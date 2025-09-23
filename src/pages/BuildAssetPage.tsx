@@ -80,116 +80,128 @@ const BuildAssetPage = () => {
 
   return (
     <div className="min-h-screen">
+      {/* SEO Meta Tags */}
+      <title>Build Assets - Commercial Development | CommercialDev</title>
+      
       {/* Hero Section */}
-      <section className="hero_build_asset_section py-20 gradient-primary text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-black/20"></div>
-        <div className="container mx-auto px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <h1 className="text-5xl font-bold mb-6 leading-tight">
-                Build Commercial Assets That Drive Growth
-              </h1>
-              <p className="text-xl mb-8 text-white/90">
-                From blueprint to business-ready, we develop modular spaces with smart infrastructure and solar-powered sustainability.
-              </p>
-              <Button size="lg" variant="hero" className="bg-white text-primary hover:bg-white/90">
-                Start Building with Us
-              </Button>
-            </div>
-            <div className="relative">
-              <img
-                src={constructionToLifestyleCenter}
-                alt="Construction site evolving into lifestyle center"
-                className="rounded-lg shadow-strong w-full"
-              />
-            </div>
+      <section id="hero_build_asset_section" className="relative py-20 lg:py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${constructionToLifestyleCenter})` }}
+        >
+          <div className="absolute inset-0 bg-commercial-navy/80"></div>
+        </div>
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Build Commercial Assets That Drive Growth
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
+              From blueprint to business-ready, we develop modular spaces with smart infrastructure and solar-powered sustainability.
+            </p>
+            <Button variant="hero" size="lg" className="animate-fade-in">
+              Start Building with Us
+            </Button>
           </div>
         </div>
       </section>
 
       {/* What We Build */}
-      <section className="asset_types_grid py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">What We Build</h2>
+      <section id="asset_types_grid" className="py-20 bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
+              What We Build
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               We develop diverse commercial assets designed for maximum flexibility and ESG compliance.
             </p>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {assetTypes.map((asset, index) => (
-              <Card key={index} className="transition-smooth hover:shadow-medium">
-                <CardContent className="p-6 text-center">
-                  <asset.icon className="w-12 h-12 text-solar mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-primary">
+              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
+                <CardContent className="p-6">
+                  <asset.icon className="h-12 w-12 text-commercial mx-auto mb-4" />
+                  <h3 className="text-lg font-semibold text-commercial-navy mb-2">
                     {asset.title}
                   </h3>
-                  <p className="text-muted-foreground">
+                  <p className="text-sm text-muted-foreground">
                     {asset.description}
                   </p>
                 </CardContent>
               </Card>
             ))}
           </div>
+          
           <div className="text-center">
-            <img
-              src={commercialPlazaRender}
+            <img 
+              src={commercialPlazaRender} 
               alt="3D render of commercial plaza"
-              className="rounded-lg shadow-medium mx-auto max-w-4xl w-full"
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
             />
           </div>
         </div>
       </section>
 
       {/* Infrastructure Blueprint */}
-      <section className="build_infrastructure_features py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Infrastructure Blueprint</h2>
+      <section id="build_infrastructure_features" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
+              Infrastructure Blueprint
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Every development includes comprehensive infrastructure designed for modern commercial operations.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-6 mb-12">
+          
+          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
             {infrastructureFeatures.map((feature, index) => (
-              <Card key={index} className="transition-smooth hover:shadow-medium">
-                <CardContent className="p-6 text-center">
-                  <feature.icon className="w-10 h-10 text-commercial mx-auto mb-3" />
-                  <h3 className="text-lg font-semibold mb-2 text-primary">
-                    {feature.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+              <div key={index} className="text-center">
+                <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                  <feature.icon className="h-8 w-8 text-commercial" />
+                </div>
+                <h3 className="text-lg font-semibold text-commercial-navy mb-2">
+                  {feature.title}
+                </h3>
+                <p className="text-sm text-muted-foreground">
+                  {feature.description}
+                </p>
+              </div>
             ))}
           </div>
+          
           <div className="text-center">
-            <img
-              src={smartInfrastructureBlueprint}
+            <img 
+              src={smartInfrastructureBlueprint} 
               alt="Smart infrastructure blueprint"
-              className="rounded-lg shadow-medium mx-auto max-w-4xl w-full"
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
             />
           </div>
         </div>
       </section>
 
       {/* Build-to-Monetize Strategy */}
-      <section className="build_monetization_model py-20 bg-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold mb-4 text-primary">Build-to-Monetize Strategy</h2>
+      <section id="build_monetization_model" className="py-20 bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
+              Build-to-Monetize Strategy
+            </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
               Multiple revenue streams ensure optimal returns for investors and stakeholders.
             </p>
           </div>
+          
           <div className="grid md:grid-cols-3 gap-8 mb-12">
             {monetizationPaths.map((path, index) => (
-              <Card key={index} className="transition-smooth hover:shadow-medium">
-                <CardContent className="p-8 text-center">
-                  <DollarSign className="w-12 h-12 text-esg mx-auto mb-4" />
-                  <h3 className="text-xl font-semibold mb-3 text-primary">
+              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
+                <CardContent className="p-8">
+                  <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
+                    <DollarSign className="h-8 w-8 text-commercial" />
+                  </div>
+                  <h3 className="text-xl font-semibold text-commercial-navy mb-4">
                     {path.title}
                   </h3>
                   <p className="text-muted-foreground mb-4">
@@ -202,22 +214,23 @@ const BuildAssetPage = () => {
               </Card>
             ))}
           </div>
+          
           <div className="text-center">
-            <img
-              src={buildRevenueDashboard}
+            <img 
+              src={buildRevenueDashboard} 
               alt="Build revenue dashboard"
-              className="rounded-lg shadow-medium mx-auto max-w-4xl w-full"
+              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
             />
           </div>
         </div>
       </section>
 
       {/* Fundraising for Development */}
-      <section className="build_fundraising_section py-20 bg-muted/50">
-        <div className="container mx-auto px-4">
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
+      <section id="build_fundraising_section" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-4xl font-bold mb-6 text-primary">
+              <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-6">
                 Invest in Building the Future
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
@@ -226,33 +239,33 @@ const BuildAssetPage = () => {
                 sustainable design principles.
               </p>
               <div className="space-y-4 mb-8">
-                <div className="flex items-center gap-3">
-                  <Sun className="w-5 h-5 text-solar" />
-                  <span>Solar-integrated development from day one</span>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
+                  <span className="text-muted-foreground">Solar-integrated development from day one</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <Building2 className="w-5 h-5 text-commercial" />
-                  <span>Modular designs for flexible monetization</span>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
+                  <span className="text-muted-foreground">Modular designs for flexible monetization</span>
                 </div>
-                <div className="flex items-center gap-3">
-                  <TrendingUp className="w-5 h-5 text-esg" />
-                  <span>ESG compliance and carbon credit generation</span>
+                <div className="flex items-center space-x-3">
+                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
+                  <span className="text-muted-foreground">ESG compliance and carbon credit generation</span>
                 </div>
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button size="lg" className="bg-primary hover:bg-primary/90">
+                <Button variant="commercial" size="lg">
                   Join Our Fundraising
                 </Button>
-                <Button size="lg" variant="outline">
+                <Button variant="outline" size="lg">
                   Explore REIT Options
                 </Button>
               </div>
             </div>
             <div>
-              <img
-                src={constructionInvestorMeeting}
+              <img 
+                src={constructionInvestorMeeting} 
                 alt="Construction investor meeting"
-                className="rounded-lg shadow-strong w-full"
+                className="w-full rounded-lg shadow-medium"
               />
             </div>
           </div>
@@ -260,31 +273,31 @@ const BuildAssetPage = () => {
       </section>
 
       {/* Call to Action */}
-      <section className="build_cta_section py-20 gradient-solar text-white">
-        <div className="container mx-auto px-4 text-center">
-          <div className="max-w-4xl mx-auto">
-            <h2 className="text-4xl font-bold mb-6">Ready to Build with Purpose?</h2>
-            <p className="text-xl mb-8 text-white/90">
-              Partner with us to develop commercial assets that generate returns while building a sustainable future.
-            </p>
-            <div className="grid md:grid-cols-2 gap-12 items-center">
-              <div>
-                <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                  <Button size="lg" variant="hero" className="bg-white text-primary hover:bg-white/90">
-                    Start Your Project
-                  </Button>
-                  <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                    Talk to Our Development Team
-                  </Button>
-                </div>
+      <section id="build_cta_section" className="py-20 bg-commercial text-white">
+        <div className="container">
+          <div className="grid md:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Build with Purpose?
+              </h2>
+              <p className="text-xl text-white/90 mb-8">
+                Partner with us to develop commercial assets that generate returns while building a sustainable future.
+              </p>
+              <div className="flex flex-col sm:flex-row gap-4">
+                <Button variant="investor" size="lg">
+                  Start Your Project
+                </Button>
+                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-commercial">
+                  Talk to Our Development Team
+                </Button>
               </div>
-              <div>
-                <img
-                  src={constructionProposalForm}
-                  alt="Construction proposal form"
-                  className="rounded-lg shadow-strong w-full"
-                />
-              </div>
+            </div>
+            <div>
+              <img 
+                src={constructionProposalForm} 
+                alt="Construction proposal form"
+                className="w-full rounded-lg shadow-medium"
+              />
             </div>
           </div>
         </div>
