@@ -47,6 +47,16 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        solar: {
+          DEFAULT: "hsl(var(--solar-primary))",
+          secondary: "hsl(var(--solar-secondary))",
+        },
+        esg: "hsl(var(--esg-green))",
+        commercial: {
+          DEFAULT: "hsl(var(--commercial-blue))",
+          navy: "hsl(var(--commercial-navy))",
+        },
+        investor: "hsl(var(--investor-gray))",
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
