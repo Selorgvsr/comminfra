@@ -122,32 +122,25 @@ const BuyPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero_buy_section relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <img 
-            src={buyHeroCommercial} 
-            alt="Commercial properties for purchase"
-            className="w-full h-full object-cover"
-          />
-          <div className="absolute inset-0 gradient-hero opacity-85"></div>
+      <section id="hero_buy_section" className="relative py-20 lg:py-32 overflow-hidden">
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{ backgroundImage: `url(${buyHeroCommercial})` }}
+        >
+          <div className="absolute inset-0 bg-commercial-navy/80"></div>
         </div>
-        
-        <div className="relative z-10 container text-center text-white">
-          <Badge className="mb-6 bg-solar text-commercial-navy font-semibold">
-            Commercial Property Investment
-          </Badge>
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-            Buy Commercial Properties That 
-            <span className="text-solar"> Build the Future</span>
-          </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90">
-            Acquire high-potential assets, add smart infrastructure, and monetize through sale, lease, or solar-powered sustainability.
-          </p>
-          <Button size="lg" variant="solar" asChild>
-            <Link to="/contact">
-              Explore Opportunities <ArrowRight className="ml-2 h-5 w-5" />
-            </Link>
-          </Button>
+        <div className="container relative z-10">
+          <div className="max-w-4xl mx-auto text-center text-white">
+            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
+              Buy Your Product Now
+            </h1>
+            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
+              Acquire high-potential assets, add smart infrastructure, and monetize through sale, lease, or solar-powered sustainability.
+            </p>
+            <Button variant="hero" size="lg" className="animate-fade-in">
+              Buy Your Product Now
+            </Button>
+          </div>
         </div>
       </section>
 
