@@ -11,7 +11,7 @@ const Header = () => {
   const navItems = [
     { label: "Buy", path: "/buy" },
     { label: "Sell", path: "/sell" },
-    { label: "Land Assets", path: "/land-assets" },
+    { label: "Land Asset", path: "/land-assets" },
     { label: "Build Asset", path: "/build-asset" },
     { label: "Rent/Lease Asset", path: "/rent-lease-asset" },
     { label: "Projects", path: "/projects" },
