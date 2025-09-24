@@ -19,7 +19,7 @@ import {
   ArrowRight,
   CheckCircle
 } from "lucide-react";
-import heroImage from "@/assets/hero-commercial-complex.jpg";
+import buyHeroCommercial from "@/assets/buy-hero-commercial.jpg";
 import aerialPark from "@/assets/aerial-business-park.jpg";
 import commercialSale from "@/assets/commercial-for-sale.jpg";
 import esgDashboard from "@/assets/esg-dashboard.jpg";
@@ -125,7 +125,7 @@ const BuyPage = () => {
       <section className="hero_buy_section relative min-h-[80vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
           <img 
-            src={heroImage} 
+            src={buyHeroCommercial} 
             alt="Commercial properties for purchase"
             className="w-full h-full object-cover"
           />
