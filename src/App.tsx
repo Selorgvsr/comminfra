@@ -7,6 +7,7 @@ import Layout from "./components/Layout";
 import Homepage from "./pages/Homepage";
 import BuyPage from "./pages/BuyPage";
 import SellPage from "./pages/SellPage";
+import LandAssetsPage from "./pages/LandAssetsPage";
 import ContactPage from "./pages/ContactPage";
 import NotFound from "./pages/NotFound";
 
@@ -23,7 +24,7 @@ const App = () => (
             <Route path="/" element={<Homepage />} />
             <Route path="/buy" element={<BuyPage />} />
             <Route path="/sell" element={<SellPage />} />
-            <Route path="/land-assets" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Land Assets Page - Coming Soon</h1></div>} />
+            <Route path="/land-assets" element={<LandAssetsPage />} />
             <Route path="/build-asset" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Build Asset Page - Coming Soon</h1></div>} />
             <Route path="/rent-lease-asset" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Rent/Lease Asset Page - Coming Soon</h1></div>} />
             <Route path="/projects" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Projects Page - Coming Soon</h1></div>} />
