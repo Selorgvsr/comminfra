@@ -40,9 +40,6 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center space-x-2">
-          <Button variant="investor" size="sm" asChild className="hidden sm:flex">
-            <Link to="/reit-invest">Invest Now</Link>
-          </Button>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>
