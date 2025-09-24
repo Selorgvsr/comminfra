@@ -11,7 +11,7 @@ const Header = () => {
   const navItems = [
     { label: "Buy", path: "/buy" },
     { label: "Sell", path: "/sell" },
-    { label: "Land Asset", path: "/land-assets" },
+    { label: "Land Assets", path: "/land-assets" },
     { label: "Build Asset", path: "/build-asset" },
     { label: "Rent/Lease Asset", path: "/rent-lease-asset" },
     { label: "Projects", path: "/projects" },
@@ -40,6 +40,9 @@ const Header = () => {
         </nav>
         
         <div className="flex items-center space-x-2">
+          <Button variant="investor" size="sm" asChild className="hidden sm:flex">
+            <Link to="/reit-invest">Invest Now</Link>
+          </Button>
           
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
             <SheetTrigger asChild>

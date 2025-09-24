@@ -17,7 +17,7 @@ import {
   ArrowRight,
   Clock
 } from "lucide-react";
-import heroImage from "@/assets/contact-hero-image.jpg";
+import heroImage from "@/assets/hero-commercial-complex.jpg";
 
 const ContactPage = () => {
   const officeLocations = [
