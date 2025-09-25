@@ -4,7 +4,7 @@ import { Building2, MapPin, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSig
 import projectsPortfolioMontageImage from "@/assets/projects-portfolio-montage.jpg";
 import projectCardsEsgImage from "@/assets/project-cards-esg.jpg";
 import projectCategoriesFilterImage from "@/assets/project-categories-filter.jpg";
-import esgDashboardImage from "@/assets/esg-dashboard.jpg";
+import esgSustainableBuildingImage from "@/assets/esg-sustainable-commercial-building.jpg";
 import projectTimelineImage from "@/assets/project-timeline.jpg";
 import investorMeetingCalendarImage from "@/assets/investor-meeting-calendar.jpg";
 
@@ -311,8 +311,8 @@ const ProjectsPage = () => {
             </div>
             <div>
               <img 
-                src={esgDashboardImage} 
-                alt="ESG dashboard with solar and carbon credit metrics"
+                src={esgSustainableBuildingImage} 
+                alt="Sustainable commercial building with ESG features including solar panels, green walls, and electric vehicle charging"
                 className="w-full rounded-lg shadow-medium"
               />
             </div>
