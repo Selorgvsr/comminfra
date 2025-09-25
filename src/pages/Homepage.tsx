@@ -16,7 +16,7 @@ import {
   Calendar
 } from "lucide-react";
 import heroImage from "@/assets/hero-commercial-complex.jpg";
-import indiaCommercialEvening from "@/assets/india-commercial-evening-solar.jpg";
+import indiaCommercialEveningHD from "@/assets/india-commercial-evening-hd.jpg";
 import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
 import investorImage from "@/assets/investor-handshake.jpg";
 
@@ -152,8 +152,8 @@ const Homepage = () => {
           
           <div className="mt-12 relative rounded-2xl overflow-hidden shadow-strong">
             <img 
-              src={indiaCommercialEvening} 
-              alt="Beautiful commercial building in India with solar panels during evening time"
+              src={indiaCommercialEveningHD} 
+              alt="Ultra HD beautiful commercial building in India with solar panels during evening golden hour"
               className="w-full h-64 object-cover"
             />
             <div className="absolute inset-0 bg-commercial-navy/20"></div>
