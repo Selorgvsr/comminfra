@@ -120,7 +120,7 @@ const BuildAssetPage = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {assetTypes.map((asset, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
+              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20 bg-commercial/5">
                 <CardContent className="p-6">
                   <asset.icon className="h-12 w-12 text-commercial mx-auto mb-4" />
                   <h3 className="text-lg font-semibold text-commercial-navy mb-2">
