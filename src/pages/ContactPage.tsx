@@ -121,7 +121,7 @@ const ContactPage = () => {
               </p>
             </div>
             
-            <Card className="shadow-strong">
+            <Card className="shadow-strong bg-commercial/5 border-commercial/20">
               <CardHeader>
                 <CardTitle className="flex items-center space-x-2">
                   <MessageSquare className="h-6 w-6 text-commercial" />
