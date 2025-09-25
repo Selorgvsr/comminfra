@@ -208,11 +208,11 @@ const BuyPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
             {valueAdditions.map((addition, index) => (
-              <Card key={index} className="group hover:shadow-medium transition-smooth shadow-soft">
+              <Card key={index} className="group hover:shadow-medium transition-smooth shadow-soft bg-commercial-navy border-commercial/20">
                 <CardContent className="p-6 text-center">
-                  <addition.icon className="h-12 w-12 text-commercial mx-auto mb-4 group-hover:text-solar transition-smooth" />
-                  <h3 className="font-semibold mb-2 text-commercial-navy">{addition.title}</h3>
-                  <p className="text-sm text-muted-foreground">{addition.description}</p>
+                  <addition.icon className="h-12 w-12 text-solar mx-auto mb-4 group-hover:text-white transition-smooth" />
+                  <h3 className="font-semibold mb-2 text-white">{addition.title}</h3>
+                  <p className="text-sm text-white/80">{addition.description}</p>
                 </CardContent>
               </Card>
             ))}
