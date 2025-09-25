@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Zap, Droplets, Car, Sun, Leaf, TrendingUp, Handshake, FileText, Calendar } from "lucide-react";
 import sellHeroImage from "@/assets/sell-hero-commercial.jpg";
-import retailFloorImage from "@/assets/retail-floor-interior.jpg";
+import multiFloorBuildingImage from "@/assets/multi-floor-commercial-building.jpg";
 import solarMeterImage from "@/assets/solar-smart-meter.jpg";
 import propertyHandoverImage from "@/assets/property-handover.jpg";
 import sellerHandshakeImage from "@/assets/seller-handshake.jpg";
@@ -131,8 +131,8 @@ const SellPage = () => {
           
           <div className="text-center">
             <img 
-              src={retailFloorImage} 
-              alt="Interior view of retail floor with leasing banners"
+              src={multiFloorBuildingImage} 
+              alt="Modern multi-floor commercial building with visible floor sections"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
             />
           </div>
