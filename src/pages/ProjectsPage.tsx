@@ -241,15 +241,15 @@ const ProjectsPage = () => {
           
           <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
             {projectCategories.map((category, index) => (
-              <Card key={index} className="text-center cursor-pointer hover-scale transition-all duration-300 border-commercial/20 hover:border-commercial/40">
+              <Card key={index} className="text-center cursor-pointer hover-scale transition-all duration-300 border-commercial/20 hover:border-commercial/40 bg-commercial-navy">
                 <CardContent className="p-6">
-                  <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <category.icon className="h-8 w-8 text-commercial" />
+                  <div className="bg-solar/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
+                    <category.icon className="h-8 w-8 text-solar" />
                   </div>
-                  <h3 className="text-lg font-semibold text-commercial-navy mb-2">
+                  <h3 className="text-lg font-semibold text-white mb-2">
                     {category.title}
                   </h3>
-                  <p className="text-sm text-commercial font-medium">
+                  <p className="text-sm text-solar font-medium">
                     {category.count}
                   </p>
                 </CardContent>
