@@ -153,14 +153,14 @@ const SellPage = () => {
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
             {valueFeatures.map((feature, index) => (
-              <div key={index} className="text-center">
+              <div key={index} className="text-center bg-commercial-navy p-6 rounded-lg border border-commercial/20">
                 <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
                   <feature.icon className="h-8 w-8 text-commercial" />
                 </div>
-                <h3 className="text-lg font-semibold text-commercial-navy mb-2">
+                <h3 className="text-lg font-semibold text-white mb-2">
                   {feature.title}
                 </h3>
-                <p className="text-sm text-muted-foreground">
+                <p className="text-sm text-white/80">
                   {feature.description}
                 </p>
               </div>
