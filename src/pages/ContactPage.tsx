@@ -233,7 +233,7 @@ const ContactPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {teamMembers.map((member, index) => (
-              <Card key={index} className="group hover:shadow-medium transition-smooth shadow-soft text-center">
+              <Card key={index} className="group hover:shadow-medium transition-smooth shadow-soft text-center bg-commercial/5 border-commercial/20">
                 <CardContent className="p-6">
                   <member.icon className="h-12 w-12 text-commercial mx-auto mb-4 group-hover:text-solar transition-smooth" />
                   <h3 className="font-semibold mb-1 text-commercial-navy">{member.title}</h3>
