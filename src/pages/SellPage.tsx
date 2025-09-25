@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Building2, Zap, Droplets, Car, Sun, Leaf, TrendingUp, Handshake, FileText, Calendar } from "lucide-react";
 import sellHeroImage from "@/assets/sell-hero-commercial.jpg";
 import multiFloorBuildingImage from "@/assets/multi-floor-commercial-building.jpg";
-import solarMeterImage from "@/assets/solar-smart-meter.jpg";
+import rooftopSolarBuildingImage from "@/assets/rooftop-solar-building.jpg";
 import propertyHandoverImage from "@/assets/property-handover.jpg";
 import sellerHandshakeImage from "@/assets/seller-handshake.jpg";
 import listingConsultationImage from "@/assets/listing-consultation.jpg";
@@ -169,8 +169,8 @@ const SellPage = () => {
           
           <div className="text-center">
             <img 
-              src={solarMeterImage} 
-              alt="Rooftop solar installation and smart meter dashboard"
+              src={rooftopSolarBuildingImage} 
+              alt="Commercial building with rooftop completely covered in solar panels"
               className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
             />
           </div>
