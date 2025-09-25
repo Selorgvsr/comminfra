@@ -17,7 +17,7 @@ import {
 } from "lucide-react";
 import heroImage from "@/assets/hero-commercial-complex.jpg";
 import aerialPark from "@/assets/aerial-business-park.jpg";
-import esgDashboard from "@/assets/esg-dashboard.jpg";
+import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
 import investorImage from "@/assets/investor-handshake.jpg";
 
 const Homepage = () => {
@@ -217,8 +217,8 @@ const Homepage = () => {
             
             <div className="relative">
               <img 
-                src={esgDashboard} 
-                alt="ESG dashboard showing sustainability metrics"
+                src={sustainableGrowthBuilding} 
+                alt="Modern commercial building with sustainability features that power growth including solar panels, green walls, and ESG impact metrics"
                 className="w-full rounded-2xl shadow-strong"
               />
             </div>
