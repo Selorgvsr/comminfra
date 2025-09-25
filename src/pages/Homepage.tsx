@@ -140,7 +140,7 @@ const Homepage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {assetTypes.map((asset, index) => (
-              <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft">
+              <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft bg-commercial/5 border-commercial/20">
                 <CardContent className="p-6 text-center">
                   <asset.icon className="h-12 w-12 text-commercial mx-auto mb-4 group-hover:text-solar transition-smooth" />
                   <h3 className="font-semibold mb-2 text-commercial-navy">{asset.title}</h3>
