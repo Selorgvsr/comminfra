@@ -163,7 +163,7 @@ const BuyPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {propertyTypes.map((property, index) => (
-              <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft">
+              <Card key={index} className="group hover:shadow-medium transition-smooth border-0 shadow-soft bg-commercial/5 border-commercial/20">
                 <CardContent className="p-6">
                   <property.icon className="h-12 w-12 text-commercial mb-4 group-hover:text-solar transition-smooth" />
                   <h3 className="font-semibold mb-2 text-commercial-navy">{property.title}</h3>
