@@ -189,26 +189,6 @@ const BuyPage = () => {
     answer: "We work with leading financial institutions to provide competitive financing options, including construction-to-permanent loans, commercial mortgages, and partnership structures."
   }];
   return <div className="min-h-screen">
-      {/* Fixed Header - Scroll Aware */}
-      <header className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrollY > 100 ? 'bg-white/80 backdrop-blur-md shadow-lg' : 'bg-transparent'}`}>
-        <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-          <nav className="hidden md:flex space-x-8">
-            <Link to="/buy" className="text-primary font-medium">Buy</Link>
-            <Link to="/sell" className="hover:text-primary transition-colors">Sell</Link>
-            <Link to="/land-assets" className="hover:text-primary transition-colors">Land Assets</Link>
-            <Link to="/build-asset" className="hover:text-primary transition-colors">Build Asset</Link>
-            <Link to="/rent-lease-asset" className="hover:text-primary transition-colors">Rent/Lease Asset</Link>
-            <Link to="/projects" className="hover:text-primary transition-colors">Projects</Link>
-            <Link to="/contact" className="hover:text-primary transition-colors">Contact Us</Link>
-          </nav>
-          <div className="flex items-center space-x-4">
-            <Search className="h-5 w-5 text-muted-foreground hover:text-primary cursor-pointer transition-colors" />
-            <button onClick={() => setIsDarkMode(!isDarkMode)} className="p-2 rounded-full hover:bg-secondary transition-colors">
-              {isDarkMode ? <SunIcon className="h-5 w-5" /> : <Moon className="h-5 w-5" />}
-            </button>
-          </div>
-        </div>
-      </header>
 
       {/* 1. Hero Section - Premium Ownership Banner */}
       <section className="BuyPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
