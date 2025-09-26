@@ -1,301 +1,602 @@
+import React, { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Building2, MapPin, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSign, Users, Calendar, FileText } from "lucide-react";
-import landToCommercialImage from "@/assets/land-to-commercial.jpg";
-import landZoningMapImage from "@/assets/land-zoning-map.jpg";
-import infrastructureBlueprintImage from "@/assets/infrastructure-blueprint.jpg";
-import sitePlanRevenueImage from "@/assets/site-plan-revenue.jpg";
-import investorHandshakeImage from "@/assets/investor-handshake.jpg";
-import landSubmissionFormImage from "@/assets/land-submission-form.jpg";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { Link } from "react-router-dom";
+import { 
+  Building2, 
+  Store, 
+  TreePine, 
+  Factory, 
+  MapPin, 
+  Ruler, 
+  Zap, 
+  Sun, 
+  FileText, 
+  Search,
+  ArrowRight,
+  CheckCircle,
+  Upload,
+  DollarSign,
+  Calendar,
+  Target,
+  Layers
+} from "lucide-react";
+
+// Image imports
+import landToCommercial from "@/assets/land-to-commercial.jpg";
+import landZoningMap from "@/assets/land-zoning-map.jpg";
+import infrastructureBlueprint from "@/assets/infrastructure-blueprint.jpg";
+import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
+import landSubmissionForm from "@/assets/land-submission-form.jpg";
 
 const LandAssetsPage = () => {
-  const landTypes = [
+  const [scrollY, setScrollY] = useState(0);
+  
+  // Scroll-aware header transparency
+  useEffect(() => {
+    const handleScroll = () => setScrollY(window.scrollY);
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  // Land Category Data
+  const landCategories = [
     {
-      title: "Urban Plots for High Street Retail",
-      description: "Prime city locations perfect for retail and commercial frontage",
       icon: Building2,
+      title: "Downtown / City Core",
+      description: "Prime urban plots with high development potential",
+      cta: "Explore City Plots",
+      link: "/projects?type=downtown"
     },
     {
-      title: "Suburban Parcels for Business Parks",
-      description: "Strategic suburban land for office complexes and corporate campuses",
-      icon: Building2,
+      icon: Store,
+      title: "Mall-Adjacent Parcels",
+      description: "Strategic locations near retail hubs",
+      cta: "View Retail-Ready Land",
+      link: "/projects?type=mall-adjacent"
     },
     {
-      title: "Agricultural Land for Agrivoltaics",
-      description: "Rural parcels ideal for solar farming and sustainable agriculture",
-      icon: Sun,
+      icon: Factory,
+      title: "Office Zone Land",
+      description: "Commercial-grade plots for office development",
+      cta: "Discover Office-Grade Land",
+      link: "/projects?type=office-zone"
     },
     {
-      title: "Industrial Zones for Solar-Enabled Logistics",
-      description: "Industrial land for warehousing and distribution with solar integration",
-      icon: Building2,
+      icon: Layers,
+      title: "Mixed-Use Potential",
+      description: "Versatile plots for integrated developments",
+      cta: "Check Mixed-Use Sites",
+      link: "/projects?type=mixed-use"
     },
+    {
+      icon: TreePine,
+      title: "Peripheral Growth Zones",
+      description: "Expansion areas with future growth potential",
+      cta: "Browse Expansion Areas",
+      link: "/projects?type=peripheral"
+    }
   ];
 
-  const infrastructureFeatures = [
+  // City Filters Data
+  const cityFilters = [
+    { name: "Chennai", plots: 45, active: true },
+    { name: "Bengaluru", plots: 38, active: false },
+    { name: "Hyderabad", plots: 29, active: false }
+  ];
+
+  // Plot Size Filters Data
+  const plotSizeFilters = [
+    { range: "<5,000 sq.ft", count: 23, type: "Small" },
+    { range: "5K–25K sq.ft", count: 41, type: "Medium" },
+    { range: "1 acre+", count: 18, type: "Large" }
+  ];
+
+  // Asset Targeting Data
+  const assetTargeting = [
     {
-      title: "Internal Roads",
-      description: "Well-planned road networks for optimal accessibility",
-      icon: Car,
+      icon: Store,
+      title: "Retail Malls",
+      description: "High-footfall locations with retail zoning",
+      features: ["Metro connectivity", "Parking availability", "Anchor tenant potential"]
     },
     {
-      title: "Car Parking Zones",
-      description: "Strategic parking allocation for commercial efficiency",
-      icon: Car,
+      icon: Building2,
+      title: "Office Towers",
+      description: "Commercial zones with IT/corporate focus",
+      features: ["IT corridor proximity", "Utility infrastructure", "Flexible FSI"]
     },
     {
-      title: "Electric and Water Connections",
-      description: "Premium utility infrastructure with smart metering",
+      icon: Factory,
+      title: "Lifestyle Centers",
+      description: "Mixed-use developments with entertainment",
+      features: ["Residential proximity", "Entertainment licensing", "Multi-level potential"]
+    },
+    {
+      icon: TreePine,
+      title: "Sustainable Development",
+      description: "ESG-aligned projects with green certifications",
+      features: ["Solar readiness", "Water harvesting", "Green building potential"]
+    }
+  ];
+
+  // ESG Features Data
+  const esgFeatures = [
+    {
+      icon: Sun,
+      title: "Solar-Ready Infrastructure",
+      description: "Pre-planned for renewable energy"
+    },
+    {
       icon: Zap,
+      title: "Smart Utilities",
+      description: "Digital infrastructure backbone"
     },
     {
-      title: "Solar Panel Integration",
-      description: "Pre-planned solar infrastructure for ESG compliance",
-      icon: Sun,
+      icon: TreePine,
+      title: "Green Certification",
+      description: "LEED/GRIHA development potential"
     },
     {
-      title: "ESG-Compliant Site Planning",
-      description: "Sustainable development with carbon credit potential",
-      icon: Leaf,
-    },
+      icon: FileText,
+      title: "REIT-Compatible",
+      description: "Investment-grade documentation"
+    }
   ];
 
-  const monetizationStreams = [
+  // Featured Listings Data
+  const featuredListings = [
     {
-      title: "Develop and Sell Floor-wise Commercial Units",
-      description: "Transform land into profitable commercial spaces with modular sales approach",
-      icon: Building2,
+      title: "Premium City Core Plot",
+      location: "Chennai IT Corridor",
+      size: "2.5 acres",
+      fsi: "3.5",
+      price: "₹450 Cr",
+      highlights: ["Metro 500m", "IT Park Adjacent", "DTCP Approved"]
     },
     {
-      title: "Lease Built Assets to Businesses",
-      description: "Generate recurring rental income through strategic leasing partnerships",
-      icon: DollarSign,
+      title: "Mall-Adjacent Parcel",
+      location: "Bengaluru ORR",
+      size: "1.8 acres",
+      fsi: "2.5",
+      price: "₹280 Cr",
+      highlights: ["Mall Frontage", "Highway Access", "Retail Zoned"]
     },
     {
-      title: "Generate Solar Power and Monetize Carbon Credits",
-      description: "Create additional revenue streams through renewable energy and ESG compliance",
-      icon: Sun,
+      title: "Mixed-Use Development",
+      location: "Hyderabad HITEC",
+      size: "3.2 acres",
+      fsi: "4.0",
+      price: "₹520 Cr",
+      highlights: ["IT Hub Location", "Airport 15km", "HMDA Approved"]
+    }
+  ];
+
+  // FAQ Data
+  const faqs = [
+    {
+      question: "What approvals are required for land purchase?",
+      answer: "Typically DTCP/CMDA approvals, clear title, NOC from relevant authorities, and zoning compliance certificates are required. We provide complete due diligence support."
     },
+    {
+      question: "Can I buy part of a larger parcel?",
+      answer: "Yes, we offer flexible subdivision options based on minimum plot sizes and local regulations. Joint development partnerships are also available."
+    },
+    {
+      question: "What's the process for due diligence?",
+      answer: "Our 30-day due diligence includes title verification, legal clearances, soil testing, utility connectivity assessment, and development potential analysis."
+    },
+    {
+      question: "Are joint development partnerships available?",
+      answer: "Yes, we offer JDA structures where you provide land and we handle development, sharing returns based on agreed ratios."
+    }
   ];
 
   return (
     <div className="min-h-screen">
-      {/* SEO Meta Tags */}
-      <title>Land Assets - Strategic Land Acquisition | CommercialDev</title>
-      
-      {/* Hero Section */}
-      <section id="hero_land_assets_section" className="relative py-20 lg:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${landToCommercialImage})` }}
-        >
-          <div className="absolute inset-0 bg-commercial-navy/80"></div>
+      {/* 1. Hero Section - Strategic Land Acquisition Banner */}
+      <section className="LandAsset_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img 
+            src={landToCommercial} 
+            alt="Aerial view of commercial land development opportunity" 
+            className="w-full h-full object-cover transform scale-105 transition-transform duration-[20s] ease-out hover:scale-110" 
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
+          <div className="absolute inset-0 backdrop-blur-[1px]"></div>
         </div>
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Strategic Land Acquisition for Commercial Growth
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
-              We buy land, build infrastructure, and transform it into high-yield commercial spaces.
-            </p>
-            <Button variant="hero" size="lg" className="animate-fade-in">
-              Explore Land Opportunities
+        
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            Strategic Land Acquisition
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Explore High-Value Land Assets 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> for Commercial Development</span>
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 animate-fade-in">
+            Downtown plots, mall-adjacent parcels, office-ready zones with ESG alignment and investment-grade potential
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group" asChild>
+              <Link to="/projects?category=land">
+                Browse Available Land 
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+            <Button variant="outline" size="lg" className="border-white/30 text-white hover:bg-white/20 backdrop-blur-sm px-8 py-4 rounded-full hover:scale-105 transition-all duration-300" asChild>
+              <Link to="/contact">Submit Land for Evaluation</Link>
             </Button>
           </div>
         </div>
       </section>
 
-      {/* What We Acquire Section */}
-      <section id="land_types_grid" className="py-20 bg-background">
-        <div className="container">
+      {/* 2. Land Category Segmentation - Icon-Based Cards */}
+      <section className="LandCategory_Segmentation py-20 bg-secondary/5">
+        <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              What We Acquire
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Strategic land acquisition across diverse zones for maximum development potential and investor returns
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Land Categories</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Discover prime land opportunities across strategic commercial zones
             </p>
           </div>
           
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {landTypes.map((type, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20 bg-commercial/5">
-                <CardContent className="p-6">
-                  <type.icon className="h-12 w-12 text-commercial mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-commercial-navy mb-2">
-                    {type.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {type.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={landZoningMapImage} 
-              alt="Map overlay with land zoning icons"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Infrastructure Development Section */}
-      <section id="land_infrastructure_features" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Infrastructure Development
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive infrastructure planning that transforms raw land into commercial-ready assets
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
-            {infrastructureFeatures.map((feature, index) => (
-              <div key={index} className="text-center bg-commercial-navy p-6 rounded-lg border border-commercial/20">
-                <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="h-8 w-8 text-commercial" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-white/80">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={infrastructureBlueprintImage} 
-              alt="Infrastructure blueprint with solar and utility overlays"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Monetization Strategy Section */}
-      <section id="land_monetization_model" className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Monetization Strategy
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Multiple revenue streams from strategic land development and ESG-aligned commercial infrastructure
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {monetizationStreams.map((stream, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
-                <CardContent className="p-8">
-                  <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                    <stream.icon className="h-8 w-8 text-commercial" />
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
+            {landCategories.map((category, index) => (
+              <Card 
+                key={index} 
+                className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <CardHeader className="text-center pb-2">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                    <category.icon className="h-8 w-8 text-primary group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
                   </div>
-                  <h3 className="text-xl font-semibold text-commercial-navy mb-4">
-                    {stream.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {stream.description}
-                  </p>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{category.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
+                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300" asChild>
+                    <Link to={category.link}>{category.cta}</Link>
+                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* 3. Location Intelligence - Interactive Map & Filters */}
+      <section className="LocationIntelligence_MapFilters py-20">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Location Intelligence</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Explore opportunities across India's fastest-growing commercial hubs
+            </p>
+          </div>
           
-          <div className="text-center">
-            <img 
-              src={sitePlanRevenueImage} 
-              alt="Commercial site plan with revenue overlays"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Fundraising Section */}
-      <section id="land_fundraising_section" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-6">
-                Invest in Land. Build the Future.
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                We raise capital to acquire and develop land into ESG-aligned commercial assets that deliver 
-                sustainable returns while contributing to carbon credit generation and sustainable infrastructure.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Strategic land acquisition in high-growth corridors</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">ESG-compliant development with solar integration</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Multiple exit strategies for investor flexibility</span>
-                </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <div className="space-y-6">
+              <div className="flex flex-wrap gap-3 mb-6">
+                {cityFilters.map((city, index) => (
+                  <Badge 
+                    key={index}
+                    variant={city.active ? "default" : "outline"}
+                    className={`px-4 py-2 cursor-pointer transition-all duration-300 hover:scale-105 ${
+                      city.active ? 'bg-primary text-white' : 'hover:bg-primary/10'
+                    }`}
+                  >
+                    {city.name} ({city.plots} plots)
+                  </Badge>
+                ))}
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="commercial" size="lg">
-                  Join Our Fundraising
-                </Button>
-                <Button variant="outline" size="lg">
-                  Learn About Our REIT
-                </Button>
-              </div>
+              
+              <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl">
+                <CardHeader>
+                  <CardTitle className="flex items-center">
+                    <MapPin className="h-5 w-5 mr-2 text-primary" />
+                    Proximity Analysis
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="space-y-3">
+                    {["Metro connectivity", "Airport access", "Highway frontage", "Mall proximity", "Hospital vicinity"].map((feature, index) => (
+                      <div key={index} className="flex items-center">
+                        <CheckCircle className="h-4 w-4 text-esg mr-3" />
+                        <span className="text-sm">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-            <div>
-              <img 
-                src={investorHandshakeImage} 
-                alt="Investor meeting and land development dashboard"
-                className="w-full rounded-lg shadow-medium"
-              />
+            
+            <div className="relative rounded-2xl overflow-hidden shadow-xl">
+              <img src={landZoningMap} alt="Interactive zoning map with commercial development zones" className="w-full h-96 object-cover" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+                <div className="p-6 text-white">
+                  <MapPin className="h-8 w-8 mb-2" />
+                  <h3 className="text-xl font-bold mb-1">Interactive Zoning Map</h3>
+                  <p className="text-white/90">Explore commercial zones with development potential</p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section id="land_cta_section" className="py-20 bg-commercial text-white">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Have Land to Sell or Develop?
-              </h2>
-              <p className="text-xl text-white/90 mb-8">
-                Partner with us to transform your land into profitable commercial assets with ESG alignment 
-                and sustainable infrastructure that maximizes both financial and environmental returns.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="investor" size="lg">
-                  Submit Your Land
-                </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-commercial">
-                  Talk to Our Development Team
-                </Button>
+      {/* 4. Land Size & Area Extent - Filter Panel */}
+      <section className="LandSize_FilterPanel py-20 bg-secondary/5">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Plot Size & Development Metrics</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Filter by size, FSI potential, and legal compliance status
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            {plotSizeFilters.map((filter, index) => (
+              <Card key={index} className="text-center p-6 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+                <Ruler className="h-12 w-12 text-primary mx-auto mb-4" />
+                <div className="text-3xl font-bold text-primary mb-2">{filter.count}</div>
+                <h3 className="font-semibold mb-2">{filter.type} Plots</h3>
+                <p className="text-sm text-muted-foreground">{filter.range}</p>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img src={infrastructureBlueprint} alt="Infrastructure blueprint showing FSI potential and utilities" className="w-full h-64 object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
+              <div className="text-center text-white">
+                <Ruler className="h-16 w-16 mx-auto mb-4" />
+                <h3 className="text-2xl font-bold mb-2">FSI/FAR Analysis</h3>
+                <p className="text-white/90">Buildable area calculations and development potential</p>
               </div>
             </div>
-            <div>
-              <img 
-                src={landSubmissionFormImage} 
-                alt="Land submission form and consultation calendar"
-                className="w-full rounded-lg shadow-medium"
-              />
+          </div>
+        </div>
+      </section>
+
+      {/* 5. Advanced Asset Targeting - Buyer Intent Mapping */}
+      <section className="AssetTargeting_BuyerIntent py-20">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Asset Targeting</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              AI-powered recommendations based on your development intent
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {assetTargeting.map((target, index) => (
+              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-b from-white to-secondary/10 border border-white/20 rounded-2xl overflow-hidden">
+                <CardHeader className="text-center pb-2">
+                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
+                    <target.icon className="h-8 w-8 text-primary group-hover:text-solar transition-colors" />
+                  </div>
+                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{target.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-sm text-muted-foreground mb-4">{target.description}</p>
+                  <div className="space-y-2">
+                    {target.features.map((feature, idx) => (
+                      <div key={idx} className="flex items-center text-xs">
+                        <CheckCircle className="h-3 w-3 text-esg mr-2" />
+                        <span>{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 6. Value-Added Land Strategy - ESG & Ownership Models */}
+      <section className="ValueStrategy_ESGOwnership py-20 bg-secondary/5">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">ESG & Ownership Models</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Sustainable development features and flexible investment structures
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
+            {esgFeatures.map((feature, index) => (
+              <Card key={index} className="text-center p-6 hover:shadow-lg transition-all duration-300 bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1">
+                <feature.icon className="h-12 w-12 text-primary mx-auto mb-3 group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
+                <h3 className="font-semibold mb-2">{feature.title}</h3>
+                <p className="text-sm text-muted-foreground">{feature.description}</p>
+              </Card>
+            ))}
+          </div>
+          
+          <div className="relative rounded-2xl overflow-hidden shadow-xl">
+            <img src={smartInfrastructureBlueprint} alt="Smart infrastructure blueprint with ESG features" className="w-full h-64 object-cover" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
+              <div className="p-6 text-white">
+                <Sun className="h-8 w-8 mb-2" />
+                <h3 className="text-xl font-bold mb-1">ESG-Aligned Infrastructure</h3>
+                <p className="text-white/90">Sustainable features that enhance long-term value</p>
+              </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 7. Featured Listings / Spotlight Parcels - Showcase Grid */}
+      <section className="FeaturedListings_SpotlightParcels py-20">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Spotlight Parcels</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Premium land opportunities with exceptional development potential
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {featuredListings.map((listing, index) => (
+              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden">
+                <CardHeader>
+                  <div className="flex justify-between items-start mb-2">
+                    <Badge className="bg-primary/10 text-primary">Featured</Badge>
+                    <span className="text-2xl font-bold text-primary">{listing.price}</span>
+                  </div>
+                  <CardTitle className="group-hover:text-primary transition-colors">{listing.title}</CardTitle>
+                  <div className="flex items-center text-sm text-muted-foreground">
+                    <MapPin className="h-4 w-4 mr-1" />
+                    {listing.location}
+                  </div>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid grid-cols-2 gap-4 mb-4">
+                    <div className="text-center">
+                      <div className="text-lg font-semibold">{listing.size}</div>
+                      <div className="text-xs text-muted-foreground">Plot Size</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-lg font-semibold">{listing.fsi}</div>
+                      <div className="text-xs text-muted-foreground">FSI</div>
+                    </div>
+                  </div>
+                  <div className="space-y-2 mb-4">
+                    {listing.highlights.map((highlight, idx) => (
+                      <div key={idx} className="flex items-center text-sm">
+                        <CheckCircle className="h-3 w-3 text-esg mr-2" />
+                        <span>{highlight}</span>
+                      </div>
+                    ))}
+                  </div>
+                  <Button className="w-full group-hover:bg-primary group-hover:text-white transition-all" variant="outline">
+                    View Details
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 8. FAQs for Land Buyers - Accordion Component */}
+      <section className="LandBuyer_FAQ py-20 bg-secondary/5">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Common questions about land acquisition and development process
+            </p>
+          </div>
+          
+          <div className="max-w-4xl mx-auto">
+            <Accordion type="single" collapsible className="space-y-4">
+              {faqs.map((faq, index) => (
+                <AccordionItem key={index} value={`item-${index}`} className="bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl px-6">
+                  <AccordionTrigger className="text-left hover:text-primary transition-colors">
+                    {faq.question}
+                  </AccordionTrigger>
+                  <AccordionContent className="text-muted-foreground">
+                    {faq.answer}
+                  </AccordionContent>
+                </AccordionItem>
+              ))}
+            </Accordion>
+          </div>
+        </div>
+      </section>
+
+      {/* 9. Contact & Submission Portal - Filterable Form */}
+      <section className="Form_LandInquiry py-20">
+        <div className="container px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Submit Your Land Inquiry</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Request site visits or submit your land for evaluation
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            <div className="relative">
+              <img src={landSubmissionForm} alt="Land submission form interface" className="w-full h-96 object-cover rounded-2xl shadow-xl" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex items-end">
+                <div className="p-8 text-white">
+                  <Target className="h-12 w-12 mb-4" />
+                  <h3 className="text-2xl font-bold mb-2">AI-Powered Matching</h3>
+                  <p className="text-white/90">Advanced algorithms match your requirements with optimal land parcels</p>
+                </div>
+              </div>
+            </div>
+            
+            <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl shadow-xl">
+              <CardHeader>
+                <CardTitle className="text-2xl text-center">Land Inquiry Form</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div>
+                    <label className="block text-sm font-medium mb-2">City</label>
+                    <select className="w-full p-3 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm">
+                      <option>Select City</option>
+                      <option>Chennai</option>
+                      <option>Bengaluru</option>
+                      <option>Hyderabad</option>
+                    </select>
+                  </div>
+                  <div>
+                    <label className="block text-sm font-medium mb-2">Plot Size</label>
+                    <select className="w-full p-3 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm">
+                      <option>Any Size</option>
+                      <option>&lt;5,000 sq.ft</option>
+                      <option>5K–25K sq.ft</option>
+                      <option>1 acre+</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Intended Use</label>
+                  <select className="w-full p-3 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm">
+                    <option>Select Development Type</option>
+                    <option>Retail Mall</option>
+                    <option>Office Tower</option>
+                    <option>Mixed-Use</option>
+                    <option>Lifestyle Center</option>
+                  </select>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Budget Range</label>
+                  <div className="relative">
+                    <DollarSign className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
+                    <input type="text" placeholder="Enter budget range" className="w-full p-3 pl-10 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm" />
+                  </div>
+                </div>
+                
+                <div>
+                  <label className="block text-sm font-medium mb-2">Upload Documents (Optional)</label>
+                  <div className="border-2 border-dashed border-gray-200 rounded-lg p-6 text-center bg-white/50">
+                    <Upload className="h-8 w-8 mx-auto mb-2 text-gray-400" />
+                    <p className="text-sm text-gray-500">Upload site plans, surveys, or requirements</p>
+                  </div>
+                </div>
+                
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <Button className="flex-1 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white rounded-full py-3">
+                    <Calendar className="h-4 w-4 mr-2" />
+                    Request Site Visit
+                  </Button>
+                  <Button variant="outline" className="flex-1 rounded-full py-3 border-primary text-primary hover:bg-primary hover:text-white">
+                    Submit Land Proposal
+                  </Button>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
