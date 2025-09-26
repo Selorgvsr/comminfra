@@ -40,6 +40,11 @@ import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
 import leasingProposalForm from "@/assets/leasing-proposal-form.jpg";
+import restaurantReadySpace from "@/assets/restaurant-ready-space.jpg";
+import jewelleryShowroomLuxury from "@/assets/jewellery-showroom-luxury.jpg";
+import corporateOfficeModern from "@/assets/corporate-office-modern.jpg";
+import retailBrandStore from "@/assets/retail-brand-store.jpg";
+import lifestyleCenterWellness from "@/assets/lifestyle-center-wellness.jpg";
 
 const RentLeaseAssetPage = () => {
   const [formData, setFormData] = useState({
@@ -55,31 +60,36 @@ const RentLeaseAssetPage = () => {
       icon: Utensils,
       title: "Restaurants & Cafés",
       description: "View Restaurant Spaces",
-      color: "from-orange-500/20 to-red-500/20"
+      color: "from-orange-500/20 to-red-500/20",
+      image: restaurantReadySpace
     },
     {
       icon: Gem,
       title: "Jewellery Stores",
       description: "Explore Jewellery Showrooms",
-      color: "from-yellow-500/20 to-amber-500/20"
+      color: "from-yellow-500/20 to-amber-500/20",
+      image: jewelleryShowroomLuxury
     },
     {
       icon: Briefcase,
       title: "Corporate Offices",
       description: "Discover Office Floors",
-      color: "from-blue-500/20 to-indigo-500/20"
+      color: "from-blue-500/20 to-indigo-500/20",
+      image: corporateOfficeModern
     },
     {
       icon: ShoppingBag,
       title: "Retail Brands",
       description: "Browse Retail Units",
-      color: "from-purple-500/20 to-pink-500/20"
+      color: "from-purple-500/20 to-pink-500/20",
+      image: retailBrandStore
     },
     {
       icon: Home,
       title: "Lifestyle Tenants",
       description: "Check Lifestyle Spaces",
-      color: "from-green-500/20 to-emerald-500/20"
+      color: "from-green-500/20 to-emerald-500/20",
+      image: lifestyleCenterWellness
     }
   ];
 
@@ -259,11 +269,19 @@ const RentLeaseAssetPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
             {tenantTypes.map((type, index) => (
-              <Card key={index} className="tenant_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm">
-                <CardHeader className="text-center pb-4">
-                  <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${type.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <type.icon className="w-10 h-10 text-primary" />
+              <Card key={index} className="tenant_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={type.image}
+                    alt={type.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className={`absolute top-3 right-3 w-12 h-12 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center backdrop-blur-sm`}>
+                    <type.icon className="w-6 h-6 text-white" />
                   </div>
+                </div>
+                <CardHeader className="text-center pb-4">
                   <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors">
                     {type.title}
                   </CardTitle>
