@@ -39,6 +39,9 @@ import investorHandshake from "@/assets/investor-handshake.jpg";
 import commercialForSale from "@/assets/commercial-for-sale.jpg";
 import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
 import multiFloorCommercialBuilding from "@/assets/multi-floor-commercial-building.jpg";
+import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
+import reitYieldDashboard from "@/assets/reit-yield-dashboard.jpg";
+import jointDevelopmentPartnership from "@/assets/joint-development-partnership.jpg";
 
 const BusinessRevenueModelPage = () => {
   const [formData, setFormData] = useState({
@@ -102,21 +105,24 @@ const BusinessRevenueModelPage = () => {
       title: "Smart Building Services",
       description: "AI, IoT, BMS optimization services",
       metrics: "₹15L setup + ₹3L/month",
-      features: ["Energy optimization", "Predictive maintenance", "Tenant analytics"]
+      features: ["Energy optimization", "Predictive maintenance", "Tenant analytics"],
+      image: smartInfrastructureBlueprint
     },
     {
       icon: PieChart,
       title: "REIT-Compatible Rental Yield",
       description: "Institutional-grade investment packaging",
       metrics: "8-12% annual yield",
-      features: ["Professional management", "Quarterly distributions", "Tax efficiency"]
+      features: ["Professional management", "Quarterly distributions", "Tax efficiency"],
+      image: reitYieldDashboard
     },
     {
       icon: HandshakeIcon,
       title: "Joint Development Partnerships",
       description: "Asset enhancement collaborations",
       metrics: "20-30% profit sharing",
-      features: ["Risk sharing", "Expertise leverage", "Market expansion"]
+      features: ["Risk sharing", "Expertise leverage", "Market expansion"],
+      image: jointDevelopmentPartnership
     }
   ];
 
@@ -297,11 +303,19 @@ const BusinessRevenueModelPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {advancedRevenue.map((revenue, index) => (
-              <Card key={index} className="advanced_revenue_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-secondary/5 backdrop-blur-sm">
-                <CardHeader className="text-center">
-                  <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
-                    <revenue.icon className="w-10 h-10 text-secondary" />
+              <Card key={index} className="advanced_revenue_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-secondary/5 backdrop-blur-sm overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={revenue.image}
+                    alt={revenue.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute top-3 right-3 w-12 h-12 rounded-xl bg-gradient-to-br from-secondary/20 to-primary/20 flex items-center justify-center backdrop-blur-sm">
+                    <revenue.icon className="w-6 h-6 text-white" />
                   </div>
+                </div>
+                <CardHeader>
                   <CardTitle className="text-xl group-hover:text-secondary transition-colors">
                     {revenue.title}
                   </CardTitle>
