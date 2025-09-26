@@ -45,6 +45,10 @@ import jewelleryShowroomLuxury from "@/assets/jewellery-showroom-luxury.jpg";
 import corporateOfficeModern from "@/assets/corporate-office-modern.jpg";
 import retailBrandStore from "@/assets/retail-brand-store.jpg";
 import lifestyleCenterWellness from "@/assets/lifestyle-center-wellness.jpg";
+import longTermLeaseSigning from "@/assets/long-term-lease-signing.jpg";
+import popupRetailFlexible from "@/assets/popup-retail-flexible.jpg";
+import leaseToOwnHandover from "@/assets/lease-to-own-handover.jpg";
+import customSpacePlanning from "@/assets/custom-space-planning.jpg";
 
 const RentLeaseAssetPage = () => {
   const [formData, setFormData] = useState({
@@ -98,25 +102,29 @@ const RentLeaseAssetPage = () => {
       icon: Calendar,
       title: "Long-Term Leasing",
       description: "5–15 years",
-      features: ["Stable rates", "Priority maintenance", "Customization rights"]
+      features: ["Stable rates", "Priority maintenance", "Customization rights"],
+      image: longTermLeaseSigning
     },
     {
       icon: RotateCcw,
       title: "Short-Term / Pop-Up",
       description: "3 months - 2 years",
-      features: ["Flexible terms", "Quick setup", "Minimal deposits"]
+      features: ["Flexible terms", "Quick setup", "Minimal deposits"],
+      image: popupRetailFlexible
     },
     {
       icon: FileText,
       title: "Lease-to-Own Options",
       description: "Buy after lease period",
-      features: ["Equity building", "Purchase options", "Tax benefits"]
+      features: ["Equity building", "Purchase options", "Tax benefits"],
+      image: leaseToOwnHandover
     },
     {
       icon: Settings,
       title: "Custom Structuring",
       description: "For anchor tenants",
-      features: ["Bespoke terms", "Revenue sharing", "Co-development"]
+      features: ["Bespoke terms", "Revenue sharing", "Co-development"],
+      image: customSpacePlanning
     }
   ];
 
@@ -311,11 +319,19 @@ const RentLeaseAssetPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {leaseModels.map((model, index) => (
-              <Card key={index} className="lease_model_card h-full hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-secondary/5 backdrop-blur-sm">
-                <CardHeader>
-                  <div className="w-16 h-16 mx-auto rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center mb-4">
-                    <model.icon className="w-8 h-8 text-primary" />
+              <Card key={index} className="lease_model_card h-full hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-secondary/5 backdrop-blur-sm overflow-hidden">
+                <div className="relative h-40 overflow-hidden">
+                  <img
+                    src={model.image}
+                    alt={model.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className="absolute top-3 right-3 w-12 h-12 rounded-xl bg-gradient-to-br from-primary/20 to-secondary/20 flex items-center justify-center backdrop-blur-sm">
+                    <model.icon className="w-6 h-6 text-white" />
                   </div>
+                </div>
+                <CardHeader>
                   <CardTitle className="text-center text-lg">{model.title}</CardTitle>
                   <CardDescription className="text-center text-primary font-semibold">
                     {model.description}
