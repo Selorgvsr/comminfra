@@ -32,7 +32,7 @@ import salesImage from "@/assets/commercial-for-sale.jpg";
 import retailImage from "@/assets/retail-floor-interior.jpg";
 import infrastructureImage from "@/assets/infrastructure-blueprint.jpg";
 import solarImage from "@/assets/rooftop-solar-building.jpg";
-import carbonImage from "@/assets/esg-dashboard.jpg";
+import carbonImage from "@/assets/carbon-credits-commercial-building.jpg";
 import smartImage from "@/assets/smart-building-dashboard.jpg";
 import reitImage from "@/assets/reit-yield-dashboard.jpg";
 import modularImage from "@/assets/commercial-facade-modern.jpg";
