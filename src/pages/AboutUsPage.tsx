@@ -46,7 +46,7 @@ const AboutUsPage = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
             Building India's Future -We Proud To Be A This Part Of Journey
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
+          <p className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
             Modular design, ESG strategy, and investor-grade execution
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
