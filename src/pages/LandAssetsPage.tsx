@@ -431,58 +431,6 @@ const LandAssetsPage = () => {
         </div>
       </section>
 
-      {/* 7. Featured Listings / Spotlight Parcels - Showcase Grid */}
-      <section className="FeaturedListings_SpotlightParcels py-20">
-        <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Spotlight Parcels</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Premium land opportunities with exceptional development potential
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {featuredListings.map((listing, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden">
-                <CardHeader>
-                  <div className="flex justify-between items-start mb-2">
-                    <Badge className="bg-primary/10 text-primary">Featured</Badge>
-                    <span className="text-2xl font-bold text-primary">{listing.price}</span>
-                  </div>
-                  <CardTitle className="group-hover:text-primary transition-colors">{listing.title}</CardTitle>
-                  <div className="flex items-center text-sm text-muted-foreground">
-                    <MapPin className="h-4 w-4 mr-1" />
-                    {listing.location}
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="grid grid-cols-2 gap-4 mb-4">
-                    <div className="text-center">
-                      <div className="text-lg font-semibold">{listing.size}</div>
-                      <div className="text-xs text-muted-foreground">Plot Size</div>
-                    </div>
-                    <div className="text-center">
-                      <div className="text-lg font-semibold">{listing.fsi}</div>
-                      <div className="text-xs text-muted-foreground">FSI</div>
-                    </div>
-                  </div>
-                  <div className="space-y-2 mb-4">
-                    {listing.highlights.map((highlight, idx) => (
-                      <div key={idx} className="flex items-center text-sm">
-                        <CheckCircle className="h-3 w-3 text-esg mr-2" />
-                        <span>{highlight}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Button className="w-full group-hover:bg-primary group-hover:text-white transition-all" variant="outline">
-                    View Details
-                  </Button>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 8. FAQs for Land Buyers - Accordion Component */}
       <section className="LandBuyer_FAQ py-20 bg-secondary/5">
