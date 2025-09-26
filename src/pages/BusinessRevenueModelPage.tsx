@@ -36,6 +36,9 @@ import propertyHandover from "@/assets/property-handover.jpg";
 import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
 import sitePlanRevenue from "@/assets/site-plan-revenue.jpg";
 import investorHandshake from "@/assets/investor-handshake.jpg";
+import commercialForSale from "@/assets/commercial-for-sale.jpg";
+import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
+import multiFloorCommercialBuilding from "@/assets/multi-floor-commercial-building.jpg";
 
 const BusinessRevenueModelPage = () => {
   const [formData, setFormData] = useState({
@@ -53,7 +56,8 @@ const BusinessRevenueModelPage = () => {
       description: "Floor-wise or full asset sales",
       metrics: "70% of total revenue",
       color: "from-blue-500/20 to-indigo-500/20",
-      details: ["Unit sales", "Bulk transactions", "Institutional buyers"]
+      details: ["Unit sales", "Bulk transactions", "Institutional buyers"],
+      image: commercialForSale
     },
     {
       icon: FileText,
@@ -61,7 +65,8 @@ const BusinessRevenueModelPage = () => {
       description: "Long-term leasing to corporates",
       metrics: "25% of total revenue",
       color: "from-green-500/20 to-emerald-500/20",
-      details: ["5-15 year leases", "Corporate tenants", "Stable income"]
+      details: ["5-15 year leases", "Corporate tenants", "Stable income"],
+      image: leaseAgreementSigning
     },
     {
       icon: Home,
@@ -69,7 +74,8 @@ const BusinessRevenueModelPage = () => {
       description: "Flexible rentals for retail, office, lifestyle tenants",
       metrics: "15% of total revenue",
       color: "from-purple-500/20 to-pink-500/20",
-      details: ["Monthly rentals", "Pop-up spaces", "Flexible terms"]
+      details: ["Monthly rentals", "Pop-up spaces", "Flexible terms"],
+      image: multiFloorCommercialBuilding
     }
   ];
 
@@ -190,11 +196,19 @@ const BusinessRevenueModelPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {primaryRevenueStreams.map((stream, index) => (
-              <Card key={index} className="revenue_stream_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm">
-                <CardHeader className="text-center">
-                  <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${stream.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <stream.icon className="w-10 h-10 text-primary" />
+              <Card key={index} className="revenue_stream_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
+                <div className="relative h-48 overflow-hidden">
+                  <img
+                    src={stream.image}
+                    alt={stream.title}
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                  <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${stream.color} flex items-center justify-center backdrop-blur-sm`}>
+                    <stream.icon className="w-6 h-6 text-white" />
                   </div>
+                </div>
+                <CardHeader className="text-center">
                   <CardTitle className="text-xl group-hover:text-primary transition-colors">
                     {stream.title}
                   </CardTitle>
