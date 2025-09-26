@@ -12,6 +12,7 @@ import LandAssetsPage from "./pages/LandAssetsPage";
 import BuildAssetPage from "./pages/BuildAssetPage";
 import RentLeaseAssetPage from "./pages/RentLeaseAssetPage";
 import ContactPage from "./pages/ContactPage";
+import SustainabilityPage from "./pages/SustainabilityPage";
 import BusinessRevenueModelPage from "./pages/BusinessRevenueModelPage";
 import NotFound from "./pages/NotFound";
 
@@ -34,7 +35,7 @@ const App = () => (
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">About Us Page - Coming Soon</h1></div>} />
-            <Route path="/sustainability" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Sustainability Page - Coming Soon</h1></div>} />
+            <Route path="/sustainability" element={<SustainabilityPage />} />
             <Route path="/business-model" element={<BusinessRevenueModelPage />} />
             <Route path="/manage-asset" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Manage Asset Page - Coming Soon</h1></div>} />
             <Route path="/reit-invest" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">REIT & Investment Page - Coming Soon</h1></div>} />
