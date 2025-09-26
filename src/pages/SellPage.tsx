@@ -305,55 +305,6 @@ const SellPage = () => {
         </div>
       </section>
 
-      {/* Section 4: Valuation & Due Diligence Workflow */}
-      <section className="valuation_due_diligence_section py-20">
-        <div className="container">
-          <div className="text-center mb-16 space-y-4">
-            <h2 className="text-4xl font-bold">
-              Valuation & Due Diligence Workflow
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Our comprehensive evaluation process ensures fair pricing, ESG alignment, and smooth transaction execution
-            </p>
-          </div>
-
-          <div className="space-y-20">
-            {valuationSteps.map((step, index) => (
-              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
-                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
-                  <div className="flex items-center gap-4">
-                    <div className="bg-gradient-to-br from-primary to-primary/70 p-4 rounded-2xl shadow-medium">
-                      <step.icon className="h-8 w-8 text-white" />
-                    </div>
-                    <div className="text-3xl font-bold text-primary">0{index + 1}</div>
-                  </div>
-                  <h3 className="text-3xl font-bold">{step.title}</h3>
-                  <p className="text-lg text-muted-foreground leading-relaxed">{step.description}</p>
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                    {step.features.map((feature, featureIndex) => (
-                      <div key={featureIndex} className="flex items-center gap-2">
-                        <CheckCircle className="h-5 w-5 text-primary" />
-                        <span className="text-sm font-medium">{feature}</span>
-                      </div>
-                    ))}
-                  </div>
-                  <Button className="group">
-                    <span className="group-hover:translate-x-1 transition-transform">Learn More</span>
-                  </Button>
-                </div>
-                <div className={`relative group ${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
-                  <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-3xl blur-2xl opacity-50 group-hover:opacity-70 transition-opacity"></div>
-                  <img 
-                    src={step.image}
-                    alt={step.title}
-                    className="relative w-full h-80 object-cover rounded-3xl shadow-strong transition-transform duration-500 group-hover:scale-[1.02]"
-                  />
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
       {/* 4. FAQs for Sellers - Accordion Component */}
       <section className="FAQ_Section py-20 bg-secondary/5">
