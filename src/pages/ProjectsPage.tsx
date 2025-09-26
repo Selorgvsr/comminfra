@@ -320,61 +320,6 @@ const ProjectsPage = () => {
         </div>
       </section>
 
-      {/* Project Timeline & Status Section */}
-      <section id="project_timeline_section" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Project Timeline & Status
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Track our development journey from completed milestones to exciting upcoming launches
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {projectTimeline.map((timeline, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
-                <CardContent className="p-6">
-                  <div className="text-3xl font-bold text-commercial mb-2">
-                    {timeline.year}
-                  </div>
-                  <div className={`text-sm px-3 py-1 rounded-full mb-4 inline-block ${
-                    timeline.status === 'Completed' ? 'bg-green-100 text-green-800' :
-                    timeline.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' :
-                    'bg-orange-100 text-orange-800'
-                  }`}>
-                    {timeline.status}
-                  </div>
-                  <div className="text-2xl font-semibold text-commercial-navy mb-3">
-                    {timeline.count} Projects
-                  </div>
-                  <div className="space-y-1">
-                    {timeline.projects.slice(0, 2).map((project, idx) => (
-                      <div key={idx} className="text-xs text-muted-foreground">
-                        {project}
-                      </div>
-                    ))}
-                    {timeline.projects.length > 2 && (
-                      <div className="text-xs text-commercial">
-                        +{timeline.projects.length - 2} more
-                      </div>
-                    )}
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={projectTimelineImage} 
-              alt="Timeline with construction icons and launch dates"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
 
       {/* Call to Action Section */}
       <section id="project_cta_section" className="py-20 bg-commercial text-white">
