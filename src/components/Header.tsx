@@ -12,7 +12,7 @@ const Header = () => {
     { label: "Buy", path: "/buy" },
     { label: "Sell", path: "/sell" },
     { label: "Land Asset", path: "/land-assets" },
-    { label: "Build Asset", path: "/build-asset" },
+    { label: "Built Asset", path: "/build-asset" },
     { label: "Rent/Lease Asset", path: "/rent-lease-asset" },
     { label: "Projects", path: "/projects" },
     { label: "Contact Us", path: "/contact" },
