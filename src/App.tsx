@@ -15,6 +15,7 @@ import ContactPage from "./pages/ContactPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import REITInvestPage from "./pages/REITInvestPage";
 import BusinessRevenueModelPage from "./pages/BusinessRevenueModelPage";
+import AboutUsPage from "./pages/AboutUsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -35,7 +36,7 @@ const App = () => (
             <Route path="/rent-lease-asset" element={<RentLeaseAssetPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
-            <Route path="/about" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">About Us Page - Coming Soon</h1></div>} />
+            <Route path="/about" element={<AboutUsPage />} />
             <Route path="/sustainability" element={<SustainabilityPage />} />
             <Route path="/business-model" element={<BusinessRevenueModelPage />} />
             <Route path="/manage-asset" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Manage Asset Page - Coming Soon</h1></div>} />
