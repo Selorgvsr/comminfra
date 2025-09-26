@@ -30,6 +30,11 @@ import landZoningMap from "@/assets/land-zoning-map.jpg";
 import infrastructureBlueprint from "@/assets/infrastructure-blueprint.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import landSubmissionForm from "@/assets/land-submission-form.jpg";
+import downtownCityCoreImage from "@/assets/downtown-city-core-land.jpg";
+import mallAdjacentImage from "@/assets/mall-adjacent-land.jpg";
+import officeZoneImage from "@/assets/office-zone-land.jpg";
+import mixedUseImage from "@/assets/mixed-use-land.jpg";
+import peripheralGrowthImage from "@/assets/peripheral-growth-land.jpg";
 
 const LandAssetsPage = () => {
   const [scrollY, setScrollY] = useState(0);
@@ -48,35 +53,40 @@ const LandAssetsPage = () => {
       title: "Downtown / City Core",
       description: "Prime urban plots with high development potential",
       cta: "Explore City Plots",
-      link: "/projects?type=downtown"
+      link: "/projects?type=downtown",
+      image: downtownCityCoreImage
     },
     {
       icon: Store,
       title: "Mall-Adjacent Parcels",
       description: "Strategic locations near retail hubs",
       cta: "View Retail-Ready Land",
-      link: "/projects?type=mall-adjacent"
+      link: "/projects?type=mall-adjacent",
+      image: mallAdjacentImage
     },
     {
       icon: Factory,
       title: "Office Zone Land",
       description: "Commercial-grade plots for office development",
       cta: "Discover Office-Grade Land",
-      link: "/projects?type=office-zone"
+      link: "/projects?type=office-zone",
+      image: officeZoneImage
     },
     {
       icon: Layers,
       title: "Mixed-Use Potential",
       description: "Versatile plots for integrated developments",
       cta: "Check Mixed-Use Sites",
-      link: "/projects?type=mixed-use"
+      link: "/projects?type=mixed-use",
+      image: mixedUseImage
     },
     {
       icon: TreePine,
       title: "Peripheral Growth Zones",
       description: "Expansion areas with future growth potential",
       cta: "Browse Expansion Areas",
-      link: "/projects?type=peripheral"
+      link: "/projects?type=peripheral",
+      image: peripheralGrowthImage
     }
   ];
 
@@ -251,8 +261,15 @@ const LandAssetsPage = () => {
                 style={{ animationDelay: `${index * 100}ms` }}
               >
                 <CardHeader className="text-center pb-2">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                    <category.icon className="h-8 w-8 text-primary group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
+                  <div className="relative mb-4">
+                    <img 
+                      src={category.image} 
+                      alt={category.title}
+                      className="w-full h-32 object-cover rounded-lg"
+                    />
+                    <div className="absolute inset-0 bg-primary/20 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <category.icon className="h-12 w-12 text-white" />
+                    </div>
                   </div>
                   <CardTitle className="text-lg group-hover:text-primary transition-colors">{category.title}</CardTitle>
                 </CardHeader>
