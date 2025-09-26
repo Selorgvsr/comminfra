@@ -1,295 +1,466 @@
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Zap, Droplets, Car, Sun, Leaf, TrendingUp, Handshake, FileText, Calendar } from "lucide-react";
-import sellHeroImage from "@/assets/sell-hero-commercial.jpg";
-import multiFloorBuildingImage from "@/assets/multi-floor-commercial-building.jpg";
-import rooftopSolarBuildingImage from "@/assets/rooftop-solar-building.jpg";
-import propertyHandoverImage from "@/assets/property-handover.jpg";
-import sellerHandshakeImage from "@/assets/seller-handshake.jpg";
-import listingConsultationImage from "@/assets/listing-consultation.jpg";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import { 
+  Building2, 
+  TrendingUp, 
+  CheckCircle, 
+  Clock, 
+  DollarSign,
+  FileText,
+  Upload,
+  MapPin,
+  Calendar,
+  Leaf,
+  ShieldCheck,
+  Timer,
+  Store,
+  ShoppingBag,
+  Building,
+  Trees,
+  Layers3
+} from "lucide-react";
+
+// Image imports
+import sellerHandshake from "@/assets/seller-handshake.jpg";
+import projectTimeline from "@/assets/project-timeline.jpg";
+import constructionFoundation from "@/assets/construction-foundation-work.jpg";
+import semiCompletedScaffolding from "@/assets/semi-completed-scaffolding.jpg";
+import interiorFitout from "@/assets/interior-fitout-progress.jpg";
+import completedWithTenants from "@/assets/completed-with-tenants.jpg";
+import retailFloorBranded from "@/assets/retail-floor-branded.jpg";
+import shoppingArcadeTraffic from "@/assets/shopping-arcade-traffic.jpg";
+import highStreetFrontage from "@/assets/high-street-frontage.jpg";
+import lifestyleCenterGreen from "@/assets/lifestyle-center-green.jpg";
+import esgDashboard from "@/assets/esg-dashboard.jpg";
+import legalComplianceReview from "@/assets/legal-compliance-review.jpg";
+import sellerFaqTablet from "@/assets/seller-faq-tablet.jpg";
+
+// Data structures
+const projectStages = [
+  {
+    id: "started",
+    title: "Started Projects",
+    description: "Land acquired, foundation begun",
+    status: "🟢",
+    cta: "Submit Site Details",
+    image: constructionFoundation,
+    completion: "0-20%"
+  },
+  {
+    id: "semi-completed",
+    title: "Semi-Completed Projects", 
+    description: "Structural work in progress",
+    status: "🟡",
+    cta: "Upload Progress Report",
+    image: semiCompletedScaffolding,
+    completion: "20-50%"
+  },
+  {
+    id: "halfway",
+    title: "Halfway Through",
+    description: "50–70% completion",
+    status: "🟠", 
+    cta: "Schedule Site Visit",
+    image: interiorFitout,
+    completion: "50-70%"
+  },
+  {
+    id: "completed",
+    title: "Completed Projects",
+    description: "Ready for occupancy",
+    status: "🔵",
+    cta: "Share Asset Valuation", 
+    image: completedWithTenants,
+    completion: "90-100%"
+  }
+];
+
+const assetTypes = [
+  {
+    title: "Retail & Office Floors",
+    icon: Store,
+    image: retailFloorBranded,
+    description: "Individual floors in commercial buildings"
+  },
+  {
+    title: "Shopping Arcades / Plazas", 
+    icon: ShoppingBag,
+    image: shoppingArcadeTraffic,
+    description: "Retail complexes and shopping centers"
+  },
+  {
+    title: "High Street Commercial Units",
+    icon: Building2,
+    image: highStreetFrontage, 
+    description: "Prime street-facing commercial properties"
+  },
+  {
+    title: "Lifestyle Centers / Business Parks",
+    icon: Trees,
+    image: lifestyleCenterGreen,
+    description: "Mixed-use developments with amenities"
+  },
+  {
+    title: "Mixed-Use Commercial Blocks",
+    icon: Layers3,
+    image: completedWithTenants,
+    description: "Multi-purpose commercial developments"
+  }
+];
+
+const valuationSteps = [
+  {
+    title: "ESG Upgrade Potential",
+    description: "Assessment of solar, carbon credits, and sustainability improvements",
+    icon: Leaf,
+    image: esgDashboard
+  },
+  {
+    title: "Legal and Compliance Checks",
+    description: "Thorough review of documentation and regulatory compliance",
+    icon: ShieldCheck,
+    image: legalComplianceReview
+  },
+  {
+    title: "Timeline for Offer and Closure", 
+    description: "Fast-track evaluation with transparent timelines",
+    icon: Timer,
+    image: projectTimeline
+  }
+];
+
+const faqs = [
+  {
+    question: "What documents are needed for property evaluation?",
+    answer: "We require property documents, approvals, completion certificates, legal clearances, and recent photographs. Our team will guide you through the complete documentation process."
+  },
+  {
+    question: "How long does the evaluation process take?",
+    answer: "Initial assessment: 48-72 hours. Complete due diligence: 7-14 working days. We provide regular updates throughout the process."
+  },
+  {
+    question: "What types of properties are preferred?",
+    answer: "We focus on commercial properties with ESG upgrade potential, prime locations, clear titles, and strong rental yield prospects. Both completed and under-construction properties are considered."
+  },
+  {
+    question: "How do you determine the property valuation?",
+    answer: "Our valuation considers location, market rates, ESG upgrade potential, legal status, rental yield prospects, and current market conditions using advanced analytics."
+  }
+];
 
 const SellPage = () => {
-  const saleFormats = [
-    {
-      title: "Floor-by-floor Commercial Units",
-      description: "Individual commercial floors tailored for specific business needs",
-      icon: Building2,
-    },
-    {
-      title: "Full Retail or Office Complexes",
-      description: "Complete commercial buildings for enterprise clients",
-      icon: Building2,
-    },
-    {
-      title: "Mixed-use Lifestyle Centers",
-      description: "Integrated retail, office, and entertainment spaces",
-      icon: Building2,
-    },
-    {
-      title: "High Street Commercial Zones",
-      description: "Prime location retail and commercial frontage",
-      icon: Building2,
-    },
-  ];
-
-  const valueFeatures = [
-    {
-      title: "Renovated Infrastructure",
-      description: "Modernized facilities with premium finishes",
-      icon: Building2,
-    },
-    {
-      title: "ESG Upgrades",
-      description: "Solar panels and water efficiency systems",
-      icon: Sun,
-    },
-    {
-      title: "Smart Connectivity",
-      description: "Electric systems and internal road access",
-      icon: Zap,
-    },
-    {
-      title: "Carbon Credit Potential",
-      description: "ESG-backed monetization opportunities",
-      icon: Leaf,
-    },
-  ];
-
-  const monetizationStreams = [
-    {
-      title: "Direct Sale to Investors",
-      description: "Immediate capital realization through strategic sales to institutional investors or businesses",
-      icon: TrendingUp,
-    },
-    {
-      title: "Lease-to-Own Models",
-      description: "Flexible ownership transition with ongoing revenue during lease period",
-      icon: Handshake,
-    },
-    {
-      title: "ESG-Backed Sale with Carbon Credits",
-      description: "Premium pricing through bundled carbon credit potential and sustainability features",
-      icon: Leaf,
-    },
-  ];
-
   return (
     <div className="min-h-screen">
-      {/* SEO Meta Tags */}
-      <title>Sell Commercial Properties - CommercialDev | ESG-Aligned Real Estate Sales</title>
-      
-      {/* Hero Section */}
-      <section id="hero_sell_section" className="relative py-20 lg:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${sellHeroImage})` }}
-        >
-          <div className="absolute inset-0 bg-commercial-navy/80"></div>
-        </div>
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Sell Commercial Spaces with Confidence
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
-              From floor-wise sales to full-scale commercial assets, we help you monetize with precision and purpose.
-            </p>
-            <Button variant="hero" size="lg" className="animate-fade-in">
-              List Your Property
-            </Button>
+      {/* Section 1: Intro - Sell Your Commercial Property */}
+      <section className="sell_intro_section py-20 bg-gradient-subtle">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              <h1 className="text-5xl font-bold text-commercial-navy leading-tight">
+                Unlock Value from Your Commercial Asset
+              </h1>
+              <p className="text-xl text-muted-foreground">
+                We offer fast evaluations, flexible deal structures, and ESG-aligned upgrades for sellers.
+              </p>
+              <Button size="lg" className="bg-commercial hover:bg-commercial/90">
+                Submit Your Property for Evaluation
+              </Button>
+            </div>
+            <div className="relative">
+              <img 
+                src={sellerHandshake} 
+                alt="Seller handshake in front of commercial building"
+                className="w-full h-96 object-cover rounded-2xl shadow-strong"
+              />
+              <div className="absolute inset-0 bg-commercial/10 rounded-2xl"></div>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* What We Sell Section */}
-      <section id="property_sale_formats" className="py-20 bg-background">
+      {/* Section 2: Project Stage Segmentation */}
+      <section className="project_stage_segmentation_section py-20">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              What We Sell
+            <h2 className="text-4xl font-bold text-commercial-navy mb-4">
+              Project Stage Segmentation
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Diverse commercial property formats designed for maximum market appeal and investment potential
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We purchase properties at every stage of development with tailored evaluation processes
             </p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {saleFormats.map((format, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20 bg-commercial/5">
-                <CardContent className="p-6">
-                  <format.icon className="h-12 w-12 text-commercial mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-commercial-navy mb-2">
-                    {format.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {format.description}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={multiFloorBuildingImage} 
-              alt="Modern multi-floor commercial building with visible floor sections"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
 
-      {/* Value-Added Selling Section */}
-      <section id="value_added_selling_features" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Value-Added Selling
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Enhanced properties with premium infrastructure and ESG compliance for maximum market value
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {valueFeatures.map((feature, index) => (
-              <div key={index} className="text-center bg-commercial-navy p-6 rounded-lg border border-commercial/20">
-                <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="h-8 w-8 text-commercial" />
-                </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-white/80">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={rooftopSolarBuildingImage} 
-              alt="Commercial building with rooftop completely covered in solar panels"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Monetization Strategy Section */}
-      <section id="monetization_sell_model" className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Monetization Strategy
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Multiple revenue streams designed to maximize returns and provide flexible exit strategies
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {monetizationStreams.map((stream, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
-                <CardContent className="p-8">
-                  <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                    <stream.icon className="h-8 w-8 text-commercial" />
+          <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-8 mb-12">
+            {projectStages.map((stage) => (
+              <Card key={stage.id} className="group hover:shadow-strong transition-all duration-300">
+                <div className="relative">
+                  <img 
+                    src={stage.image}
+                    alt={stage.title}
+                    className="w-full h-48 object-cover rounded-t-lg"
+                  />
+                  <div className="absolute top-4 left-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full">
+                    <span className="text-sm font-medium">{stage.completion}</span>
                   </div>
-                  <h3 className="text-xl font-semibold text-commercial-navy mb-4">
-                    {stream.title}
-                  </h3>
-                  <p className="text-muted-foreground">
-                    {stream.description}
-                  </p>
+                </div>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <span className="text-2xl">{stage.status}</span>
+                    {stage.title}
+                  </CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <p className="text-muted-foreground">{stage.description}</p>
+                  <Button variant="outline" className="w-full">
+                    {stage.cta}
+                  </Button>
                 </CardContent>
               </Card>
             ))}
           </div>
-          
+
           <div className="text-center">
             <img 
-              src={propertyHandoverImage} 
-              alt="Commercial property handover and investor dashboard"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
+              src={projectTimeline}
+              alt="Project timeline showing development stages"
+              className="w-full max-w-4xl mx-auto h-64 object-cover rounded-2xl shadow-strong"
             />
           </div>
         </div>
       </section>
 
-      {/* Sell to Us Section */}
-      <section id="third_party_sell_section" className="py-20 bg-muted/30">
+      {/* Section 3: Asset Type Categories Grid */}
+      <section className="asset_type_categories_grid py-20 bg-accent/30">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-commercial-navy mb-4">
+              Asset Type Categories
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              We specialize in various commercial property types across different markets
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {assetTypes.map((asset, index) => (
+              <Card key={index} className="group hover:shadow-strong transition-all duration-300 cursor-pointer">
+                <div className="relative overflow-hidden">
+                  <img 
+                    src={asset.image}
+                    alt={asset.title}
+                    className="w-full h-56 object-cover transition-transform duration-300 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-commercial-navy/20 group-hover:bg-commercial-navy/10 transition-colors"></div>
+                  <div className="absolute top-4 right-4">
+                    <div className="bg-white/90 backdrop-blur-sm p-2 rounded-full">
+                      <asset.icon className="h-6 w-6 text-commercial" />
+                    </div>
+                  </div>
+                </div>
+                <CardHeader>
+                  <CardTitle className="text-xl">{asset.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground mb-4">{asset.description}</p>
+                  <Button variant="outline" className="w-full">
+                    Submit This Asset Type
+                  </Button>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4: Valuation & Due Diligence Workflow */}
+      <section className="valuation_due_diligence_section py-20">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-commercial-navy mb-4">
+              Valuation & Due Diligence Workflow
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Our comprehensive evaluation process ensures fair pricing and smooth transactions
+            </p>
+          </div>
+
+          <div className="space-y-12">
+            {valuationSteps.map((step, index) => (
+              <div key={index} className={`grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ${index % 2 === 1 ? 'lg:grid-flow-col-dense' : ''}`}>
+                <div className={`space-y-6 ${index % 2 === 1 ? 'lg:col-start-2' : ''}`}>
+                  <div className="flex items-center gap-4">
+                    <div className="bg-commercial/10 p-3 rounded-full">
+                      <step.icon className="h-8 w-8 text-commercial" />
+                    </div>
+                    <h3 className="text-2xl font-bold text-commercial-navy">{step.title}</h3>
+                  </div>
+                  <p className="text-lg text-muted-foreground">{step.description}</p>
+                  <Button variant="outline">Learn More</Button>
+                </div>
+                <div className={`${index % 2 === 1 ? 'lg:col-start-1 lg:row-start-1' : ''}`}>
+                  <img 
+                    src={step.image}
+                    alt={step.title}
+                    className="w-full h-80 object-cover rounded-2xl shadow-strong"
+                  />
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5: FAQs for Sellers */}
+      <section className="seller_faq_section py-20 bg-accent/30">
+        <div className="container">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-6">
-                Have a Commercial Property to Sell?
+              <h2 className="text-4xl font-bold text-commercial-navy mb-8">
+                Frequently Asked Questions
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                We acquire high-potential commercial assets and enhance them through strategic infrastructure upgrades, 
-                ESG compliance improvements, and smart technology integration before bringing them to market.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Fast acquisition process with competitive pricing</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Professional property evaluation and market analysis</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">ESG enhancement and value addition expertise</span>
-                </div>
-              </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="commercial" size="lg">
-                  Submit Your Property
-                </Button>
-                <Button variant="outline" size="lg">
-                  Talk to Our Acquisition Team
-                </Button>
-              </div>
+              <Accordion type="single" collapsible className="space-y-4">
+                {faqs.map((faq, index) => (
+                  <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-lg px-6 border-0 shadow-sm">
+                    <AccordionTrigger className="text-left font-semibold">
+                      {faq.question}
+                    </AccordionTrigger>
+                    <AccordionContent className="text-muted-foreground">
+                      {faq.answer}
+                    </AccordionContent>
+                  </AccordionItem>
+                ))}
+              </Accordion>
             </div>
-            <div>
+            <div className="lg:sticky lg:top-24">
               <img 
-                src={sellerHandshakeImage} 
-                alt="Seller handshake and property evaluation"
-                className="w-full rounded-lg shadow-medium"
+                src={sellerFaqTablet}
+                alt="Seller reading FAQ on tablet"
+                className="w-full h-96 object-cover rounded-2xl shadow-strong"
               />
             </div>
           </div>
         </div>
       </section>
 
-      {/* Call to Action Section */}
-      <section id="sell_cta_section" className="py-20 bg-commercial text-white">
+      {/* Section 6: Contact & Submission Portal */}
+      <section className="contact_submission_portal_section py-20">
         <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Sell with Purpose?
-              </h2>
-              <p className="text-xl text-white/90 mb-8">
-                Join our network of successful commercial property sellers who have maximized their returns 
-                through our strategic approach to ESG-aligned real estate transactions.
-              </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="investor" size="lg">
-                  List Now
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold text-commercial-navy mb-4">
+              Contact & Submission Portal
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Submit your property details for a comprehensive evaluation
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+            <Card className="p-8">
+              <CardHeader>
+                <CardTitle className="text-2xl text-commercial-navy">Property Submission Form</CardTitle>
+              </CardHeader>
+              <CardContent className="space-y-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Property Location</label>
+                    <Input placeholder="Enter location" />
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Project Stage</label>
+                    <select className="w-full h-10 px-3 rounded-md border border-input bg-background">
+                      <option>Started (0-20%)</option>
+                      <option>Semi-completed (20-50%)</option>
+                      <option>Halfway (50-70%)</option>
+                      <option>Completed (90-100%)</option>
+                    </select>
+                  </div>
+                </div>
+                
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Asset Type</label>
+                    <select className="w-full h-10 px-3 rounded-md border border-input bg-background">
+                      <option>Retail & Office Floors</option>
+                      <option>Shopping Arcades</option>
+                      <option>High Street Commercial</option>
+                      <option>Lifestyle Centers</option>
+                      <option>Mixed-Use Blocks</option>
+                    </select>
+                  </div>
+                  <div className="space-y-2">
+                    <label className="text-sm font-medium">Expected Value (₹)</label>
+                    <Input placeholder="Enter expected value" />
+                  </div>
+                </div>
+
+                <div className="space-y-2">
+                  <label className="text-sm font-medium">Approvals & Permissions</label>
+                  <Textarea placeholder="List all approvals and permissions obtained" />
+                </div>
+
+                <div className="space-y-4">
+                  <label className="text-sm font-medium">Upload Documents</label>
+                  <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+                    <div className="border-2 border-dashed border-border rounded-lg p-6 text-center hover:border-commercial transition-colors cursor-pointer">
+                      <Upload className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
+                      <p className="text-sm text-muted-foreground">Site Photos</p>
+                    </div>
+                    <div className="border-2 border-dashed border-border rounded-lg p-6 text-center hover:border-commercial transition-colors cursor-pointer">
+                      <FileText className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
+                      <p className="text-sm text-muted-foreground">Floor Plans</p>
+                    </div>
+                    <div className="border-2 border-dashed border-border rounded-lg p-6 text-center hover:border-commercial transition-colors cursor-pointer">
+                      <ShieldCheck className="h-8 w-8 mx-auto mb-2 text-muted-foreground" />
+                      <p className="text-sm text-muted-foreground">Legal Documents</p>
+                    </div>
+                  </div>
+                </div>
+
+                <Button size="lg" className="w-full bg-commercial hover:bg-commercial/90">
+                  Get Your Property Evaluated
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-commercial">
-                  Schedule a Consultation
-                </Button>
-              </div>
-            </div>
-            <div>
-              <img 
-                src={listingConsultationImage} 
-                alt="Commercial property listing form and consultation calendar"
-                className="w-full rounded-lg shadow-medium"
-              />
+              </CardContent>
+            </Card>
+
+            <div className="space-y-8">
+              <Card className="p-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <TrendingUp className="h-6 w-6 text-commercial" />
+                    Fast Evaluation Process
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Get your property evaluated within 48-72 hours with our streamlined process.</p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <DollarSign className="h-6 w-6 text-commercial" />
+                    Competitive Pricing
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">We offer market-leading prices with ESG upgrade value considerations.</p>
+                </CardContent>
+              </Card>
+
+              <Card className="p-6">
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <CheckCircle className="h-6 w-6 text-commercial" />
+                    Transparent Process
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-muted-foreground">Complete transparency in valuation methodology and transaction process.</p>
+                </CardContent>
+              </Card>
             </div>
           </div>
         </div>
