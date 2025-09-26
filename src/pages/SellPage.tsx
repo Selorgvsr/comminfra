@@ -20,7 +20,7 @@ import {
   ShoppingBag,
   Building,
   Trees,
-  Layers3
+  Blocks
 } from "lucide-react";
 
 // Image imports
@@ -105,7 +105,7 @@ const assetTypes = [
   },
   {
     title: "Mixed-Use Commercial Blocks",
-    icon: Layers3,
+    icon: Blocks,
     image: completedWithTenants,
     description: "Multi-purpose commercial developments"
   }
