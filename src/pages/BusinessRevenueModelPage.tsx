@@ -64,7 +64,7 @@ const BusinessRevenueModelPage = () => {
     },
     {
       icon: FileText,
-      title: "Lease Agreements",
+      title: "Lease Income",
       description: "Long-term leasing to corporates",
       metrics: "25% of total revenue",
       color: "from-green-500/20 to-emerald-500/20",
