@@ -44,7 +44,7 @@ const AboutUsPage = () => {
         
         <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Building India's Future—
+            Building India's Future -We Proud To Be A This Part Of Journey
             <span className="gradient-text">One Commercial Asset at a Time</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
