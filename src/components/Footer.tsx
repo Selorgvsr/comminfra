@@ -6,7 +6,6 @@ const Footer = () => {
     { label: "About Us", path: "/about" },
     { label: "Sustainability", path: "/sustainability" },
     { label: "Business Revenue Model", path: "/business-model" },
-    { label: "Managing Asset", path: "/manage-asset" },
     { label: "REIT & Invest in Rental Yield Assets", path: "/reit-invest" },
   ];
 
