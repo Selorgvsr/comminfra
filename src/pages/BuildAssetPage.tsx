@@ -1,305 +1,461 @@
+import { Building, Shield, Leaf, Zap, Car, Settings, Eye, MessageCircle, Send } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { Building2, Wrench, Zap, Car, Droplets, Sun, TrendingUp, DollarSign, Target } from "lucide-react";
-import constructionToLifestyleCenter from "@/assets/construction-to-lifestyle-center.jpg";
-import commercialPlazaRender from "@/assets/commercial-plaza-render.jpg";
-import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
-import buildRevenueDashboard from "@/assets/build-revenue-dashboard.jpg";
-import constructionInvestorMeeting from "@/assets/construction-investor-meeting.jpg";
-import constructionProposalForm from "@/assets/construction-proposal-form.jpg";
+import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Input } from "@/components/ui/input";
+import { Label } from "@/components/ui/label";
+import { Textarea } from "@/components/ui/textarea";
+import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
+import commercialInteriorImage from "@/assets/commercial-interior.jpg";
+import fireSafetyImage from "@/assets/fire-safety-system.jpg";
+import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
+import evChargingImage from "@/assets/ev-charging-parking.jpg";
+import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
+import proposalFormImage from "@/assets/construction-proposal-form.jpg";
 
 const BuildAssetPage = () => {
-  const assetTypes = [
+  const architecturalFeatures = [
     {
-      title: "Retail and Office Complexes",
-      description: "Multi-story commercial buildings with flexible floor plans and modern amenities.",
-      icon: Building2,
+      icon: Building,
+      title: "Façade Design",
+      description: "Modern, modular, brand-ready",
+      image: commercialFacadeImage
     },
     {
-      title: "Mixed-Use Commercial Buildings",
-      description: "Integrated spaces combining retail, office, and lifestyle amenities.",
-      icon: Target,
+      icon: Settings,
+      title: "Interior Layouts",
+      description: "Ergonomic, scalable, tenant-adaptable",
+      image: commercialInteriorImage
     },
     {
-      title: "Lifestyle Centers",
-      description: "Open-air shopping centers with entertainment and dining options.",
-      icon: TrendingUp,
+      icon: Leaf,
+      title: "Material Palette",
+      description: "Premium finishes, ESG-compliant sourcing",
+      image: commercialInteriorImage
     },
     {
-      title: "Solar-Enabled Business Parks",
-      description: "Corporate campuses with integrated renewable energy infrastructure.",
-      icon: Sun,
+      icon: Zap,
+      title: "AI-Adaptive Design",
+      description: "Smart lighting, occupancy sensors, energy optimization",
+      image: smartDashboardImage
+    }
+  ];
+
+  const safetyFeatures = [
+    "Earthquake-Resistant Framework",
+    "Fire Safety Systems: sprinklers, smoke detectors, evacuation protocols",
+    "Load-Bearing & Wind Resistance Metrics",
+    "Compliance: NBC, IS Codes, global safety standards"
+  ];
+
+  const esgFeatures = [
+    {
+      icon: "🌞",
+      title: "Solar Panel Integration",
+      description: "Renewable energy generation with grid-tie capabilities",
+      image: rooftopSolarImage
     },
+    {
+      icon: "♻️",
+      title: "Rainwater Harvesting",
+      description: "Greywater recycling and water conservation systems",
+      image: rooftopSolarImage
+    },
+    {
+      icon: "🌿",
+      title: "Biophilic Design",
+      description: "Garden zones and nature-integrated spaces",
+      image: commercialInteriorImage
+    },
+    {
+      icon: "📉",
+      title: "Carbon Credit Eligibility",
+      description: "ESG reporting and sustainability certifications",
+      image: smartDashboardImage
+    }
   ];
 
   const infrastructureFeatures = [
     {
-      title: "Internal Roads & Parking",
-      description: "Comprehensive transportation infrastructure",
       icon: Car,
+      title: "Multi-level Car Parking",
+      description: "EV charging stations and smart parking solutions",
+      image: evChargingImage
     },
     {
-      title: "Electric & Water Connections",
-      description: "Modern utility systems and smart metering",
       icon: Zap,
+      title: "Redundant Connections",
+      description: "Electric & water backup systems",
+      image: smartDashboardImage
     },
     {
-      title: "Smart Building Systems",
-      description: "IoT-enabled building management and automation",
-      icon: Wrench,
+      icon: Shield,
+      title: "Access Control",
+      description: "Internal roads and security infrastructure",
+      image: commercialFacadeImage
     },
     {
-      title: "Solar Panel Integration",
-      description: "Renewable energy systems for sustainability",
-      icon: Sun,
-    },
-    {
-      title: "ESG-Compliant Design",
-      description: "Environmental and social governance standards",
-      icon: Droplets,
-    },
+      icon: Settings,
+      title: "Smart Office Tech",
+      description: "IoT, AI, and cloud-integrated systems",
+      image: smartDashboardImage
+    }
   ];
 
-  const monetizationPaths = [
+  const addOnCapabilities = [
+    "Modular Expansion Zones",
+    "Vertical Extension Ready (additional floors)",
+    "AI-Driven Building Management Systems (BMS)",
+    "REIT-Grade Documentation & Investor Dashboards"
+  ];
+
+  const faqItems = [
     {
-      title: "Sell Floor-by-Floor",
-      description: "Individual unit sales to investors and businesses",
-      revenue: "Direct Capital Returns",
+      question: "What safety certifications are included?",
+      answer: "All buildings include NBC compliance, IS code certifications, fire safety approvals, and earthquake resistance validations as per Indian building standards."
     },
     {
-      title: "Lease to Businesses",
-      description: "Long-term rental agreements with corporate tenants",
-      revenue: "Recurring Rental Income",
+      question: "Can interiors be customized?",
+      answer: "Yes, our modular design allows for flexible interior configurations to meet specific tenant requirements while maintaining structural integrity."
     },
     {
-      title: "Solar Power Generation",
-      description: "Carbon credit monetization and energy sales",
-      revenue: "Sustainable Revenue Streams",
-    },
+      question: "Is solar generation metered separately?",
+      answer: "Solar installations include separate metering for renewable energy generation, allowing for carbon credit tracking and potential revenue sharing."
+    }
   ];
 
   return (
-    <div className="min-h-screen">
-      {/* SEO Meta Tags */}
-      <title>Build Assets - Commercial Development | CommercialDev</title>
-      
+    <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section id="hero_build_asset_section" className="relative py-20 lg:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${constructionToLifestyleCenter})` }}
-        >
-          <div className="absolute inset-0 bg-commercial-navy/80"></div>
-        </div>
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Build Commercial Assets That Drive Growth
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
-              From blueprint to business-ready, we develop modular spaces with smart infrastructure and solar-powered sustainability.
-            </p>
-            <Button variant="hero" size="lg" className="animate-fade-in">
-              Start Building with Us
+      <section 
+        className="build_asset_hero_banner relative min-h-screen flex items-center justify-center bg-cover bg-center"
+        style={{ backgroundImage: `url(${commercialFacadeImage})` }}
+      >
+        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
+        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
+            Built for Business,<br />Designed for Impact
+          </h1>
+          <p className="text-xl md:text-2xl mb-8 opacity-90">
+            From façade to fire safety, every detail is engineered for performance
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="hero bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <Eye className="mr-2 h-5 w-5" />
+              View Build Specifications
+            </Button>
+            <Button size="lg" variant="outline" className="bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
+              <Building className="mr-2 h-5 w-5" />
+              Explore Completed Projects
             </Button>
           </div>
         </div>
       </section>
 
-      {/* What We Build */}
-      <section id="asset_types_grid" className="py-20 bg-background">
-        <div className="container">
+      {/* Architectural Design & Aesthetic Excellence */}
+      <section className="architectural_design_section py-20 px-4">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              What We Build
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              We develop diverse commercial assets designed for maximum flexibility and ESG compliance.
-            </p>
+            <h2 className="text-4xl font-bold mb-4">Architectural Excellence</h2>
+            <p className="text-xl text-muted-foreground">Modern design meets functional innovation</p>
           </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8 mb-12">
-            {assetTypes.map((asset, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20 bg-commercial/5">
-                <CardContent className="p-6">
-                  <asset.icon className="h-12 w-12 text-commercial mx-auto mb-4" />
-                  <h3 className="text-lg font-semibold text-commercial-navy mb-2">
-                    {asset.title}
-                  </h3>
-                  <p className="text-sm text-muted-foreground">
-                    {asset.description}
-                  </p>
-                </CardContent>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {architecturalFeatures.map((feature, index) => (
+              <Card key={index} className="architectural_feature_card group hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <CardHeader className="text-center">
+                  <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  <CardDescription>{feature.description}</CardDescription>
+                </CardHeader>
               </Card>
             ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={commercialPlazaRender} 
-              alt="3D render of commercial plaza"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
           </div>
         </div>
       </section>
 
-      {/* Infrastructure Blueprint */}
-      <section id="build_infrastructure_features" className="py-20 bg-muted/30">
-        <div className="container">
+      {/* Structural Stability & Safety Engineering */}
+      <section className="structural_safety_section py-20 px-4 bg-muted/50">
+        <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Infrastructure Blueprint
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Every development includes comprehensive infrastructure designed for modern commercial operations.
-            </p>
+            <h2 className="text-4xl font-bold mb-4">Safety & Compliance</h2>
+            <p className="text-xl text-muted-foreground">Built to the highest safety standards</p>
           </div>
-          
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div className="space-y-6">
+              {safetyFeatures.map((feature, index) => (
+                <div key={index} className="safety_feature_item flex items-start space-x-4">
+                  <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
+                  <p className="text-lg">{feature}</p>
+                </div>
+              ))}
+            </div>
+            <div className="relative">
+              <img 
+                src={fireSafetyImage} 
+                alt="Fire Safety System"
+                className="w-full h-96 object-cover rounded-lg shadow-lg"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Green Building & Sustainability Features */}
+      <section className="esg_features_section py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">ESG & Sustainability</h2>
+            <p className="text-xl text-muted-foreground">Building a greener future</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {esgFeatures.map((feature, index) => (
+              <Card key={index} className="esg_feature_card text-center hover:shadow-lg transition-all duration-300">
+                <CardHeader>
+                  <div className="text-4xl mb-4">{feature.icon}</div>
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  <CardDescription>{feature.description}</CardDescription>
+                </CardHeader>
+                <CardContent>
+                  <div className="relative h-32 overflow-hidden rounded-lg">
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title}
+                      className="w-full h-full object-cover"
+                    />
+                  </div>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Operational Infrastructure */}
+      <section className="infrastructure_features_section py-20 px-4 bg-muted/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Operational Infrastructure</h2>
+            <p className="text-xl text-muted-foreground">Smart systems for modern business</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {infrastructureFeatures.map((feature, index) => (
-              <div key={index} className="text-center bg-commercial-navy p-6 rounded-lg border border-commercial/20">
-                <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                  <feature.icon className="h-8 w-8 text-commercial" />
+              <Card key={index} className="infrastructure_feature_card group hover:shadow-lg transition-all duration-300">
+                <div className="relative h-48 overflow-hidden rounded-t-lg">
+                  <img 
+                    src={feature.image} 
+                    alt={feature.title}
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
                 </div>
-                <h3 className="text-lg font-semibold text-white mb-2">
-                  {feature.title}
-                </h3>
-                <p className="text-sm text-white/80">
-                  {feature.description}
-                </p>
-              </div>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={smartInfrastructureBlueprint} 
-              alt="Smart infrastructure blueprint"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Build-to-Monetize Strategy */}
-      <section id="build_monetization_model" className="py-20 bg-background">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Build-to-Monetize Strategy
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Multiple revenue streams ensure optimal returns for investors and stakeholders.
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            {monetizationPaths.map((path, index) => (
-              <Card key={index} className="text-center hover-scale transition-all duration-300 border-commercial/20">
-                <CardContent className="p-8">
-                  <div className="bg-commercial/10 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-6">
-                    <DollarSign className="h-8 w-8 text-commercial" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-commercial-navy mb-4">
-                    {path.title}
-                  </h3>
-                  <p className="text-muted-foreground mb-4">
-                    {path.description}
-                  </p>
-                  <div className="text-sm font-medium text-commercial">
-                    {path.revenue}
-                  </div>
-                </CardContent>
+                <CardHeader className="text-center">
+                  <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <CardTitle className="text-xl">{feature.title}</CardTitle>
+                  <CardDescription>{feature.description}</CardDescription>
+                </CardHeader>
               </Card>
             ))}
           </div>
-          
-          <div className="text-center">
-            <img 
-              src={buildRevenueDashboard} 
-              alt="Build revenue dashboard"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
+        </div>
+      </section>
+
+      {/* Advanced Add-On Capabilities */}
+      <section className="addon_capabilities_section py-20 px-4">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Future-Ready Capabilities</h2>
+            <p className="text-xl text-muted-foreground">Designed for growth and adaptation</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {addOnCapabilities.map((capability, index) => (
+              <Card key={index} className="addon_capability_card p-6 hover:shadow-lg transition-all duration-300">
+                <div className="flex items-center space-x-4">
+                  <Settings className="h-8 w-8 text-primary flex-shrink-0" />
+                  <p className="text-lg font-medium">{capability}</p>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
 
-      {/* Fundraising for Development */}
-      <section id="build_fundraising_section" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-6">
-                Invest in Building the Future
-              </h2>
-              <p className="text-lg text-muted-foreground mb-8">
-                We raise capital to develop ESG-aligned commercial assets from the ground up. 
-                Our development process combines institutional-grade project management with 
-                sustainable design principles.
-              </p>
-              <div className="space-y-4 mb-8">
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Solar-integrated development from day one</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Modular designs for flexible monetization</span>
-                </div>
-                <div className="flex items-center space-x-3">
-                  <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">ESG compliance and carbon credit generation</span>
+      {/* Project Showcase */}
+      <section className="project_showcase_section py-20 px-4 bg-muted/50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Project Gallery</h2>
+            <p className="text-xl text-muted-foreground">Showcasing architectural excellence</p>
+          </div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
+              <div className="relative h-64">
+                <img 
+                  src={commercialFacadeImage} 
+                  alt="Commercial Project"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                  ESG Certified
                 </div>
               </div>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="commercial" size="lg">
-                  Join Our Fundraising
-                </Button>
-                <Button variant="outline" size="lg">
-                  Explore REIT Options
-                </Button>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Modern Business Complex</h3>
+                <p className="text-muted-foreground">50,000 sq.ft • Solar Ready • Smart Systems</p>
+              </CardContent>
+            </Card>
+            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
+              <div className="relative h-64">
+                <img 
+                  src={smartDashboardImage} 
+                  alt="Smart Building"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
+                  AI-Enabled
+                </div>
               </div>
-            </div>
-            <div>
-              <img 
-                src={constructionInvestorMeeting} 
-                alt="Construction investor meeting"
-                className="w-full rounded-lg shadow-medium"
-              />
-            </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Smart Office Tower</h3>
+                <p className="text-muted-foreground">75,000 sq.ft • IoT Integrated • Carbon Neutral</p>
+              </CardContent>
+            </Card>
+            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
+              <div className="relative h-64">
+                <img 
+                  src={evChargingImage} 
+                  alt="Sustainable Complex"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
+                  LEED Gold
+                </div>
+              </div>
+              <CardContent className="p-6">
+                <h3 className="text-xl font-semibold mb-2">Eco Business Park</h3>
+                <p className="text-muted-foreground">1,20,000 sq.ft • EV Ready • Rainwater Harvesting</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
 
-      {/* Call to Action */}
-      <section id="build_cta_section" className="py-20 bg-commercial text-white">
-        <div className="container">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6">
-                Ready to Build with Purpose?
-              </h2>
-              <p className="text-xl text-white/90 mb-8">
-                Partner with us to develop commercial assets that generate returns while building a sustainable future.
-              </p>
+      {/* FAQs */}
+      <section className="buyer_tenant_faq_section py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <p className="text-xl text-muted-foreground">Everything you need to know about our buildings</p>
+          </div>
+          <Accordion type="single" collapsible className="space-y-4">
+            {faqItems.map((item, index) => (
+              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+                <AccordionTrigger className="text-left hover:no-underline">
+                  <div className="flex items-center space-x-3">
+                    <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
+                    <span className="text-lg font-medium">{item.question}</span>
+                  </div>
+                </AccordionTrigger>
+                <AccordionContent className="pt-4 text-muted-foreground">
+                  {item.answer}
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
+        </div>
+      </section>
+
+      {/* Contact & Inquiry Portal */}
+      <section className="contact_inquiry_portal_section py-20 px-4 bg-muted/50">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl font-bold mb-4">Get Technical Details</h2>
+            <p className="text-xl text-muted-foreground">Request comprehensive project documentation</p>
+          </div>
+          <Card className="p-8">
+            <form className="space-y-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="location">Location</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select city" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="chennai">Chennai</SelectItem>
+                      <SelectItem value="bangalore">Bangalore</SelectItem>
+                      <SelectItem value="hyderabad">Hyderabad</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="asset-type">Asset Type</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select asset type" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="office">Office Complex</SelectItem>
+                      <SelectItem value="retail">Retail Space</SelectItem>
+                      <SelectItem value="mixed">Mixed-Use</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="space-y-2">
+                  <Label htmlFor="build-stage">Build Stage</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select stage" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="planning">Planning</SelectItem>
+                      <SelectItem value="construction">Under Construction</SelectItem>
+                      <SelectItem value="completed">Completed</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+                <div className="space-y-2">
+                  <Label htmlFor="esg-preferences">ESG Preferences</Label>
+                  <Select>
+                    <SelectTrigger>
+                      <SelectValue placeholder="Select ESG features" />
+                    </SelectTrigger>
+                    <SelectContent>
+                      <SelectItem value="solar">Solar Integration</SelectItem>
+                      <SelectItem value="leed">LEED Certification</SelectItem>
+                      <SelectItem value="carbon-neutral">Carbon Neutral</SelectItem>
+                    </SelectContent>
+                  </Select>
+                </div>
+              </div>
+              <div className="space-y-2">
+                <Label htmlFor="message">Additional Requirements</Label>
+                <Textarea 
+                  id="message"
+                  placeholder="Describe your specific requirements..."
+                  className="min-h-[120px]"
+                />
+              </div>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="investor" size="lg">
-                  Start Your Project
+                <Button type="submit" size="lg" className="flex-1">
+                  <Send className="mr-2 h-5 w-5" />
+                  Request Technical Deck
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-commercial">
-                  Talk to Our Development Team
+                <Button type="button" variant="outline" size="lg" className="flex-1">
+                  <Eye className="mr-2 h-5 w-5" />
+                  Book a Site Visit
                 </Button>
               </div>
-            </div>
-            <div>
-              <img 
-                src={constructionProposalForm} 
-                alt="Construction proposal form"
-                className="w-full rounded-lg shadow-medium"
-              />
-            </div>
-          </div>
+            </form>
+          </Card>
         </div>
       </section>
     </div>
