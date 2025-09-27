@@ -1,22 +1,26 @@
 import { Link } from "react-router-dom";
 import { Building2, Mail, Phone, MapPin } from "lucide-react";
-
 const Footer = () => {
-  const footerLinks = [
-    { label: "About Us", path: "/about" },
-    { label: "Sustainability", path: "/sustainability" },
-    { label: "Business Revenue Model", path: "/business-model" },
-    { label: "REIT & Invest in Rental Yield Assets", path: "/reit-invest" },
-  ];
-
-  return (
-    <footer className="bg-commercial-navy text-white">
+  const footerLinks = [{
+    label: "About Us",
+    path: "/about"
+  }, {
+    label: "Sustainability",
+    path: "/sustainability"
+  }, {
+    label: "Business Revenue Model",
+    path: "/business-model"
+  }, {
+    label: "REIT & Invest in Rental Yield Assets",
+    path: "/reit-invest"
+  }];
+  return <footer className="bg-commercial-navy text-white">
       <div className="container py-12">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
               <Building2 className="h-8 w-8 text-solar" />
-              <span className="text-xl font-bold">CommercialDev</span>
+              <span className="text-xl font-bold">CommInfra</span>
             </div>
             <p className="text-sm text-white/80">
               Building the future of commercial real estate with ESG-aligned infrastructure and solar-powered sustainability.
@@ -26,26 +30,22 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Quick Links</h3>
             <ul className="space-y-2">
-              {footerLinks.slice(0, 3).map((link) => (
-                <li key={link.path}>
+              {footerLinks.slice(0, 3).map(link => <li key={link.path}>
                   <Link to={link.path} className="text-sm text-white/80 hover:text-solar transition-smooth">
                     {link.label}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
           <div>
             <h3 className="font-semibold mb-4">Services</h3>
             <ul className="space-y-2">
-              {footerLinks.slice(3).map((link) => (
-                <li key={link.path}>
+              {footerLinks.slice(3).map(link => <li key={link.path}>
                   <Link to={link.path} className="text-sm text-white/80 hover:text-solar transition-smooth">
                     {link.label}
                   </Link>
-                </li>
-              ))}
+                </li>)}
             </ul>
           </div>
           
@@ -74,8 +74,6 @@ const Footer = () => {
           </p>
         </div>
       </div>
-    </footer>
-  );
+    </footer>;
 };
-
 export default Footer;
