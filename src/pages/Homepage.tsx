@@ -29,7 +29,7 @@ import investorImage from "@/assets/investor-handshake.jpg";
 import landImage from "@/assets/aerial-business-park.jpg";
 import buildingImage from "@/assets/sustainable-growth-building.jpg";
 import salesImage from "@/assets/commercial-for-sale.jpg";
-import retailImage from "@/assets/retail-floor-interior.jpg";
+import retailImage from "@/assets/commercial-office-interior.jpg";
 import infrastructureImage from "@/assets/infrastructure-blueprint.jpg";
 import solarImage from "@/assets/rooftop-solar-building.jpg";
 import carbonImage from "@/assets/carbon-credits-commercial-building.jpg";
