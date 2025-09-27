@@ -36,6 +36,7 @@ import {
 // Image imports
 import sellerHandshake from "@/assets/seller-handshake.jpg";
 import projectTimeline from "@/assets/project-timeline.jpg";
+import sellHeroCommercial from "@/assets/sell-hero-commercial.jpg";
 import constructionFoundation from "@/assets/construction-foundation-work.jpg";
 import semiCompletedScaffolding from "@/assets/semi-completed-scaffolding.jpg";
 import interiorFitout from "@/assets/interior-fitout-progress.jpg";
@@ -261,11 +262,13 @@ const SellPage = () => {
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <img src={projectTimeline} alt="Development timeline showing various project stages" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
-              <div className="text-center text-white">
-                <Calendar className="h-16 w-16 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Project Timeline Visualization</h3>
-                <p className="text-white/90">Track development progress from foundation to completion</p>
+            <div className="absolute inset-0 bg-[url('@/assets/sell-hero-commercial.jpg')] bg-cover bg-center">
+              <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
+                <div className="text-center text-white">
+                  <Calendar className="h-16 w-16 mx-auto mb-4" />
+                  <h3 className="text-2xl font-bold mb-2">Project Timeline Visualization</h3>
+                  <p className="text-white/90">Track development progress from foundation to completion</p>
+                </div>
               </div>
             </div>
           </div>
