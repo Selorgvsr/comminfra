@@ -52,10 +52,7 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-4">Contact</h3>
             <div className="space-y-2 text-sm text-white/80">
-              <div className="flex items-center space-x-2">
-                <MapPin className="h-4 w-4" />
-                <span>Velachery, TN, India</span>
-              </div>
+              
               <div className="flex items-center space-x-2">
                 <Phone className="h-4 w-4" />
                 <span>+91 98765 43210</span>
