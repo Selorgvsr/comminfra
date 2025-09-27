@@ -13,7 +13,7 @@ import commercialInterior from "@/assets/commercial-interior.jpg";
 import commercialPlaza from "@/assets/commercial-plaza-bustling.jpg";
 import businessPark from "@/assets/aerial-business-park.jpg";
 import lifestyleCenter from "@/assets/lifestyle-center-green.jpg";
-import projectTimeline from "@/assets/project-timeline.jpg";
+import projectTimeline from "@/assets/attractive-commercial-building.jpg";
 import rooftopSolar from "@/assets/rooftop-solar-building.jpg";
 import revenueDashboard from "@/assets/build-revenue-dashboard.jpg";
 import proposalForm from "@/assets/construction-proposal-form.jpg";
