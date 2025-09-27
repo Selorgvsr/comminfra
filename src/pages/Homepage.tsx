@@ -69,7 +69,7 @@ const Homepage = () => {
     },
     {
       icon: Building2,
-      title: "Build Assets",
+      title: "Built Assets",
       description: "Architecturally rich, structurally sound, ESG-compliant buildings",
       image: buildingImage,
       link: "/build-asset",
