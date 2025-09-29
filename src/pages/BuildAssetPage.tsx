@@ -8,6 +8,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
 import commercialInteriorImage from "@/assets/commercial-office-interior.jpg";
+import materialPaletteImage from "@/assets/material-palette-showcase.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
 import evChargingImage from "@/assets/ev-charging-parking.jpg";
@@ -32,7 +33,7 @@ const BuildAssetPage = () => {
       icon: Leaf,
       title: "Material Palette",
       description: "Premium finishes, ESG-compliant sourcing",
-      image: commercialInteriorImage
+      image: materialPaletteImage
     },
     {
       icon: Zap,
