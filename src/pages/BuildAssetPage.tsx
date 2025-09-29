@@ -11,6 +11,7 @@ import commercialInteriorImage from "@/assets/commercial-office-interior.jpg";
 import materialPaletteImage from "@/assets/material-palette-showcase.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
+import rainwaterHarvestingImage from "@/assets/rainwater-harvesting-system.jpg";
 import evChargingImage from "@/assets/ev-charging-parking.jpg";
 import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
@@ -61,7 +62,7 @@ const BuildAssetPage = () => {
       icon: "♻️",
       title: "Rainwater Harvesting",
       description: "Greywater recycling and water conservation systems",
-      image: rooftopSolarImage
+      image: rainwaterHarvestingImage
     },
     {
       icon: "🌿",
