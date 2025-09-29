@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
-import commercialInteriorImage from "@/assets/commercial-interior.jpg";
+import commercialInteriorImage from "@/assets/commercial-office-interior.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
 import evChargingImage from "@/assets/ev-charging-parking.jpg";
