@@ -14,6 +14,7 @@ import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
 import rainwaterHarvestingImage from "@/assets/rainwater-harvesting-system.jpg";
 import evChargingImage from "@/assets/ev-charging-parking.jpg";
+import ecoBusinessParkImage from "@/assets/eco-business-park-parking.jpg";
 import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
 
@@ -332,7 +333,7 @@ const BuildAssetPage = () => {
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
                 <img 
-                  src={evChargingImage} 
+                  src={ecoBusinessParkImage} 
                   alt="Sustainable Complex"
                   className="w-full h-full object-cover"
                 />
