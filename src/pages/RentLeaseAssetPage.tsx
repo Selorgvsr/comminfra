@@ -287,7 +287,7 @@ const RentLeaseAssetPage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {facilities.map((facility, index) => <Card key={index} className="facility_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-muted/20 backdrop-blur-sm">
+            {facilities.map((facility, index) => <Card key={index} className="facility_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5 backdrop-blur-sm">
                 <CardHeader className="text-center">
                   <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${facility.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
                     <facility.icon className="w-10 h-10 text-primary" />
