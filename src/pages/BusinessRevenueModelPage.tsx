@@ -20,6 +20,7 @@ import commercialForSale from "@/assets/commercial-for-sale.jpg";
 import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
 import multiFloorCommercialBuilding from "@/assets/multi-floor-commercial-building.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
+import modernCommercialBuilding from "@/assets/modern-commercial-building.jpg";
 import reitYieldDashboard from "@/assets/reit-yield-dashboard.jpg";
 import jointDevelopmentPartnership from "@/assets/joint-development-partnership.jpg";
 const BusinessRevenueModelPage = () => {
@@ -74,7 +75,7 @@ const BusinessRevenueModelPage = () => {
     description: "AI, IoT, BMS optimization services",
     metrics: "₹15L setup + ₹3L/month",
     features: ["Energy optimization", "Predictive maintenance", "Tenant analytics"],
-    image: smartInfrastructureBlueprint
+    image: modernCommercialBuilding
   }, {
     icon: PieChart,
     title: "REIT-Compatible Rental Yield",
