@@ -466,7 +466,7 @@ const REITInvestPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
             {investorPersonas.map((persona, index) => (
-              <Card key={index} className="investor_persona_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-purple-500/5 backdrop-blur-sm">
+              <Card key={index} className="investor_persona_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-primary/5 via-secondary/10 to-accent/5 backdrop-blur-sm">
                 <CardHeader className="text-center">
                   <div className="w-16 h-16 mx-auto rounded-xl bg-gradient-to-br from-purple-500/20 to-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <persona.icon className="w-8 h-8 text-purple-600" />
