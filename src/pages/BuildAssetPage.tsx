@@ -7,6 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
+import modernBusinessComplexImage from "@/assets/modern-business-complex.jpg";
 import commercialInteriorImage from "@/assets/commercial-office-interior.jpg";
 import materialPaletteImage from "@/assets/material-palette-showcase.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
@@ -299,7 +300,7 @@ const BuildAssetPage = () => {
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
                 <img 
-                  src={commercialFacadeImage} 
+                  src={modernBusinessComplexImage} 
                   alt="Commercial Project"
                   className="w-full h-full object-cover"
                 />
