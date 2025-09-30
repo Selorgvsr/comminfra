@@ -294,8 +294,8 @@ const SustainabilityPage = () => {
             {esgPillars.map((pillar, index) => (
               <Card key={index} className="esg_pillar_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-muted/20 backdrop-blur-sm">
                 <CardHeader className="text-center">
-                  <div className={`w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br ${pillar.color} flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
-                    <pillar.icon className="w-10 h-10 text-white" />
+                  <div className={`w-24 h-24 mx-auto rounded-2xl bg-gradient-to-br ${pillar.color} border border-primary/20 shadow-lg flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300`}>
+                    <pillar.icon className="w-12 h-12 text-primary drop-shadow-sm" />
                   </div>
                   <CardTitle className="text-xl group-hover:text-green-600 transition-colors">
                     {pillar.title}
