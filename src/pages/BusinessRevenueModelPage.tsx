@@ -22,7 +22,7 @@ import multiFloorCommercialBuilding from "@/assets/multi-floor-commercial-buildi
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import modernCommercialBuilding from "@/assets/modern-commercial-building.jpg";
 import reitYieldDashboard from "@/assets/reit-yield-dashboard.jpg";
-import jointDevelopmentPartnership from "@/assets/joint-development-partnership.jpg";
+import jointDevelopmentPartnership from "@/assets/joint-development-modern.jpg";
 const BusinessRevenueModelPage = () => {
   const [formData, setFormData] = useState({
     investorType: "",
