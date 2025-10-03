@@ -22,7 +22,7 @@ import corporateOfficeModern from "@/assets/corporate-office-modern.jpg";
 import retailBrandStore from "@/assets/retail-brand-store.jpg";
 import lifestyleCenterWellness from "@/assets/lifestyle-center-wellness.jpg";
 import longTermLeaseSigning from "@/assets/long-term-lease-signing.jpg";
-import popupRetailFlexible from "@/assets/popup-retail-flexible.jpg";
+import popupRetailFlexible from "@/assets/popup-shop-interior.jpg";
 import leaseToOwnHandover from "@/assets/lease-to-own-handover.jpg";
 import customSpacePlanning from "@/assets/custom-space-planning.jpg";
 const RentLeaseAssetPage = () => {
