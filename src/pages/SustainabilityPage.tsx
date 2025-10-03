@@ -40,6 +40,7 @@ import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
 import esgDashboard from "@/assets/esg-dashboard.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
+import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
 
 const SustainabilityPage = () => {
   const [formData, setFormData] = useState({
@@ -63,7 +64,7 @@ const SustainabilityPage = () => {
       title: "Low Carbon Footprint",
       description: "Eco-friendly façade and interior materials",
       color: "from-blue-500/20 to-cyan-500/20",
-      image: energyEfficientFacade
+      image: sustainableGrowthBuilding
     },
     {
       icon: Droplets,
