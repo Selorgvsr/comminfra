@@ -189,7 +189,7 @@ const SellPage = () => {
       {/* 1. Hero Section - Sell Your Commercial Property */}
       <section className="SellPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={sellerHandshake} alt="Professional handshake representing successful commercial property transaction" className="w-full h-full object-cover" />
+          <img src={sellHeroCommercial} alt="Attractive modern commercial building for sale" className="w-full h-full object-cover" />
           {/* Glassmorphism overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
           <div className="absolute inset-0 backdrop-blur-[2px]"></div>
