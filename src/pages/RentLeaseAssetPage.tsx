@@ -12,7 +12,7 @@ import { Building2, Utensils, Gem, Briefcase, ShoppingBag, Home, Calendar, Rotat
 // Import images
 import leasedRetailInterior from "@/assets/leased-retail-interior.jpg";
 import retailFloorInterior from "@/assets/retail-floor-interior.jpg";
-import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
+import restaurantCommercialInterior from "@/assets/restaurant-commercial-interior.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
 import leasingProposalForm from "@/assets/leasing-proposal-form.jpg";
@@ -353,7 +353,7 @@ const RentLeaseAssetPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {featuredListings.map((listing, index) => <Card key={index} className="listing_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
                 <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20">
-                  <img src={index === 0 ? retailFloorInterior : index === 1 ? leaseAgreementSigning : smartInfrastructureBlueprint} alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+                  <img src={index === 0 ? retailFloorInterior : index === 1 ? restaurantCommercialInterior : smartInfrastructureBlueprint} alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <Badge className="absolute top-4 right-4 bg-primary text-white">
                     {listing.badge}
                   </Badge>
