@@ -216,9 +216,7 @@ const BuyPage = () => {
             Buy High-Value Commercial Properties 
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Directly from Us</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 animate-fade-in">
-            Modular, ESG-aligned, investor-grade assets with built-in value enhancement and sustainable features
-          </p>
+          
           <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
             <Link to="/projects">
               Browse Available Properties 
