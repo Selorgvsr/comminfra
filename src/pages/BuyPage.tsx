@@ -17,6 +17,11 @@ import projectTimeline from "@/assets/attractive-commercial-building.jpg";
 import rooftopSolar from "@/assets/rooftop-solar-building.jpg";
 import revenueDashboard from "@/assets/build-revenue-dashboard.jpg";
 import proposalForm from "@/assets/construction-proposal-form.jpg";
+import officeSpacesPremium from "@/assets/office-spaces-premium.jpg";
+import commercialPlazaPremium from "@/assets/commercial-plaza-premium.jpg";
+import lifestyleCenterPremium from "@/assets/lifestyle-center-premium.jpg";
+import businessParkPremium from "@/assets/business-park-premium.jpg";
+import highStreetPremium from "@/assets/high-street-premium.jpg";
 const BuyPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -219,33 +224,277 @@ const BuyPage = () => {
         </div>
       </section>
 
-      {/* 2. Asset Categories - Icon-Based Cards */}
-      <section className="AssetCard_Categories py-20 bg-secondary/5">
-        <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Asset Categories</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover premium commercial properties across diverse categories
+      {/* 2. Asset Categories - Premium Elegant Design */}
+      <section className="AssetCard_Categories py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+        <div className="container px-4 max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-20">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent mb-6 tracking-tight">
+              Asset Categories
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light">
+              Discover premium commercial properties across diverse categories.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {assetCategories.map((category, index) => <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden" style={{
-            animationDelay: `${index * 100}ms`
-          }}>
-                <div className="relative h-48 overflow-hidden">
-                  <img src={category.image} alt={category.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <category.icon className="absolute top-4 left-4 h-8 w-8 text-white group-hover:text-solar transition-colors duration-300" />
+
+          {/* Category Sections */}
+          <div className="space-y-20">
+            
+            {/* 1. Office Spaces */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={officeSpacesPremium} 
+                    alt="Premium Office Spaces - Modern glass office tower" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <Building2 className="h-12 w-12 text-white mb-2" />
+                  </div>
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2 text-primary group-hover:text-solar transition-colors">{category.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300" asChild>
-                    <Link to={category.link}>{category.cta}</Link>
+                
+                <div className="space-y-6 lg:pl-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full">
+                    <Building2 className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-semibold text-blue-900">Office Spaces</span>
+                  </div>
+                  
+                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                    Step into the future of work
+                  </h3>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p>Our Office Spaces are crafted for performance, prestige, and presence. Each tower stands as a symbol of productivity — designed with modern infrastructure, high-speed connectivity, green energy systems, and customizable interiors.</p>
+                    
+                    <p>We offer spaces ranging from boutique executive offices to multi-floor corporate setups, built to adapt to dynamic business needs.</p>
+                    
+                    <p>Enjoy premium facilities like central air systems, high-speed elevators, security surveillance, conference zones, and energy-efficient lighting.</p>
+                    
+                    <p>Every workspace breathes elegance, natural light, and sustainability — perfect for companies that dream big and move fast.</p>
+                    
+                    <p className="font-semibold text-gray-900">Invest in office spaces that don't just house teams — they inspire innovation.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/projects?type=office">
+                      Explore Properties
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
                   </Button>
-                </CardContent>
-              </Card>)}
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Commercial Plazas */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1 space-y-6 lg:pr-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-50 rounded-full">
+                    <Store className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-semibold text-purple-900">Commercial Plazas</span>
+                  </div>
+                  
+                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                    The heart of urban interaction
+                  </h3>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p>Welcome to Commercial Plazas — the heart of urban interaction.</p>
+                    
+                    <p>Each plaza is a curated ecosystem of retail, dining, and business synergy, positioned in high-traffic zones for maximum visibility and returns.</p>
+                    
+                    <p>Designed for versatility — from jewelry showrooms and cafés to boutiques and tech stores — our plazas cater to brands that want to shine in the cityscape.</p>
+                    
+                    <p>These are more than buildings; they're communities of commerce, experience, and expression.</p>
+                    
+                    <p className="font-semibold text-gray-900">Architected with wide corridors, parking, safety systems, and elegant aesthetics, they invite growth, connection, and constant movement.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/projects?type=retail">
+                      Explore Properties
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+                
+                <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={commercialPlazaPremium} 
+                    alt="Commercial Plazas - Vibrant shopping plaza with modern stores" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-8 right-8">
+                    <Store className="h-12 w-12 text-white mb-2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. Lifestyle Centers */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={lifestyleCenterPremium} 
+                    alt="Lifestyle Centers - Upscale open-air shopping and dining center" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <Trees className="h-12 w-12 text-white mb-2" />
+                  </div>
+                </div>
+                
+                <div className="space-y-6 lg:pl-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 rounded-full">
+                    <Trees className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-900">Lifestyle Centers</span>
+                  </div>
+                  
+                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                    Where lifestyle meets luxury
+                  </h3>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p>Our Lifestyle Centers redefine modern living with a blend of retail, leisure, and culture.</p>
+                    
+                    <p>Imagine an open-air promenade where dining meets design, and shopping blends with serenity.</p>
+                    
+                    <p>Each center is designed for high-end brands, cafés, art studios, and wellness spaces — destinations that shape urban lifestyle trends.</p>
+                    
+                    <p>These are not just commercial properties — they're lifestyle experiences engineered for emotional engagement, footfall, and long-term revenue.</p>
+                    
+                    <p className="font-semibold text-gray-900">Smart layouts, biophilic design, solar rooftops, and pedestrian-friendly walkways ensure sustainability and luxury coexist.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/projects?type=lifestyle">
+                      Explore Properties
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. Business Parks */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1 space-y-6 lg:pr-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 rounded-full">
+                    <Factory className="h-5 w-5 text-amber-600" />
+                    <span className="text-sm font-semibold text-amber-900">Business Parks</span>
+                  </div>
+                  
+                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                    The evolution of enterprise
+                  </h3>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p>Our Business Parks represent the evolution of enterprise real estate — integrated work environments built for growth and collaboration.</p>
+                    
+                    <p>Each park features multiple towers, shared amenities, landscaped open zones, cafeterias, EV parking, and digital infrastructure.</p>
+                    
+                    <p>They're designed to support IT companies, logistics offices, R&D units, and start-up clusters with scalable, plug-and-play setups.</p>
+                    
+                    <p>With renewable energy systems, smart surveillance, and sustainable construction, these parks offer future-ready spaces for businesses that aim for global standards.</p>
+                    
+                    <p className="font-semibold text-gray-900">A business park isn't just a workplace — it's a living ecosystem of ideas.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/projects?type=business-park">
+                      Explore Properties
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+                
+                <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={businessParkPremium} 
+                    alt="Business Parks - Expansive business park campus with corporate towers" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-8 right-8">
+                    <Factory className="h-12 w-12 text-white mb-2" />
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 5. High Street Commercial */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={highStreetPremium} 
+                    alt="High Street Commercial - Urban high-street with modern storefronts" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <ShoppingBag className="h-12 w-12 text-white mb-2" />
+                  </div>
+                </div>
+                
+                <div className="space-y-6 lg:pl-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-rose-50 rounded-full">
+                    <ShoppingBag className="h-5 w-5 text-rose-600" />
+                    <span className="text-sm font-semibold text-rose-900">High Street Commercial</span>
+                  </div>
+                  
+                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                    The pulse of city commerce
+                  </h3>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p>Welcome to the pulse of city commerce — our High Street Commercial Properties are designed for brands that thrive on exposure and experience.</p>
+                    
+                    <p>Located in high-footfall areas, these spaces offer unmatched visibility and accessibility.</p>
+                    
+                    <p>Ideal for restaurants, flagship showrooms, fashion brands, and premium outlets — each property is built with elegant facades, signage visibility, and smart retail planning.</p>
+                    
+                    <p>Infrastructure includes ample parking, power backup, and modern interiors — everything your brand needs to make a statement.</p>
+                    
+                    <p className="font-semibold text-gray-900">For investors, these are income-generating properties with exceptional resale and rental potential.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/projects?type=high-street">
+                      Explore Properties
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
