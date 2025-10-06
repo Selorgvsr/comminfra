@@ -22,6 +22,10 @@ import commercialPlazaPremium from "@/assets/commercial-plaza-premium.jpg";
 import lifestyleCenterPremium from "@/assets/lifestyle-center-premium.jpg";
 import businessParkPremium from "@/assets/business-park-premium.jpg";
 import highStreetPremium from "@/assets/high-street-premium.jpg";
+import institutionalInvestors from "@/assets/institutional-investors.jpg";
+import corporateOccupiers from "@/assets/corporate-occupiers.jpg";
+import hniFamilyOffices from "@/assets/hni-family-offices.jpg";
+import reitsFunds from "@/assets/reits-funds.jpg";
 const BuyPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -585,37 +589,222 @@ const BuyPage = () => {
         </div>
       </section>
 
-      {/* 5. Buyer Segmentation - Persona Cards */}
-      <section className="BuyerPersona_Cards py-20">
-        <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Tailored for Every Investor</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Customized investment opportunities designed for different investor profiles
+      {/* 5. Tailored for Every Investor - Premium Corporate Section */}
+      <section className="BuyerPersona_Cards py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+        <div className="container px-4 max-w-7xl mx-auto">
+          {/* Header */}
+          <div className="text-center mb-12">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent mb-6 tracking-tight">
+              Tailored for Every Investor
+            </h2>
+            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+              Customized investment opportunities designed to match diverse investor goals — from institutional stability to corporate expansion and family wealth creation.
             </p>
           </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {buyerPersonas.map((persona, index) => <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-gradient-to-b from-white to-secondary/10 border border-white/20 rounded-2xl overflow-hidden">
-                <CardHeader className="text-center pb-2">
-                  <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center mx-auto mb-4 group-hover:bg-primary/20 transition-colors">
-                    <persona.icon className="h-8 w-8 text-primary group-hover:text-solar transition-colors" />
+
+          {/* Investor Type Cards */}
+          <div className="space-y-24 mt-20">
+            
+            {/* 1. Institutional Investors */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={institutionalInvestors} 
+                    alt="Institutional Investors - Aerial view of corporate towers and financial skyline" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
+                      <Building className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-white text-2xl font-bold">Institutional Grade</h3>
                   </div>
-                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{persona.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">{persona.description}</p>
-                  <div className="space-y-2 mb-4">
-                    {persona.features.map((feature, idx) => <div key={idx} className="flex items-center text-xs">
-                        <CheckCircle className="h-3 w-3 text-esg mr-2" />
-                        <span>{feature}</span>
-                      </div>)}
+                </div>
+                
+                <div className="space-y-6 lg:pl-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full">
+                    <Building className="h-5 w-5 text-blue-600" />
+                    <span className="text-sm font-semibold text-blue-900">Institutional Investors</span>
                   </div>
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all" asChild>
-                    <Link to={persona.link}>Learn More</Link>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p className="font-semibold text-gray-900 text-xl">For institutional investors seeking scale, stability, and long-term yield — our commercial assets deliver consistent performance and portfolio diversification.</p>
+                    
+                    <p>We offer high-grade office towers, business parks, and retail plazas with predictable income streams and low vacancy risks.</p>
+                    
+                    <p>Each project is backed by professional management, compliance transparency, and sustainable design to attract top corporate tenants.</p>
+                    
+                    <p>Our developments align with ESG goals, offering carbon credit benefits through solar energy integration.</p>
+                    
+                    <p className="font-semibold text-gray-900">Partner with us to gain access to large-scale opportunities and REIT-ready investments that redefine commercial real estate value.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/institutional-inquiry">
+                      Explore Opportunities
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
                   </Button>
-                </CardContent>
-              </Card>)}
+                </div>
+              </div>
+            </div>
+
+            {/* 2. Corporate Occupiers */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1 space-y-6 lg:pr-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-purple-50 rounded-full">
+                    <Briefcase className="h-5 w-5 text-purple-600" />
+                    <span className="text-sm font-semibold text-purple-900">Corporate Occupiers</span>
+                  </div>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p className="font-semibold text-gray-900 text-xl">Corporate occupiers deserve more than space — they deserve ecosystems.</p>
+                    
+                    <p>We design tailor-made work environments for established brands and emerging enterprises alike.</p>
+                    
+                    <p>Our commercial developments offer flexibility for expansion, smart energy systems, high-speed connectivity, and world-class maintenance.</p>
+                    
+                    <p>From leasing individual floors to owning entire office blocks, we provide strategic solutions that enhance productivity and brand image.</p>
+                    
+                    <p className="font-semibold text-gray-900">Let your company operate from a landmark address built for growth, innovation, and sustainability.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/corporate-inquiry">
+                      Explore Opportunities
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+                
+                <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={corporateOccupiers} 
+                    alt="Corporate Occupiers - Modern corporate office interior with glass walls" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-8 right-8">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
+                      <Briefcase className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-white text-2xl font-bold">Corporate Excellence</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* 3. HNIs / Family Offices */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={hniFamilyOffices} 
+                    alt="HNIs and Family Offices - Luxury meeting lounge with sunset skyline view" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-8 left-8">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
+                      <Users className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-white text-2xl font-bold">Private Wealth</h3>
+                  </div>
+                </div>
+                
+                <div className="space-y-6 lg:pl-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-amber-50 rounded-full">
+                    <Users className="h-5 w-5 text-amber-600" />
+                    <span className="text-sm font-semibold text-amber-900">HNIs / Family Offices</span>
+                  </div>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p className="font-semibold text-gray-900 text-xl">For high-net-worth individuals and family offices, our developments open doors to secure, appreciating assets that balance prestige with profit.</p>
+                    
+                    <p>Invest in premium commercial floors, boutique retail units, or long-term leasing ventures that generate stable rental yields.</p>
+                    
+                    <p>We curate customized investment plans — from single-unit ownership to multi-asset portfolios — designed for legacy creation.</p>
+                    
+                    <p>Each project is built with transparency, sustainability, and timeless design — assets that appreciate in both value and reputation.</p>
+                    
+                    <p className="font-semibold text-gray-900">Turn your investment into a legacy of growth, purpose, and prestige.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/hni-inquiry">
+                      Explore Opportunities
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+              </div>
+            </div>
+
+            {/* 4. REITs & Funds */}
+            <div className="group">
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+                <div className="order-2 lg:order-1 space-y-6 lg:pr-8">
+                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-green-50 rounded-full">
+                    <TrendingUp className="h-5 w-5 text-green-600" />
+                    <span className="text-sm font-semibold text-green-900">REITs & Funds</span>
+                  </div>
+                  
+                  <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
+                    <p className="font-semibold text-gray-900 text-xl">We collaborate with REITs, private equity firms, and institutional funds to create scalable, income-generating commercial assets.</p>
+                    
+                    <p>Our developments meet investment-grade benchmarks — audited, compliant, and built for long-term rental yields.</p>
+                    
+                    <p>With transparent financial structures, asset management systems, and energy-efficient operations, our projects deliver sustainable returns and carbon credits.</p>
+                    
+                    <p>Partner with us to co-create commercial portfolios that merge physical growth with financial performance.</p>
+                    
+                    <p className="font-semibold text-gray-900">The future of commercial investing is collaborative, clean, and data-driven — we're already there.</p>
+                  </div>
+                  
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
+                    asChild
+                  >
+                    <Link to="/reit-inquiry">
+                      Explore Opportunities
+                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
+                    </Link>
+                  </Button>
+                </div>
+                
+                <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
+                  <img 
+                    src={reitsFunds} 
+                    alt="REITs and Funds - City skyline with real estate fund graphs overlay" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
+                  <div className="absolute bottom-8 right-8">
+                    <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
+                      <TrendingUp className="h-8 w-8 text-white" />
+                    </div>
+                    <h3 className="text-white text-2xl font-bold">Fund Performance</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
       </section>
