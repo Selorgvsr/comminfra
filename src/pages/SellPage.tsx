@@ -352,7 +352,7 @@ const SellPage = () => {
                       </div>
                       <div className="border-2 border-dashed border-primary/30 rounded-xl p-6 text-center hover:border-primary hover:bg-primary/5 transition-all cursor-pointer group">
                         <FileText className="h-8 w-8 mx-auto mb-2 text-primary group-hover:scale-110 transition-transform" />
-                        <p className="text-sm font-medium">Floor Plans</p>
+                        
                         <p className="text-xs text-muted-foreground">PDF, JPG up to 5MB</p>
                       </div>
                       <div className="border-2 border-dashed border-primary/30 rounded-xl p-6 text-center hover:border-primary hover:bg-primary/5 transition-all cursor-pointer group">
