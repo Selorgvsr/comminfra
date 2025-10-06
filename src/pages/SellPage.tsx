@@ -7,31 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
 import { Link } from "react-router-dom";
-import { 
-  Building2, 
-  TrendingUp, 
-  CheckCircle, 
-  Clock, 
-  DollarSign,
-  FileText,
-  Upload,
-  MapPin,
-  Calendar,
-  Leaf,
-  ShieldCheck,
-  Timer,
-  Store,
-  ShoppingBag,
-  Building,
-  Trees,
-  Blocks,
-  Star,
-  Award,
-  Zap,
-  ArrowRight,
-  Moon,
-  SunIcon
-} from "lucide-react";
+import { Building2, TrendingUp, CheckCircle, Clock, DollarSign, FileText, Upload, MapPin, Calendar, Leaf, ShieldCheck, Timer, Store, ShoppingBag, Building, Trees, Blocks, Star, Award, Zap, ArrowRight, Moon, SunIcon } from "lucide-react";
 
 // Image imports
 import sellerHandshake from "@/assets/seller-handshake.jpg";
@@ -50,129 +26,104 @@ import legalComplianceReview from "@/assets/legal-compliance-review.jpg";
 import sellerFaqTablet from "@/assets/seller-faq-tablet.jpg";
 
 // Data structures
-const projectStages = [
-  {
-    id: "started",
-    title: "Started Projects",
-    description: "Land acquired, foundation work begun",
-    status: "🟢",
-    cta: "Submit Site Details",
-    image: constructionFoundation,
-    completion: 15,
-    completionText: "0-20% Complete"
-  },
-  {
-    id: "semi-completed",
-    title: "Semi-Completed Projects", 
-    description: "Structural work and basic construction in progress",
-    status: "🟡",
-    cta: "Upload Progress Report",
-    image: semiCompletedScaffolding,
-    completion: 40,
-    completionText: "20-50% Complete"
-  },
-  {
-    id: "halfway",
-    title: "Halfway Through",
-    description: "Interior work and finishing stages underway",
-    status: "🟠", 
-    cta: "Schedule Site Visit",
-    image: interiorFitout,
-    completion: 65,
-    completionText: "50-70% Complete"
-  },
-  {
-    id: "completed",
-    title: "Completed Projects",
-    description: "Ready for occupancy with active tenants",
-    status: "🔵",
-    cta: "Share Asset Valuation", 
-    image: completedWithTenants,
-    completion: 95,
-    completionText: "90-100% Complete"
-  }
-];
-
-const assetTypes = [
-  {
-    title: "Retail & Office Floors",
-    icon: Store,
-    image: retailFloorBranded,
-    description: "Individual floors in commercial buildings with high rental potential"
-  },
-  {
-    title: "Shopping Arcades / Plazas", 
-    icon: ShoppingBag,
-    image: shoppingArcadeTraffic,
-    description: "Retail complexes and shopping centers with foot traffic"
-  },
-  {
-    title: "High Street Commercial Units",
-    icon: Building2,
-    image: highStreetFrontage, 
-    description: "Prime street-facing commercial properties in busy areas"
-  },
-  {
-    title: "Lifestyle Centers / Business Parks",
-    icon: Trees,
-    image: lifestyleCenterGreen,
-    description: "Mixed-use developments with amenities and green spaces"
-  },
-  {
-    title: "Mixed-Use Commercial Blocks",
-    icon: Blocks,
-    image: completedWithTenants,
-    description: "Multi-purpose commercial developments with diverse income streams"
-  }
-];
-
-const valuationSteps = [
-  {
-    title: "ESG Upgrade Potential",
-    description: "We assess solar installation possibilities, carbon credit eligibility, and sustainability improvements that can increase property value by 15-25%.",
-    icon: Leaf,
-    image: esgDashboard,
-    features: ["Solar rooftop analysis", "Carbon credit assessment", "Green certification potential", "Energy efficiency upgrades"]
-  },
-  {
-    title: "Legal and Compliance Checks",
-    description: "Comprehensive review of all documentation, regulatory compliance, and legal clearances to ensure smooth transaction processing.",
-    icon: ShieldCheck,
-    image: legalComplianceReview,
-    features: ["Title verification", "Approval status check", "Compliance audit", "Documentation review"]
-  },
-  {
-    title: "Timeline for Offer and Closure", 
-    description: "Fast-track evaluation process with transparent timelines and regular updates throughout the acquisition journey.",
-    icon: Timer,
-    image: projectTimeline,
-    features: ["48-hour initial assessment", "7-day due diligence", "Transparent pricing", "Quick closure process"]
-  }
-];
-
-const faqs = [
-  {
-    question: "What documents are needed for property evaluation?",
-    answer: "We require property documents, approvals (CMDA/DTCP), completion certificates, legal clearances, and recent photographs. Our team will guide you through the complete documentation process and help gather any missing paperwork."
-  },
-  {
-    question: "How long does the evaluation process take?",
-    answer: "Initial assessment: 48-72 hours for basic evaluation. Complete due diligence: 7-14 working days including site visits. We provide regular updates and maintain transparent communication throughout the process."
-  },
-  {
-    question: "What types of properties are preferred?",
-    answer: "We focus on commercial properties with ESG upgrade potential, prime locations, clear titles, and strong rental yield prospects. Both completed and under-construction properties are considered, especially those with growth potential."
-  },
-  {
-    question: "How do you determine the property valuation?",
-    answer: "Our valuation considers location premiums, current market rates, ESG upgrade potential, legal status, rental yield prospects, and future development possibilities using advanced analytics and market intelligence."
-  },
-  {
-    question: "What deal structures do you offer?",
-    answer: "We offer flexible deal structures including outright purchase, joint development partnerships, revenue sharing models, and staged payments. The structure depends on the property type, completion status, and seller preferences."
-  }
-];
-
+const projectStages = [{
+  id: "started",
+  title: "Started Projects",
+  description: "Land acquired, foundation work begun",
+  status: "🟢",
+  cta: "Submit Site Details",
+  image: constructionFoundation,
+  completion: 15,
+  completionText: "0-20% Complete"
+}, {
+  id: "semi-completed",
+  title: "Semi-Completed Projects",
+  description: "Structural work and basic construction in progress",
+  status: "🟡",
+  cta: "Upload Progress Report",
+  image: semiCompletedScaffolding,
+  completion: 40,
+  completionText: "20-50% Complete"
+}, {
+  id: "halfway",
+  title: "Halfway Through",
+  description: "Interior work and finishing stages underway",
+  status: "🟠",
+  cta: "Schedule Site Visit",
+  image: interiorFitout,
+  completion: 65,
+  completionText: "50-70% Complete"
+}, {
+  id: "completed",
+  title: "Completed Projects",
+  description: "Ready for occupancy with active tenants",
+  status: "🔵",
+  cta: "Share Asset Valuation",
+  image: completedWithTenants,
+  completion: 95,
+  completionText: "90-100% Complete"
+}];
+const assetTypes = [{
+  title: "Retail & Office Floors",
+  icon: Store,
+  image: retailFloorBranded,
+  description: "Individual floors in commercial buildings with high rental potential"
+}, {
+  title: "Shopping Arcades / Plazas",
+  icon: ShoppingBag,
+  image: shoppingArcadeTraffic,
+  description: "Retail complexes and shopping centers with foot traffic"
+}, {
+  title: "High Street Commercial Units",
+  icon: Building2,
+  image: highStreetFrontage,
+  description: "Prime street-facing commercial properties in busy areas"
+}, {
+  title: "Lifestyle Centers / Business Parks",
+  icon: Trees,
+  image: lifestyleCenterGreen,
+  description: "Mixed-use developments with amenities and green spaces"
+}, {
+  title: "Mixed-Use Commercial Blocks",
+  icon: Blocks,
+  image: completedWithTenants,
+  description: "Multi-purpose commercial developments with diverse income streams"
+}];
+const valuationSteps = [{
+  title: "ESG Upgrade Potential",
+  description: "We assess solar installation possibilities, carbon credit eligibility, and sustainability improvements that can increase property value by 15-25%.",
+  icon: Leaf,
+  image: esgDashboard,
+  features: ["Solar rooftop analysis", "Carbon credit assessment", "Green certification potential", "Energy efficiency upgrades"]
+}, {
+  title: "Legal and Compliance Checks",
+  description: "Comprehensive review of all documentation, regulatory compliance, and legal clearances to ensure smooth transaction processing.",
+  icon: ShieldCheck,
+  image: legalComplianceReview,
+  features: ["Title verification", "Approval status check", "Compliance audit", "Documentation review"]
+}, {
+  title: "Timeline for Offer and Closure",
+  description: "Fast-track evaluation process with transparent timelines and regular updates throughout the acquisition journey.",
+  icon: Timer,
+  image: projectTimeline,
+  features: ["48-hour initial assessment", "7-day due diligence", "Transparent pricing", "Quick closure process"]
+}];
+const faqs = [{
+  question: "What documents are needed for property evaluation?",
+  answer: "We require property documents, approvals (CMDA/DTCP), completion certificates, legal clearances, and recent photographs. Our team will guide you through the complete documentation process and help gather any missing paperwork."
+}, {
+  question: "How long does the evaluation process take?",
+  answer: "Initial assessment: 48-72 hours for basic evaluation. Complete due diligence: 7-14 working days including site visits. We provide regular updates and maintain transparent communication throughout the process."
+}, {
+  question: "What types of properties are preferred?",
+  answer: "We focus on commercial properties with ESG upgrade potential, prime locations, clear titles, and strong rental yield prospects. Both completed and under-construction properties are considered, especially those with growth potential."
+}, {
+  question: "How do you determine the property valuation?",
+  answer: "Our valuation considers location premiums, current market rates, ESG upgrade potential, legal status, rental yield prospects, and future development possibilities using advanced analytics and market intelligence."
+}, {
+  question: "What deal structures do you offer?",
+  answer: "We offer flexible deal structures including outright purchase, joint development partnerships, revenue sharing models, and staged payments. The structure depends on the property type, completion status, and seller preferences."
+}];
 const SellPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -183,9 +134,7 @@ const SellPage = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-
-  return (
-    <div className="min-h-screen">
+  return <div className="min-h-screen">
       {/* 1. Hero Section - Sell Your Commercial Property */}
       <section className="SellPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -226,10 +175,9 @@ const SellPage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {projectStages.map((stage, index) => (
-              <Card key={stage.id} className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1" style={{
-                animationDelay: `${index * 100}ms`
-              }}>
+            {projectStages.map((stage, index) => <Card key={stage.id} className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <div className="relative h-48 overflow-hidden">
                   <img src={stage.image} alt={stage.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -256,20 +204,13 @@ const SellPage = () => {
                     {stage.cta}
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <img src={projectTimeline} alt="Development timeline showing various project stages" className="w-full h-64 object-cover" />
             <div className="absolute inset-0 bg-[url('@/assets/sell-hero-commercial.jpg')] bg-cover bg-center">
-              <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
-                <div className="text-center text-white">
-                  <Calendar className="h-16 w-16 mx-auto mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Project Timeline Visualization</h3>
-                  <p className="text-white/90">Track development progress from foundation to completion</p>
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
@@ -286,10 +227,9 @@ const SellPage = () => {
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {assetTypes.map((asset, index) => (
-              <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden" style={{
-                animationDelay: `${index * 100}ms`
-              }}>
+            {assetTypes.map((asset, index) => <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <div className="relative h-48 overflow-hidden">
                   <img src={asset.image} alt={asset.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
@@ -302,8 +242,7 @@ const SellPage = () => {
                     Submit This Asset Type
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -321,16 +260,14 @@ const SellPage = () => {
           
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem key={index} value={`item-${index}`} className="bg-white/60 backdrop-blur-sm rounded-xl px-6 border border-white/20 shadow-lg">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white/60 backdrop-blur-sm rounded-xl px-6 border border-white/20 shadow-lg">
                   <AccordionTrigger className="text-left font-semibold hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
           
@@ -496,8 +433,6 @@ const SellPage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default SellPage;
