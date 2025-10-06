@@ -248,11 +248,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={officeSpacesPremium} 
-                    alt="Premium Office Spaces - Modern glass office tower" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={officeSpacesPremium} alt="Premium Office Spaces - Modern glass office tower" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <Building2 className="h-12 w-12 text-white mb-2" />
@@ -281,11 +277,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Invest in office spaces that don't just house teams — they inspire innovation.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=office">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -320,11 +312,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Architected with wide corridors, parking, safety systems, and elegant aesthetics, they invite growth, connection, and constant movement.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=retail">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -333,11 +321,7 @@ const BuyPage = () => {
                 </div>
                 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={commercialPlazaPremium} 
-                    alt="Commercial Plazas - Vibrant shopping plaza with modern stores" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={commercialPlazaPremium} alt="Commercial Plazas - Vibrant shopping plaza with modern stores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <Store className="h-12 w-12 text-white mb-2" />
@@ -350,11 +334,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={lifestyleCenterPremium} 
-                    alt="Lifestyle Centers - Upscale open-air shopping and dining center" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={lifestyleCenterPremium} alt="Lifestyle Centers - Upscale open-air shopping and dining center" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <Trees className="h-12 w-12 text-white mb-2" />
@@ -383,11 +363,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Smart layouts, biophilic design, solar rooftops, and pedestrian-friendly walkways ensure sustainability and luxury coexist.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=lifestyle">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -422,11 +398,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">A business park isn't just a workplace — it's a living ecosystem of ideas.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=business-park">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -435,11 +407,7 @@ const BuyPage = () => {
                 </div>
                 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={businessParkPremium} 
-                    alt="Business Parks - Expansive business park campus with corporate towers" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={businessParkPremium} alt="Business Parks - Expansive business park campus with corporate towers" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <Factory className="h-12 w-12 text-white mb-2" />
@@ -452,11 +420,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={highStreetPremium} 
-                    alt="High Street Commercial - Urban high-street with modern storefronts" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={highStreetPremium} alt="High Street Commercial - Urban high-street with modern storefronts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <ShoppingBag className="h-12 w-12 text-white mb-2" />
@@ -485,11 +449,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">For investors, these are income-generating properties with exceptional resale and rental potential.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=high-street">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -536,13 +496,7 @@ const BuyPage = () => {
           
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
             <img src={projectTimeline} alt="Project development timeline stages" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-r from-primary/80 to-secondary/80 flex items-center justify-center">
-              <div className="text-center text-white">
-                <Calendar className="h-16 w-16 mx-auto mb-4" />
-                <h3 className="text-2xl font-bold mb-2">Project Timeline Visualization</h3>
-                <p className="text-white/90">Track development progress from foundation to completion</p>
-              </div>
-            </div>
+            
           </div>
         </div>
       </section>
@@ -609,11 +563,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={institutionalInvestors} 
-                    alt="Institutional Investors - Aerial view of corporate towers and financial skyline" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={institutionalInvestors} alt="Institutional Investors - Aerial view of corporate towers and financial skyline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -641,11 +591,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Partner with us to gain access to large-scale opportunities and REIT-ready investments that redefine commercial real estate value.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/institutional-inquiry">
                       Explore Opportunities
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -676,11 +622,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Let your company operate from a landmark address built for growth, innovation, and sustainability.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/corporate-inquiry">
                       Explore Opportunities
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -689,11 +631,7 @@ const BuyPage = () => {
                 </div>
                 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={corporateOccupiers} 
-                    alt="Corporate Occupiers - Modern corporate office interior with glass walls" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={corporateOccupiers} alt="Corporate Occupiers - Modern corporate office interior with glass walls" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -709,11 +647,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={hniFamilyOffices} 
-                    alt="HNIs and Family Offices - Luxury meeting lounge with sunset skyline view" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={hniFamilyOffices} alt="HNIs and Family Offices - Luxury meeting lounge with sunset skyline view" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -741,11 +675,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">Turn your investment into a legacy of growth, purpose, and prestige.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/hni-inquiry">
                       Explore Opportunities
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -776,11 +706,7 @@ const BuyPage = () => {
                     <p className="font-semibold text-gray-900">The future of commercial investing is collaborative, clean, and data-driven — we're already there.</p>
                   </div>
                   
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/reit-inquiry">
                       Explore Opportunities
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -789,11 +715,7 @@ const BuyPage = () => {
                 </div>
                 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img 
-                    src={reitsFunds} 
-                    alt="REITs and Funds - City skyline with real estate fund graphs overlay" 
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={reitsFunds} alt="REITs and Funds - City skyline with real estate fund graphs overlay" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -856,93 +778,7 @@ const BuyPage = () => {
       </section>
 
       {/* 8. Contact & Inquiry Portal - Filterable Form */}
-      <section className="Form_BuyerInquiry py-20 bg-secondary/5">
-        <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Start Your Investment Journey</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Request detailed investment information tailored to your requirements
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <div className="relative">
-              <img src={proposalForm} alt="Investment inquiry form interface" className="w-full h-96 object-cover rounded-2xl shadow-xl" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex items-end">
-                <div className="p-8 text-white">
-                  <FileText className="h-12 w-12 mb-4" />
-                  <h3 className="text-2xl font-bold mb-2">Professional Investment Deck</h3>
-                  <p className="text-white/90">Comprehensive property analysis and financial projections</p>
-                </div>
-              </div>
-            </div>
-            
-            <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl shadow-xl">
-              <CardHeader>
-                <CardTitle className="text-2xl text-center">Investment Inquiry Form</CardTitle>
-              </CardHeader>
-              <CardContent className="space-y-6">
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Asset Type</label>
-                    <select className="w-full p-3 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm">
-                      <option>Select Asset Type</option>
-                      <option>Office Spaces</option>
-                      <option>Commercial Plazas</option>
-                      <option>Lifestyle Centers</option>
-                      <option>Business Parks</option>
-                      <option>High Street Commercial</option>
-                    </select>
-                  </div>
-                  <div>
-                    <label className="block text-sm font-medium mb-2">Development Stage</label>
-                    <select className="w-full p-3 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm">
-                      <option>Any Stage</option>
-                      <option>Ready to Occupy</option>
-                      <option>Nearing Completion</option>
-                      <option>Under Construction</option>
-                      <option>Pre-Launch</option>
-                    </select>
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Preferred Location</label>
-                  <div className="relative">
-                    <MapPin className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
-                    <input type="text" placeholder="Enter city or area" className="w-full p-3 pl-10 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm" />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Investment Budget</label>
-                  <div className="relative">
-                    <DollarSign className="absolute left-3 top-3 h-5 w-5 text-gray-400" />
-                    <input type="text" placeholder="Enter budget range" className="w-full p-3 pl-10 rounded-lg border border-gray-200 bg-white/80 backdrop-blur-sm" />
-                  </div>
-                </div>
-                
-                <div>
-                  <label className="block text-sm font-medium mb-2">Upload Documents (Optional)</label>
-                  <div className="border-2 border-dashed border-gray-200 rounded-lg p-6 text-center bg-white/50">
-                    <Upload className="h-8 w-8 mx-auto mb-2 text-gray-400" />
-                    <p className="text-sm text-gray-500">Upload investment criteria or KYC documents</p>
-                  </div>
-                </div>
-                
-                <div className="flex flex-col sm:flex-row gap-4">
-                  <Button className="flex-1 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white rounded-full py-3">
-                    Request Investment Deck
-                  </Button>
-                  <Button variant="outline" className="flex-1 rounded-full py-3 border-primary text-primary hover:bg-primary hover:text-white">
-                    Book a Consultation
-                  </Button>
-                </div>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Fixed Footer - Glassmorphic */}
       
