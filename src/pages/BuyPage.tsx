@@ -26,6 +26,10 @@ import institutionalInvestors from "@/assets/institutional-investors.jpg";
 import corporateOccupiers from "@/assets/corporate-occupiers.jpg";
 import hniFamilyOffices from "@/assets/hni-family-offices.jpg";
 import reitsFunds from "@/assets/reits-funds.jpg";
+import completedWithTenants from "@/assets/completed-with-tenants.jpg";
+import semiCompletedScaffolding from "@/assets/semi-completed-scaffolding.jpg";
+import constructionFoundation from "@/assets/construction-foundation-work.jpg";
+import constructionInvestorMeeting from "@/assets/construction-investor-meeting.jpg";
 const BuyPage = () => {
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
@@ -82,28 +86,32 @@ const BuyPage = () => {
     progress: 100,
     color: "bg-green-500",
     cta: "Buy Now",
-    badge: "🟢"
+    badge: "🟢",
+    image: completedWithTenants
   }, {
     title: "Nearing Completion",
     description: "85-95% complete with finishing work in progress",
     progress: 90,
     color: "bg-yellow-500",
     cta: "Schedule Site Visit",
-    badge: "🟡"
+    badge: "🟡",
+    image: semiCompletedScaffolding
   }, {
     title: "Under Construction",
     description: "40-70% complete with structural work ongoing",
     progress: 60,
     color: "bg-orange-500",
     cta: "Request Project Brief",
-    badge: "🟠"
+    badge: "🟠",
+    image: constructionFoundation
   }, {
     title: "Pre-Launch",
     description: "Planning stage with early bird pricing available",
     progress: 25,
     color: "bg-blue-500",
     cta: "Register Interest",
-    badge: "🔵"
+    badge: "🔵",
+    image: constructionInvestorMeeting
   }];
 
   // ESG Features Data
@@ -473,13 +481,22 @@ const BuyPage = () => {
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {developmentStages.map((stage, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1">
-                <CardHeader className="pb-2">
-                  <div className="flex items-center justify-between mb-2">
-                    <span className="text-2xl">{stage.badge}</span>
-                    <Badge variant="outline" className="text-xs">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={stage.image} 
+                    alt={stage.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
+                  />
+                  <div className="absolute top-4 right-4">
+                    <Badge variant="outline" className="text-xs bg-white/90 backdrop-blur-sm">
                       {stage.progress}% Complete
                     </Badge>
                   </div>
+                  <div className="absolute top-4 left-4">
+                    <span className="text-3xl">{stage.badge}</span>
+                  </div>
+                </div>
+                <CardHeader className="pb-2">
                   <CardTitle className="text-lg">{stage.title}</CardTitle>
                 </CardHeader>
                 <CardContent>
