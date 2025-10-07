@@ -152,9 +152,7 @@ const SellPage = () => {
             Unlock Value from Your Commercial Asset
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Direct Acquisition</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 animate-fade-in">
-            Fast evaluations, flexible deal structures, and ESG-aligned upgrades for sellers. Transform your property into a future-ready asset.
-          </p>
+          
           <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
             <Link to="#inquiry-form">
               Submit Your Property for Evaluation 
@@ -231,11 +229,7 @@ const SellPage = () => {
             <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-auto overflow-hidden">
-                  <img 
-                    src={retailFloorBranded} 
-                    alt="Modern commercial tower with retail and office floors" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
+                  <img src={retailFloorBranded} alt="Modern commercial tower with retail and office floors" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Store className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
@@ -279,11 +273,7 @@ const SellPage = () => {
                   </Button>
                 </div>
                 <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
-                  <img 
-                    src={shoppingArcadeTraffic} 
-                    alt="Vibrant retail plaza with glass-front stores" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
+                  <img src={shoppingArcadeTraffic} alt="Vibrant retail plaza with glass-front stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
                   <ShoppingBag className="absolute top-6 right-6 h-12 w-12 text-white" />
                 </div>
@@ -294,11 +284,7 @@ const SellPage = () => {
             <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-auto overflow-hidden">
-                  <img 
-                    src={highStreetFrontage} 
-                    alt="Bustling urban high street with boutique stores" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
+                  <img src={highStreetFrontage} alt="Bustling urban high street with boutique stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Building2 className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
@@ -340,11 +326,7 @@ const SellPage = () => {
                   </Button>
                 </div>
                 <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
-                  <img 
-                    src={lifestyleCenterGreen} 
-                    alt="Contemporary business park with landscaped greenery" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
+                  <img src={lifestyleCenterGreen} alt="Contemporary business park with landscaped greenery" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
                   <Trees className="absolute top-6 right-6 h-12 w-12 text-white" />
                 </div>
@@ -355,11 +337,7 @@ const SellPage = () => {
             <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-auto overflow-hidden">
-                  <img 
-                    src={completedWithTenants} 
-                    alt="Futuristic mixed-use complex with offices and retail zones" 
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
-                  />
+                  <img src={completedWithTenants} alt="Futuristic mixed-use complex with offices and retail zones" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Blocks className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
