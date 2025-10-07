@@ -216,33 +216,171 @@ const SellPage = () => {
         </div>
       </section>
 
-      {/* 3. Asset Type Categories - Icon-Based Cards */}
-      <section className="AssetCard_Categories py-20">
+      {/* 3. Asset Type Categories - Premium Acquisition Focus */}
+      <section className="AssetCard_Categories py-24 bg-gradient-to-b from-background to-secondary/5">
         <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Asset Type Categories</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We specialize in various commercial property types across different markets and development stages
+          <div className="text-center mb-16 max-w-4xl mx-auto">
+            <h2 className="text-4xl md:text-6xl font-bold text-primary mb-6">Asset Type Categories</h2>
+            <p className="text-xl md:text-2xl text-muted-foreground leading-relaxed">
+              We acquire and enhance diverse commercial property types across markets — transforming existing assets into high-performance investment opportunities.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {assetTypes.map((asset, index) => <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden" style={{
-            animationDelay: `${index * 100}ms`
-          }}>
-                <div className="relative h-48 overflow-hidden">
-                  <img src={asset.image} alt={asset.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                  <asset.icon className="absolute top-4 left-4 h-8 w-8 text-white group-hover:text-solar transition-colors duration-300" />
+          <div className="space-y-16">
+            {/* 1. Retail & Office Floors */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-80 md:h-auto overflow-hidden">
+                  <img 
+                    src={retailFloorBranded} 
+                    alt="Modern commercial tower with retail and office floors" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+                  <Store className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
-                <CardContent className="p-6">
-                  <h3 className="font-semibold mb-2 text-primary group-hover:text-solar transition-colors">{asset.title}</h3>
-                  <p className="text-sm text-muted-foreground mb-4">{asset.description}</p>
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300">
-                    Submit This Asset Type
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold text-primary mb-4">Retail & Office Floors</h3>
+                  <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
+                    <p>We specialize in acquiring Retail & Office Floors from third-party owners and repositioning them into high-performing commercial assets.</p>
+                    <p>Our expert team evaluates prime properties with strong infrastructure but underutilized potential.</p>
+                    <p>We enhance these spaces through architectural upgrades, branding, and market repositioning.</p>
+                    <p>Retail floors are redesigned for visibility and tenant appeal, while office floors are modernized for corporate leasing.</p>
+                    <p>From fire safety compliance to smart office automation, we bring every acquired property up to current market standards.</p>
+                    <p>Our network of investors, corporate tenants, and REIT partners ensures profitable exits and steady income streams.</p>
+                    <p>Each acquisition undergoes a full due-diligence cycle — zoning, valuation, and legal verification — ensuring security and transparency.</p>
+                    <p className="font-semibold text-primary">We don't just buy assets; we transform them into next-gen commercial experiences.</p>
+                  </div>
+                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                    Explore Opportunities
+                    <ArrowRight className="ml-2 h-5 w-5" />
                   </Button>
-                </CardContent>
-              </Card>)}
+                </div>
+              </div>
+            </Card>
+
+            {/* 2. Shopping Arcades / Plazas */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold text-primary mb-4">Shopping Arcades / Plazas</h3>
+                  <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
+                    <p>Our team identifies Shopping Arcades and Plazas that have location advantage but need modern repositioning.</p>
+                    <p>We acquire such properties, revitalize their façades, upgrade infrastructure, and curate an improved tenant mix.</p>
+                    <p>By optimizing visibility, accessibility, and experience, we turn underperforming retail zones into thriving commercial hubs.</p>
+                    <p>We collaborate with leasing consultants, retail strategists, and designers to rebrand and remarket the properties.</p>
+                    <p>Every acquisition is backed by market intelligence and ROI projection, ensuring a profitable turnaround.</p>
+                    <p>Our focus is on unlocking unrealized potential — making old plazas relevant again in a fast-evolving retail ecosystem.</p>
+                    <p className="font-semibold text-primary">From new lighting systems to smart navigation, every improvement enhances both footfall and financial return.</p>
+                  </div>
+                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                    Explore Opportunities
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+                <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
+                  <img 
+                    src={shoppingArcadeTraffic} 
+                    alt="Vibrant retail plaza with glass-front stores" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
+                  <ShoppingBag className="absolute top-6 right-6 h-12 w-12 text-white" />
+                </div>
+              </div>
+            </Card>
+
+            {/* 3. High Street Commercial Units */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-80 md:h-auto overflow-hidden">
+                  <img 
+                    src={highStreetFrontage} 
+                    alt="Bustling urban high street with boutique stores" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+                  <Building2 className="absolute top-6 left-6 h-12 w-12 text-white" />
+                </div>
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold text-primary mb-4">High Street Commercial Units</h3>
+                  <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
+                    <p>We acquire High Street Commercial Units in prime urban corridors and elevate them through design and functionality upgrades.</p>
+                    <p>Many such spaces have unmatched visibility but lack modern appeal — that's where our expertise steps in.</p>
+                    <p>We refurbish interiors, update façades, and integrate smart systems to attract high-value tenants and investors.</p>
+                    <p>Our repositioned high street assets cater to fashion brands, jewelers, and upscale retailers seeking prestige and performance.</p>
+                    <p>Through targeted marketing and digital presence, we amplify property value and ensure rapid re-leasing or resale.</p>
+                    <p className="font-semibold text-primary">We bridge the gap between potential and perfection — redefining what high street commercial means in the modern market.</p>
+                  </div>
+                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                    Explore Opportunities
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </Card>
+
+            {/* 4. Lifestyle Centers / Business Parks */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold text-primary mb-4">Lifestyle Centers / Business Parks</h3>
+                  <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
+                    <p>We strategically acquire Lifestyle Centers and Business Parks that show structural integrity but need modernization and management refinement.</p>
+                    <p>Our process includes sustainability retrofits, digital facility upgrades, and workspace redesigns.</p>
+                    <p>By integrating EV infrastructure, renewable energy, and landscaped amenities, we transform properties into holistic ecosystems.</p>
+                    <p>We attract long-term corporate tenants, wellness brands, and tech companies seeking eco-forward campuses.</p>
+                    <p>Our acquisitions become models of regeneration — blending sustainability with revenue growth.</p>
+                    <p>We collaborate with REITs, institutional buyers, and global investors to scale and reimagine these commercial communities.</p>
+                    <p className="font-semibold text-primary">Every property becomes more than a workplace — it evolves into a sustainable lifestyle environment.</p>
+                  </div>
+                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                    Explore Opportunities
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+                <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
+                  <img 
+                    src={lifestyleCenterGreen} 
+                    alt="Contemporary business park with landscaped greenery" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
+                  <Trees className="absolute top-6 right-6 h-12 w-12 text-white" />
+                </div>
+              </div>
+            </Card>
+
+            {/* 5. Mixed-Use Commercial Blocks */}
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
+              <div className="grid md:grid-cols-2 gap-0">
+                <div className="relative h-80 md:h-auto overflow-hidden">
+                  <img 
+                    src={completedWithTenants} 
+                    alt="Futuristic mixed-use complex with offices and retail zones" 
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
+                  <Blocks className="absolute top-6 left-6 h-12 w-12 text-white" />
+                </div>
+                <div className="p-8 md:p-12 flex flex-col justify-center">
+                  <h3 className="text-3xl font-bold text-primary mb-4">Mixed-Use Commercial Blocks</h3>
+                  <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
+                    <p>Our Mixed-Use Commercial Block acquisitions are designed for high-impact redevelopment and investment growth.</p>
+                    <p>We identify properties with multi-segment potential — retail, office, leisure — and reposition them with modern architecture and technology.</p>
+                    <p>Through façade redesigns, interior optimization, and sustainable upgrades, we create renewed commercial ecosystems.</p>
+                    <p>Each project is backed by deep valuation metrics, ensuring that every acquired asset delivers scalable returns.</p>
+                    <p>We work with fund managers, developers, and institutional partners to execute sales, leases, or REIT integrations.</p>
+                    <p>Every rebranded property tells a story of transformation — turning aging structures into icons of modern urban life.</p>
+                    <p className="font-semibold text-primary">With every block we touch, we amplify value, elevate aesthetics, and redefine what commercial success looks like.</p>
+                  </div>
+                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
+                    Explore Opportunities
+                    <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </div>
+              </div>
+            </Card>
           </div>
         </div>
       </section>
