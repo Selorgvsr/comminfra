@@ -8,8 +8,9 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
 import modernBusinessComplexImage from "@/assets/modern-business-complex.jpg";
-import commercialInteriorImage from "@/assets/commercial-office-interior.jpg";
+import commercialInteriorImage from "@/assets/custom-space-planning.jpg";
 import materialPaletteImage from "@/assets/material-palette-showcase.jpg";
+import smartInfrastructureImage from "@/assets/smart-infrastructure-blueprint.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
 import rainwaterHarvestingImage from "@/assets/rainwater-harvesting-system.jpg";
@@ -23,26 +24,62 @@ const BuildAssetPage = () => {
     {
       icon: Building,
       title: "Façade Design",
-      description: "Modern, modular, brand-ready",
+      content: `Our Façade Designs are where art meets engineering — a blend of geometry, light, and material finesse.
+Each structure we create is wrapped in a skin of sophistication — designed to stand out yet complement the skyline.
+We merge aesthetics with performance, optimizing natural light, ventilation, and energy efficiency.
+Curtain walls, aluminum panels, and glass fins are crafted with precision and durability.
+Our façades adapt to local climate conditions, ensuring sustainability and reduced heat gain.
+Every design is tested through simulation for solar impact, wind flow, and long-term performance.
+We collaborate with leading façade consultants and global design experts to achieve timeless appeal.
+From reflective glass towers to textured concrete exteriors, our approach celebrates innovation.
+Lighting integration transforms each façade into an architectural statement by night.
+In every project, the façade becomes a visual identity — iconic, efficient, and future-ready.`,
       image: commercialFacadeImage
     },
     {
       icon: Settings,
       title: "Interior Layouts",
-      description: "Ergonomic, scalable, tenant-adaptable",
+      content: `Our Interior Layouts are designed with purpose — merging comfort, flexibility, and brand personality.
+Spaces are planned for flow, human interaction, and operational efficiency.
+We create layouts that adapt — from open office floors to boutique retail showrooms.
+Natural light, spatial rhythm, and acoustics define our design principles.
+Every inch of space is optimized for productivity, movement, and mood.
+Our design team studies behavioral patterns, user journeys, and work dynamics.
+Modular partitions, adaptable furniture, and ergonomic planning define the core layout.
+We balance luxury with function — ensuring aesthetic harmony and operational ease.
+Sustainability guides our design — from eco-materials to energy-efficient lighting.
+Each space is curated to elevate user experience while maintaining timeless visual grace.`,
       image: commercialInteriorImage
     },
     {
       icon: Leaf,
       title: "Material Palette",
-      description: "Premium finishes, ESG-compliant sourcing",
+      content: `Our Material Palette defines the sensory soul of every building we create.
+We curate materials that balance elegance, durability, and environmental responsibility.
+From glass and steel to bamboo and reclaimed wood — every texture tells a story.
+Each project's palette is chosen for its tactile feel, visual tone, and performance value.
+We source materials locally and sustainably, supporting green certification goals.
+Our design teams test each material for acoustic performance, thermal comfort, and longevity.
+We embrace both classic and contemporary finishes — polished marble, textured concrete, metallic coatings.
+Through AI-assisted selection tools, we simulate how light and time affect each surface.
+Every palette reflects the brand identity of the project — refined, bold, or organic.
+The result: buildings that don't just look beautiful, but feel timeless.`,
       image: materialPaletteImage
     },
     {
       icon: Zap,
       title: "AI-Adaptive Design",
-      description: "Smart lighting, occupancy sensors, energy optimization",
-      image: smartDashboardImage
+      content: `Our AI-Adaptive Design process blends technology with creativity to shape the future of architecture.
+We use AI algorithms to optimize layouts, predict material behavior, and simulate design outcomes.
+Machine learning tools evaluate daylight, airflow, and spatial efficiency before construction begins.
+Design intelligence meets human intuition — resulting in smarter, faster, and more sustainable solutions.
+Adaptive systems continuously refine design choices based on environmental and operational data.
+We integrate IoT and BIM data for seamless collaboration and real-time design iteration.
+AI-driven façade morphing enhances building performance while maintaining aesthetics.
+Each project becomes a living model — learning, adjusting, and evolving over time.
+This innovation-driven process reduces waste, increases ROI, and enhances occupant comfort.
+AI doesn't replace creativity — it amplifies it, transforming architecture into intelligent art.`,
+      image: smartInfrastructureImage
     }
   ];
 
@@ -158,26 +195,43 @@ const BuildAssetPage = () => {
       </section>
 
       {/* Architectural Design & Aesthetic Excellence */}
-      <section className="architectural_design_section py-20 px-4">
+      <section className="architectural_design_section py-20 px-4 bg-gradient-to-b from-background to-muted/20">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Architectural Excellence</h2>
-            <p className="text-xl text-muted-foreground">Modern design meets functional innovation</p>
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-gold bg-clip-text text-transparent">
+              Architectural Excellence
+            </h2>
+            <p className="text-xl text-muted-foreground font-light">Modern design meets functional innovation</p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
             {architecturalFeatures.map((feature, index) => (
-              <Card key={index} className="architectural_feature_card group hover:shadow-lg transition-all duration-300">
-                <div className="relative h-48 overflow-hidden rounded-t-lg">
+              <Card 
+                key={index} 
+                className="architectural_feature_card group hover:shadow-2xl transition-all duration-500 border-gold/20 overflow-hidden animate-fade-in"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className="relative h-80 overflow-hidden">
                   <img 
                     src={feature.image} 
                     alt={feature.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
                 </div>
-                <CardHeader className="text-center">
-                  <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
+                <CardHeader className="p-8">
+                  <div className="flex items-center gap-4 mb-4">
+                    <feature.icon className="h-8 w-8 text-primary flex-shrink-0" strokeWidth={1.5} />
+                    <CardTitle className="text-2xl font-semibold">{feature.title}</CardTitle>
+                  </div>
+                  <CardDescription className="text-base leading-relaxed whitespace-pre-line text-muted-foreground">
+                    {feature.content}
+                  </CardDescription>
+                  <Button 
+                    variant="outline" 
+                    className="mt-6 border-primary/50 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                  >
+                    Explore Design Approach
+                  </Button>
                 </CardHeader>
               </Card>
             ))}
