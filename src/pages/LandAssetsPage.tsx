@@ -225,20 +225,13 @@ const LandAssetsPage = () => {
           </div>
           
           <div className="space-y-16">
-            {landCategories.map((category, index) => (
-              <Card 
-                key={index} 
-                className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
+            {landCategories.map((category, index) => <Card key={index} className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in" style={{
+            animationDelay: `${index * 150}ms`
+          }}>
                 <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
                   {/* Image Section */}
                   <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
-                    <img 
-                      src={category.image} 
-                      alt={category.title} 
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
-                    />
+                    <img src={category.image} alt={category.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
                     <div className="absolute top-8 left-8">
                       <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-colors duration-500">
@@ -258,11 +251,7 @@ const LandAssetsPage = () => {
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
                       {category.description}
                     </p>
-                    <Button 
-                      size="lg" 
-                      className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500"
-                      asChild
-                    >
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500" asChild>
                       <Link to={category.link} className="flex items-center gap-2">
                         {category.cta}
                         <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -270,8 +259,7 @@ const LandAssetsPage = () => {
                     </Button>
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -362,35 +350,7 @@ const LandAssetsPage = () => {
       </section>
 
       {/* 6. Value-Added Land Strategy - ESG & Ownership Models */}
-      <section className="ValueStrategy_ESGOwnership py-20 bg-secondary/5">
-        <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">ESG & Ownership Models</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Sustainable development features and flexible investment structures
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {esgFeatures.map((feature, index) => <Card key={index} className="text-center p-6 hover:shadow-lg transition-all duration-300 bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1">
-                <feature.icon className="h-12 w-12 text-primary mx-auto mb-3 group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
-                <h3 className="font-semibold mb-2">{feature.title}</h3>
-                <p className="text-sm text-muted-foreground">{feature.description}</p>
-              </Card>)}
-          </div>
-          
-          <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img src={smartInfrastructureBlueprint} alt="Smart infrastructure blueprint with ESG features" className="w-full h-64 object-cover" />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
-              <div className="p-6 text-white">
-                <Sun className="h-8 w-8 mb-2" />
-                <h3 className="text-xl font-bold mb-1">ESG-Aligned Infrastructure</h3>
-                <p className="text-white/90">Sustainable features that enhance long-term value</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
+      
 
 
       {/* 8. FAQs for Land Buyers - Accordion Component */}
