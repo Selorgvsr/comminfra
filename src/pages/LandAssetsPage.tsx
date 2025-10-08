@@ -4,7 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import { Building2, Store, TreePine, Factory, MapPin, Ruler, Zap, Sun, FileText, Search, ArrowRight, CheckCircle, Upload, DollarSign, Calendar, Target, Layers } from "lucide-react";
+import { Building2, Store, TreePine, Factory, MapPin, Ruler, Zap, Sun, FileText, Search, ArrowRight, CheckCircle, Upload, DollarSign, Calendar, Target, Layers, TrendingUp, Compass } from "lucide-react";
 
 // Image imports
 import landToCommercial from "@/assets/land-to-commercial.jpg";
@@ -31,36 +31,36 @@ const LandAssetsPage = () => {
   const landCategories = [{
     icon: Building2,
     title: "Downtown / City Core",
-    description: "Prime urban plots with high development potential",
-    cta: "Explore City Plots",
+    description: "Our Downtown / City Core land parcels are the epicenter of opportunity — positioned within the most valuable and visible zones of urban life. Perfect for premium office towers, retail blocks, and hospitality developments, these lands offer unmatched connectivity and prestige. With established infrastructure — roads, power, and transit — every square foot here carries exponential potential. We assist in selling or acquiring core-zone assets with verified documentation, zoning compliance, and investor support. When you invest in city-core land, you invest in brand visibility, business growth, and long-term appreciation.",
+    cta: "View Land Parcels",
     link: "/projects?type=downtown",
     image: downtownCityCoreImage
   }, {
     icon: Store,
     title: "Mall-Adjacent Parcels",
-    description: "Strategic locations near retail hubs",
-    cta: "View Retail-Ready Land",
+    description: "Our Mall-Adjacent Land Parcels are strategically positioned next to established retail ecosystems — where high footfall meets future value. These plots are perfect for developing commercial extensions, boutique showrooms, restaurants, and lifestyle outlets. Investors benefit from ready infrastructure, public visibility, and synergy with existing retail giants. We handle end-to-end sale preparation — from valuation to buyer targeting — ensuring your land captures its true commercial worth. In every successful city, land beside a mall becomes tomorrow's most lucrative investment.",
+    cta: "View Land Parcels",
     link: "/projects?type=mall-adjacent",
     image: mallAdjacentImage
   }, {
-    icon: Factory,
+    icon: Building2,
     title: "Office Zone Land",
-    description: "Commercial-grade plots for office development",
-    cta: "Discover Office-Grade Land",
+    description: "Our Office Zone Lands are strategically located within or near established business districts — the heart of corporate expansion. These plots are zoned and ready for high-rise developments, IT parks, or coworking towers. Designed for institutional buyers and developers, each parcel offers high utility value, excellent access, and sustainable infrastructure. We facilitate seamless transactions, legal due diligence, and development partnerships for large-scale office land sales. When you sell or invest in office zone land, you're not just trading real estate — you're shaping the next corporate skyline.",
+    cta: "View Land Parcels",
     link: "/projects?type=office-zone",
     image: officeZoneImage
   }, {
     icon: Layers,
     title: "Mixed-Use Potential",
-    description: "Versatile plots for integrated developments",
-    cta: "Check Mixed-Use Sites",
+    description: "Our Mixed-Use Potential Lands are the foundation for tomorrow's integrated cities — where retail, workspace, and lifestyle coexist. Ideal for developers envisioning multi-purpose hubs, these lands come with high flexibility and zoning adaptability. We help you position these assets for maximum investor interest — from architectural feasibility to market-driven valuation. Every mixed-use parcel is a blank canvas of possibilities — a chance to redefine how people live, work, and connect. Whether for sale or joint venture, these are future-ready investment opportunities waiting to be built upon.",
+    cta: "View Land Parcels",
     link: "/projects?type=mixed-use",
     image: mixedUseImage
   }, {
-    icon: TreePine,
+    icon: Compass,
     title: "Peripheral Growth Zones",
-    description: "Expansion areas with future growth potential",
-    cta: "Browse Expansion Areas",
+    description: "Our Peripheral Growth Zone Lands are the smart investor's move — affordable today, priceless tomorrow. These plots sit in the path of planned urban expansion, industrial corridors, or upcoming infrastructure projects. We specialize in identifying and marketing lands with strong appreciation potential, offering clear documentation and easy access to utilities. Perfect for future commercial parks, logistics hubs, or tech campuses — these lands promise exponential value in the next growth wave. Invest now, develop later — your foresight builds tomorrow's cityscape.",
+    cta: "View Land Parcels",
     link: "/projects?type=peripheral",
     image: peripheralGrowthImage
   }];
@@ -209,36 +209,69 @@ const LandAssetsPage = () => {
         </div>
       </section>
 
-      {/* 2. Land Category Segmentation - Icon-Based Cards */}
-      <section className="LandCategory_Segmentation py-20 bg-secondary/5">
+      {/* 2. Land Category Segmentation - Luxurious Premium Cards */}
+      <section className="LandCategory_Segmentation py-24 bg-gradient-to-b from-white via-secondary/5 to-white">
         <div className="container px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Land Categories</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Discover prime land opportunities across strategic commercial zones
+          <div className="text-center mb-20">
+            <Badge className="mb-6 bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2">
+              Premium Land Opportunities
+            </Badge>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              Land Categories
+            </h2>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Discover prime land opportunities across strategic commercial zones designed for growth, visibility, and long-term value.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
-            {landCategories.map((category, index) => <Card key={index} className="group hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 bg-white/60 backdrop-blur-sm border border-white/20 rounded-2xl overflow-hidden animate-fade-in" style={{
-            animationDelay: `${index * 100}ms`
-          }}>
-                <CardHeader className="text-center pb-2">
-                  <div className="relative mb-4">
-                    <img src={category.image} alt={category.title} className="w-full h-32 object-cover rounded-lg" />
-                    <div className="absolute inset-0 bg-primary/20 rounded-lg flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <category.icon className="h-12 w-12 text-white" />
+          <div className="space-y-16">
+            {landCategories.map((category, index) => (
+              <Card 
+                key={index} 
+                className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in"
+                style={{ animationDelay: `${index * 150}ms` }}
+              >
+                <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+                  {/* Image Section */}
+                  <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
+                    <img 
+                      src={category.image} 
+                      alt={category.title} 
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" 
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
+                    <div className="absolute top-8 left-8">
+                      <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-colors duration-500">
+                        <category.icon className="h-8 w-8 text-white" />
+                      </div>
                     </div>
                   </div>
-                  <CardTitle className="text-lg group-hover:text-primary transition-colors">{category.title}</CardTitle>
-                </CardHeader>
-                <CardContent>
-                  <p className="text-sm text-muted-foreground mb-4">{category.description}</p>
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all duration-300" asChild>
-                    <Link to={category.link}>{category.cta}</Link>
-                  </Button>
-                </CardContent>
-              </Card>)}
+
+                  {/* Content Section */}
+                  <div className={`flex flex-col justify-center p-10 md:p-14 ${index % 2 === 1 ? 'md:col-start-1' : ''}`}>
+                    <Badge className="w-fit mb-4 bg-gradient-to-r from-primary/10 to-solar/10 text-primary border-none font-semibold px-4 py-1.5">
+                      Category {index + 1}
+                    </Badge>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary group-hover:text-commercial transition-colors duration-500">
+                      {category.title}
+                    </h3>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+                      {category.description}
+                    </p>
+                    <Button 
+                      size="lg" 
+                      className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500"
+                      asChild
+                    >
+                      <Link to={category.link} className="flex items-center gap-2">
+                        {category.cta}
+                        <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </Card>
+            ))}
           </div>
         </div>
       </section>
