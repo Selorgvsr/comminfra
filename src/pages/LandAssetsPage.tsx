@@ -192,9 +192,7 @@ const LandAssetsPage = () => {
             Explore High-Value Land Assets 
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> for Commercial Development</span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 animate-fade-in">
-            Downtown plots, mall-adjacent parcels, office-ready zones with ESG alignment and investment-grade potential
-          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl group" asChild>
               <Link to="/projects?category=land">
