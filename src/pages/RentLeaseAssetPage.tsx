@@ -199,39 +199,52 @@ const RentLeaseAssetPage = () => {
       </section>
 
       {/* Find Your Perfect Space - Tenant Type Segmentation */}
-      <section className="tenant_type_segmentation_section py-20 bg-gradient-to-b from-background to-muted/30">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+      <section className="tenant_type_segmentation_section py-24 bg-gradient-to-b from-white via-secondary/5 to-white">
+        <div className="container px-4">
+          <div className="text-center mb-20">
+            <Badge className="mb-6 bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2">
+              Premium Commercial Spaces
+            </Badge>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
               Find Your Perfect Space
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Discover commercial spaces designed for your specific business needs
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {tenantTypes.map((type, index) => <Card key={index} className="tenant_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
-                <div className="relative h-64 overflow-hidden">
-                  <img src={type.image} alt={type.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
-                  <div className={`absolute top-4 right-4 w-14 h-14 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center backdrop-blur-sm shadow-lg`}>
-                    <type.icon className="w-7 h-7 text-white" />
+          <div className="space-y-16">
+            {tenantTypes.map((type, index) => <Card key={index} className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in" style={{
+            animationDelay: `${index * 150}ms`
+          }}>
+                <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+                  {/* Image Section */}
+                  <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
+                    <img src={type.image} alt={type.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
+                    <div className="absolute top-8 left-8">
+                      <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-colors duration-500">
+                        <type.icon className="h-8 w-8 text-white" />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Content Section */}
+                  <div className={`flex flex-col justify-center p-10 md:p-14 ${index % 2 === 1 ? 'md:col-start-1' : ''}`}>
+                    <Badge className="w-fit mb-4 bg-gradient-to-r from-primary/10 to-solar/10 text-primary border-none font-semibold px-4 py-1.5">
+                      Category {index + 1}
+                    </Badge>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary group-hover:text-commercial transition-colors duration-500">
+                      {type.title}
+                    </h3>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+                      {type.description}
+                    </p>
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500">
+                      View Space
+                    </Button>
                   </div>
                 </div>
-                <CardHeader className="pb-3">
-                  <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
-                    {type.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors leading-relaxed line-clamp-6">
-                    {type.description}
-                  </p>
-                  <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white shadow-lg">
-                    View Space
-                  </Button>
-                </CardContent>
               </Card>)}
           </div>
         </div>
