@@ -18,13 +18,11 @@ import evChargingImage from "@/assets/ev-charging-parking.jpg";
 import ecoBusinessParkImage from "@/assets/eco-business-park-parking.jpg";
 import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
-
 const BuildAssetPage = () => {
-  const architecturalFeatures = [
-    {
-      icon: Building,
-      title: "Façade Design",
-      content: `Our Façade Designs are where art meets engineering — a blend of geometry, light, and material finesse.
+  const architecturalFeatures = [{
+    icon: Building,
+    title: "Façade Design",
+    content: `Our Façade Designs are where art meets engineering — a blend of geometry, light, and material finesse.
 Each structure we create is wrapped in a skin of sophistication — designed to stand out yet complement the skyline.
 We merge aesthetics with performance, optimizing natural light, ventilation, and energy efficiency.
 Curtain walls, aluminum panels, and glass fins are crafted with precision and durability.
@@ -34,12 +32,11 @@ We collaborate with leading façade consultants and global design experts to ach
 From reflective glass towers to textured concrete exteriors, our approach celebrates innovation.
 Lighting integration transforms each façade into an architectural statement by night.
 In every project, the façade becomes a visual identity — iconic, efficient, and future-ready.`,
-      image: commercialFacadeImage
-    },
-    {
-      icon: Settings,
-      title: "Interior Layouts",
-      content: `Our Interior Layouts are designed with purpose — merging comfort, flexibility, and brand personality.
+    image: commercialFacadeImage
+  }, {
+    icon: Settings,
+    title: "Interior Layouts",
+    content: `Our Interior Layouts are designed with purpose — merging comfort, flexibility, and brand personality.
 Spaces are planned for flow, human interaction, and operational efficiency.
 We create layouts that adapt — from open office floors to boutique retail showrooms.
 Natural light, spatial rhythm, and acoustics define our design principles.
@@ -49,12 +46,11 @@ Modular partitions, adaptable furniture, and ergonomic planning define the core 
 We balance luxury with function — ensuring aesthetic harmony and operational ease.
 Sustainability guides our design — from eco-materials to energy-efficient lighting.
 Each space is curated to elevate user experience while maintaining timeless visual grace.`,
-      image: commercialInteriorImage
-    },
-    {
-      icon: Leaf,
-      title: "Material Palette",
-      content: `Our Material Palette defines the sensory soul of every building we create.
+    image: commercialInteriorImage
+  }, {
+    icon: Leaf,
+    title: "Material Palette",
+    content: `Our Material Palette defines the sensory soul of every building we create.
 We curate materials that balance elegance, durability, and environmental responsibility.
 From glass and steel to bamboo and reclaimed wood — every texture tells a story.
 Each project's palette is chosen for its tactile feel, visual tone, and performance value.
@@ -64,12 +60,11 @@ We embrace both classic and contemporary finishes — polished marble, textured 
 Through AI-assisted selection tools, we simulate how light and time affect each surface.
 Every palette reflects the brand identity of the project — refined, bold, or organic.
 The result: buildings that don't just look beautiful, but feel timeless.`,
-      image: materialPaletteImage
-    },
-    {
-      icon: Zap,
-      title: "AI-Adaptive Design",
-      content: `Our AI-Adaptive Design process blends technology with creativity to shape the future of architecture.
+    image: materialPaletteImage
+  }, {
+    icon: Zap,
+    title: "AI-Adaptive Design",
+    content: `Our AI-Adaptive Design process blends technology with creativity to shape the future of architecture.
 We use AI algorithms to optimize layouts, predict material behavior, and simulate design outcomes.
 Machine learning tools evaluate daylight, airflow, and spatial efficiency before construction begins.
 Design intelligence meets human intuition — resulting in smarter, faster, and more sustainable solutions.
@@ -79,108 +74,73 @@ AI-driven façade morphing enhances building performance while maintaining aesth
 Each project becomes a living model — learning, adjusting, and evolving over time.
 This innovation-driven process reduces waste, increases ROI, and enhances occupant comfort.
 AI doesn't replace creativity — it amplifies it, transforming architecture into intelligent art.`,
-      image: smartInfrastructureImage
-    }
-  ];
-
-  const safetyFeatures = [
-    "Earthquake-Resistant Framework",
-    "Fire Safety Systems: sprinklers, smoke detectors, evacuation protocols",
-    "Load-Bearing & Wind Resistance Metrics",
-    "Compliance: NBC, IS Codes, global safety standards"
-  ];
-
-  const esgFeatures = [
-    {
-      icon: "🌞",
-      title: "Solar Panel Integration",
-      description: "Renewable energy generation with grid-tie capabilities",
-      image: rooftopSolarImage
-    },
-    {
-      icon: "♻️",
-      title: "Rainwater Harvesting",
-      description: "Greywater recycling and water conservation systems",
-      image: rainwaterHarvestingImage
-    },
-    {
-      icon: "🌿",
-      title: "Biophilic Design",
-      description: "Garden zones and nature-integrated spaces",
-      image: commercialInteriorImage
-    },
-    {
-      icon: "📉",
-      title: "Carbon Credit Eligibility",
-      description: "ESG reporting and sustainability certifications",
-      image: smartDashboardImage
-    }
-  ];
-
-  const infrastructureFeatures = [
-    {
-      icon: Car,
-      title: "Multi-level Car Parking",
-      description: "EV charging stations and smart parking solutions",
-      image: evChargingImage
-    },
-    {
-      icon: Zap,
-      title: "Redundant Connections",
-      description: "Electric & water backup systems",
-      image: smartDashboardImage
-    },
-    {
-      icon: Shield,
-      title: "Access Control",
-      description: "Internal roads and security infrastructure",
-      image: commercialFacadeImage
-    },
-    {
-      icon: Settings,
-      title: "Smart Office Tech",
-      description: "IoT, AI, and cloud-integrated systems",
-      image: smartDashboardImage
-    }
-  ];
-
-  const addOnCapabilities = [
-    "Modular Expansion Zones",
-    "Vertical Extension Ready (additional floors)",
-    "AI-Driven Building Management Systems (BMS)",
-    "REIT-Grade Documentation & Investor Dashboards"
-  ];
-
-  const faqItems = [
-    {
-      question: "What safety certifications are included?",
-      answer: "All buildings include NBC compliance, IS code certifications, fire safety approvals, and earthquake resistance validations as per Indian building standards."
-    },
-    {
-      question: "Can interiors be customized?",
-      answer: "Yes, our modular design allows for flexible interior configurations to meet specific tenant requirements while maintaining structural integrity."
-    },
-    {
-      question: "Is solar generation metered separately?",
-      answer: "Solar installations include separate metering for renewable energy generation, allowing for carbon credit tracking and potential revenue sharing."
-    }
-  ];
-
-  return (
-    <div className="min-h-screen bg-background">
+    image: smartInfrastructureImage
+  }];
+  const safetyFeatures = ["Earthquake-Resistant Framework", "Fire Safety Systems: sprinklers, smoke detectors, evacuation protocols", "Load-Bearing & Wind Resistance Metrics", "Compliance: NBC, IS Codes, global safety standards"];
+  const esgFeatures = [{
+    icon: "🌞",
+    title: "Solar Panel Integration",
+    description: "Renewable energy generation with grid-tie capabilities",
+    image: rooftopSolarImage
+  }, {
+    icon: "♻️",
+    title: "Rainwater Harvesting",
+    description: "Greywater recycling and water conservation systems",
+    image: rainwaterHarvestingImage
+  }, {
+    icon: "🌿",
+    title: "Biophilic Design",
+    description: "Garden zones and nature-integrated spaces",
+    image: commercialInteriorImage
+  }, {
+    icon: "📉",
+    title: "Carbon Credit Eligibility",
+    description: "ESG reporting and sustainability certifications",
+    image: smartDashboardImage
+  }];
+  const infrastructureFeatures = [{
+    icon: Car,
+    title: "Multi-level Car Parking",
+    description: "EV charging stations and smart parking solutions",
+    image: evChargingImage
+  }, {
+    icon: Zap,
+    title: "Redundant Connections",
+    description: "Electric & water backup systems",
+    image: smartDashboardImage
+  }, {
+    icon: Shield,
+    title: "Access Control",
+    description: "Internal roads and security infrastructure",
+    image: commercialFacadeImage
+  }, {
+    icon: Settings,
+    title: "Smart Office Tech",
+    description: "IoT, AI, and cloud-integrated systems",
+    image: smartDashboardImage
+  }];
+  const addOnCapabilities = ["Modular Expansion Zones", "Vertical Extension Ready (additional floors)", "AI-Driven Building Management Systems (BMS)", "REIT-Grade Documentation & Investor Dashboards"];
+  const faqItems = [{
+    question: "What safety certifications are included?",
+    answer: "All buildings include NBC compliance, IS code certifications, fire safety approvals, and earthquake resistance validations as per Indian building standards."
+  }, {
+    question: "Can interiors be customized?",
+    answer: "Yes, our modular design allows for flexible interior configurations to meet specific tenant requirements while maintaining structural integrity."
+  }, {
+    question: "Is solar generation metered separately?",
+    answer: "Solar installations include separate metering for renewable energy generation, allowing for carbon credit tracking and potential revenue sharing."
+  }];
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
-      <section 
-        className="build_asset_hero_banner relative min-h-screen flex items-center justify-center bg-cover bg-center"
-        style={{ backgroundImage: `url(${commercialFacadeImage})` }}
-      >
+      <section className="build_asset_hero_banner relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{
+      backgroundImage: `url(${commercialFacadeImage})`
+    }}>
         <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
         <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
             Built for Business,<br />Designed for Impact
           </h1>
-          <p className="text-xl md:text-2xl mb-8 opacity-90">
-            From façade to fire safety, every detail is engineered for performance
-          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="hero bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
               <Eye className="mr-2 h-5 w-5" />
@@ -210,20 +170,13 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
           </div>
           
           <div className="space-y-16">
-            {architecturalFeatures.map((feature, index) => (
-              <Card 
-                key={index} 
-                className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in"
-                style={{ animationDelay: `${index * 150}ms` }}
-              >
+            {architecturalFeatures.map((feature, index) => <Card key={index} className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in" style={{
+            animationDelay: `${index * 150}ms`
+          }}>
                 <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
                   {/* Image Section */}
                   <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
-                    <img 
-                      src={feature.image} 
-                      alt={feature.title}
-                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
-                    />
+                    <img src={feature.image} alt={feature.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
                     <div className="absolute top-8 left-8">
                       <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-colors duration-500">
@@ -243,16 +196,12 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 whitespace-pre-line">
                       {feature.content}
                     </p>
-                    <Button 
-                      size="lg" 
-                      className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500"
-                    >
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500">
                       Explore Design Approach
                     </Button>
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -266,53 +215,20 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-6">
-              {safetyFeatures.map((feature, index) => (
-                <div key={index} className="safety_feature_item flex items-start space-x-4">
+              {safetyFeatures.map((feature, index) => <div key={index} className="safety_feature_item flex items-start space-x-4">
                   <Shield className="h-6 w-6 text-primary mt-1 flex-shrink-0" />
                   <p className="text-lg">{feature}</p>
-                </div>
-              ))}
+                </div>)}
             </div>
             <div className="relative">
-              <img 
-                src={fireSafetyImage} 
-                alt="Fire Safety System"
-                className="w-full h-96 object-cover rounded-lg shadow-lg"
-              />
+              <img src={fireSafetyImage} alt="Fire Safety System" className="w-full h-96 object-cover rounded-lg shadow-lg" />
             </div>
           </div>
         </div>
       </section>
 
       {/* Green Building & Sustainability Features */}
-      <section className="esg_features_section py-20 px-4">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">ESG & Sustainability</h2>
-            <p className="text-xl text-muted-foreground">Building a greener future</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {esgFeatures.map((feature, index) => (
-              <Card key={index} className="esg_feature_card text-center hover:shadow-lg transition-all duration-300">
-                <CardHeader>
-                  <div className="text-4xl mb-4">{feature.icon}</div>
-                  <CardTitle className="text-xl">{feature.title}</CardTitle>
-                  <CardDescription>{feature.description}</CardDescription>
-                </CardHeader>
-                <CardContent>
-                  <div className="relative h-32 overflow-hidden rounded-lg">
-                    <img 
-                      src={feature.image} 
-                      alt={feature.title}
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* Operational Infrastructure */}
       <section className="infrastructure_features_section py-20 px-4 bg-muted/50">
@@ -322,22 +238,16 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
             <p className="text-xl text-muted-foreground">Smart systems for modern business</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {infrastructureFeatures.map((feature, index) => (
-              <Card key={index} className="infrastructure_feature_card group hover:shadow-lg transition-all duration-300">
+            {infrastructureFeatures.map((feature, index) => <Card key={index} className="infrastructure_feature_card group hover:shadow-lg transition-all duration-300">
                 <div className="relative h-48 overflow-hidden rounded-t-lg">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
+                  <img src={feature.image} alt={feature.title} className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" />
                 </div>
                 <CardHeader className="text-center">
                   <feature.icon className="h-12 w-12 mx-auto mb-4 text-primary" />
                   <CardTitle className="text-xl">{feature.title}</CardTitle>
                   <CardDescription>{feature.description}</CardDescription>
                 </CardHeader>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -350,14 +260,12 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
             <p className="text-xl text-muted-foreground">Designed for growth and adaptation</p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {addOnCapabilities.map((capability, index) => (
-              <Card key={index} className="addon_capability_card p-6 hover:shadow-lg transition-all duration-300">
+            {addOnCapabilities.map((capability, index) => <Card key={index} className="addon_capability_card p-6 hover:shadow-lg transition-all duration-300">
                 <div className="flex items-center space-x-4">
                   <Settings className="h-8 w-8 text-primary flex-shrink-0" />
                   <p className="text-lg font-medium">{capability}</p>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -372,11 +280,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
-                <img 
-                  src={modernBusinessComplexImage} 
-                  alt="Commercial Project"
-                  className="w-full h-full object-cover"
-                />
+                <img src={modernBusinessComplexImage} alt="Commercial Project" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
                   ESG Certified
                 </div>
@@ -388,11 +292,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
             </Card>
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
-                <img 
-                  src={smartDashboardImage} 
-                  alt="Smart Building"
-                  className="w-full h-full object-cover"
-                />
+                <img src={smartDashboardImage} alt="Smart Building" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
                   AI-Enabled
                 </div>
@@ -404,11 +304,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
             </Card>
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
-                <img 
-                  src={ecoBusinessParkImage} 
-                  alt="Sustainable Complex"
-                  className="w-full h-full object-cover"
-                />
+                <img src={ecoBusinessParkImage} alt="Sustainable Complex" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
                   LEED Gold
                 </div>
@@ -430,8 +326,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
             <p className="text-xl text-muted-foreground">Everything you need to know about our buildings</p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
-            {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+            {faqItems.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
@@ -441,8 +336,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
                 <AccordionContent className="pt-4 text-muted-foreground">
                   {item.answer}
                 </AccordionContent>
-              </AccordionItem>
-            ))}
+              </AccordionItem>)}
           </Accordion>
         </div>
       </section>
@@ -514,11 +408,7 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
               </div>
               <div className="space-y-2">
                 <Label htmlFor="message">Additional Requirements</Label>
-                <Textarea 
-                  id="message"
-                  placeholder="Describe your specific requirements..."
-                  className="min-h-[120px]"
-                />
+                <Textarea id="message" placeholder="Describe your specific requirements..." className="min-h-[120px]" />
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button type="submit" size="lg" className="flex-1">
@@ -534,8 +424,6 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
           </Card>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default BuildAssetPage;
