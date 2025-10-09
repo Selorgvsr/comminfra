@@ -36,31 +36,31 @@ const RentLeaseAssetPage = () => {
   const tenantTypes = [{
     icon: Utensils,
     title: "Restaurants & Cafés",
-    description: "View Restaurant Spaces",
+    description: "Spaces designed to delight the senses and elevate dining experiences. Warm, inviting interiors for casual dining and fine cuisine. Ambient lighting enhances mood and creates memorable experiences. AI-optimized layouts for foot traffic, operational flow, and customer comfort. Flexible seating arrangements to adapt to group sizes and seasonal events. Large windows and outdoor access maximize natural light and street visibility. Greenery and biophilic elements create calm and a welcoming atmosphere. Kitchen zones integrated for efficiency and smooth service. Perfect for modern cafés, bakeries, bistros, and restaurants. Designed to increase dwell time and customer satisfaction. Spaces can be customized for brand-specific themes and décor. Attention to acoustics, sightlines, and circulation ensures a premium experience. Flexible for pop-up events or seasonal changes. Optimized for visibility, accessibility, and operational ease.",
     color: "from-orange-500/20 to-red-500/20",
-    image: restaurantReadySpace
+    image: restaurantCommercialInterior
   }, {
     icon: Gem,
     title: "Jewellery Stores",
-    description: "Explore Jewellery Showrooms",
+    description: "Elegant spaces crafted for high-value products and premium clientele. Lighting designed to showcase sparkle and brilliance. Display cases arranged for optimum visibility and security. Smooth customer circulation and viewing experience. Minimalist décor enhances focus on jewellery pieces. Flexible shelving and displays for seasonal or promotional items. Strategic window placement boosts street visibility. AI insights for customer flow optimization. Security systems integrated without compromising aesthetics. Ideal for high-end jewellery brands seeking luxury and functionality. Interior materials are durable yet sophisticated — marble, glass, and steel accents. Lighting, layout, and finishes work in harmony to create a lasting impression. Every detail curated to maximize engagement and sales potential.",
     color: "from-yellow-500/20 to-amber-500/20",
     image: jewelleryShowroomLuxury
   }, {
     icon: Briefcase,
     title: "Corporate Offices",
-    description: "Discover Office Floors",
+    description: "Smart workspaces built to boost productivity and employee well-being. Open layouts for collaboration, private zones for focus. Meeting rooms and tech hubs integrated seamlessly. Lighting, ventilation, and acoustics optimized for comfort. Natural materials and greenery create balanced work environments. AI-optimized furniture and room placement for workflow efficiency. Spaces designed to scale with growing teams and corporate needs. Integrated smart office systems enhance operational ease. Premium materials ensure durability and aesthetic appeal. Professional environment that impresses clients and inspires employees. Flexible floor plans accommodate various office types and sizes. Sustainable and efficient designs for modern corporate culture. Optimized for both employee satisfaction and business performance.",
     color: "from-blue-500/20 to-indigo-500/20",
     image: corporateOfficeModern
   }, {
     icon: ShoppingBag,
     title: "Retail Brands",
-    description: "Browse Retail Units",
+    description: "Retail spaces designed to maximize brand visibility and customer engagement. Wide aisles allow easy browsing and enhance shopping experience. Lighting showcases products naturally and dramatically. Flexible layouts adapt for seasonal displays and new collections. Strategic storefront placement ensures high footfall. High-quality materials balance luxury and durability. Smart digital signage and tech integrations enrich customer experience. AI-based insights guide product placement and store optimization. Ideal for fashion, lifestyle, electronics, or specialty brands. Spaces are flexible to accommodate brand-specific designs and pop-ups. Enhances brand recall and increases conversion potential. Optimized circulation and sightlines for shopper comfort. Interior finishes convey modern sophistication and prestige.",
     color: "from-purple-500/20 to-pink-500/20",
     image: retailBrandStore
   }, {
     icon: Home,
     title: "Lifestyle Tenants",
-    description: "Check Lifestyle Spaces",
+    description: "Spaces crafted for experience-driven tenants. Wellness centers, boutique studios, and creative spaces thrive here. Open layouts, natural light, and flexible floorplans enhance utility and comfort. Smart HVAC and lighting create optimal conditions for activities. Designed to foster community interaction and repeat visitation. AI-optimized space planning maximizes usage efficiency. Indoor-outdoor integration creates vibrant energy flow. Materials and finishes ensure durability and aesthetic appeal. Perfect for lifestyle brands, wellness hubs, creative studios, or boutique ventures. Every space is designed for engagement, brand presence, and operational ease. Promotes creativity, health, and vibrant commercial ecosystems. Future-ready, adaptable, and attractive to premium tenants.",
     color: "from-green-500/20 to-emerald-500/20",
     image: lifestyleCenterWellness
   }];
@@ -198,7 +198,7 @@ const RentLeaseAssetPage = () => {
         </div>
       </section>
 
-      {/* Tenant Type Segmentation */}
+      {/* Find Your Perfect Space - Tenant Type Segmentation */}
       <section className="tenant_type_segmentation_section py-20 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -210,24 +210,27 @@ const RentLeaseAssetPage = () => {
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-8">
-            {tenantTypes.map((type, index) => <Card key={index} className="tenant_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
-                <div className="relative h-40 overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {tenantTypes.map((type, index) => <Card key={index} className="tenant_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
+                <div className="relative h-64 overflow-hidden">
                   <img src={type.image} alt={type.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className={`absolute top-3 right-3 w-12 h-12 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center backdrop-blur-sm`}>
-                    <type.icon className="w-6 h-6 text-white" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent" />
+                  <div className={`absolute top-4 right-4 w-14 h-14 rounded-xl bg-gradient-to-br ${type.color} flex items-center justify-center backdrop-blur-sm shadow-lg`}>
+                    <type.icon className="w-7 h-7 text-white" />
                   </div>
                 </div>
-                <CardHeader className="text-center pb-4">
-                  <CardTitle className="text-lg font-semibold group-hover:text-primary transition-colors">
+                <CardHeader className="pb-3">
+                  <CardTitle className="text-2xl font-bold group-hover:text-primary transition-colors">
                     {type.title}
                   </CardTitle>
                 </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground group-hover:text-foreground transition-colors">
+                <CardContent className="space-y-4">
+                  <p className="text-sm text-muted-foreground group-hover:text-foreground transition-colors leading-relaxed line-clamp-6">
                     {type.description}
                   </p>
+                  <Button className="w-full bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white shadow-lg">
+                    View Space
+                  </Button>
                 </CardContent>
               </Card>)}
           </div>
