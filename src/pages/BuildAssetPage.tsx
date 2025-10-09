@@ -195,44 +195,62 @@ AI doesn't replace creativity — it amplifies it, transforming architecture int
       </section>
 
       {/* Architectural Design & Aesthetic Excellence */}
-      <section className="architectural_design_section py-20 px-4 bg-gradient-to-b from-background to-muted/20">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-5xl font-bold mb-4 bg-gradient-to-r from-primary to-gold bg-clip-text text-transparent">
+      <section className="architectural_design_section py-24 bg-gradient-to-b from-white via-secondary/5 to-white">
+        <div className="container px-4">
+          <div className="text-center mb-20">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              Premium Design Standards
+            </div>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
               Architectural Excellence
             </h2>
-            <p className="text-xl text-muted-foreground font-light">Modern design meets functional innovation</p>
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+              Modern design meets functional innovation
+            </p>
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          
+          <div className="space-y-16">
             {architecturalFeatures.map((feature, index) => (
               <Card 
                 key={index} 
-                className="architectural_feature_card group hover:shadow-2xl transition-all duration-500 border-gold/20 overflow-hidden animate-fade-in"
+                className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in"
                 style={{ animationDelay: `${index * 150}ms` }}
               >
-                <div className="relative h-80 overflow-hidden">
-                  <img 
-                    src={feature.image} 
-                    alt={feature.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
-                </div>
-                <CardHeader className="p-8">
-                  <div className="flex items-center gap-4 mb-4">
-                    <feature.icon className="h-8 w-8 text-primary flex-shrink-0" strokeWidth={1.5} />
-                    <CardTitle className="text-2xl font-semibold">{feature.title}</CardTitle>
+                <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? 'md:grid-flow-dense' : ''}`}>
+                  {/* Image Section */}
+                  <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? 'md:col-start-2' : ''}`}>
+                    <img 
+                      src={feature.image} 
+                      alt={feature.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
+                    <div className="absolute top-8 left-8">
+                      <div className="w-16 h-16 rounded-2xl bg-white/20 backdrop-blur-md flex items-center justify-center group-hover:bg-white/30 transition-colors duration-500">
+                        <feature.icon className="h-8 w-8 text-white" />
+                      </div>
+                    </div>
                   </div>
-                  <CardDescription className="text-base leading-relaxed whitespace-pre-line text-muted-foreground">
-                    {feature.content}
-                  </CardDescription>
-                  <Button 
-                    variant="outline" 
-                    className="mt-6 border-primary/50 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                  >
-                    Explore Design Approach
-                  </Button>
-                </CardHeader>
+
+                  {/* Content Section */}
+                  <div className={`flex flex-col justify-center p-10 md:p-14 ${index % 2 === 1 ? 'md:col-start-1' : ''}`}>
+                    <div className="w-fit mb-4 bg-gradient-to-r from-primary/10 to-solar/10 text-primary border-none font-semibold px-4 py-1.5 rounded-full text-sm">
+                      Category {index + 1}
+                    </div>
+                    <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary group-hover:text-commercial transition-colors duration-500">
+                      {feature.title}
+                    </h3>
+                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 whitespace-pre-line">
+                      {feature.content}
+                    </p>
+                    <Button 
+                      size="lg" 
+                      className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500"
+                    >
+                      Explore Design Approach
+                    </Button>
+                  </div>
+                </div>
               </Card>
             ))}
           </div>
