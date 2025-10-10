@@ -16,9 +16,9 @@ import propertyHandover from "@/assets/property-handover.jpg";
 import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
 import sitePlanRevenue from "@/assets/site-plan-revenue.jpg";
 import investorHandshake from "@/assets/investor-handshake.jpg";
-import commercialForSale from "@/assets/commercial-for-sale.jpg";
-import leaseAgreementSigning from "@/assets/lease-agreement-signing.jpg";
-import multiFloorCommercialBuilding from "@/assets/multi-floor-commercial-building.jpg";
+import propertySalesAerial from "@/assets/property-sales-aerial.jpg";
+import leaseCorporateTenants from "@/assets/lease-corporate-tenants.jpg";
+import rentalIncomeHighrise from "@/assets/rental-income-highrise.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import modernCommercialBuilding from "@/assets/modern-commercial-building.jpg";
 import reitYieldDashboard from "@/assets/reit-yield-dashboard.jpg";
@@ -34,27 +34,18 @@ const BusinessRevenueModelPage = () => {
   const primaryRevenueStreams = [{
     icon: Building2,
     title: "Property Sales",
-    description: "Floor-wise or full asset sales",
-    metrics: "70% of total revenue",
-    color: "from-blue-500/20 to-indigo-500/20",
-    details: ["Unit sales", "Bulk transactions", "Institutional buyers"],
-    image: commercialForSale
+    description: "Our Property Sales are the cornerstone of our revenue strategy — delivering high-value, turnkey commercial spaces to investors and end-users. We acquire, develop, and market properties with premium specifications and superior location advantage. Every project undergoes meticulous planning, architectural excellence, and compliance verification. Sales strategies are designed to maximize ROI for both developers and investors. We segment properties by type — office towers, retail outlets, mixed-use developments — ensuring targeted marketing and optimal visibility. Data-driven market analysis ensures competitive pricing and investor confidence. High-quality marketing assets and 3D visualizations enhance buyer engagement. Investor support includes legal, financial, and post-sale guidance. Sales revenue is accelerated through strategic timing, premium positioning, and strong market demand. By selling property floor by floor or as complete blocks, we optimize financial returns. Every transaction is backed by transparency, trust, and high-end service standards.",
+    image: propertySalesAerial
   }, {
     icon: FileText,
     title: "Lease Agreements",
-    description: "Long-term leasing to corporates",
-    metrics: "25% of total revenue",
-    color: "from-green-500/20 to-emerald-500/20",
-    details: ["5-15 year leases", "Corporate tenants", "Stable income"],
-    image: leaseAgreementSigning
+    description: "Our Lease Agreements form a stable, recurring revenue source — allowing businesses to occupy premium spaces with flexible terms. Properties are strategically leased to retail, office, and lifestyle tenants for optimal income. Leasing solutions are customized to tenant size, duration, and operational needs. Legal and financial frameworks ensure smooth, long-term occupancy. Leases include high-quality infrastructure — parking, utilities, HVAC, security, and smart building systems. Tenant onboarding and support are fully managed for seamless integration. Lease revenue provides predictable cash flow while preserving asset value. Flexible options accommodate startups, corporates, and lifestyle brands alike. We monitor occupancy and renewals, maximizing long-term profitability. Sustainability and smart building features enhance tenant satisfaction and reduce operational costs. Revenue growth is amplified through strategic lease pricing, market analysis, and targeted marketing.",
+    image: leaseCorporateTenants
   }, {
     icon: Home,
     title: "Rental Income",
-    description: "Flexible rentals for retail, office, lifestyle tenants",
-    metrics: "15% of total revenue",
-    color: "from-purple-500/20 to-pink-500/20",
-    details: ["Monthly rentals", "Pop-up spaces", "Flexible terms"],
-    image: multiFloorCommercialBuilding
+    description: "Our Rental Income strategy ensures continuous cash flow from high-value commercial spaces. Properties are rented to office tenants, retail stores, and lifestyle businesses. We maintain and manage buildings to ensure operational excellence and tenant satisfaction. Smart rental systems track occupancy, payments, and lease terms efficiently. Dynamic pricing models optimize revenue based on location, demand, and market trends. Rented spaces retain premium asset value while providing recurring returns. AI-based insights assist in tenant selection, risk management, and lease optimization. Amenities such as parking, connectivity, and building services enhance tenant retention. Rental income complements property sales and lease agreements for a balanced revenue model. Investment in well-located, modern commercial properties maximizes rental yield potential. Our approach ensures a long-term, predictable, and scalable income stream.",
+    image: rentalIncomeHighrise
   }];
   const sustainabilityStreams = [{
     icon: Sun,
@@ -157,48 +148,67 @@ const BusinessRevenueModelPage = () => {
       </section>
 
       {/* Primary Revenue Streams */}
-      <section className="primary_revenue_streams_section py-20 bg-gradient-to-b from-background to-muted/30">
+      <section className="primary_revenue_streams_section py-24 bg-gradient-to-b from-background to-muted/30">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+          <div className="text-center mb-20 animate-fade-in">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
               Primary Revenue Streams
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Core income generators driving sustainable business growth
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {primaryRevenueStreams.map((stream, index) => <Card key={index} className="revenue_stream_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
-                <div className="relative h-48 overflow-hidden">
-                  <img src={stream.image} alt={stream.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl bg-gradient-to-br ${stream.color} flex items-center justify-center backdrop-blur-sm`}>
-                    <stream.icon className="w-6 h-6 text-white" />
+          <div className="space-y-24">
+            {primaryRevenueStreams.map((stream, index) => (
+              <div 
+                key={index}
+                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center group animate-fade-in`}
+                style={{ animationDelay: `${index * 0.2}s` }}
+              >
+                {/* Image Section */}
+                <div className="w-full lg:w-1/2 relative overflow-hidden rounded-2xl shadow-2xl">
+                  <div className="aspect-[4/3] relative overflow-hidden">
+                    <img 
+                      src={stream.image} 
+                      alt={stream.title}
+                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                    
+                    {/* Icon Badge */}
+                    <div className="absolute top-6 right-6">
+                      <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-primary/90 to-secondary/90 backdrop-blur-sm flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                        <stream.icon className="w-8 h-8 text-white" />
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <CardHeader className="text-center">
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">
-                    {stream.title}
-                  </CardTitle>
-                  <CardDescription className="text-muted-foreground">
-                    {stream.description}
-                  </CardDescription>
-                </CardHeader>
-                <CardContent className="space-y-4">
-                  <div className="text-center">
-                    <Badge variant="secondary" className="text-primary font-semibold">
-                      {stream.metrics}
-                    </Badge>
+
+                {/* Content Section */}
+                <div className="w-full lg:w-1/2 space-y-6">
+                  <div className="space-y-4">
+                    <h3 className="text-4xl md:text-5xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
+                      {stream.title}
+                    </h3>
+                    
+                    <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
+                    
+                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">
+                      {stream.description}
+                    </p>
                   </div>
-                  <ul className="space-y-2">
-                    {stream.details.map((detail, detailIndex) => <li key={detailIndex} className="flex items-center gap-2 text-sm">
-                        <TrendingUp className="w-4 h-4 text-green-500 flex-shrink-0" />
-                        {detail}
-                      </li>)}
-                  </ul>
-                </CardContent>
-              </Card>)}
+
+                  <Button 
+                    size="lg" 
+                    className="group/btn bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
+                  >
+                    Learn More
+                    <TrendingUp className="ml-2 w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
+                  </Button>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
       </section>
