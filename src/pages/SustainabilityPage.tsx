@@ -41,6 +41,8 @@ import esgDashboard from "@/assets/esg-dashboard.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
 import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
+import lowCarbonConstruction from "@/assets/low-carbon-construction.jpg";
+import smartEnergySystems from "@/assets/smart-energy-systems.jpg";
 
 const SustainabilityPage = () => {
   const [formData, setFormData] = useState({
@@ -55,30 +57,78 @@ const SustainabilityPage = () => {
     {
       icon: Recycle,
       title: "Energy-Efficient Design",
-      description: "Advanced materials and sustainable construction methods",
+      content: [
+        "Our Energy-Efficient Design reduces operational costs while maximizing comfort and productivity.",
+        "Smart orientation and passive solar strategies optimize daylight and thermal efficiency.",
+        "High-performance insulation and glazing maintain interior climate year-round.",
+        "LED and adaptive lighting systems reduce electricity consumption without compromising ambience.",
+        "Energy modeling ensures optimal HVAC operation and low energy wastage.",
+        "Integration of renewable energy sources, such as rooftop solar panels, lowers reliance on non-renewable power.",
+        "Automated shading systems respond to sunlight for comfort and efficiency.",
+        "Intelligent building management systems monitor and optimize energy usage.",
+        "Energy-efficient design improves tenant satisfaction and boosts property valuation.",
+        "Sustainable orientation and design choices reduce the building's carbon footprint.",
+        "We combine aesthetics with function — buildings that perform beautifully and efficiently."
+      ],
       color: "from-green-500/20 to-emerald-500/20",
       image: energyEfficientFacade
     },
     {
       icon: Building,
       title: "Low Carbon Footprint",
-      description: "Eco-friendly façade and interior materials",
+      content: [
+        "Our Low Carbon Footprint strategies minimize environmental impact from construction to operation.",
+        "Use of recycled and low-emission building materials reduces embodied carbon.",
+        "Energy-efficient construction techniques cut emissions during build phase.",
+        "Carbon tracking systems help monitor emissions in real time.",
+        "Sustainable sourcing ensures compliance with global environmental standards.",
+        "Green spaces, terraces, and vertical gardens improve air quality and reduce heat islands.",
+        "Buildings designed with lifecycle sustainability in mind — from planning to operation.",
+        "Reduced energy and material consumption lowers operational carbon emissions.",
+        "Optimized transportation access reduces carbon associated with commuting.",
+        "Smart logistics and waste reduction during construction further cut footprint.",
+        "Every building embodies responsible, low-impact urban growth."
+      ],
       color: "from-blue-500/20 to-cyan-500/20",
-      image: sustainableGrowthBuilding
+      image: lowCarbonConstruction
     },
     {
       icon: Droplets,
       title: "Water Management",
-      description: "Rainwater harvesting and natural ventilation systems",
+      content: [
+        "Our Water Management systems ensure sustainable usage and reduce wastage.",
+        "Rainwater harvesting captures and stores water for landscaping and operational use.",
+        "Greywater recycling reduces dependence on municipal water supply.",
+        "Smart irrigation systems monitor soil moisture and optimize water delivery.",
+        "Low-flow fixtures and water-efficient appliances conserve resources.",
+        "Integrated sensors detect leaks and prevent water loss.",
+        "Water-saving design enhances long-term operational efficiency and reduces costs.",
+        "Sustainable landscaping improves biodiversity and mitigates urban heat.",
+        "Water management solutions are tailored to local climate and regulations.",
+        "Every drop is accounted for, ensuring responsible water stewardship.",
+        "Buildings perform efficiently while maintaining comfort and aesthetics."
+      ],
       color: "from-blue-400/20 to-teal-500/20",
       image: rainwaterHarvestingSystem
     },
     {
-      icon: Brain,
+      icon: Zap,
       title: "Smart Energy Systems",
-      description: "AI-powered building management for optimization",
+      content: [
+        "Our Smart Energy Systems integrate renewable energy, storage, and intelligent control.",
+        "Solar panels generate clean, renewable electricity onsite.",
+        "Energy storage solutions ensure reliable power and peak-shaving capabilities.",
+        "Building management systems optimize energy use across lighting, HVAC, and appliances.",
+        "IoT sensors provide real-time monitoring and predictive maintenance alerts.",
+        "AI-driven analytics reduce operational costs and improve sustainability.",
+        "Smart meters track energy consumption per zone for efficiency audits.",
+        "Dynamic load balancing maximizes renewable energy use.",
+        "Integration with grid systems allows energy trading or net-zero operation.",
+        "Sustainable technology meets operational needs without sacrificing comfort.",
+        "Future-ready systems ensure long-term ROI and environmental responsibility."
+      ],
       color: "from-purple-500/20 to-violet-500/20",
-      image: smartBuildingDashboard
+      image: smartEnergySystems
     }
   ];
 
@@ -245,35 +295,57 @@ const SustainabilityPage = () => {
               Sustainable Building Features
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Cutting-edge green technologies and sustainable design principles
+              Cutting-edge green technologies and sustainable design principles for modern commercial spaces
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div className="space-y-24">
             {greenFeatures.map((feature, index) => (
-              <Card key={index} className="green_feature_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 cursor-pointer border-0 bg-gradient-to-br from-background via-background/90 to-green-500/5 backdrop-blur-sm overflow-hidden">
-                <div className="relative h-40 overflow-hidden">
-                  <img
-                    src={feature.image}
-                    alt={feature.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-                  <div className={`absolute top-3 right-3 w-12 h-12 rounded-xl bg-gradient-to-br ${feature.color} flex items-center justify-center backdrop-blur-sm`}>
-                    <feature.icon className="w-6 h-6 text-white" />
+              <div 
+                key={index}
+                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-8 items-center animate-fade-in`}
+              >
+                <div className="lg:w-1/2">
+                  <Card className="overflow-hidden border-0 shadow-2xl group hover:shadow-3xl transition-all duration-500">
+                    <div className="relative h-[400px] overflow-hidden">
+                      <img
+                        src={feature.image}
+                        alt={feature.title}
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
+                      <div className={`absolute top-6 right-6 w-20 h-20 rounded-2xl bg-gradient-to-br ${feature.color} backdrop-blur-md border border-white/20 flex items-center justify-center shadow-xl group-hover:scale-110 transition-transform duration-300`}>
+                        <feature.icon className="w-10 h-10 text-white drop-shadow-lg" />
+                      </div>
+                    </div>
+                  </Card>
+                </div>
+
+                <div className="lg:w-1/2 space-y-6">
+                  <div className="space-y-4">
+                    <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                      {feature.title}
+                    </h3>
+                    
+                    <div className="space-y-3 text-muted-foreground leading-relaxed">
+                      {feature.content.map((line, lineIndex) => (
+                        <p key={lineIndex} className="text-base">
+                          {line}
+                        </p>
+                      ))}
+                    </div>
+
+                    <div className="pt-4">
+                      <Button 
+                        size="lg"
+                        className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105"
+                      >
+                        Learn More
+                      </Button>
+                    </div>
                   </div>
                 </div>
-                <CardHeader className="text-center pb-4">
-                  <CardTitle className="text-lg font-semibold group-hover:text-green-600 transition-colors">
-                    {feature.title}
-                  </CardTitle>
-                </CardHeader>
-                <CardContent className="text-center">
-                  <p className="text-muted-foreground group-hover:text-foreground transition-colors">
-                    {feature.description}
-                  </p>
-                </CardContent>
-              </Card>
+              </div>
             ))}
           </div>
         </div>
