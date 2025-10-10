@@ -134,9 +134,7 @@ const BusinessRevenueModelPage = () => {
               </span>
             </h1>
             
-            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto leading-relaxed">
-              Diversified income streams across asset classes and ESG channels for sustainable growth
-            </p>
+            
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
@@ -160,20 +158,13 @@ const BusinessRevenueModelPage = () => {
           </div>
           
           <div className="space-y-24">
-            {primaryRevenueStreams.map((stream, index) => (
-              <div 
-                key={index}
-                className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center group animate-fade-in`}
-                style={{ animationDelay: `${index * 0.2}s` }}
-              >
+            {primaryRevenueStreams.map((stream, index) => <div key={index} className={`flex flex-col ${index % 2 === 0 ? 'lg:flex-row' : 'lg:flex-row-reverse'} gap-12 items-center group animate-fade-in`} style={{
+            animationDelay: `${index * 0.2}s`
+          }}>
                 {/* Image Section */}
                 <div className="w-full lg:w-1/2 relative overflow-hidden rounded-2xl shadow-2xl">
                   <div className="aspect-[4/3] relative overflow-hidden">
-                    <img 
-                      src={stream.image} 
-                      alt={stream.title}
-                      className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out"
-                    />
+                    <img src={stream.image} alt={stream.title} className="w-full h-full object-cover transform group-hover:scale-110 transition-transform duration-700 ease-out" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent" />
                     
                     {/* Icon Badge */}
@@ -199,16 +190,12 @@ const BusinessRevenueModelPage = () => {
                     </p>
                   </div>
 
-                  <Button 
-                    size="lg" 
-                    className="group/btn bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105"
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
                     Learn More
                     <TrendingUp className="ml-2 w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
                   </Button>
                 </div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
