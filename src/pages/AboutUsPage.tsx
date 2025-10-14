@@ -251,7 +251,7 @@ const AboutUsPage = () => {
             <Card className="PillarCard hover-scale neumorphic-card">
               <CardHeader className="text-center">
                 <Building2 className="h-16 w-16 text-primary mx-auto mb-4" />
-                <CardTitle className="text-xl">Build Assets</CardTitle>
+                <CardTitle className="text-xl">Built Assets</CardTitle>
                 <CardDescription>
                   Sustainable, architecturally rich commercial developments
                 </CardDescription>
