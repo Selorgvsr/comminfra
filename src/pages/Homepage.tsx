@@ -6,22 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { 
-  Building2, 
-  MapPin, 
-  Hammer, 
-  DollarSign, 
-  Home, 
-  Car,
-  Sun,
-  Leaf,
-  Brain,
-  BarChart3,
-  Shield,
-  Zap,
-  Users,
-  Award
-} from "lucide-react";
+import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award } from "lucide-react";
 
 // Import images
 import heroImage from "@/assets/hero-commercial-complex.jpg";
@@ -40,7 +25,6 @@ import yieldImage from "@/assets/rental-yield-analytics.jpg";
 import certificationImage from "@/assets/sustainable-growth-building.jpg";
 import esgUIImage from "@/assets/esg-dashboard.jpg";
 import contactImage from "@/assets/contact-hero-image.jpg";
-
 const Homepage = () => {
   const [formData, setFormData] = useState({
     name: "",
@@ -49,141 +33,115 @@ const Homepage = () => {
     location: "",
     message: ""
   });
-
-  const corePillars = [
-    {
-      icon: DollarSign,
-      title: "Fund Raising",
-      description: "Empowering real estate ventures through strategic capital partnerships and investor relations. We align financial growth with sustainable development, ensuring long-term asset value and investor confidence.",
-      image: investorImage,
-      link: "/reit-invest",
-      cta: "View Investment Models"
-    },
-    {
-      icon: MapPin,
-      title: "Land Assets",
-      description: "Curating prime land parcels with high appreciation potential. Our strategic acquisitions focus on location, connectivity, and zoning to maximize future commercial and industrial opportunities.",
-      image: landImage,
-      link: "/land-assets",
-      cta: "Explore Land Opportunities"
-    },
-    {
-      icon: Building2,
-      title: "Built Assets",
-      description: "Developing high-quality, energy-efficient commercial buildings that combine design excellence with operational sustainability. Every project is engineered for durability and performance.",
-      image: buildingImage,
-      link: "/build-asset",
-      cta: "View Build Specifications"
-    },
-    {
-      icon: Home,
-      title: "Selling Assets",
-      description: "Offering tailor-made sales solutions for investors and clients. We bridge opportunities through data-driven marketing, maximizing ROI, and seamless transaction experiences.",
-      image: salesImage,
-      link: "/sell",
-      cta: "Sell or Buy Commercial Property"
-    },
-    {
-      icon: Hammer,
-      title: "Rental / Lease Assets",
-      description: "Delivering flexible rental and leasing models for long-term business occupancy. Our portfolio includes ready-to-move spaces designed for modern commercial needs.",
-      image: retailImage,
-      link: "/rent-lease-asset",
-      cta: "Browse Lease Options"
-    },
-    {
-      icon: Car,
-      title: "Commercial Infrastructure",
-      description: "Building integrated commercial ecosystems that fuel business growth. From logistics parks to tech hubs, we create future-ready spaces that empower industries.",
-      image: infrastructureImage,
-      link: "/projects",
-      cta: "Explore Infrastructure Features"
-    }
-  ];
-
-  const advancedCapabilities = [
-    {
-      icon: Sun,
-      title: "Solar Power Generation",
-      description: "On-site renewable energy with grid integration",
-      image: solarImage
-    },
-    {
-      icon: Leaf,
-      title: "Carbon Credit Monetization",
-      description: "ESG compliance with revenue generation",
-      image: carbonImage
-    },
-    {
-      icon: Brain,
-      title: "AI-Powered Building Management",
-      description: "Smart systems for energy optimization",
-      image: smartImage
-    },
-    {
-      icon: BarChart3,
-      title: "REIT-Grade Dashboards",
-      description: "Investor reporting and ESG tracking",
-      image: reitImage
-    }
-  ];
-
-  const valuePropositions = [
-    {
-      icon: Shield,
-      title: "Modular Design Logic",
-      description: "Scalable and flexible commercial spaces"
-    },
-    {
-      icon: Users,
-      title: "Investor-Grade Clarity",
-      description: "Transparent reporting and compliance"
-    },
-    {
-      icon: Leaf,
-      title: "ESG & Sustainability Focus",
-      description: "Environmental responsibility with profitability"
-    },
-    {
-      icon: Zap,
-      title: "Seamless Integration",
-      description: "Design, technology, and business logic unified"
-    }
-  ];
-
+  const corePillars = [{
+    icon: DollarSign,
+    title: "Fund Raising",
+    description: "Empowering real estate ventures through strategic capital partnerships and investor relations. We align financial growth with sustainable development, ensuring long-term asset value and investor confidence.",
+    image: investorImage,
+    link: "/reit-invest",
+    cta: "View Investment Models"
+  }, {
+    icon: MapPin,
+    title: "Land Assets",
+    description: "Curating prime land parcels with high appreciation potential. Our strategic acquisitions focus on location, connectivity, and zoning to maximize future commercial and industrial opportunities.",
+    image: landImage,
+    link: "/land-assets",
+    cta: "Explore Land Opportunities"
+  }, {
+    icon: Building2,
+    title: "Built Assets",
+    description: "Developing high-quality, energy-efficient commercial buildings that combine design excellence with operational sustainability. Every project is engineered for durability and performance.",
+    image: buildingImage,
+    link: "/build-asset",
+    cta: "View Build Specifications"
+  }, {
+    icon: Home,
+    title: "Selling Assets",
+    description: "Offering tailor-made sales solutions for investors and clients. We bridge opportunities through data-driven marketing, maximizing ROI, and seamless transaction experiences.",
+    image: salesImage,
+    link: "/sell",
+    cta: "Sell or Buy Commercial Property"
+  }, {
+    icon: Hammer,
+    title: "Rental / Lease Assets",
+    description: "Delivering flexible rental and leasing models for long-term business occupancy. Our portfolio includes ready-to-move spaces designed for modern commercial needs.",
+    image: retailImage,
+    link: "/rent-lease-asset",
+    cta: "Browse Lease Options"
+  }, {
+    icon: Car,
+    title: "Commercial Infrastructure",
+    description: "Building integrated commercial ecosystems that fuel business growth. From logistics parks to tech hubs, we create future-ready spaces that empower industries.",
+    image: infrastructureImage,
+    link: "/projects",
+    cta: "Explore Infrastructure Features"
+  }];
+  const advancedCapabilities = [{
+    icon: Sun,
+    title: "Solar Power Generation",
+    description: "On-site renewable energy with grid integration",
+    image: solarImage
+  }, {
+    icon: Leaf,
+    title: "Carbon Credit Monetization",
+    description: "ESG compliance with revenue generation",
+    image: carbonImage
+  }, {
+    icon: Brain,
+    title: "AI-Powered Building Management",
+    description: "Smart systems for energy optimization",
+    image: smartImage
+  }, {
+    icon: BarChart3,
+    title: "REIT-Grade Dashboards",
+    description: "Investor reporting and ESG tracking",
+    image: reitImage
+  }];
+  const valuePropositions = [{
+    icon: Shield,
+    title: "Modular Design Logic",
+    description: "Scalable and flexible commercial spaces"
+  }, {
+    icon: Users,
+    title: "Investor-Grade Clarity",
+    description: "Transparent reporting and compliance"
+  }, {
+    icon: Leaf,
+    title: "ESG & Sustainability Focus",
+    description: "Environmental responsibility with profitability"
+  }, {
+    icon: Zap,
+    title: "Seamless Integration",
+    description: "Design, technology, and business logic unified"
+  }];
   const handleInputChange = (field: string, value: string) => {
-    setFormData(prev => ({ ...prev, [field]: value }));
+    setFormData(prev => ({
+      ...prev,
+      [field]: value
+    }));
   };
-
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     console.log("Form submitted:", formData);
     // Handle form submission logic here
   };
-
-  return (
-    <div className="Homepage_Container">
+  return <div className="Homepage_Container">
       {/* Hero Banner */}
       <section className="Homepage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${heroImage})` }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${heroImage})`
+      }} />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/60" />
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
           <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
             Commercial Infrastructure Asset
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto animate-fade-in">
-            Modular development, ESG alignment, and investor-ready assets across India
-          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in">
             <Button size="lg" className="bg-primary hover:bg-primary/90 transition-all duration-300 transform hover:scale-105">
               Explore Our Platform
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white hover:text-primary transition-all duration-300 transform hover:scale-105">
-              Get Started
-            </Button>
+            
           </div>
         </div>
       </section>
@@ -198,18 +156,11 @@ const Homepage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {corePillars.map((pillar, index) => (
-              <Card 
-                key={index} 
-                className="PillarCard_Container group relative overflow-hidden backdrop-blur-sm bg-card/80 border border-border/50 hover:border-primary/30 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-[1.02] animate-fade-in"
-                style={{ animationDelay: `${index * 100}ms` }}
-              >
+            {corePillars.map((pillar, index) => <Card key={index} className="PillarCard_Container group relative overflow-hidden backdrop-blur-sm bg-card/80 border border-border/50 hover:border-primary/30 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-[1.02] animate-fade-in" style={{
+            animationDelay: `${index * 100}ms`
+          }}>
                 <div className="relative overflow-hidden">
-                  <img 
-                    src={pillar.image} 
-                    alt={pillar.title}
-                    className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
-                  />
+                  <img src={pillar.image} alt={pillar.title} className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
                   <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm p-3 rounded-xl shadow-lg">
                     <pillar.icon className="h-7 w-7 text-primary-foreground" />
@@ -225,17 +176,14 @@ const Homepage = () => {
                 </CardHeader>
                 <CardContent className="pt-0">
                   <Link to={pillar.link}>
-                    <Button 
-                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-xl"
-                    >
+                    <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-xl">
                       {pillar.cta}
                     </Button>
                   </Link>
                 </CardContent>
                 {/* Glassmorphism overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -250,22 +198,16 @@ const Homepage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {advancedCapabilities.map((capability, index) => (
-              <Card key={index} className="CapabilityCard_Container text-center group hover:shadow-lg transition-all duration-300">
+            {advancedCapabilities.map((capability, index) => <Card key={index} className="CapabilityCard_Container text-center group hover:shadow-lg transition-all duration-300">
                 <CardContent className="pt-6">
                   <div className="relative mb-4">
-                    <img 
-                      src={capability.image} 
-                      alt={capability.title}
-                      className="w-full h-32 object-cover rounded-lg mb-4"
-                    />
+                    <img src={capability.image} alt={capability.title} className="w-full h-32 object-cover rounded-lg mb-4" />
                     <capability.icon className="absolute top-2 right-2 h-6 w-6 text-white bg-primary/80 rounded p-1" />
                   </div>
                   <h3 className="font-semibold mb-2">{capability.title}</h3>
                   <p className="text-sm text-muted-foreground">{capability.description}</p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -280,8 +222,7 @@ const Homepage = () => {
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {valuePropositions.map((prop, index) => (
-              <Card key={index} className="ValuePropCard_Container p-6 backdrop-blur-sm bg-card/50 border-primary/20">
+            {valuePropositions.map((prop, index) => <Card key={index} className="ValuePropCard_Container p-6 backdrop-blur-sm bg-card/50 border-primary/20">
                 <div className="flex items-start gap-4">
                   <div className="bg-primary/10 p-3 rounded-lg">
                     <prop.icon className="h-6 w-6 text-primary" />
@@ -291,15 +232,10 @@ const Homepage = () => {
                     <p className="text-muted-foreground">{prop.description}</p>
                   </div>
                 </div>
-              </Card>
-            ))}
+              </Card>)}
           </div>
           <div className="mt-12 text-center">
-            <img 
-              src={modularImage} 
-              alt="Modular Architecture"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-lg"
-            />
+            <img src={modularImage} alt="Modular Architecture" className="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
           </div>
         </div>
       </section>
@@ -315,11 +251,7 @@ const Homepage = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <img 
-                src={yieldImage} 
-                alt="Rental Yield Analytics"
-                className="w-full rounded-lg shadow-lg"
-              />
+              <img src={yieldImage} alt="Rental Yield Analytics" className="w-full rounded-lg shadow-lg" />
             </div>
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
@@ -368,11 +300,7 @@ const Homepage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <Card className="ESGCard_Certification text-center">
               <CardContent className="pt-6">
-                <img 
-                  src={certificationImage} 
-                  alt="Green Building Certification"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
+                <img src={certificationImage} alt="Green Building Certification" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Award className="h-8 w-8 text-primary mx-auto mb-2" />
                 <h3 className="font-semibold mb-2">Green Building Certifications</h3>
                 <p className="text-sm text-muted-foreground">LEED and GRIHA certified developments</p>
@@ -380,11 +308,7 @@ const Homepage = () => {
             </Card>
             <Card className="ESGCard_Solar text-center">
               <CardContent className="pt-6">
-                <img 
-                  src={solarImage} 
-                  alt="Solar Infrastructure"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
+                <img src={solarImage} alt="Solar Infrastructure" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Sun className="h-8 w-8 text-primary mx-auto mb-2" />
                 <h3 className="font-semibold mb-2">Solar Infrastructure</h3>
                 <p className="text-sm text-muted-foreground">Renewable energy generation</p>
@@ -392,11 +316,7 @@ const Homepage = () => {
             </Card>
             <Card className="ESGCard_Carbon text-center">
               <CardContent className="pt-6">
-                <img 
-                  src={carbonImage} 
-                  alt="Carbon Credit Monetization"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
+                <img src={carbonImage} alt="Carbon Credit Monetization" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <Leaf className="h-8 w-8 text-primary mx-auto mb-2" />
                 <h3 className="font-semibold mb-2">Carbon Credit Monetization</h3>
                 <p className="text-sm text-muted-foreground">Environmental impact tracking</p>
@@ -404,11 +324,7 @@ const Homepage = () => {
             </Card>
             <Card className="ESGCard_Dashboard text-center">
               <CardContent className="pt-6">
-                <img 
-                  src={esgUIImage} 
-                  alt="ESG Dashboards"
-                  className="w-full h-32 object-cover rounded-lg mb-4"
-                />
+                <img src={esgUIImage} alt="ESG Dashboards" className="w-full h-32 object-cover rounded-lg mb-4" />
                 <BarChart3 className="h-8 w-8 text-primary mx-auto mb-2" />
                 <h3 className="font-semibold mb-2">ESG Dashboards</h3>
                 <p className="text-sm text-muted-foreground">Investor and tenant reporting</p>
@@ -434,11 +350,7 @@ const Homepage = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <img 
-                src={contactImage} 
-                alt="Contact Us"
-                className="w-full rounded-lg shadow-lg"
-              />
+              <img src={contactImage} alt="Contact Us" className="w-full rounded-lg shadow-lg" />
             </div>
             <Card className="Form_HomepageInquiry">
               <CardHeader>
@@ -450,28 +362,17 @@ const Homepage = () => {
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Name</Label>
-                      <Input
-                        id="name"
-                        value={formData.name}
-                        onChange={(e) => handleInputChange("name", e.target.value)}
-                        placeholder="Your full name"
-                        required
-                      />
+                      <Input id="name" value={formData.name} onChange={e => handleInputChange("name", e.target.value)} placeholder="Your full name" required />
                     </div>
                     <div>
                       <Label htmlFor="organization">Organization</Label>
-                      <Input
-                        id="organization"
-                        value={formData.organization}
-                        onChange={(e) => handleInputChange("organization", e.target.value)}
-                        placeholder="Company/Organization"
-                      />
+                      <Input id="organization" value={formData.organization} onChange={e => handleInputChange("organization", e.target.value)} placeholder="Company/Organization" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="interestArea">Interest Area</Label>
-                      <Select value={formData.interestArea} onValueChange={(value) => handleInputChange("interestArea", value)}>
+                      <Select value={formData.interestArea} onValueChange={value => handleInputChange("interestArea", value)}>
                         <SelectTrigger>
                           <SelectValue placeholder="Select your interest" />
                         </SelectTrigger>
@@ -485,23 +386,12 @@ const Homepage = () => {
                     </div>
                     <div>
                       <Label htmlFor="location">Location</Label>
-                      <Input
-                        id="location"
-                        value={formData.location}
-                        onChange={(e) => handleInputChange("location", e.target.value)}
-                        placeholder="Preferred location"
-                      />
+                      <Input id="location" value={formData.location} onChange={e => handleInputChange("location", e.target.value)} placeholder="Preferred location" />
                     </div>
                   </div>
                   <div>
                     <Label htmlFor="message">Message</Label>
-                    <Textarea
-                      id="message"
-                      value={formData.message}
-                      onChange={(e) => handleInputChange("message", e.target.value)}
-                      placeholder="Tell us about your requirements"
-                      rows={4}
-                    />
+                    <Textarea id="message" value={formData.message} onChange={e => handleInputChange("message", e.target.value)} placeholder="Tell us about your requirements" rows={4} />
                   </div>
                   <Button type="submit" className="w-full">
                     Get in Touch
@@ -512,8 +402,6 @@ const Homepage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default Homepage;
