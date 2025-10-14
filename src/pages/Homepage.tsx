@@ -54,7 +54,7 @@ const Homepage = () => {
     {
       icon: DollarSign,
       title: "Fund Raising",
-      description: "Institutional partnerships, REIT alignment, fractional ownership",
+      description: "Empowering real estate ventures through strategic capital partnerships and investor relations. We align financial growth with sustainable development, ensuring long-term asset value and investor confidence.",
       image: investorImage,
       link: "/reit-invest",
       cta: "View Investment Models"
@@ -62,7 +62,7 @@ const Homepage = () => {
     {
       icon: MapPin,
       title: "Land Assets",
-      description: "Prime city plots, mall-adjacent parcels, office-ready zones",
+      description: "Curating prime land parcels with high appreciation potential. Our strategic acquisitions focus on location, connectivity, and zoning to maximize future commercial and industrial opportunities.",
       image: landImage,
       link: "/land-assets",
       cta: "Explore Land Opportunities"
@@ -70,7 +70,7 @@ const Homepage = () => {
     {
       icon: Building2,
       title: "Built Assets",
-      description: "Architecturally rich, structurally sound, ESG-compliant buildings",
+      description: "Developing high-quality, energy-efficient commercial buildings that combine design excellence with operational sustainability. Every project is engineered for durability and performance.",
       image: buildingImage,
       link: "/build-asset",
       cta: "View Build Specifications"
@@ -78,7 +78,7 @@ const Homepage = () => {
     {
       icon: Home,
       title: "Selling Assets",
-      description: "Floor-wise or full asset sales, value-added acquisitions",
+      description: "Offering tailor-made sales solutions for investors and clients. We bridge opportunities through data-driven marketing, maximizing ROI, and seamless transaction experiences.",
       image: salesImage,
       link: "/sell",
       cta: "Sell or Buy Commercial Property"
@@ -86,7 +86,7 @@ const Homepage = () => {
     {
       icon: Hammer,
       title: "Rental / Lease Assets",
-      description: "Flexible leasing for restaurants, jewellery, offices, lifestyle tenants",
+      description: "Delivering flexible rental and leasing models for long-term business occupancy. Our portfolio includes ready-to-move spaces designed for modern commercial needs.",
       image: retailImage,
       link: "/rent-lease-asset",
       cta: "Browse Lease Options"
@@ -94,7 +94,7 @@ const Homepage = () => {
     {
       icon: Car,
       title: "Commercial Infrastructure",
-      description: "Roads, utilities, solar, smart systems, car parking",
+      description: "Building integrated commercial ecosystems that fuel business growth. From logistics parks to tech hubs, we create future-ready spaces that empower industries.",
       image: infrastructureImage,
       link: "/projects",
       cta: "Explore Infrastructure Features"
@@ -189,39 +189,51 @@ const Homepage = () => {
       </section>
 
       {/* Core Pillars Section */}
-      <section className="Homepage_CorePillars py-20 bg-background">
+      <section className="Homepage_CorePillars py-20 bg-gradient-to-b from-background to-muted/20">
         <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Our Strategic Pillars</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Comprehensive commercial real estate solutions for modern investors and tenants
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Strategic Pillars</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Comprehensive commercial real estate solutions driving sustainable growth and investor success
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {corePillars.map((pillar, index) => (
-              <Card key={index} className="PillarCard_Container group hover:shadow-lg transition-all duration-300 transform hover:-translate-y-2">
-                <div className="relative overflow-hidden rounded-t-lg">
+              <Card 
+                key={index} 
+                className="PillarCard_Container group relative overflow-hidden backdrop-blur-sm bg-card/80 border border-border/50 hover:border-primary/30 shadow-lg hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 hover:scale-[1.02] animate-fade-in"
+                style={{ animationDelay: `${index * 100}ms` }}
+              >
+                <div className="relative overflow-hidden">
                   <img 
                     src={pillar.image} 
                     alt={pillar.title}
-                    className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-110"
+                    className="w-full h-56 object-cover transition-transform duration-700 group-hover:scale-110"
                   />
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
-                  <pillar.icon className="absolute top-4 right-4 h-8 w-8 text-white" />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent" />
+                  <div className="absolute top-4 right-4 bg-primary/90 backdrop-blur-sm p-3 rounded-xl shadow-lg">
+                    <pillar.icon className="h-7 w-7 text-primary-foreground" />
+                  </div>
                 </div>
-                <CardHeader>
-                  <CardTitle className="flex items-center gap-2">
+                <CardHeader className="space-y-3 pb-4">
+                  <CardTitle className="text-2xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                     {pillar.title}
                   </CardTitle>
-                  <CardDescription>{pillar.description}</CardDescription>
+                  <CardDescription className="text-base leading-relaxed text-muted-foreground line-clamp-5">
+                    {pillar.description}
+                  </CardDescription>
                 </CardHeader>
-                <CardContent>
+                <CardContent className="pt-0">
                   <Link to={pillar.link}>
-                    <Button className="w-full transition-all duration-300 hover:scale-105">
+                    <Button 
+                      className="w-full bg-primary hover:bg-primary/90 text-primary-foreground font-semibold transition-all duration-300 transform hover:scale-105 shadow-md hover:shadow-xl"
+                    >
                       {pillar.cta}
                     </Button>
                   </Link>
                 </CardContent>
+                {/* Glassmorphism overlay effect */}
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </Card>
             ))}
           </div>
