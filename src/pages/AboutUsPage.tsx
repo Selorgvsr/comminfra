@@ -4,41 +4,19 @@ import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
-import { 
-  Building2, 
-  Target, 
-  Users, 
-  Handshake, 
-  MapPin, 
-  Wrench, 
-  ShoppingCart, 
-  Home, 
-  Truck,
-  Sun,
-  Leaf,
-  Brain,
-  BarChart3,
-  ArrowRight,
-  Upload
-} from "lucide-react";
+import { Building2, Target, Users, Handshake, MapPin, Wrench, ShoppingCart, Home, Truck, Sun, Leaf, Brain, BarChart3, ArrowRight, Upload } from "lucide-react";
 import indiaCommercialEvening from "@/assets/india-commercial-evening-hd.jpg";
 import visionaryInfrastructure from "@/assets/visionary-infrastructure.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import leadershipTeamMeeting from "@/assets/leadership-team-meeting.jpg";
-
 const AboutUsPage = () => {
-  return (
-    <div className="min-h-screen bg-background">
+  return <div className="min-h-screen bg-background">
       {/* Hero Section */}
       <section className="AboutUs_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
-          <img
-            src={indiaCommercialEvening}
-            alt="India's commercial skyline at sunset"
-            className="w-full h-full object-cover"
-          />
+          <img src={indiaCommercialEvening} alt="India's commercial skyline at sunset" className="w-full h-full object-cover" />
           <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background/60 backdrop-blur-[2px]" />
         </div>
         
@@ -46,17 +24,13 @@ const AboutUsPage = () => {
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
             Building India's Future -We Proud To Be A This Part Of Journey
           </h1>
-          <p className="text-xl md:text-2xl text-foreground mb-8 max-w-3xl mx-auto animate-fade-in [animation-delay:200ms]">
-            Modular design, ESG strategy, and investor-grade execution
-          </p>
+          
           <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
             <Button variant="hero" size="lg" className="group">
               Explore Our Platform
               <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
             </Button>
-            <Button variant="investor" size="lg">
-              Meet the Team
-            </Button>
+            
           </div>
         </div>
       </section>
@@ -88,11 +62,7 @@ const AboutUsPage = () => {
             </div>
             
             <div className="relative">
-              <img
-                src={visionaryInfrastructure}
-                alt="Visionary sustainable infrastructure"
-                className="w-full rounded-xl shadow-strong hover-scale"
-              />
+              <img src={visionaryInfrastructure} alt="Visionary sustainable infrastructure" className="w-full rounded-xl shadow-strong hover-scale" />
               <div className="absolute top-4 right-4 flex gap-2">
                 <div className="bg-success/20 text-success px-3 py-1 rounded-full text-sm font-medium">
                   ESG Aligned
@@ -391,11 +361,7 @@ const AboutUsPage = () => {
           </div>
           
           <div className="relative rounded-xl overflow-hidden">
-            <img
-              src={leadershipTeamMeeting}
-              alt="Leadership team meeting discussing strategy"
-              className="w-full h-80 object-cover"
-            />
+            <img src={leadershipTeamMeeting} alt="Leadership team meeting discussing strategy" className="w-full h-80 object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end">
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
@@ -440,20 +406,11 @@ const AboutUsPage = () => {
               <div className="grid md:grid-cols-2 gap-6">
                 <div className="space-y-2">
                   <Label htmlFor="name">Name</Label>
-                  <Input
-                    id="name"
-                    placeholder="Your full name"
-                    className="glass-input"
-                  />
+                  <Input id="name" placeholder="Your full name" className="glass-input" />
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="email">Email</Label>
-                  <Input
-                    id="email"
-                    type="email"
-                    placeholder="your.email@company.com"
-                    className="glass-input"
-                  />
+                  <Input id="email" type="email" placeholder="your.email@company.com" className="glass-input" />
                 </div>
               </div>
               
@@ -475,11 +432,7 @@ const AboutUsPage = () => {
                 </div>
                 <div className="space-y-2">
                   <Label htmlFor="city">Preferred City</Label>
-                  <Input
-                    id="city"
-                    placeholder="Mumbai, Delhi, Bangalore..."
-                    className="glass-input"
-                  />
+                  <Input id="city" placeholder="Mumbai, Delhi, Bangalore..." className="glass-input" />
                 </div>
               </div>
               
@@ -501,11 +454,7 @@ const AboutUsPage = () => {
               
               <div className="space-y-2">
                 <Label htmlFor="message">Message</Label>
-                <Textarea
-                  id="message"
-                  placeholder="Tell us about your requirements, investment goals, or partnership interests..."
-                  className="glass-input min-h-[120px]"
-                />
+                <Textarea id="message" placeholder="Tell us about your requirements, investment goals, or partnership interests..." className="glass-input min-h-[120px]" />
               </div>
               
               <div className="space-y-4">
@@ -529,8 +478,6 @@ const AboutUsPage = () => {
           </Card>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default AboutUsPage;
