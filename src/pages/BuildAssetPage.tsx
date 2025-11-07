@@ -20,33 +20,19 @@ import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
 const BuildAssetPage = () => {
   const architecturalFeatures = [{
-    icon: Building,
-    title: "Façade Design",
-    content: `Our Façade Designs are where art meets engineering — a blend of geometry, light, and material finesse.
-Each structure we create is wrapped in a skin of sophistication — designed to stand out yet complement the skyline.
-We merge aesthetics with performance, optimizing natural light, ventilation, and energy efficiency.
-Curtain walls, aluminum panels, and glass fins are crafted with precision and durability.
-Our façades adapt to local climate conditions, ensuring sustainability and reduced heat gain.
-Every design is tested through simulation for solar impact, wind flow, and long-term performance.
-We collaborate with leading façade consultants and global design experts to achieve timeless appeal.
-From reflective glass towers to textured concrete exteriors, our approach celebrates innovation.
-Lighting integration transforms each façade into an architectural statement by night.
-In every project, the façade becomes a visual identity — iconic, efficient, and future-ready.`,
-    image: commercialFacadeImage
-  }, {
-    icon: Settings,
-    title: "Interior Layouts",
-    content: `Our Interior Layouts are designed with purpose — merging comfort, flexibility, and brand personality.
-Spaces are planned for flow, human interaction, and operational efficiency.
-We create layouts that adapt — from open office floors to boutique retail showrooms.
-Natural light, spatial rhythm, and acoustics define our design principles.
-Every inch of space is optimized for productivity, movement, and mood.
-Our design team studies behavioral patterns, user journeys, and work dynamics.
-Modular partitions, adaptable furniture, and ergonomic planning define the core layout.
-We balance luxury with function — ensuring aesthetic harmony and operational ease.
-Sustainability guides our design — from eco-materials to energy-efficient lighting.
-Each space is curated to elevate user experience while maintaining timeless visual grace.`,
-    image: commercialInteriorImage
+    icon: Zap,
+    title: "AI-Adaptive Design",
+    content: `Our AI-Adaptive Design process blends technology with creativity to shape the future of architecture.
+We use AI algorithms to optimize layouts, predict material behavior, and simulate design outcomes.
+Machine learning tools evaluate daylight, airflow, and spatial efficiency before construction begins.
+Design intelligence meets human intuition — resulting in smarter, faster, and more sustainable solutions.
+Adaptive systems continuously refine design choices based on environmental and operational data.
+We integrate IoT and BIM data for seamless collaboration and real-time design iteration.
+AI-driven façade morphing enhances building performance while maintaining aesthetics.
+Each project becomes a living model — learning, adjusting, and evolving over time.
+This innovation-driven process reduces waste, increases ROI, and enhances occupant comfort.
+AI doesn't replace creativity — it amplifies it, transforming architecture into intelligent art.`,
+    image: smartInfrastructureImage
   }, {
     icon: Leaf,
     title: "Material Palette",
@@ -62,19 +48,33 @@ Every palette reflects the brand identity of the project — refined, bold, or o
 The result: buildings that don't just look beautiful, but feel timeless.`,
     image: materialPaletteImage
   }, {
-    icon: Zap,
-    title: "AI-Adaptive Design",
-    content: `Our AI-Adaptive Design process blends technology with creativity to shape the future of architecture.
-We use AI algorithms to optimize layouts, predict material behavior, and simulate design outcomes.
-Machine learning tools evaluate daylight, airflow, and spatial efficiency before construction begins.
-Design intelligence meets human intuition — resulting in smarter, faster, and more sustainable solutions.
-Adaptive systems continuously refine design choices based on environmental and operational data.
-We integrate IoT and BIM data for seamless collaboration and real-time design iteration.
-AI-driven façade morphing enhances building performance while maintaining aesthetics.
-Each project becomes a living model — learning, adjusting, and evolving over time.
-This innovation-driven process reduces waste, increases ROI, and enhances occupant comfort.
-AI doesn't replace creativity — it amplifies it, transforming architecture into intelligent art.`,
-    image: smartInfrastructureImage
+    icon: Settings,
+    title: "Interior Layouts",
+    content: `Our Interior Layouts are designed with purpose — merging comfort, flexibility, and brand personality.
+Spaces are planned for flow, human interaction, and operational efficiency.
+We create layouts that adapt — from open office floors to boutique retail showrooms.
+Natural light, spatial rhythm, and acoustics define our design principles.
+Every inch of space is optimized for productivity, movement, and mood.
+Our design team studies behavioral patterns, user journeys, and work dynamics.
+Modular partitions, adaptable furniture, and ergonomic planning define the core layout.
+We balance luxury with function — ensuring aesthetic harmony and operational ease.
+Sustainability guides our design — from eco-materials to energy-efficient lighting.
+Each space is curated to elevate user experience while maintaining timeless visual grace.`,
+    image: commercialInteriorImage
+  }, {
+    icon: Building,
+    title: "Façade Design",
+    content: `Our Façade Designs are where art meets engineering — a blend of geometry, light, and material finesse.
+Each structure we create is wrapped in a skin of sophistication — designed to stand out yet complement the skyline.
+We merge aesthetics with performance, optimizing natural light, ventilation, and energy efficiency.
+Curtain walls, aluminum panels, and glass fins are crafted with precision and durability.
+Our façades adapt to local climate conditions, ensuring sustainability and reduced heat gain.
+Every design is tested through simulation for solar impact, wind flow, and long-term performance.
+We collaborate with leading façade consultants and global design experts to achieve timeless appeal.
+From reflective glass towers to textured concrete exteriors, our approach celebrates innovation.
+Lighting integration transforms each façade into an architectural statement by night.
+In every project, the façade becomes a visual identity — iconic, efficient, and future-ready.`,
+    image: commercialFacadeImage
   }];
   const safetyFeatures = ["Earthquake-Resistant Framework", "Fire Safety Systems: sprinklers, smoke detectors, evacuation protocols", "Load-Bearing & Wind Resistance Metrics", "Compliance: NBC, IS Codes, global safety standards"];
   const esgFeatures = [{
