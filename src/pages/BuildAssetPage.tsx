@@ -9,7 +9,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
 import modernBusinessComplexImage from "@/assets/modern-business-complex.jpg";
 import commercialInteriorImage from "@/assets/custom-space-planning.jpg";
-import materialPaletteImage from "@/assets/material-palette-showcase.jpg";
+import materialPaletteImage from "@/assets/architectural-wood-facade.jpg";
 import smartInfrastructureImage from "@/assets/smart-infrastructure-blueprint.jpg";
 import fireSafetyImage from "@/assets/fire-safety-system.jpg";
 import rooftopSolarImage from "@/assets/rooftop-solar-building.jpg";
