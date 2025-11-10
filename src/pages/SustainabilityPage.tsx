@@ -214,9 +214,7 @@ const SustainabilityPage = () => {
                     </div>
 
                     <div className="pt-4">
-                      <Button size="lg" className="bg-gradient-to-r from-green-600 to-blue-600 hover:from-green-700 hover:to-blue-700 text-white px-8 shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                        Learn More
-                      </Button>
+                      
                     </div>
                   </div>
                 </div>
