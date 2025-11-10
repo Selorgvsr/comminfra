@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import commercialFacadeImage from "@/assets/commercial-facade-modern.jpg";
+import commercialFacadeImage from "@/assets/glass-tower-facade-modern.jpg";
 import modernBusinessComplexImage from "@/assets/modern-business-complex.jpg";
 import commercialInteriorImage from "@/assets/custom-space-planning.jpg";
 import materialPaletteImage from "@/assets/architectural-wood-facade.jpg";
