@@ -21,7 +21,6 @@ import completedWithTenantsImage from "@/assets/completed-with-tenants.jpg";
 import propertyHandoverImage from "@/assets/property-handover.jpg";
 import leaseToOwnHandoverImage from "@/assets/lease-to-own-handover.jpg";
 import corporateOfficModernImage from "@/assets/corporate-office-modern.jpg";
-
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
@@ -126,7 +125,6 @@ const ProjectsPage = () => {
     projects: ["Eco Office Tower", "Solar Shopping Mall", "Sustainable Plaza"],
     count: 6
   }];
-
   const ongoingProjects = [{
     name: "Metro Lifestyle Center",
     location: "Bangalore, Karnataka",
@@ -152,7 +150,6 @@ const ProjectsPage = () => {
     description: "Modern business park designed for IT and tech companies with integrated solar power and rainwater harvesting systems.",
     image: constructionToLifestyleCenterImage
   }];
-
   const futureProjects = [{
     name: "Eco Corporate Campus",
     location: "Chennai, Tamil Nadu",
@@ -170,13 +167,19 @@ const ProjectsPage = () => {
     location: "Delhi NCR",
     image: jointDevelopmentModernImage
   }];
-
-  const galleryImages = [
-    { src: completedWithTenantsImage, alt: "Completed commercial complex with tenants" },
-    { src: propertyHandoverImage, alt: "Property handover ceremony" },
-    { src: leaseToOwnHandoverImage, alt: "Lease to own property handover" },
-    { src: corporateOfficModernImage, alt: "Modern corporate office building" }
-  ];
+  const galleryImages = [{
+    src: completedWithTenantsImage,
+    alt: "Completed commercial complex with tenants"
+  }, {
+    src: propertyHandoverImage,
+    alt: "Property handover ceremony"
+  }, {
+    src: leaseToOwnHandoverImage,
+    alt: "Lease to own property handover"
+  }, {
+    src: corporateOfficModernImage,
+    alt: "Modern corporate office building"
+  }];
   return <div className="min-h-screen">
       {/* SEO Meta Tags */}
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
@@ -265,14 +268,9 @@ const ProjectsPage = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {ongoingProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
+            {ongoingProjects.map((project, index) => <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
                 <div className="relative h-56 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  <img src={project.image} alt={project.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 </div>
                 <CardContent className="p-6">
@@ -290,8 +288,7 @@ const ProjectsPage = () => {
                     {project.description}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -300,21 +297,14 @@ const ProjectsPage = () => {
       <section id="future_projects_section" className="py-20 bg-background">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
-              Future Projects
-            </h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">UPCOMING PROJECTS</h2>
             <div className="w-20 h-1 bg-commercial mx-auto"></div>
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {futureProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
+            {futureProjects.map((project, index) => <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
                 <div className="relative h-64 overflow-hidden">
-                  <img 
-                    src={project.image} 
-                    alt={project.name}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                  />
+                  <img src={project.image} alt={project.name} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy via-commercial-navy/50 to-transparent flex items-center justify-center">
                     <span className="text-white text-2xl font-bold uppercase tracking-wider">
                       Coming Soon
@@ -330,8 +320,7 @@ const ProjectsPage = () => {
                     {project.location}
                   </p>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -347,20 +336,10 @@ const ProjectsPage = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {galleryImages.map((image, index) => (
-              <div 
-                key={index} 
-                className="relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer group"
-                onClick={() => setSelectedGalleryImage(image.src)}
-              >
-                <img 
-                  src={image.src} 
-                  alt={image.alt}
-                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                />
+            {galleryImages.map((image, index) => <div key={index} className="relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer group" onClick={() => setSelectedGalleryImage(image.src)}>
+                <img src={image.src} alt={image.alt} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                 <div className="absolute inset-0 bg-commercial-navy/0 group-hover:bg-commercial-navy/20 transition-colors duration-300"></div>
-              </div>
-            ))}
+              </div>)}
           </div>
         </div>
       </section>
@@ -368,13 +347,7 @@ const ProjectsPage = () => {
       {/* Lightbox Dialog */}
       <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
         <DialogContent className="max-w-5xl p-0 border-0">
-          {selectedGalleryImage && (
-            <img 
-              src={selectedGalleryImage} 
-              alt="Gallery image" 
-              className="w-full h-auto rounded-lg"
-            />
-          )}
+          {selectedGalleryImage && <img src={selectedGalleryImage} alt="Gallery image" className="w-full h-auto rounded-lg" />}
         </DialogContent>
       </Dialog>
 
