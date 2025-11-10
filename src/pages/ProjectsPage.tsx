@@ -254,9 +254,7 @@ const ProjectsPage = () => {
                 <Button variant="investor" size="lg">
                   Schedule a Project Tour
                 </Button>
-                <Button variant="outline" size="lg" className="border-white text-white hover:bg-white hover:text-commercial">
-                  Talk to Our Development Team
-                </Button>
+                
               </div>
             </div>
             <div>
