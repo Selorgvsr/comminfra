@@ -482,11 +482,7 @@ const BuyPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
             {developmentStages.map((stage, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
-                  <img 
-                    src={stage.image} 
-                    alt={stage.title} 
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" 
-                  />
+                  <img src={stage.image} alt={stage.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute top-4 right-4">
                     <Badge variant="outline" className="text-xs bg-white/90 backdrop-blur-sm">
                       {stage.progress}% Complete
@@ -607,10 +603,7 @@ const BuyPage = () => {
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                    <Link to="/institutional-inquiry">
-                      Explore Opportunities
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
+                    
                   </Button>
                 </div>
               </div>
@@ -638,10 +631,7 @@ const BuyPage = () => {
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                    <Link to="/corporate-inquiry">
-                      Explore Opportunities
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
+                    
                   </Button>
                 </div>
                 
@@ -691,10 +681,7 @@ const BuyPage = () => {
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                    <Link to="/hni-inquiry">
-                      Explore Opportunities
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
+                    
                   </Button>
                 </div>
               </div>
@@ -722,10 +709,7 @@ const BuyPage = () => {
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
-                    <Link to="/reit-inquiry">
-                      Explore Opportunities
-                      <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                    </Link>
+                    
                   </Button>
                 </div>
                 
