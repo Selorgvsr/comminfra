@@ -1,13 +1,29 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Dialog, DialogContent } from "@/components/ui/dialog";
 import { Building2, MapPin, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSign, Users, Calendar, FileText, Filter, Award, Target, Clock } from "lucide-react";
+import { useState } from "react";
 import projectsPortfolioMontageImage from "@/assets/projects-portfolio-montage.jpg";
 import projectCardsEsgImage from "@/assets/project-cards-esg.jpg";
 import projectCategoriesFilterImage from "@/assets/project-categories-filter.jpg";
 import esgSustainableBuildingImage from "@/assets/esg-sustainable-commercial-building.jpg";
 import projectTimelineImage from "@/assets/project-timeline.jpg";
 import investorMeetingCalendarImage from "@/assets/investor-meeting-calendar.jpg";
+import semiCompletedScaffoldingImage from "@/assets/semi-completed-scaffolding.jpg";
+import interiorFitoutProgressImage from "@/assets/interior-fitout-progress.jpg";
+import constructionFoundationWorkImage from "@/assets/construction-foundation-work.jpg";
+import constructionToLifestyleCenterImage from "@/assets/construction-to-lifestyle-center.jpg";
+import smartInfrastructureBlueprintImage from "@/assets/smart-infrastructure-blueprint.jpg";
+import infrastructureBlueprintImage from "@/assets/infrastructure-blueprint.jpg";
+import visionaryInfrastructureImage from "@/assets/visionary-infrastructure.jpg";
+import jointDevelopmentModernImage from "@/assets/joint-development-modern.jpg";
+import completedWithTenantsImage from "@/assets/completed-with-tenants.jpg";
+import propertyHandoverImage from "@/assets/property-handover.jpg";
+import leaseToOwnHandoverImage from "@/assets/lease-to-own-handover.jpg";
+import corporateOfficModernImage from "@/assets/corporate-office-modern.jpg";
+
 const ProjectsPage = () => {
+  const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
     title: "Green Valley Business Park",
     location: "Mumbai, Maharashtra",
@@ -110,6 +126,57 @@ const ProjectsPage = () => {
     projects: ["Eco Office Tower", "Solar Shopping Mall", "Sustainable Plaza"],
     count: 6
   }];
+
+  const ongoingProjects = [{
+    name: "Metro Lifestyle Center",
+    location: "Bangalore, Karnataka",
+    status: "Under Construction",
+    description: "A state-of-the-art mixed-use development featuring retail spaces, entertainment zones, and modern amenities. Expected completion in Q4 2024.",
+    image: semiCompletedScaffoldingImage
+  }, {
+    name: "Solar Agri Hub",
+    location: "Ahmedabad, Gujarat",
+    status: "Foundation Stage",
+    description: "Revolutionary agrivoltaic project combining sustainable agriculture with solar energy generation. Pioneering dual land-use technology.",
+    image: constructionFoundationWorkImage
+  }, {
+    name: "Urban Commons Plaza",
+    location: "Pune, Maharashtra",
+    status: "Interior Fitout",
+    description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
+    image: interiorFitoutProgressImage
+  }, {
+    name: "Tech Valley Business Park",
+    location: "Hyderabad, Telangana",
+    status: "Structural Work",
+    description: "Modern business park designed for IT and tech companies with integrated solar power and rainwater harvesting systems.",
+    image: constructionToLifestyleCenterImage
+  }];
+
+  const futureProjects = [{
+    name: "Eco Corporate Campus",
+    location: "Chennai, Tamil Nadu",
+    image: smartInfrastructureBlueprintImage
+  }, {
+    name: "Smart Tech Park Phase 2",
+    location: "Bangalore, Karnataka",
+    image: infrastructureBlueprintImage
+  }, {
+    name: "Green Retail Hub",
+    location: "Mumbai, Maharashtra",
+    image: visionaryInfrastructureImage
+  }, {
+    name: "Innovation District",
+    location: "Delhi NCR",
+    image: jointDevelopmentModernImage
+  }];
+
+  const galleryImages = [
+    { src: completedWithTenantsImage, alt: "Completed commercial complex with tenants" },
+    { src: propertyHandoverImage, alt: "Property handover ceremony" },
+    { src: leaseToOwnHandoverImage, alt: "Lease to own property handover" },
+    { src: corporateOfficModernImage, alt: "Modern corporate office building" }
+  ];
   return <div className="min-h-screen">
       {/* SEO Meta Tags */}
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
@@ -187,8 +254,129 @@ const ProjectsPage = () => {
         </div>
       </section>
 
-      {/* Project Categories Section */}
-      
+      {/* Ongoing Projects Section */}
+      <section id="ongoing_projects_section" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
+              Ongoing Projects
+            </h2>
+            <div className="w-20 h-1 bg-commercial mx-auto"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {ongoingProjects.map((project, index) => (
+              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
+                <div className="relative h-56 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy/80 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-commercial-navy mb-2">
+                    {project.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground mb-2 flex items-center">
+                    <MapPin className="h-4 w-4 mr-1 text-commercial" />
+                    {project.location}
+                  </p>
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-3">
+                    {project.status}
+                  </span>
+                  <p className="text-sm text-muted-foreground leading-relaxed">
+                    {project.description}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Future Projects Section */}
+      <section id="future_projects_section" className="py-20 bg-background">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
+              Future Projects
+            </h2>
+            <div className="w-20 h-1 bg-commercial mx-auto"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            {futureProjects.map((project, index) => (
+              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20 shadow-lg group">
+                <div className="relative h-64 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.name}
+                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy via-commercial-navy/50 to-transparent flex items-center justify-center">
+                    <span className="text-white text-2xl font-bold uppercase tracking-wider">
+                      Coming Soon
+                    </span>
+                  </div>
+                </div>
+                <CardContent className="p-6">
+                  <h3 className="text-xl font-bold text-commercial-navy mb-2">
+                    {project.name}
+                  </h3>
+                  <p className="text-sm text-muted-foreground flex items-center">
+                    <MapPin className="h-4 w-4 mr-1 text-commercial" />
+                    {project.location}
+                  </p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Project Gallery Section */}
+      <section id="project_gallery_section" className="py-20 bg-muted/30">
+        <div className="container">
+          <div className="text-center mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
+              Project Gallery
+            </h2>
+            <div className="w-20 h-1 bg-commercial mx-auto"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {galleryImages.map((image, index) => (
+              <div 
+                key={index} 
+                className="relative h-64 overflow-hidden rounded-lg shadow-lg cursor-pointer group"
+                onClick={() => setSelectedGalleryImage(image.src)}
+              >
+                <img 
+                  src={image.src} 
+                  alt={image.alt}
+                  className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                />
+                <div className="absolute inset-0 bg-commercial-navy/0 group-hover:bg-commercial-navy/20 transition-colors duration-300"></div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Lightbox Dialog */}
+      <Dialog open={!!selectedGalleryImage} onOpenChange={() => setSelectedGalleryImage(null)}>
+        <DialogContent className="max-w-5xl p-0 border-0">
+          {selectedGalleryImage && (
+            <img 
+              src={selectedGalleryImage} 
+              alt="Gallery image" 
+              className="w-full h-auto rounded-lg"
+            />
+          )}
+        </DialogContent>
+      </Dialog>
 
       {/* ESG & Sustainability Impact Section */}
       <section id="project_esg_impact_section" className="py-20 bg-background">
