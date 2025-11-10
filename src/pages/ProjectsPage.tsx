@@ -7,148 +7,118 @@ import projectCategoriesFilterImage from "@/assets/project-categories-filter.jpg
 import esgSustainableBuildingImage from "@/assets/esg-sustainable-commercial-building.jpg";
 import projectTimelineImage from "@/assets/project-timeline.jpg";
 import investorMeetingCalendarImage from "@/assets/investor-meeting-calendar.jpg";
-
 const ProjectsPage = () => {
-  const featuredProjects = [
-    {
-      title: "Green Valley Business Park",
-      location: "Mumbai, Maharashtra",
-      type: "Business Park",
-      esgHighlight: "100% Solar Powered",
-      status: "Completed",
-      description: "Modern business complex with integrated solar infrastructure",
-    },
-    {
-      title: "Metro Lifestyle Center",
-      location: "Bangalore, Karnataka",
-      type: "Mixed-Use Development",
-      esgHighlight: "LEED Gold Certified",
-      status: "Ongoing",
-      description: "Retail and entertainment hub with sustainable design",
-    },
-    {
-      title: "Smart Commerce Plaza",
-      location: "Pune, Maharashtra",
-      type: "Retail Complex",
-      esgHighlight: "Carbon Neutral",
-      status: "Completed",
-      description: "High-street retail with smart building technology",
-    },
-    {
-      title: "Eco Corporate Campus",
-      location: "Chennai, Tamil Nadu",
-      type: "Office Complex",
-      esgHighlight: "Rainwater Harvesting",
-      status: "Upcoming",
-      description: "Corporate offices with environmental sustainability focus",
-    },
-    {
-      title: "Solar Agri Hub",
-      location: "Ahmedabad, Gujarat",
-      type: "Agrivoltaic Zone",
-      esgHighlight: "Dual Land Use",
-      status: "Ongoing",
-      description: "Agricultural land with solar panel integration",
-    },
-    {
-      title: "Urban Retail District",
-      location: "Hyderabad, Telangana",
-      type: "Lifestyle Center",
-      esgHighlight: "Zero Waste",
-      status: "Completed",
-      description: "Shopping and dining destination with waste management",
-    },
-  ];
-
-  const projectCategories = [
-    {
-      title: "Mixed-Use Developments",
-      count: "12 Projects",
-      icon: Building2,
-    },
-    {
-      title: "Retail & Office Complexes",
-      count: "18 Projects",
-      icon: Building2,
-    },
-    {
-      title: "Lifestyle Centers",
-      count: "8 Projects",
-      icon: Users,
-    },
-    {
-      title: "Business Parks",
-      count: "15 Projects",
-      icon: Building2,
-    },
-    {
-      title: "Agrivoltaic Zones",
-      count: "6 Projects",
-      icon: Sun,
-    },
-  ];
-
-  const esgMetrics = [
-    {
-      title: "Solar Capacity Installed",
-      value: "25 MW",
-      icon: Sun,
-    },
-    {
-      title: "Carbon Credits Generated",
-      value: "50,000 Tons CO2e",
-      icon: Leaf,
-    },
-    {
-      title: "Water Conservation",
-      value: "2M Liters/Year",
-      icon: Droplets,
-    },
-    {
-      title: "LEED Certified Projects",
-      value: "85%",
-      icon: Award,
-    },
-  ];
-
-  const projectTimeline = [
-    {
-      year: "2024",
-      status: "Upcoming",
-      projects: ["Eco Corporate Campus", "Smart Tech Park", "Green Retail Hub"],
-      count: 3,
-    },
-    {
-      year: "2023",
-      status: "Ongoing",
-      projects: ["Metro Lifestyle Center", "Solar Agri Hub", "Urban Commons"],
-      count: 5,
-    },
-    {
-      year: "2022",
-      status: "Completed",
-      projects: ["Green Valley Business Park", "Smart Commerce Plaza", "Urban Retail District"],
-      count: 8,
-    },
-    {
-      year: "2021",
-      status: "Completed",
-      projects: ["Eco Office Tower", "Solar Shopping Mall", "Sustainable Plaza"],
-      count: 6,
-    },
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const featuredProjects = [{
+    title: "Green Valley Business Park",
+    location: "Mumbai, Maharashtra",
+    type: "Business Park",
+    esgHighlight: "100% Solar Powered",
+    status: "Completed",
+    description: "Modern business complex with integrated solar infrastructure"
+  }, {
+    title: "Metro Lifestyle Center",
+    location: "Bangalore, Karnataka",
+    type: "Mixed-Use Development",
+    esgHighlight: "LEED Gold Certified",
+    status: "Ongoing",
+    description: "Retail and entertainment hub with sustainable design"
+  }, {
+    title: "Smart Commerce Plaza",
+    location: "Pune, Maharashtra",
+    type: "Retail Complex",
+    esgHighlight: "Carbon Neutral",
+    status: "Completed",
+    description: "High-street retail with smart building technology"
+  }, {
+    title: "Eco Corporate Campus",
+    location: "Chennai, Tamil Nadu",
+    type: "Office Complex",
+    esgHighlight: "Rainwater Harvesting",
+    status: "Upcoming",
+    description: "Corporate offices with environmental sustainability focus"
+  }, {
+    title: "Solar Agri Hub",
+    location: "Ahmedabad, Gujarat",
+    type: "Agrivoltaic Zone",
+    esgHighlight: "Dual Land Use",
+    status: "Ongoing",
+    description: "Agricultural land with solar panel integration"
+  }, {
+    title: "Urban Retail District",
+    location: "Hyderabad, Telangana",
+    type: "Lifestyle Center",
+    esgHighlight: "Zero Waste",
+    status: "Completed",
+    description: "Shopping and dining destination with waste management"
+  }];
+  const projectCategories = [{
+    title: "Mixed-Use Developments",
+    count: "12 Projects",
+    icon: Building2
+  }, {
+    title: "Retail & Office Complexes",
+    count: "18 Projects",
+    icon: Building2
+  }, {
+    title: "Lifestyle Centers",
+    count: "8 Projects",
+    icon: Users
+  }, {
+    title: "Business Parks",
+    count: "15 Projects",
+    icon: Building2
+  }, {
+    title: "Agrivoltaic Zones",
+    count: "6 Projects",
+    icon: Sun
+  }];
+  const esgMetrics = [{
+    title: "Solar Capacity Installed",
+    value: "25 MW",
+    icon: Sun
+  }, {
+    title: "Carbon Credits Generated",
+    value: "50,000 Tons CO2e",
+    icon: Leaf
+  }, {
+    title: "Water Conservation",
+    value: "2M Liters/Year",
+    icon: Droplets
+  }, {
+    title: "LEED Certified Projects",
+    value: "85%",
+    icon: Award
+  }];
+  const projectTimeline = [{
+    year: "2024",
+    status: "Upcoming",
+    projects: ["Eco Corporate Campus", "Smart Tech Park", "Green Retail Hub"],
+    count: 3
+  }, {
+    year: "2023",
+    status: "Ongoing",
+    projects: ["Metro Lifestyle Center", "Solar Agri Hub", "Urban Commons"],
+    count: 5
+  }, {
+    year: "2022",
+    status: "Completed",
+    projects: ["Green Valley Business Park", "Smart Commerce Plaza", "Urban Retail District"],
+    count: 8
+  }, {
+    year: "2021",
+    status: "Completed",
+    projects: ["Eco Office Tower", "Solar Shopping Mall", "Sustainable Plaza"],
+    count: 6
+  }];
+  return <div className="min-h-screen">
       {/* SEO Meta Tags */}
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
       
       {/* Hero Section */}
       <section id="hero_projects_section" className="relative py-20 lg:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url(${projectsPortfolioMontageImage})` }}
-        >
+        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
+        backgroundImage: `url(${projectsPortfolioMontageImage})`
+      }}>
           <div className="absolute inset-0 bg-commercial-navy/80"></div>
         </div>
         <div className="container relative z-10">
@@ -179,19 +149,14 @@ const ProjectsPage = () => {
           </div>
           
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredProjects.map((project, index) => (
-              <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20">
+            {featuredProjects.map((project, index) => <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20">
                 <CardContent className="p-0">
                   <div className="h-48 bg-gradient-to-br from-commercial/20 to-commercial/40 flex items-center justify-center">
                     <Building2 className="h-16 w-16 text-commercial" />
                   </div>
                   <div className="p-6">
                     <div className="flex items-center justify-between mb-2">
-                      <span className={`text-xs px-2 py-1 rounded-full ${
-                        project.status === 'Completed' ? 'bg-green-100 text-green-800' :
-                        project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' :
-                        'bg-orange-100 text-orange-800'
-                      }`}>
+                      <span className={`text-xs px-2 py-1 rounded-full ${project.status === 'Completed' ? 'bg-green-100 text-green-800' : project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' : 'bg-orange-100 text-orange-800'}`}>
                         {project.status}
                       </span>
                       <span className="text-xs bg-commercial/10 text-commercial px-2 py-1 rounded-full">
@@ -213,59 +178,17 @@ const ProjectsPage = () => {
                     </p>
                   </div>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
           
           <div className="text-center">
-            <img 
-              src={projectCardsEsgImage} 
-              alt="Project cards with solar icons and carbon credit badges"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
+            <img src={projectCardsEsgImage} alt="Project cards with solar icons and carbon credit badges" className="w-full max-w-4xl mx-auto rounded-lg shadow-medium" />
           </div>
         </div>
       </section>
 
       {/* Project Categories Section */}
-      <section id="project_categories_filter" className="py-20 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
-              Project Categories
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Explore our diverse portfolio across different commercial real estate categories
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 lg:grid-cols-5 gap-8 mb-12">
-            {projectCategories.map((category, index) => (
-              <Card key={index} className="text-center cursor-pointer hover-scale transition-all duration-300 border-commercial/20 hover:border-commercial/40 bg-commercial-navy">
-                <CardContent className="p-6">
-                  <div className="bg-solar/20 rounded-full w-16 h-16 flex items-center justify-center mx-auto mb-4">
-                    <category.icon className="h-8 w-8 text-solar" />
-                  </div>
-                  <h3 className="text-lg font-semibold text-white mb-2">
-                    {category.title}
-                  </h3>
-                  <p className="text-sm text-solar font-medium">
-                    {category.count}
-                  </p>
-                </CardContent>
-              </Card>
-            ))}
-          </div>
-          
-          <div className="text-center">
-            <img 
-              src={projectCategoriesFilterImage} 
-              alt="Category icons with zoning overlays"
-              className="w-full max-w-4xl mx-auto rounded-lg shadow-medium"
-            />
-          </div>
-        </div>
-      </section>
+      
 
       {/* ESG & Sustainability Impact Section */}
       <section id="project_esg_impact_section" className="py-20 bg-background">
@@ -280,8 +203,7 @@ const ProjectsPage = () => {
                 impact across all our commercial developments.
               </p>
               <div className="grid grid-cols-2 gap-6 mb-8">
-                {esgMetrics.map((metric, index) => (
-                  <div key={index} className="text-center">
+                {esgMetrics.map((metric, index) => <div key={index} className="text-center">
                     <div className="bg-commercial/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
                       <metric.icon className="h-6 w-6 text-commercial" />
                     </div>
@@ -291,8 +213,7 @@ const ProjectsPage = () => {
                     <div className="text-sm text-muted-foreground">
                       {metric.title}
                     </div>
-                  </div>
-                ))}
+                  </div>)}
               </div>
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
@@ -310,11 +231,7 @@ const ProjectsPage = () => {
               </div>
             </div>
             <div>
-              <img 
-                src={esgSustainableBuildingImage} 
-                alt="Sustainable commercial building with ESG features including solar panels, green walls, and electric vehicle charging"
-                className="w-full rounded-lg shadow-medium"
-              />
+              <img src={esgSustainableBuildingImage} alt="Sustainable commercial building with ESG features including solar panels, green walls, and electric vehicle charging" className="w-full rounded-lg shadow-medium" />
             </div>
           </div>
         </div>
@@ -343,17 +260,11 @@ const ProjectsPage = () => {
               </div>
             </div>
             <div>
-              <img 
-                src={investorMeetingCalendarImage} 
-                alt="Investor meeting and site visit calendar"
-                className="w-full rounded-lg shadow-medium"
-              />
+              <img src={investorMeetingCalendarImage} alt="Investor meeting and site visit calendar" className="w-full rounded-lg shadow-medium" />
             </div>
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default ProjectsPage;
