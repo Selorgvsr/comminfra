@@ -190,10 +190,7 @@ const BusinessRevenueModelPage = () => {
                     </p>
                   </div>
 
-                  <Button size="lg" className="group/btn bg-gradient-to-r from-primary to-secondary hover:from-primary/90 hover:to-secondary/90 text-white px-8 py-6 text-lg font-semibold rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:scale-105">
-                    Learn More
-                    <TrendingUp className="ml-2 w-5 h-5 group-hover/btn:translate-x-1 transition-transform duration-300" />
-                  </Button>
+                  
                 </div>
               </div>)}
           </div>
