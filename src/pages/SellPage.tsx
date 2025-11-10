@@ -245,10 +245,7 @@ const SellPage = () => {
                     <p>Each acquisition undergoes a full due-diligence cycle — zoning, valuation, and legal verification — ensuring security and transparency.</p>
                     <p className="font-semibold text-primary">We don't just buy assets; we transform them into next-gen commercial experiences.</p>
                   </div>
-                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  
                 </div>
               </div>
             </Card>
@@ -267,10 +264,7 @@ const SellPage = () => {
                     <p>Our focus is on unlocking unrealized potential — making old plazas relevant again in a fast-evolving retail ecosystem.</p>
                     <p className="font-semibold text-primary">From new lighting systems to smart navigation, every improvement enhances both footfall and financial return.</p>
                   </div>
-                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  
                 </div>
                 <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
                   <img src={shoppingArcadeTraffic} alt="Vibrant retail plaza with glass-front stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -298,10 +292,7 @@ const SellPage = () => {
                     <p>Through targeted marketing and digital presence, we amplify property value and ensure rapid re-leasing or resale.</p>
                     <p className="font-semibold text-primary">We bridge the gap between potential and perfection — redefining what high street commercial means in the modern market.</p>
                   </div>
-                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  
                 </div>
               </div>
             </Card>
@@ -320,10 +311,7 @@ const SellPage = () => {
                     <p>We collaborate with REITs, institutional buyers, and global investors to scale and reimagine these commercial communities.</p>
                     <p className="font-semibold text-primary">Every property becomes more than a workplace — it evolves into a sustainable lifestyle environment.</p>
                   </div>
-                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  
                 </div>
                 <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
                   <img src={lifestyleCenterGreen} alt="Contemporary business park with landscaped greenery" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
@@ -352,10 +340,7 @@ const SellPage = () => {
                     <p>Every rebranded property tells a story of transformation — turning aging structures into icons of modern urban life.</p>
                     <p className="font-semibold text-primary">With every block we touch, we amplify value, elevate aesthetics, and redefine what commercial success looks like.</p>
                   </div>
-                  <Button className="mt-6 bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-6 py-3 rounded-full group-hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl w-fit">
-                    Explore Opportunities
-                    <ArrowRight className="ml-2 h-5 w-5" />
-                  </Button>
+                  
                 </div>
               </div>
             </Card>
