@@ -290,10 +290,7 @@ const AboutUsPage = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="commercial" size="lg">
-              Explore Each Pillar
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </Button>
+            
           </div>
         </div>
       </section>
