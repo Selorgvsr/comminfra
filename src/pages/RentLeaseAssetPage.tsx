@@ -17,7 +17,7 @@ import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprin
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
 import leasingProposalForm from "@/assets/leasing-proposal-form.jpg";
 import restaurantReadySpace from "@/assets/restaurant-ready-space.jpg";
-import jewelleryShowroomLuxury from "@/assets/jewellery-showroom-luxury.jpg";
+import elegantJewelryBoutique from "@/assets/elegant-jewelry-boutique.jpg";
 import corporateOfficeModern from "@/assets/corporate-office-modern.jpg";
 import retailBrandStore from "@/assets/retail-brand-store.jpg";
 import lifestyleCenterWellness from "@/assets/lifestyle-center-wellness.jpg";
@@ -44,7 +44,7 @@ const RentLeaseAssetPage = () => {
     title: "Jewellery Stores",
     description: "Elegant spaces crafted for high-value products and premium clientele. Lighting designed to showcase sparkle and brilliance. Display cases arranged for optimum visibility and security. Smooth customer circulation and viewing experience. Minimalist décor enhances focus on jewellery pieces. Flexible shelving and displays for seasonal or promotional items. Strategic window placement boosts street visibility. AI insights for customer flow optimization. Security systems integrated without compromising aesthetics. Ideal for high-end jewellery brands seeking luxury and functionality. Interior materials are durable yet sophisticated — marble, glass, and steel accents. Lighting, layout, and finishes work in harmony to create a lasting impression. Every detail curated to maximize engagement and sales potential.",
     color: "from-yellow-500/20 to-amber-500/20",
-    image: jewelleryShowroomLuxury
+    image: elegantJewelryBoutique
   }, {
     icon: Briefcase,
     title: "Corporate Offices",
