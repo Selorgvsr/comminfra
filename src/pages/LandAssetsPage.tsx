@@ -12,7 +12,7 @@ import landZoningMap from "@/assets/land-zoning-map.jpg";
 import infrastructureBlueprint from "@/assets/infrastructure-blueprint.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import landSubmissionForm from "@/assets/land-submission-form.jpg";
-import downtownCityCoreImage from "@/assets/downtown-city-core-land.jpg";
+import downtownCityCoreImage from "@/assets/downtown-city-skyline-evening.jpg";
 import mallAdjacentImage from "@/assets/mall-adjacent-land.jpg";
 import officeZoneImage from "@/assets/office-zone-land.jpg";
 import mixedUseImage from "@/assets/mixed-use-land.jpg";
