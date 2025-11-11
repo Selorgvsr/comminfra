@@ -163,7 +163,7 @@ const SellPage = () => {
       </section>
 
       {/* 2. Project Stage Segmentation - Progress Grid */}
-      <section className="ProjectStage_Filter py-20 gradient-cool">
+      <section className="ProjectStage_Filter py-20 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Project Stage Segmentation</h2>
@@ -215,7 +215,7 @@ const SellPage = () => {
       </section>
 
       {/* 3. Asset Type Categories - Premium Acquisition Focus */}
-      <section className="AssetCard_Categories py-24 bg-gradient-section-1">
+      <section className="AssetCard_Categories py-24 bg-gradient-section-2 text-white">
         <div className="container px-4">
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-bold text-primary mb-6">Asset Type Categories</h2>

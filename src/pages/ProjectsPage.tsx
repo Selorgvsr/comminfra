@@ -207,7 +207,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Featured Projects Section */}
-      <section id="featured_projects_grid" className="py-20 gradient-cool">
+      <section id="featured_projects_grid" className="py-20 bg-gradient-section-1 text-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
@@ -294,7 +294,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Future Projects Section */}
-      <section id="future_projects_section" className="py-20 gradient-warm">
+      <section id="future_projects_section" className="py-20 bg-gradient-section-3 text-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">UPCOMING PROJECTS</h2>
@@ -326,7 +326,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Project Gallery Section */}
-      <section id="project_gallery_section" className="py-20 bg-gradient-section-3">
+      <section id="project_gallery_section" className="py-20 bg-gradient-section-4 text-white">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
@@ -352,7 +352,7 @@ const ProjectsPage = () => {
       </Dialog>
 
       {/* ESG & Sustainability Impact Section */}
-      <section id="project_esg_impact_section" className="py-20 gradient-mesh">
+      <section id="project_esg_impact_section" className="py-20 bg-gradient-section-1 text-white">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

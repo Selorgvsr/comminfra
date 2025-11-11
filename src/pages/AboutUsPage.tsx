@@ -36,7 +36,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="AboutUs_VisionMission py-20 gradient-cool">
+      <section className="AboutUs_VisionMission py-20 bg-gradient-section-1 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -77,7 +77,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* What We Do Section */}
-      <section className="AboutUs_WhatWeDo py-20">
+      <section className="AboutUs_WhatWeDo py-20 bg-gradient-section-2 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -160,7 +160,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Development Philosophy Section */}
-      <section className="AboutUs_Philosophy py-20 bg-gradient-section-2">
+      <section className="AboutUs_Philosophy py-20 bg-gradient-section-3 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -216,7 +216,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Core Pillars Carousel */}
-      <section className="AboutUs_CorePillars py-20">
+      <section className="AboutUs_CorePillars py-20 bg-gradient-section-4 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -296,7 +296,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Leadership & Team Section */}
-      <section className="AboutUs_Leadership py-20 gradient-warm">
+      <section className="AboutUs_Leadership py-20 bg-gradient-section-1 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">

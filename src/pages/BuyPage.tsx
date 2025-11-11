@@ -235,7 +235,7 @@ const BuyPage = () => {
       </section>
 
       {/* 2. Asset Categories - Premium Elegant Design */}
-      <section className="AssetCard_Categories py-24 bg-gradient-section-1">
+      <section className="AssetCard_Categories py-24 bg-gradient-section-1 text-white">
         <div className="container px-4 max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
@@ -513,7 +513,7 @@ const BuyPage = () => {
       </section>
 
       {/* 4. ESG Features - Icon Strip with Tooltips */}
-      <section className="ESG_Features py-20 bg-secondary/5">
+      <section className="ESG_Features py-20 bg-gradient-section-2 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">ESG Value Additions</h2>
@@ -555,7 +555,7 @@ const BuyPage = () => {
       </section>
 
       {/* 5. Tailored for Every Investor - Premium Corporate Section */}
-      <section className="BuyerPersona_Cards py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section className="BuyerPersona_Cards py-24 bg-gradient-section-3 text-white">
         <div className="container px-4 max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
@@ -731,7 +731,7 @@ const BuyPage = () => {
       </section>
 
       {/* 6. Investment Highlights - Infographic Grid */}
-      <section className="Investment_Highlights py-20 bg-secondary/5">
+      <section className="Investment_Highlights py-20 bg-gradient-section-4 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Investment Highlights</h2>

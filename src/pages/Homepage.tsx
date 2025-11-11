@@ -147,11 +147,11 @@ const Homepage = () => {
       </section>
 
       {/* Core Pillars Section */}
-      <section className="Homepage_CorePillars py-20 bg-gradient-section-1">
+      <section className="Homepage_CorePillars py-20 bg-gradient-section-1 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Strategic Pillars</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Strategic Pillars</h2>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
               Comprehensive commercial real estate solutions driving sustainable growth and investor success
             </p>
           </div>
@@ -189,11 +189,11 @@ const Homepage = () => {
       </section>
 
       {/* Advanced Add-On Capabilities */}
-      <section className="Homepage_AdvancedCapabilities py-20 gradient-warm">
+      <section className="Homepage_AdvancedCapabilities py-20 bg-gradient-section-2 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Advanced ESG Capabilities</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">Advanced ESG Capabilities</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Next-generation features for sustainable and profitable commercial development
             </p>
           </div>
@@ -213,11 +213,11 @@ const Homepage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="Homepage_ValueProposition py-20 gradient-cool">
+      <section className="Homepage_ValueProposition py-20 bg-gradient-section-3 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">Why Choose Us</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Leading commercial real estate development with proven expertise
             </p>
           </div>
@@ -241,11 +241,11 @@ const Homepage = () => {
       </section>
 
       {/* REIT & Rental Yield Investment Highlights */}
-      <section className="Homepage_REITHighlights py-20 bg-gradient-section-2">
+      <section className="Homepage_REITHighlights py-20 bg-gradient-section-4 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">REIT & Rental Yield Investment</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">REIT & Rental Yield Investment</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Snapshot of REIT-compatible assets and rental income streams
             </p>
           </div>
@@ -289,11 +289,11 @@ const Homepage = () => {
       </section>
 
       {/* Sustainability & ESG Commitment */}
-      <section className="Homepage_ESGCommitment py-20 bg-gradient-section-3">
+      <section className="Homepage_ESGCommitment py-20 bg-gradient-section-1 text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Sustainability & ESG Commitment</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">Sustainability & ESG Commitment</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Environmental responsibility with profitable returns
             </p>
           </div>
@@ -340,11 +340,11 @@ const Homepage = () => {
       </section>
 
       {/* Contact & Inquiry Portal */}
-      <section className="Homepage_ContactPortal py-20 gradient-mesh">
+      <section className="Homepage_ContactPortal py-20 gradient-mesh text-white">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            <h2 className="text-4xl font-bold mb-4 text-white">Get in Touch</h2>
+            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Ready to explore commercial real estate opportunities? Let's start the conversation.
             </p>
           </div>

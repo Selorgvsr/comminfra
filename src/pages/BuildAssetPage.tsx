@@ -156,7 +156,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       </section>
 
       {/* Architectural Design & Aesthetic Excellence */}
-      <section className="architectural_design_section py-24 bg-gradient-section-1">
+      <section className="architectural_design_section py-24 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-20">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
@@ -208,7 +208,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       </section>
 
       {/* Structural Stability & Safety Engineering */}
-      <section className="structural_safety_section py-20 px-4 gradient-warm">
+      <section className="structural_safety_section py-20 px-4 bg-gradient-section-2 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Safety & Compliance</h2>
@@ -232,7 +232,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       
 
       {/* Operational Infrastructure */}
-      <section className="infrastructure_features_section py-20 px-4 bg-gradient-section-2">
+      <section className="infrastructure_features_section py-20 px-4 bg-gradient-section-3 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Operational Infrastructure</h2>
@@ -254,7 +254,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       </section>
 
       {/* Advanced Add-On Capabilities */}
-      <section className="addon_capabilities_section py-20 px-4 gradient-cool">
+      <section className="addon_capabilities_section py-20 px-4 bg-gradient-section-4 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Future-Ready Capabilities</h2>
@@ -272,7 +272,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       </section>
 
       {/* Project Showcase */}
-      <section className="project_showcase_section py-20 px-4 bg-gradient-section-3">
+      <section className="project_showcase_section py-20 px-4 bg-gradient-section-1 text-white">
         <div className="max-w-7xl mx-auto">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Project Gallery</h2>
