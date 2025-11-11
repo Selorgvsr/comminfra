@@ -175,7 +175,7 @@ const LandAssetsPage = () => {
     question: "Are joint development partnerships available?",
     answer: "Yes, we offer JDA structures where you provide land and we handle development, sharing returns based on agreed ratios."
   }];
-  return <div className="min-h-screen">
+  return <div className="min-h-screen gradient-mesh">
       {/* 1. Hero Section - Strategic Land Acquisition Banner */}
       <section className="LandAsset_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -352,7 +352,7 @@ const LandAssetsPage = () => {
 
 
       {/* 8. FAQs for Land Buyers - Accordion Component */}
-      <section className="LandBuyer_FAQ py-20 bg-secondary/5">
+      <section className="LandBuyer_FAQ py-20 gradient-cool">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Frequently Asked Questions</h2>

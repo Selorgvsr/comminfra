@@ -146,7 +146,7 @@ const BusinessRevenueModelPage = () => {
       </section>
 
       {/* Primary Revenue Streams */}
-      <section className="primary_revenue_streams_section py-24 bg-gradient-to-b from-background to-muted/30">
+      <section className="primary_revenue_streams_section py-24 bg-gradient-section-1">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-foreground">
@@ -198,7 +198,7 @@ const BusinessRevenueModelPage = () => {
       </section>
 
       {/* Sustainability Revenue Streams */}
-      <section className="sustainability_revenue_section py-20 bg-gradient-to-b from-muted/30 to-green-500/5">
+      <section className="sustainability_revenue_section py-20 bg-gradient-section-2">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent">
@@ -242,7 +242,7 @@ const BusinessRevenueModelPage = () => {
       </section>
 
       {/* Advanced Add-On Revenue */}
-      <section className="advanced_revenue_section py-20 bg-gradient-to-b from-green-500/5 to-background">
+      <section className="advanced_revenue_section py-20 gradient-warm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">

@@ -134,7 +134,7 @@ const SellPage = () => {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
-  return <div className="min-h-screen">
+  return <div className="min-h-screen gradient-mesh">
       {/* 1. Hero Section - Sell Your Commercial Property */}
       <section className="SellPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
@@ -163,7 +163,7 @@ const SellPage = () => {
       </section>
 
       {/* 2. Project Stage Segmentation - Progress Grid */}
-      <section className="ProjectStage_Filter py-20 bg-secondary/5">
+      <section className="ProjectStage_Filter py-20 gradient-cool">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Project Stage Segmentation</h2>
@@ -215,7 +215,7 @@ const SellPage = () => {
       </section>
 
       {/* 3. Asset Type Categories - Premium Acquisition Focus */}
-      <section className="AssetCard_Categories py-24 bg-gradient-to-b from-background to-secondary/5">
+      <section className="AssetCard_Categories py-24 bg-gradient-section-1">
         <div className="container px-4">
           <div className="text-center mb-16 max-w-4xl mx-auto">
             <h2 className="text-4xl md:text-6xl font-bold text-primary mb-6">Asset Type Categories</h2>
@@ -350,7 +350,7 @@ const SellPage = () => {
 
 
       {/* 4. FAQs for Sellers - Accordion Component */}
-      <section className="FAQ_Section py-20 bg-secondary/5">
+      <section className="FAQ_Section py-20 gradient-mesh">
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Frequently Asked Questions</h2>

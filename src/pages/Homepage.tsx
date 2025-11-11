@@ -147,7 +147,7 @@ const Homepage = () => {
       </section>
 
       {/* Core Pillars Section */}
-      <section className="Homepage_CorePillars py-20 bg-gradient-to-b from-background to-muted/20">
+      <section className="Homepage_CorePillars py-20 bg-gradient-section-1">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Our Strategic Pillars</h2>
@@ -189,7 +189,7 @@ const Homepage = () => {
       </section>
 
       {/* Advanced Add-On Capabilities */}
-      <section className="Homepage_AdvancedCapabilities py-20 bg-muted/50">
+      <section className="Homepage_AdvancedCapabilities py-20 gradient-warm">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Advanced ESG Capabilities</h2>
@@ -213,7 +213,7 @@ const Homepage = () => {
       </section>
 
       {/* Why Choose Us */}
-      <section className="Homepage_ValueProposition py-20 bg-background">
+      <section className="Homepage_ValueProposition py-20 gradient-cool">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Why Choose Us</h2>
@@ -241,7 +241,7 @@ const Homepage = () => {
       </section>
 
       {/* REIT & Rental Yield Investment Highlights */}
-      <section className="Homepage_REITHighlights py-20 bg-primary/5">
+      <section className="Homepage_REITHighlights py-20 bg-gradient-section-2">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">REIT & Rental Yield Investment</h2>
@@ -289,7 +289,7 @@ const Homepage = () => {
       </section>
 
       {/* Sustainability & ESG Commitment */}
-      <section className="Homepage_ESGCommitment py-20 bg-muted/30">
+      <section className="Homepage_ESGCommitment py-20 bg-gradient-section-3">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Sustainability & ESG Commitment</h2>
@@ -340,7 +340,7 @@ const Homepage = () => {
       </section>
 
       {/* Contact & Inquiry Portal */}
-      <section className="Homepage_ContactPortal py-20 bg-background">
+      <section className="Homepage_ContactPortal py-20 gradient-mesh">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl font-bold mb-4">Get in Touch</h2>

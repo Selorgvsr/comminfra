@@ -180,7 +180,7 @@ const ProjectsPage = () => {
     src: corporateOfficModernImage,
     alt: "Modern corporate office building"
   }];
-  return <div className="min-h-screen">
+  return <div className="min-h-screen gradient-mesh">
       {/* SEO Meta Tags */}
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
       
@@ -207,7 +207,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Featured Projects Section */}
-      <section id="featured_projects_grid" className="py-20 bg-background">
+      <section id="featured_projects_grid" className="py-20 gradient-cool">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
@@ -258,7 +258,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Ongoing Projects Section */}
-      <section id="ongoing_projects_section" className="py-20 bg-muted/30">
+      <section id="ongoing_projects_section" className="py-20 bg-gradient-section-2">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
@@ -294,7 +294,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Future Projects Section */}
-      <section id="future_projects_section" className="py-20 bg-background">
+      <section id="future_projects_section" className="py-20 gradient-warm">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">UPCOMING PROJECTS</h2>
@@ -326,7 +326,7 @@ const ProjectsPage = () => {
       </section>
 
       {/* Project Gallery Section */}
-      <section id="project_gallery_section" className="py-20 bg-muted/30">
+      <section id="project_gallery_section" className="py-20 bg-gradient-section-3">
         <div className="container">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
@@ -352,7 +352,7 @@ const ProjectsPage = () => {
       </Dialog>
 
       {/* ESG & Sustainability Impact Section */}
-      <section id="project_esg_impact_section" className="py-20 bg-background">
+      <section id="project_esg_impact_section" className="py-20 gradient-mesh">
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>

@@ -205,7 +205,7 @@ const BuyPage = () => {
     question: "What financing options are available?",
     answer: "We work with leading financial institutions to provide competitive financing options, including construction-to-permanent loans, commercial mortgages, and partnership structures."
   }];
-  return <div className="min-h-screen">
+  return <div className="min-h-screen gradient-mesh">
 
       {/* 1. Hero Section - Premium Ownership Banner */}
       <section className="BuyPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -235,7 +235,7 @@ const BuyPage = () => {
       </section>
 
       {/* 2. Asset Categories - Premium Elegant Design */}
-      <section className="AssetCard_Categories py-24 bg-gradient-to-b from-white via-gray-50 to-white">
+      <section className="AssetCard_Categories py-24 bg-gradient-section-1">
         <div className="container px-4 max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">

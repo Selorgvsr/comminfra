@@ -12,7 +12,7 @@ import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import leadershipTeamMeeting from "@/assets/leadership-team-meeting.jpg";
 const AboutUsPage = () => {
-  return <div className="min-h-screen bg-background">
+  return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
       <section className="AboutUs_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 z-0">
@@ -36,7 +36,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Vision & Mission Section */}
-      <section className="AboutUs_VisionMission py-20 bg-background/50 backdrop-blur-md">
+      <section className="AboutUs_VisionMission py-20 gradient-cool">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -160,7 +160,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Development Philosophy Section */}
-      <section className="AboutUs_Philosophy py-20 bg-muted/20">
+      <section className="AboutUs_Philosophy py-20 bg-gradient-section-2">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
@@ -296,7 +296,7 @@ const AboutUsPage = () => {
       </section>
 
       {/* Leadership & Team Section */}
-      <section className="AboutUs_Leadership py-20 bg-muted/20">
+      <section className="AboutUs_Leadership py-20 gradient-warm">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
