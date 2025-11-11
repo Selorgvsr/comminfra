@@ -267,7 +267,7 @@ const BuyPage = () => {
                     <span className="text-sm font-semibold text-blue-900">Office Spaces</span>
                   </div>
                   
-                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-4xl font-bold leading-tight text-slate-50">
                     Step into the future of work
                   </h3>
                   
@@ -280,7 +280,7 @@ const BuyPage = () => {
                     
                     <p>Every workspace breathes elegance, natural light, and sustainability — perfect for companies that dream big and move fast.</p>
                     
-                    <p className="font-semibold text-gray-900">Invest in office spaces that don't just house teams — they inspire innovation.</p>
+                    <p className="font-semibold text-slate-50">Invest in office spaces that don't just house teams — they inspire innovation.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -302,7 +302,7 @@ const BuyPage = () => {
                     <span className="text-sm font-semibold text-purple-900">Commercial Plazas</span>
                   </div>
                   
-                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-4xl font-bold leading-tight text-slate-50">
                     The heart of urban interaction
                   </h3>
                   
@@ -315,7 +315,7 @@ const BuyPage = () => {
                     
                     <p>These are more than buildings; they're communities of commerce, experience, and expression.</p>
                     
-                    <p className="font-semibold text-gray-900">Architected with wide corridors, parking, safety systems, and elegant aesthetics, they invite growth, connection, and constant movement.</p>
+                    <p className="font-semibold text-slate-50">Architected with wide corridors, parking, safety systems, and elegant aesthetics, they invite growth, connection, and constant movement.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -353,7 +353,7 @@ const BuyPage = () => {
                     <span className="text-sm font-semibold text-green-900">Lifestyle Centers</span>
                   </div>
                   
-                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-4xl font-bold leading-tight text-slate-50">
                     Where lifestyle meets luxury
                   </h3>
                   
@@ -366,7 +366,7 @@ const BuyPage = () => {
                     
                     <p>These are not just commercial properties — they're lifestyle experiences engineered for emotional engagement, footfall, and long-term revenue.</p>
                     
-                    <p className="font-semibold text-gray-900">Smart layouts, biophilic design, solar rooftops, and pedestrian-friendly walkways ensure sustainability and luxury coexist.</p>
+                    <p className="font-semibold text-slate-50">Smart layouts, biophilic design, solar rooftops, and pedestrian-friendly walkways ensure sustainability and luxury coexist.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -388,7 +388,7 @@ const BuyPage = () => {
                     <span className="text-sm font-semibold text-amber-900">Business Parks</span>
                   </div>
                   
-                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-4xl font-bold leading-tight text-slate-50">
                     The evolution of enterprise
                   </h3>
                   
@@ -401,7 +401,7 @@ const BuyPage = () => {
                     
                     <p>With renewable energy systems, smart surveillance, and sustainable construction, these parks offer future-ready spaces for businesses that aim for global standards.</p>
                     
-                    <p className="font-semibold text-gray-900">A business park isn't just a workplace — it's a living ecosystem of ideas.</p>
+                    <p className="font-semibold text-slate-50">A business park isn't just a workplace — it's a living ecosystem of ideas.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -439,7 +439,7 @@ const BuyPage = () => {
                     <span className="text-sm font-semibold text-rose-900">High Street Commercial</span>
                   </div>
                   
-                  <h3 className="text-4xl font-bold text-gray-900 leading-tight">
+                  <h3 className="text-4xl font-bold leading-tight text-slate-50">
                     The pulse of city commerce
                   </h3>
                   
@@ -452,7 +452,7 @@ const BuyPage = () => {
                     
                     <p>Infrastructure includes ample parking, power backup, and modern interiors — everything your brand needs to make a statement.</p>
                     
-                    <p className="font-semibold text-gray-900">For investors, these are income-generating properties with exceptional resale and rental potential.</p>
+                    <p className="font-semibold text-slate-50">For investors, these are income-generating properties with exceptional resale and rental potential.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -591,7 +591,7 @@ const BuyPage = () => {
                   </div>
                   
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-gray-900 text-xl">For institutional investors seeking scale, stability, and long-term yield — our commercial assets deliver consistent performance and portfolio diversification.</p>
+                    <p className="font-semibold text-xl text-zinc-950">For institutional investors seeking scale, stability, and long-term yield — our commercial assets deliver consistent performance and portfolio diversification.</p>
                     
                     <p>We offer high-grade office towers, business parks, and retail plazas with predictable income streams and low vacancy risks.</p>
                     
@@ -599,7 +599,7 @@ const BuyPage = () => {
                     
                     <p>Our developments align with ESG goals, offering carbon credit benefits through solar energy integration.</p>
                     
-                    <p className="font-semibold text-gray-900">Partner with us to gain access to large-scale opportunities and REIT-ready investments that redefine commercial real estate value.</p>
+                    <p className="font-semibold text-gray-950">Partner with us to gain access to large-scale opportunities and REIT-ready investments that redefine commercial real estate value.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -619,7 +619,7 @@ const BuyPage = () => {
                   </div>
                   
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-gray-900 text-xl">Corporate occupiers deserve more than space — they deserve ecosystems.</p>
+                    <p className="font-semibold text-xl text-slate-950">Corporate occupiers deserve more than space — they deserve ecosystems.</p>
                     
                     <p>We design tailor-made work environments for established brands and emerging enterprises alike.</p>
                     
@@ -627,7 +627,7 @@ const BuyPage = () => {
                     
                     <p>From leasing individual floors to owning entire office blocks, we provide strategic solutions that enhance productivity and brand image.</p>
                     
-                    <p className="font-semibold text-gray-900">Let your company operate from a landmark address built for growth, innovation, and sustainability.</p>
+                    <p className="font-semibold text-gray-950">Let your company operate from a landmark address built for growth, innovation, and sustainability.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -669,7 +669,7 @@ const BuyPage = () => {
                   </div>
                   
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-gray-900 text-xl">For high-net-worth individuals and family offices, our developments open doors to secure, appreciating assets that balance prestige with profit.</p>
+                    <p className="font-semibold text-xl text-slate-950">For high-net-worth individuals and family offices, our developments open doors to secure, appreciating assets that balance prestige with profit.</p>
                     
                     <p>Invest in premium commercial floors, boutique retail units, or long-term leasing ventures that generate stable rental yields.</p>
                     
@@ -677,7 +677,7 @@ const BuyPage = () => {
                     
                     <p>Each project is built with transparency, sustainability, and timeless design — assets that appreciate in both value and reputation.</p>
                     
-                    <p className="font-semibold text-gray-900">Turn your investment into a legacy of growth, purpose, and prestige.</p>
+                    <p className="font-semibold text-gray-950">Turn your investment into a legacy of growth, purpose, and prestige.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
@@ -697,7 +697,7 @@ const BuyPage = () => {
                   </div>
                   
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-gray-900 text-xl">We collaborate with REITs, private equity firms, and institutional funds to create scalable, income-generating commercial assets.</p>
+                    <p className="font-semibold text-xl text-slate-950">We collaborate with REITs, private equity firms, and institutional funds to create scalable, income-generating commercial assets.</p>
                     
                     <p>Our developments meet investment-grade benchmarks — audited, compliant, and built for long-term rental yields.</p>
                     
@@ -705,7 +705,7 @@ const BuyPage = () => {
                     
                     <p>Partner with us to co-create commercial portfolios that merge physical growth with financial performance.</p>
                     
-                    <p className="font-semibold text-gray-900">The future of commercial investing is collaborative, clean, and data-driven — we're already there.</p>
+                    <p className="font-semibold text-zinc-950">The future of commercial investing is collaborative, clean, and data-driven — we're already there.</p>
                   </div>
                   
                   <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
