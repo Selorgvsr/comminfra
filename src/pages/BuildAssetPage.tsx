@@ -17,6 +17,7 @@ import rainwaterHarvestingImage from "@/assets/rainwater-harvesting-system.jpg";
 import evChargingImage from "@/assets/ev-charging-parking.jpg";
 import ecoBusinessParkImage from "@/assets/eco-business-park-parking.jpg";
 import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
+import smartEnergySystemsImage from "@/assets/smart-energy-systems.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
 const BuildAssetPage = () => {
   const architecturalFeatures = [{
@@ -107,7 +108,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
     icon: Zap,
     title: "Redundant Connections",
     description: "Electric & water backup systems",
-    image: smartDashboardImage
+    image: smartEnergySystemsImage
   }, {
     icon: Shield,
     title: "Access Control",
