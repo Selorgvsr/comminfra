@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -14,6 +15,7 @@ import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprin
 import leadershipTeamMeeting from "@/assets/leadership-team-meeting.jpg";
 import strategicExcellence from "@/assets/strategic-excellence.jpg";
 const AboutUsPage = () => {
+  const navigate = useNavigate();
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
       <section className="AboutUs_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
@@ -377,7 +379,7 @@ const AboutUsPage = () => {
           </div>
           
           <div className="text-center mt-12">
-            <Button variant="investor" size="lg">
+            <Button variant="investor" size="lg" onClick={() => navigate('/contact')}>
               Connect With Us
               <ArrowRight className="ml-2 h-5 w-5" />
             </Button>
