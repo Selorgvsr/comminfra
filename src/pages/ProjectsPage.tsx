@@ -210,7 +210,7 @@ const ProjectsPage = () => {
       <section id="featured_projects_grid" className="py-20 bg-gradient-section-1 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sky-50">
               Featured Projects
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -261,7 +261,7 @@ const ProjectsPage = () => {
       <section id="ongoing_projects_section" className="py-20 bg-gradient-section-2">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wide text-slate-50">
               Ongoing Projects
             </h2>
             <div className="w-20 h-1 bg-commercial mx-auto"></div>
@@ -297,7 +297,7 @@ const ProjectsPage = () => {
       <section id="future_projects_section" className="py-20 bg-gradient-section-3 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">UPCOMING PROJECTS</h2>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wide text-slate-50">UPCOMING PROJECTS</h2>
             <div className="w-20 h-1 bg-commercial mx-auto"></div>
           </div>
           
@@ -329,7 +329,7 @@ const ProjectsPage = () => {
       <section id="project_gallery_section" className="py-20 bg-gradient-section-4 text-white">
         <div className="container">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-4 uppercase tracking-wide">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 uppercase tracking-wide text-slate-50">
               Project Gallery
             </h2>
             <div className="w-20 h-1 bg-commercial mx-auto"></div>
@@ -356,7 +356,7 @@ const ProjectsPage = () => {
         <div className="container">
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold text-commercial-navy mb-6">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-600">
                 ESG & Sustainability Impact
               </h2>
               <p className="text-lg text-muted-foreground mb-8">
@@ -368,7 +368,7 @@ const ProjectsPage = () => {
                     <div className="bg-commercial/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
                       <metric.icon className="h-6 w-6 text-commercial" />
                     </div>
-                    <div className="text-2xl font-bold text-commercial-navy mb-1">
+                    <div className="text-2xl font-bold text-commercial-navy mb-1 bg-gray-950">
                       {metric.value}
                     </div>
                     <div className="text-sm text-muted-foreground">
