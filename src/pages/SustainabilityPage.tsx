@@ -343,7 +343,7 @@ const SustainabilityPage = () => {
       <section className="esg_pillars_section py-20 bg-gradient-to-b from-green-500/5 to-blue-500/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent p-4">
               ESG Integration Framework
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
