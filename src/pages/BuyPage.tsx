@@ -5,34 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
-import {
-  Building2,
-  Store,
-  Trees,
-  Factory,
-  ShoppingBag,
-  Sun,
-  Recycle,
-  Car,
-  Zap,
-  FileText,
-  Building,
-  Users,
-  Briefcase,
-  UserCheck,
-  TrendingUp,
-  Home,
-  Shield,
-  ArrowRight,
-  CheckCircle,
-  Calendar,
-  MapPin,
-  DollarSign,
-  Upload,
-  Search,
-  Moon,
-  SunIcon,
-} from "lucide-react";
+import { Building2, Store, Trees, Factory, ShoppingBag, Sun, Recycle, Car, Zap, FileText, Building, Users, Briefcase, UserCheck, TrendingUp, Home, Shield, ArrowRight, CheckCircle, Calendar, MapPin, DollarSign, Upload, Search, Moon, SunIcon } from "lucide-react";
 
 // Image imports
 import buyHeroCommercial from "@/assets/buy-hero-commercial.jpg";
@@ -69,216 +42,174 @@ const BuyPage = () => {
   }, []);
 
   // Asset Categories Data
-  const assetCategories = [
-    {
-      icon: Building2,
-      title: "Office Spaces",
-      description: "Premium corporate environments with smart infrastructure",
-      image: commercialInterior,
-      cta: "View Office Listings",
-      link: "/projects?type=office",
-    },
-    {
-      icon: Store,
-      title: "Commercial Plazas",
-      description: "High-traffic retail destinations with diverse tenant mix",
-      image: commercialPlaza,
-      cta: "Explore Retail Units",
-      link: "/projects?type=retail",
-    },
-    {
-      icon: Trees,
-      title: "Lifestyle Centers",
-      description: "Experiential retail and entertainment hubs",
-      image: lifestyleCenter,
-      cta: "Discover Lifestyle Assets",
-      link: "/projects?type=lifestyle",
-    },
-    {
-      icon: Factory,
-      title: "Business Parks",
-      description: "Integrated corporate campuses with modern amenities",
-      image: businessPark,
-      cta: "Browse Park Inventory",
-      link: "/projects?type=business-park",
-    },
-    {
-      icon: ShoppingBag,
-      title: "High Street Commercial",
-      description: "Prime frontage properties in commercial corridors",
-      image: commercialInterior,
-      cta: "Check Availability",
-      link: "/projects?type=high-street",
-    },
-  ];
+  const assetCategories = [{
+    icon: Building2,
+    title: "Office Spaces",
+    description: "Premium corporate environments with smart infrastructure",
+    image: commercialInterior,
+    cta: "View Office Listings",
+    link: "/projects?type=office"
+  }, {
+    icon: Store,
+    title: "Commercial Plazas",
+    description: "High-traffic retail destinations with diverse tenant mix",
+    image: commercialPlaza,
+    cta: "Explore Retail Units",
+    link: "/projects?type=retail"
+  }, {
+    icon: Trees,
+    title: "Lifestyle Centers",
+    description: "Experiential retail and entertainment hubs",
+    image: lifestyleCenter,
+    cta: "Discover Lifestyle Assets",
+    link: "/projects?type=lifestyle"
+  }, {
+    icon: Factory,
+    title: "Business Parks",
+    description: "Integrated corporate campuses with modern amenities",
+    image: businessPark,
+    cta: "Browse Park Inventory",
+    link: "/projects?type=business-park"
+  }, {
+    icon: ShoppingBag,
+    title: "High Street Commercial",
+    description: "Prime frontage properties in commercial corridors",
+    image: commercialInterior,
+    cta: "Check Availability",
+    link: "/projects?type=high-street"
+  }];
 
   // Development Stage Data
-  const developmentStages = [
-    {
-      title: "Ready to Occupy",
-      description: "Completed properties with all amenities",
-      progress: 100,
-      color: "bg-green-500",
-      cta: "Buy Now",
-      badge: "🟢",
-      image: completedWithTenants,
-    },
-    {
-      title: "Nearing Completion",
-      description: "85-95% complete with finishing work in progress",
-      progress: 90,
-      color: "bg-yellow-500",
-      cta: "Schedule Site Visit",
-      badge: "🟡",
-      image: semiCompletedScaffolding,
-    },
-    {
-      title: "Under Construction",
-      description: "40-70% complete with structural work ongoing",
-      progress: 60,
-      color: "bg-orange-500",
-      cta: "Request Project Brief",
-      badge: "🟠",
-      image: constructionFoundation,
-    },
-    {
-      title: "Pre-Launch",
-      description: "Planning stage with early bird pricing available",
-      progress: 25,
-      color: "bg-blue-500",
-      cta: "Register Interest",
-      badge: "🔵",
-      image: constructionInvestorMeeting,
-    },
-  ];
+  const developmentStages = [{
+    title: "Ready to Occupy",
+    description: "Completed properties with all amenities",
+    progress: 100,
+    color: "bg-green-500",
+    cta: "Buy Now",
+    badge: "🟢",
+    image: completedWithTenants
+  }, {
+    title: "Nearing Completion",
+    description: "85-95% complete with finishing work in progress",
+    progress: 90,
+    color: "bg-yellow-500",
+    cta: "Schedule Site Visit",
+    badge: "🟡",
+    image: semiCompletedScaffolding
+  }, {
+    title: "Under Construction",
+    description: "40-70% complete with structural work ongoing",
+    progress: 60,
+    color: "bg-orange-500",
+    cta: "Request Project Brief",
+    badge: "🟠",
+    image: constructionFoundation
+  }, {
+    title: "Pre-Launch",
+    description: "Planning stage with early bird pricing available",
+    progress: 25,
+    color: "bg-blue-500",
+    cta: "Register Interest",
+    badge: "🔵",
+    image: constructionInvestorMeeting
+  }];
 
   // ESG Features Data
-  const esgFeatures = [
-    {
-      icon: Sun,
-      title: "Solar-powered infrastructure",
-      tooltip: "Rooftop solar with grid-tie capability",
-    },
-    {
-      icon: Recycle,
-      title: "Carbon credit eligibility",
-      tooltip: "LEED certified with carbon offset programs",
-    },
-    {
-      icon: Car,
-      title: "EV-ready parking",
-      tooltip: "Electric vehicle charging stations",
-    },
-    {
-      icon: Zap,
-      title: "Redundant connections",
-      tooltip: "Backup power and water systems",
-    },
-    {
-      icon: FileText,
-      title: "REIT-grade documentation",
-      tooltip: "Investment-ready legal structure",
-    },
-    {
-      icon: Building,
-      title: "Floor-wise ownership",
-      tooltip: "Flexible ownership options available",
-    },
-  ];
+  const esgFeatures = [{
+    icon: Sun,
+    title: "Solar-powered infrastructure",
+    tooltip: "Rooftop solar with grid-tie capability"
+  }, {
+    icon: Recycle,
+    title: "Carbon credit eligibility",
+    tooltip: "LEED certified with carbon offset programs"
+  }, {
+    icon: Car,
+    title: "EV-ready parking",
+    tooltip: "Electric vehicle charging stations"
+  }, {
+    icon: Zap,
+    title: "Redundant connections",
+    tooltip: "Backup power and water systems"
+  }, {
+    icon: FileText,
+    title: "REIT-grade documentation",
+    tooltip: "Investment-ready legal structure"
+  }, {
+    icon: Building,
+    title: "Floor-wise ownership",
+    tooltip: "Flexible ownership options available"
+  }];
 
   // Buyer Personas Data
-  const buyerPersonas = [
-    {
-      icon: Building,
-      title: "Institutional Investors",
-      description: "Large-scale portfolio acquisitions with ESG focus",
-      features: ["Bulk Purchase Options", "Portfolio Diversification", "ESG Compliance"],
-      link: "/institutional-inquiry",
-    },
-    {
-      icon: Briefcase,
-      title: "Corporate Occupiers",
-      description: "Companies seeking owned operational spaces",
-      features: ["Custom Fit-Outs", "Operational Control", "Tax Benefits"],
-      link: "/corporate-inquiry",
-    },
-    {
-      icon: Users,
-      title: "HNIs / Family Offices",
-      description: "High-net-worth individuals and family investment vehicles",
-      features: ["Premium Assets", "Wealth Preservation", "Legacy Building"],
-      link: "/hni-inquiry",
-    },
-    {
-      icon: TrendingUp,
-      title: "REITs & Funds",
-      description: "Structured investment vehicles for rental yield",
-      features: ["Yield Optimization", "Professional Management", "Liquidity Options"],
-      link: "/reit-inquiry",
-    },
-  ];
+  const buyerPersonas = [{
+    icon: Building,
+    title: "Institutional Investors",
+    description: "Large-scale portfolio acquisitions with ESG focus",
+    features: ["Bulk Purchase Options", "Portfolio Diversification", "ESG Compliance"],
+    link: "/institutional-inquiry"
+  }, {
+    icon: Briefcase,
+    title: "Corporate Occupiers",
+    description: "Companies seeking owned operational spaces",
+    features: ["Custom Fit-Outs", "Operational Control", "Tax Benefits"],
+    link: "/corporate-inquiry"
+  }, {
+    icon: Users,
+    title: "HNIs / Family Offices",
+    description: "High-net-worth individuals and family investment vehicles",
+    features: ["Premium Assets", "Wealth Preservation", "Legacy Building"],
+    link: "/hni-inquiry"
+  }, {
+    icon: TrendingUp,
+    title: "REITs & Funds",
+    description: "Structured investment vehicles for rental yield",
+    features: ["Yield Optimization", "Professional Management", "Liquidity Options"],
+    link: "/reit-inquiry"
+  }];
 
   // Investment Highlights Data
-  const investmentHighlights = [
-    {
-      icon: TrendingUp,
-      title: "Rental Yield Potential",
-      value: "8-12%",
-      description: "Annual rental returns",
-    },
-    {
-      icon: Home,
-      title: "Lease-Ready Units",
-      value: "85%",
-      description: "Pre-leased occupancy",
-    },
-    {
-      icon: Sun,
-      title: "ESG Impact",
-      value: "30%",
-      description: "Carbon footprint reduction",
-    },
-    {
-      icon: Shield,
-      title: "Asset Appreciation",
-      value: "15-25%",
-      description: "Expected IRR over 5 years",
-    },
-  ];
+  const investmentHighlights = [{
+    icon: TrendingUp,
+    title: "Rental Yield Potential",
+    value: "8-12%",
+    description: "Annual rental returns"
+  }, {
+    icon: Home,
+    title: "Lease-Ready Units",
+    value: "85%",
+    description: "Pre-leased occupancy"
+  }, {
+    icon: Sun,
+    title: "ESG Impact",
+    value: "30%",
+    description: "Carbon footprint reduction"
+  }, {
+    icon: Shield,
+    title: "Asset Appreciation",
+    value: "15-25%",
+    description: "Expected IRR over 5 years"
+  }];
 
   // FAQ Data
-  const faqs = [
-    {
-      question: "Can I buy individual floors or entire blocks?",
-      answer:
-        "Yes, we offer flexible ownership structures including floor-wise purchases, entire building acquisitions, and even partial stake investments through our REIT structure.",
-    },
-    {
-      question: "What ESG certifications are available?",
-      answer:
-        "Our properties feature LEED certifications, carbon credit eligibility, solar power integration, and sustainable building materials. We provide detailed ESG impact reports for all investments.",
-    },
-    {
-      question: "What's the process for site visits and due diligence?",
-      answer:
-        "We offer comprehensive site visits with technical experts, provide detailed due diligence reports, legal documentation review, and 30-day evaluation periods for institutional investors.",
-    },
-    {
-      question: "What financing options are available?",
-      answer:
-        "We work with leading financial institutions to provide competitive financing options, including construction-to-permanent loans, commercial mortgages, and partnership structures.",
-    },
-  ];
-  return (
-    <div className="min-h-screen gradient-mesh">
+  const faqs = [{
+    question: "Can I buy individual floors or entire blocks?",
+    answer: "Yes, we offer flexible ownership structures including floor-wise purchases, entire building acquisitions, and even partial stake investments through our REIT structure."
+  }, {
+    question: "What ESG certifications are available?",
+    answer: "Our properties feature LEED certifications, carbon credit eligibility, solar power integration, and sustainable building materials. We provide detailed ESG impact reports for all investments."
+  }, {
+    question: "What's the process for site visits and due diligence?",
+    answer: "We offer comprehensive site visits with technical experts, provide detailed due diligence reports, legal documentation review, and 30-day evaluation periods for institutional investors."
+  }, {
+    question: "What financing options are available?",
+    answer: "We work with leading financial institutions to provide competitive financing options, including construction-to-permanent loans, commercial mortgages, and partnership structures."
+  }];
+  return <div className="min-h-screen gradient-mesh">
       {/* 1. Hero Section - Premium Ownership Banner */}
       <section className="BuyPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img
-            src={buyHeroCommercial}
-            alt="Modern commercial skyline with solar panels"
-            className="w-full h-full object-cover"
-          />
+          <img src={buyHeroCommercial} alt="Modern commercial skyline with solar panels" className="w-full h-full object-cover" />
           {/* Glassmorphism overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
           <div className="absolute inset-0 backdrop-blur-[2px]"></div>
@@ -296,11 +227,7 @@ const BuyPage = () => {
             </span>
           </h1>
 
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group"
-            asChild
-          >
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
             <Link to="/projects">
               Browse Available Properties
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -328,11 +255,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={officeSpacesPremium}
-                    alt="Premium Office Spaces - Modern glass office tower"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={officeSpacesPremium} alt="Premium Office Spaces - Modern glass office tower" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <Building2 className="h-12 w-12 text-white mb-2" />
@@ -374,11 +297,7 @@ const BuyPage = () => {
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=office">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -420,11 +339,7 @@ const BuyPage = () => {
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=retail">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -433,11 +348,7 @@ const BuyPage = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={commercialPlazaPremium}
-                    alt="Commercial Plazas - Vibrant shopping plaza with modern stores"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={commercialPlazaPremium} alt="Commercial Plazas - Vibrant shopping plaza with modern stores" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <Store className="h-12 w-12 text-white mb-2" />
@@ -450,11 +361,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={lifestyleCenterPremium}
-                    alt="Lifestyle Centers - Upscale open-air shopping and dining center"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={lifestyleCenterPremium} alt="Lifestyle Centers - Upscale open-air shopping and dining center" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <Trees className="h-12 w-12 text-white mb-2" />
@@ -490,11 +397,7 @@ const BuyPage = () => {
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=lifestyle">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -541,11 +444,7 @@ const BuyPage = () => {
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=business-park">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -554,11 +453,7 @@ const BuyPage = () => {
                 </div>
 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={businessParkPremium}
-                    alt="Business Parks - Expansive business park campus with corporate towers"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={businessParkPremium} alt="Business Parks - Expansive business park campus with corporate towers" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <Factory className="h-12 w-12 text-white mb-2" />
@@ -571,11 +466,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={highStreetPremium}
-                    alt="High Street Commercial - Urban high-street with modern storefronts"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={highStreetPremium} alt="High Street Commercial - Urban high-street with modern storefronts" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <ShoppingBag className="h-12 w-12 text-white mb-2" />
@@ -614,11 +505,7 @@ const BuyPage = () => {
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  >
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-rose-600 to-rose-700 hover:from-rose-700 hover:to-rose-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild>
                     <Link to="/projects?type=high-street">
                       Explore Properties
                       <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
@@ -642,17 +529,9 @@ const BuyPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-12">
-            {developmentStages.map((stage, index) => (
-              <Card
-                key={index}
-                className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1"
-              >
+            {developmentStages.map((stage, index) => <Card key={index} className="group hover:shadow-xl transition-all duration-300 bg-white/80 backdrop-blur-sm border border-white/30 rounded-xl overflow-hidden hover:-translate-y-1">
                 <div className="relative h-48 overflow-hidden">
-                  <img
-                    src={stage.image}
-                    alt={stage.title}
-                    className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
-                  />
+                  <img src={stage.image} alt={stage.title} className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   <div className="absolute top-4 right-4">
                     <Badge variant="outline" className="text-xs bg-white/90 backdrop-blur-sm">
                       {stage.progress}% Complete
@@ -668,16 +547,11 @@ const BuyPage = () => {
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">{stage.description}</p>
                   <Progress value={stage.progress} className="mb-4" />
-                  <Button
-                    variant="outline"
-                    size="sm"
-                    className="w-full group-hover:bg-primary group-hover:text-white transition-all"
-                  >
+                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all">
                     {stage.cta}
                   </Button>
                 </CardContent>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
@@ -697,25 +571,15 @@ const BuyPage = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
-            {esgFeatures.map((feature, index) => (
-              <Card
-                key={index}
-                className="group text-center p-6 hover:shadow-lg transition-all duration-300 bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1"
-                title={feature.tooltip}
-              >
+            {esgFeatures.map((feature, index) => <Card key={index} className="group text-center p-6 hover:shadow-lg transition-all duration-300 bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1" title={feature.tooltip}>
                 <feature.icon className="h-12 w-12 text-primary mx-auto mb-3 group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-sm font-medium text-center">{feature.title}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src={rooftopSolar}
-                alt="Commercial building with rooftop solar installation"
-                className="w-full h-64 object-cover"
-              />
+              <img src={rooftopSolar} alt="Commercial building with rooftop solar installation" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-6 text-white">
                   <Sun className="h-8 w-8 mb-2" />
@@ -725,11 +589,7 @@ const BuyPage = () => {
               </div>
             </div>
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img
-                src={revenueDashboard}
-                alt="ESG dashboard showing carbon credits and sustainability metrics"
-                className="w-full h-64 object-cover"
-              />
+              <img src={revenueDashboard} alt="ESG dashboard showing carbon credits and sustainability metrics" className="w-full h-64 object-cover" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-6 text-white">
                   <Recycle className="h-8 w-8 mb-2" />
@@ -762,11 +622,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={institutionalInvestors}
-                    alt="Institutional Investors - Aerial view of corporate towers and financial skyline"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={institutionalInvestors} alt="Institutional Investors - Aerial view of corporate towers and financial skyline" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -783,7 +639,7 @@ const BuyPage = () => {
                   </div>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-xl text-zinc-950">
+                    <p className="font-semibold text-xl text-slate-50">
                       For institutional investors seeking scale, stability, and long-term yield — our commercial assets
                       deliver consistent performance and portfolio diversification.
                     </p>
@@ -803,17 +659,13 @@ const BuyPage = () => {
                       integration.
                     </p>
 
-                    <p className="font-semibold text-gray-950">
+                    <p className="font-semibold text-slate-50">
                       Partner with us to gain access to large-scale opportunities and REIT-ready investments that
                       redefine commercial real estate value.
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  ></Button>
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild></Button>
                 </div>
               </div>
             </div>
@@ -828,7 +680,7 @@ const BuyPage = () => {
                   </div>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-xl text-slate-950">
+                    <p className="font-semibold text-xl text-slate-50">
                       Corporate occupiers deserve more than space — they deserve ecosystems.
                     </p>
 
@@ -846,24 +698,16 @@ const BuyPage = () => {
                       enhance productivity and brand image.
                     </p>
 
-                    <p className="font-semibold text-gray-950">
+                    <p className="font-semibold text-slate-50">
                       Let your company operate from a landmark address built for growth, innovation, and sustainability.
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  ></Button>
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-purple-600 to-purple-700 hover:from-purple-700 hover:to-purple-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild></Button>
                 </div>
 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={corporateOccupiers}
-                    alt="Corporate Occupiers - Modern corporate office interior with glass walls"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={corporateOccupiers} alt="Corporate Occupiers - Modern corporate office interior with glass walls" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -879,11 +723,7 @@ const BuyPage = () => {
             <div className="group">
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
                 <div className="relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={hniFamilyOffices}
-                    alt="HNIs and Family Offices - Luxury meeting lounge with sunset skyline view"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={hniFamilyOffices} alt="HNIs and Family Offices - Luxury meeting lounge with sunset skyline view" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 left-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -900,7 +740,7 @@ const BuyPage = () => {
                   </div>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-xl text-slate-950">
+                    <p className="font-semibold text-xl text-zinc-50">
                       For high-net-worth individuals and family offices, our developments open doors to secure,
                       appreciating assets that balance prestige with profit.
                     </p>
@@ -920,16 +760,12 @@ const BuyPage = () => {
                       appreciate in both value and reputation.
                     </p>
 
-                    <p className="font-semibold text-gray-950">
+                    <p className="font-semibold text-zinc-50">
                       Turn your investment into a legacy of growth, purpose, and prestige.
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  ></Button>
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-amber-600 to-amber-700 hover:from-amber-700 hover:to-amber-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild></Button>
                 </div>
               </div>
             </div>
@@ -944,7 +780,7 @@ const BuyPage = () => {
                   </div>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p className="font-semibold text-xl text-slate-950">
+                    <p className="font-semibold text-xl text-slate-50">
                       We collaborate with REITs, private equity firms, and institutional funds to create scalable,
                       income-generating commercial assets.
                     </p>
@@ -964,24 +800,16 @@ const BuyPage = () => {
                       performance.
                     </p>
 
-                    <p className="font-semibold text-zinc-950">
+                    <p className="font-semibold text-slate-50">
                       The future of commercial investing is collaborative, clean, and data-driven — we're already there.
                     </p>
                   </div>
 
-                  <Button
-                    size="lg"
-                    className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300"
-                    asChild
-                  ></Button>
+                  <Button size="lg" className="group/btn bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300" asChild></Button>
                 </div>
 
                 <div className="order-1 lg:order-2 relative overflow-hidden rounded-3xl shadow-2xl h-[500px]">
-                  <img
-                    src={reitsFunds}
-                    alt="REITs and Funds - City skyline with real estate fund graphs overlay"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-                  />
+                  <img src={reitsFunds} alt="REITs and Funds - City skyline with real estate fund graphs overlay" className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-transparent"></div>
                   <div className="absolute bottom-8 right-8">
                     <div className="w-16 h-16 rounded-full bg-white/20 backdrop-blur-md flex items-center justify-center mb-3">
@@ -1007,17 +835,12 @@ const BuyPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {investmentHighlights.map((highlight, index) => (
-              <Card
-                key={index}
-                className="text-center p-8 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1"
-              >
+            {investmentHighlights.map((highlight, index) => <Card key={index} className="text-center p-8 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
                 <highlight.icon className="h-16 w-16 text-primary mx-auto mb-4 group-hover:text-solar transition-colors" />
                 <div className="text-4xl font-bold text-primary mb-2">{highlight.value}</div>
                 <h3 className="font-semibold mb-2">{highlight.title}</h3>
                 <p className="text-sm text-muted-foreground">{highlight.description}</p>
-              </Card>
-            ))}
+              </Card>)}
           </div>
         </div>
       </section>
@@ -1034,18 +857,12 @@ const BuyPage = () => {
 
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => (
-                <AccordionItem
-                  key={index}
-                  value={`item-${index}`}
-                  className="bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl px-6"
-                >
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl px-6">
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
-                </AccordionItem>
-              ))}
+                </AccordionItem>)}
             </Accordion>
           </div>
         </div>
@@ -1054,7 +871,6 @@ const BuyPage = () => {
       {/* 8. Contact & Inquiry Portal - Filterable Form */}
 
       {/* Fixed Footer - Glassmorphic */}
-    </div>
-  );
+    </div>;
 };
 export default BuyPage;
