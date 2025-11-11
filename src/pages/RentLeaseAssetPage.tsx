@@ -523,7 +523,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-muted-foreground">Everything you need to know about leasing with us</p>
