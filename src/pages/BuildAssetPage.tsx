@@ -21,6 +21,7 @@ import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import smartEnergySystemsImage from "@/assets/smart-energy-systems.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
 import accessControlImage from "@/assets/access-control-image.jpg";
+import smartOfficeTowerImage from "@/assets/smart-office-tower.jpg";
 const BuildAssetPage = () => {
   const architecturalFeatures = [{
     icon: Zap,
@@ -297,7 +298,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
             </Card>
             <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
               <div className="relative h-64">
-                <img src={smartDashboardImage} alt="Smart Building" className="w-full h-full object-cover" />
+                <img src={smartOfficeTowerImage} alt="Smart Building" className="w-full h-full object-cover" />
                 <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
                   AI-Enabled
                 </div>
