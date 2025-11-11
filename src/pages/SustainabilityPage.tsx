@@ -465,7 +465,7 @@ const SustainabilityPage = () => {
       <section className="advanced_capabilities_section py-20 bg-gradient-to-b from-background to-purple-500/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent p-4">
               Advanced ESG Capabilities
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
