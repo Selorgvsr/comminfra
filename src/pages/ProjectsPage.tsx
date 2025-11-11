@@ -372,7 +372,7 @@ const ProjectsPage = () => {
                     <div className="bg-commercial/10 rounded-full w-12 h-12 flex items-center justify-center mx-auto mb-3">
                       <metric.icon className="h-6 w-6 text-commercial" />
                     </div>
-                    <div className="text-2xl font-bold text-commercial-navy mb-1 bg-gray-950">
+                    <div className="text-2xl font-bold text-commercial-navy mb-1 bg-lime-500">
                       {metric.value}
                     </div>
                     <div className="text-sm text-muted-foreground">
