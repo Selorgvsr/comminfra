@@ -525,8 +525,12 @@ const SellPage = () => {
                     <Clock className="h-5 w-5 text-primary" />
                     <span className="text-sm">Mon-Sat: 9 AM - 7 PM</span>
                   </div>
-                  <Button variant="outline" className="w-full hover:bg-primary hover:text-white transition-all">
-                    Schedule a Call
+                  <Button 
+                    variant="outline" 
+                    className="w-full hover:bg-primary hover:text-white transition-all"
+                    asChild
+                  >
+                    <Link to="/contact">Schedule a Call</Link>
                   </Button>
                 </CardContent>
               </Card>
