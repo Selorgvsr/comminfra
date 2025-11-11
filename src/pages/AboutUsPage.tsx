@@ -12,6 +12,7 @@ import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
 import smartInfrastructureBlueprint from "@/assets/smart-infrastructure-blueprint.jpg";
 import leadershipTeamMeeting from "@/assets/leadership-team-meeting.jpg";
+import strategicExcellence from "@/assets/strategic-excellence.jpg";
 const AboutUsPage = () => {
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
@@ -362,7 +363,7 @@ const AboutUsPage = () => {
           </div>
           
           <div className="relative rounded-xl overflow-hidden">
-            <img src={leadershipTeamMeeting} alt="Leadership team meeting discussing strategy" className="w-full h-80 object-cover" />
+            <img src={strategicExcellence} alt="Leadership team meeting discussing strategy" className="w-full h-80 object-cover" />
             <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent flex items-end">
               <div className="p-8">
                 <h3 className="text-2xl font-bold text-foreground mb-2">
