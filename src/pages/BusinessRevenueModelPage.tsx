@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
-import { Building2, FileText, Home, Sun, Recycle, Brain, HandshakeIcon, TrendingUp, PieChart, BarChart3, DollarSign, Target, Users, Upload, Calculator, Zap, Leaf, Shield, Globe } from "lucide-react";
+import { Building2, FileText, Home, Sun, Recycle, Brain, HandshakeIcon, TrendingUp, PieChart, BarChart3, DollarSign, Target, Users, Upload, Calculator, Zap, Leaf, Shield, Globe, ArrowRight } from "lucide-react";
 
 // Import images
 import buildRevenueDashboard from "@/assets/build-revenue-dashboard.jpg";
@@ -117,31 +117,27 @@ const BusinessRevenueModelPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-primary/5">
       {/* Hero Section */}
-      <section className="revenue_model_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${buildRevenueDashboard})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-primary/20 via-transparent to-secondary/20 backdrop-blur-sm" />
+      <section className="revenue_model_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={buildRevenueDashboard} alt="How We Generate Revenue" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+        </div>
         
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              How We Generate
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">
-                Revenue
-              </span>
-            </h1>
-            
-            
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Explore Our Revenue Strategy
-              </Button>
-            </div>
-          </div>
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            Business Revenue Model
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            How We Generate 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Revenue</span>
+          </h1>
+          
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            Explore Our Revenue Strategy
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

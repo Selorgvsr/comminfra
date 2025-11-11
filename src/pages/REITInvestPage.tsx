@@ -8,7 +8,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
-import { Building2, ShoppingBag, Factory, TreePine, TrendingUp, FileText, Users, Building, PieChart, BarChart3, DollarSign, Target, Sun, Recycle, Leaf, Shield, Upload, CheckCircle, Calendar, MapPin, Star, Award, Calculator, Briefcase, Home, Globe } from "lucide-react";
+import { Building2, ShoppingBag, Factory, TreePine, TrendingUp, FileText, Users, Building, PieChart, BarChart3, DollarSign, Target, Sun, Recycle, Leaf, Shield, Upload, CheckCircle, Calendar, MapPin, Star, Award, Calculator, Briefcase, Home, Globe, ArrowRight } from "lucide-react";
 
 // Import images
 import premiumCommercialInvestment from "@/assets/premium-commercial-investment.jpg";
@@ -164,32 +164,27 @@ const REITInvestPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-blue-500/5">
       {/* Hero Section */}
-      <section className="REITPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${premiumCommercialInvestment})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-500/20 via-transparent to-purple-500/20 backdrop-blur-sm" />
+      <section className="REITPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={premiumCommercialInvestment} alt="Secure Long-Term Returns with REIT-Grade Properties" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+        </div>
         
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              Secure Long-Term Returns
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-400">
-                with REIT-Grade Properties
-              </span>
-            </h1>
-            
-            
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Explore Investment Opportunities
-              </Button>
-              
-            </div>
-          </div>
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            REIT & Investment Opportunities
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Secure Long-Term Returns 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> with REIT-Grade Properties</span>
+          </h1>
+          
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            Explore Investment Opportunities
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

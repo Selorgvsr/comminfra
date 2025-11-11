@@ -1,7 +1,8 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
-import { Building2, MapPin, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSign, Users, Calendar, FileText, Filter, Award, Target, Clock } from "lucide-react";
+import { Building2, MapPin, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSign, Users, Calendar, FileText, Filter, Award, Target, Clock, ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
 import projectsPortfolioMontageImage from "@/assets/projects-portfolio-montage.jpg";
 import projectCardsEsgImage from "@/assets/project-cards-esg.jpg";
@@ -185,24 +186,27 @@ const ProjectsPage = () => {
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
       
       {/* Hero Section */}
-      <section id="hero_projects_section" className="relative py-20 lg:py-32 overflow-hidden">
-        <div className="absolute inset-0 bg-cover bg-center bg-no-repeat" style={{
-        backgroundImage: `url(${projectsPortfolioMontageImage})`
-      }}>
-          <div className="absolute inset-0 bg-commercial-navy/80"></div>
+      <section id="hero_projects_section" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={projectsPortfolioMontageImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
         </div>
-        <div className="container relative z-10">
-          <div className="max-w-4xl mx-auto text-center text-white">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">
-              Explore Our Commercial Real Estate Projects
-            </h1>
-            <p className="text-xl md:text-2xl mb-8 text-white/90 animate-fade-in">
-              From high street retail to solar-powered business parks, our developments reflect precision, purpose, and performance.
-            </p>
-            <Button variant="hero" size="lg" className="animate-fade-in">
-              View Our Portfolio
-            </Button>
-          </div>
+        
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            Our Projects Portfolio
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Explore Our Commercial Real Estate Projects
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Precision, Purpose, and Performance</span>
+          </h1>
+          
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            View Our Portfolio
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

@@ -1,4 +1,5 @@
-import { Building, Shield, Leaf, Zap, Car, Settings, Eye, MessageCircle, Send } from "lucide-react";
+import { Building, Shield, Leaf, Zap, Car, Settings, Eye, MessageCircle, Send, ArrowRight } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
@@ -133,25 +134,27 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
   }];
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
-      <section className="build_asset_hero_banner relative min-h-screen flex items-center justify-center bg-cover bg-center" style={{
-      backgroundImage: `url(${commercialFacadeImage})`
-    }}>
-        <div className="absolute inset-0 bg-black/40 backdrop-blur-sm"></div>
-        <div className="relative z-10 text-center text-white max-w-4xl mx-auto px-4">
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-            Built for Business,<br />Designed for Impact
+      <section className="build_asset_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={commercialFacadeImage} alt="Built for Business, Designed for Impact" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+        </div>
+        
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            Premium Built Assets
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Built for Business, 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Designed for Impact</span>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="hero bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <Eye className="mr-2 h-5 w-5" />
-              View Build Specifications
-            </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 text-white border border-white/20 hover:bg-white/20 transition-all duration-300">
-              <Building className="mr-2 h-5 w-5" />
-              Explore Completed Projects
-            </Button>
-          </div>
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            View Build Specifications
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

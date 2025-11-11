@@ -7,7 +7,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
-import { Leaf, Recycle, Building, Droplets, Zap, Sun, Brain, TrendingUp, Users, Shield, BarChart3, Lightbulb, Wind, TreePine, Upload, CheckCircle, Target, Award, Calculator, FileText, Calendar, MapPin } from "lucide-react";
+import { Leaf, Recycle, Building, Droplets, Zap, Sun, Brain, TrendingUp, Users, Shield, BarChart3, Lightbulb, Wind, TreePine, Upload, CheckCircle, Target, Award, Calculator, FileText, Calendar, MapPin, ArrowRight } from "lucide-react";
 
 // Import images
 import esgSustainableBuilding from "@/assets/esg-sustainable-commercial-building.jpg";
@@ -146,32 +146,27 @@ const SustainabilityPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-green-500/5">
       {/* Hero Section */}
-      <section className="sustainability_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden" style={{
-      backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(${esgSustainableBuilding})`,
-      backgroundSize: 'cover',
-      backgroundPosition: 'center',
-      backgroundAttachment: 'fixed'
-    }}>
-        <div className="absolute inset-0 bg-gradient-to-r from-green-500/20 via-transparent to-blue-500/20 backdrop-blur-sm" />
+      <section className="sustainability_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+        <div className="absolute inset-0">
+          <img src={esgSustainableBuilding} alt="Green, Smart, and Profitable" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+        </div>
         
-        <div className="container mx-auto px-4 text-center relative z-10">
-          <div className="max-w-4xl mx-auto space-y-8">
-            <h1 className="text-5xl md:text-7xl font-bold text-white leading-tight">
-              We Build for Tomorrow
-              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-green-400 to-blue-400">
-                Green, Smart, and Profitable
-              </span>
-            </h1>
-            
-            
-            
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-              <Button size="lg" className="bg-green-600 hover:bg-green-700 text-white px-8 py-4 text-lg font-semibold rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105">
-                Explore Our Sustainability Strategy
-              </Button>
-              
-            </div>
-          </div>
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            ESG & Sustainability Excellence
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            We Build for Tomorrow 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Green, Smart, and Profitable</span>
+          </h1>
+          
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            Explore Our Sustainability Strategy
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 

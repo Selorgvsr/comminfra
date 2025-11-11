@@ -5,6 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Building2, Target, Users, Handshake, MapPin, Wrench, ShoppingCart, Home, Truck, Sun, Leaf, Brain, BarChart3, ArrowRight, Upload } from "lucide-react";
+import { Badge } from "@/components/ui/badge";
 import indiaCommercialEvening from "@/assets/india-commercial-evening-hd.jpg";
 import visionaryInfrastructure from "@/assets/visionary-infrastructure.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
@@ -15,23 +16,26 @@ const AboutUsPage = () => {
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
       <section className="AboutUs_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0 z-0">
-          <img src={indiaCommercialEvening} alt="India's commercial skyline at sunset" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-background/20 via-background/40 to-background/60 backdrop-blur-[2px]" />
+        <div className="absolute inset-0">
+          <img src={indiaCommercialEvening} alt="Building India's Future" className="w-full h-full object-cover" />
+          {/* Glassmorphism overlay */}
+          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
+          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
         </div>
         
-        <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-foreground mb-6 animate-fade-in">
-            Building India's Future -We Proud To Be A This Part Of Journey
+        <div className="relative z-10 container text-center text-white px-4">
+          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+            About CommInfra
+          </Badge>
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+            Building India's Future 
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> We're Proud To Be Part Of This Journey</span>
           </h1>
           
-          <div className="flex flex-col sm:flex-row gap-4 justify-center animate-fade-in [animation-delay:400ms]">
-            <Button variant="hero" size="lg" className="group">
-              Explore Our Platform
-              <ArrowRight className="ml-2 h-5 w-5 transition-transform group-hover:translate-x-1" />
-            </Button>
-            
-          </div>
+          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
+            Explore Our Platform
+            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+          </Button>
         </div>
       </section>
 
