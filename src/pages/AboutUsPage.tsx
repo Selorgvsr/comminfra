@@ -43,7 +43,7 @@ const AboutUsPage = () => {
               <div className="VisionCard glass-panel p-8 rounded-xl border border-border/50">
                 <div className="flex items-center mb-4">
                   <Target className="h-8 w-8 text-primary mr-3" />
-                  <h3 className="text-2xl font-bold text-foreground">Our Vision</h3>
+                  <h3 className="text-2xl font-bold text-slate-50">Our Vision</h3>
                 </div>
                 <p className="text-lg text-muted-foreground">
                   To create scalable, sustainable commercial infrastructure across India that sets new standards for environmental responsibility and investor returns.
@@ -53,7 +53,7 @@ const AboutUsPage = () => {
               <div className="MissionCard glass-panel p-8 rounded-xl border border-border/50">
                 <div className="flex items-center mb-4">
                   <Building2 className="h-8 w-8 text-primary mr-3" />
-                  <h3 className="text-2xl font-bold text-foreground">Our Mission</h3>
+                  <h3 className="text-2xl font-bold text-slate-50">Our Mission</h3>
                 </div>
                 <p className="text-lg text-muted-foreground">
                   Integrate smart design, solar power, and REIT-grade clarity into every asset we develop, ensuring maximum value for all stakeholders.
@@ -80,7 +80,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_WhatWeDo py-20 bg-gradient-section-2 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               What We Do
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -163,7 +163,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_Philosophy py-20 bg-gradient-section-3 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-950">
               Our Development Philosophy
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -176,7 +176,7 @@ const AboutUsPage = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Wrench className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">Modular Design Logic</h3>
+              <h3 className="text-xl font-bold mb-4 text-gray-950">Modular Design Logic</h3>
               <p className="text-muted-foreground">
                 Scalable, adaptable designs that grow with changing market needs
               </p>
@@ -186,7 +186,7 @@ const AboutUsPage = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Brain className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">AI-Adaptive Infrastructure</h3>
+              <h3 className="text-xl font-bold mb-4 text-zinc-950">AI-Adaptive Infrastructure</h3>
               <p className="text-muted-foreground">
                 Smart systems that optimize performance and reduce operational costs
               </p>
@@ -196,7 +196,7 @@ const AboutUsPage = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-success/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <Leaf className="h-8 w-8 text-success" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">ESG-First Approach</h3>
+              <h3 className="text-xl font-bold mb-4 text-neutral-950">ESG-First Approach</h3>
               <p className="text-muted-foreground">
                 Environmental, social, and governance principles embedded in every decision
               </p>
@@ -206,7 +206,7 @@ const AboutUsPage = () => {
               <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
                 <BarChart3 className="h-8 w-8 text-primary" />
               </div>
-              <h3 className="text-xl font-bold text-foreground mb-4">Investor-Grade Transparency</h3>
+              <h3 className="text-xl font-bold mb-4 text-neutral-950">Investor-Grade Transparency</h3>
               <p className="text-muted-foreground">
                 Real-time dashboards and comprehensive reporting for all stakeholders
               </p>
@@ -219,7 +219,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_CorePillars py-20 bg-gradient-section-4 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-neutral-950">
               Core Pillars of Our Platform
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -299,7 +299,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_Leadership py-20 bg-gradient-section-1 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Leadership & Team
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -384,7 +384,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_Contact py-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Let's Build the Future Together
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
