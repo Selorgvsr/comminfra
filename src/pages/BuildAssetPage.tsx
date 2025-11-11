@@ -20,6 +20,7 @@ import ecoBusinessParkImage from "@/assets/eco-business-park-parking.jpg";
 import smartDashboardImage from "@/assets/smart-building-dashboard.jpg";
 import smartEnergySystemsImage from "@/assets/smart-energy-systems.jpg";
 import proposalFormImage from "@/assets/construction-proposal-form.jpg";
+import accessControlImage from "@/assets/access-control-image.jpg";
 const BuildAssetPage = () => {
   const architecturalFeatures = [{
     icon: Zap,
@@ -114,7 +115,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
     icon: Shield,
     title: "Access Control",
     description: "Internal roads and security infrastructure",
-    image: commercialFacadeImage
+    image: accessControlImage
   }, {
     icon: Settings,
     title: "Smart Office Tech",
