@@ -323,7 +323,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       <section className="buyer_tenant_faq_section py-20 px-4">
         <div className="max-w-4xl mx-auto">
           <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+            <h2 className="text-4xl font-bold mb-4 text-slate-50">Frequently Asked Questions</h2>
             <p className="text-xl text-muted-foreground">Everything you need to know about our buildings</p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
@@ -331,7 +331,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
                 <AccordionTrigger className="text-left hover:no-underline">
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />
-                    <span className="text-lg font-medium">{item.question}</span>
+                    <span className="text-lg font-medium text-slate-50">{item.question}</span>
                   </div>
                 </AccordionTrigger>
                 <AccordionContent className="pt-4 text-muted-foreground">
