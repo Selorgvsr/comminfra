@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
-import { Building2, Mail, Phone, MapPin } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
+import logo from "@/assets/comminfra-logo.svg";
 const Footer = () => {
   const footerLinks = [{
     label: "About Us",
@@ -19,8 +20,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <Building2 className="h-8 w-8 text-solar" />
-              <span className="text-xl font-bold">CommInfra</span>
+              <img src={logo} alt="CommInfra Logo" className="h-12 w-auto" />
             </div>
             <p className="text-sm text-white/80">
               Building the future of commercial real estate with ESG-aligned infrastructure and solar-powered sustainability.
