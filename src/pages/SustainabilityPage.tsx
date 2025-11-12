@@ -56,7 +56,6 @@ const SustainabilityPage = () => {
     {
       icon: Recycle,
       title: "Energy-Efficient Design",
-
       content: [
         "Our Energy-Efficient Design reduces operational costs while maximizing comfort and productivity.",
         "Smart orientation and passive solar strategies optimize daylight and thermal efficiency.",
