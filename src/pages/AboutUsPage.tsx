@@ -170,7 +170,7 @@ const AboutUsPage = () => {
       <section className="AboutUs_Philosophy py-20 bg-gradient-section-3 text-white">
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-950">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Our Development Philosophy
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
