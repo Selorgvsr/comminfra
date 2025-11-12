@@ -148,7 +148,7 @@ const SellPage = () => {
           <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
             Premium Property Acquisition
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in text-red-600">
+          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in text-slate-50">
             Unlock Value from Your Commercial Asset
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Direct Acquisition</span>
           </h1>
