@@ -20,7 +20,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="space-y-4">
             <div className="flex items-center space-x-2">
-              <img src={logo} alt="CommInfra Logo" className="h-14 w-auto" />
+              <img src={logo} alt="CommInfra Logo" className="h-16 w-auto" />
             </div>
             <p className="text-sm text-white/80">
               Building the future of commercial real estate with ESG-aligned infrastructure and solar-powered sustainability.
