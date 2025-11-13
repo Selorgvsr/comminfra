@@ -318,7 +318,7 @@ const SustainabilityPage = () => {
 
                 <div className="lg:w-1/2 space-y-6">
                   <div className="space-y-4">
-                    <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent">
+                    <h3 className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent p-4">
                       {feature.title}
                     </h3>
 
