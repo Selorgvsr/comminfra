@@ -241,7 +241,7 @@ const BuyPage = () => {
         <div className="container px-4 max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-20">
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent mb-6 tracking-tight p-4">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text mb-6 tracking-tight p-4 text-emerald-50">
               Asset Categories
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light">
@@ -607,7 +607,7 @@ const BuyPage = () => {
         <div className="container px-4 max-w-7xl mx-auto">
           {/* Header */}
           <div className="text-center mb-12">
-            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text text-transparent mb-6 tracking-tight">
+            <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text mb-6 tracking-tight text-slate-50">
               Tailored for Every Investor
             </h2>
             <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
