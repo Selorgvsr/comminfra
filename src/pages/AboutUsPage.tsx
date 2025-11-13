@@ -200,12 +200,12 @@ const AboutUsPage = () => {
             </div>
             
             <div className="PhilosophyCard text-center group">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
-                <Wrench className="h-8 w-8 text-primary" />
+              <div className="inline-flex items-center justify-center w-16 h-16 bg-success/20 rounded-full mb-6 group-hover:scale-110 transition-transform">
+                <Leaf className="h-8 w-8 text-success" />
               </div>
-              <h3 className="text-xl font-bold mb-4 text-slate-50">Modular Design Logic</h3>
+              <h3 className="text-xl font-bold mb-4 text-slate-50">ESG-First Approach</h3>
               <p className="text-muted-foreground">
-                Scalable, adaptable designs that grow with changing market needs
+                Environmental, social, and governance principles embedded in every decision
               </p>
             </div>
             
