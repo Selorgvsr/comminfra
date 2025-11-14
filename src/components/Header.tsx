@@ -33,8 +33,9 @@ const Header = () => {
       <div className="container flex h-16 items-center justify-between">
         <Link to="/" className="flex items-center space-x-3">
           <img src={logo} alt="CommInfra Logo" className="h-16 w-auto" />
-          <span className="text-3xl font-extrabold tracking-wider bg-gradient-to-r from-primary via-commercial to-primary bg-clip-text text-transparent drop-shadow-sm">
-            COMMINFRA
+          <span className="text-3xl font-extrabold tracking-wider drop-shadow-sm">
+            <span className="text-primary">COMM</span>
+            <span className="text-commercial">INFRA</span>
           </span>
         </Link>
         
