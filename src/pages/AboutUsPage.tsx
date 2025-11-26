@@ -35,10 +35,7 @@ const AboutUsPage = () => {
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> We're Proud To Be Part Of This Journey</span>
           </h1>
           
-          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group">
-            Explore Our Platform
-            <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-          </Button>
+          
         </div>
       </section>
 
@@ -52,7 +49,7 @@ const AboutUsPage = () => {
                   <Target className="h-8 w-8 text-primary mr-3" />
                   <h3 className="text-2xl font-bold text-slate-50">Our Vision</h3>
                 </div>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-gray-300">
                   To create scalable, sustainable commercial infrastructure across India that sets new standards for environmental responsibility and investor returns.
                 </p>
               </div>
@@ -62,7 +59,7 @@ const AboutUsPage = () => {
                   <Building2 className="h-8 w-8 text-primary mr-3" />
                   <h3 className="text-2xl font-bold text-slate-50">Our Mission</h3>
                 </div>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-gray-300">
                   Integrate smart design, solar power, and REIT-grade clarity into every asset we develop, ensuring maximum value for all stakeholders.
                 </p>
               </div>
@@ -90,7 +87,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               What We Do
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-200">
               Comprehensive commercial real estate solutions powered by innovation and sustainability
             </p>
           </div>
