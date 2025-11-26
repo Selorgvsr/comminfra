@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img src={logo} alt="CommInfra Logo" className="h-16 w-auto" />
-              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-primary to-commercial bg-clip-text text-transparent">
+              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-primary to-commercial bg-clip-text text-blue-700">
                 COMMINFRA
               </span>
             </div>
