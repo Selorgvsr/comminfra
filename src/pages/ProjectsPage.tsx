@@ -15,6 +15,7 @@ import interiorFitoutProgressImage from "@/assets/interior-fitout-progress.jpg";
 import urbanCommonsPlazaImage from "@/assets/urban-commons-plaza.jpg";
 import constructionFoundationWorkImage from "@/assets/construction-foundation-work.jpg";
 import constructionToLifestyleCenterImage from "@/assets/construction-to-lifestyle-center.jpg";
+import techValleyBusinessParkImage from "@/assets/tech-valley-business-park.jpg";
 import smartInfrastructureBlueprintImage from "@/assets/smart-infrastructure-blueprint.jpg";
 import infrastructureBlueprintImage from "@/assets/infrastructure-blueprint.jpg";
 import visionaryInfrastructureImage from "@/assets/visionary-infrastructure.jpg";
@@ -150,7 +151,7 @@ const ProjectsPage = () => {
     location: "Hyderabad, Telangana",
     status: "Structural Work",
     description: "Modern business park designed for IT and tech companies with integrated solar power and rainwater harvesting systems.",
-    image: constructionToLifestyleCenterImage
+    image: techValleyBusinessParkImage
   }];
   const futureProjects = [{
     name: "Eco Corporate Campus",
