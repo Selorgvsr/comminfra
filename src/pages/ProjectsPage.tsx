@@ -12,6 +12,7 @@ import projectTimelineImage from "@/assets/project-timeline.jpg";
 import investorMeetingCalendarImage from "@/assets/investor-meeting-calendar.jpg";
 import semiCompletedScaffoldingImage from "@/assets/semi-completed-scaffolding.jpg";
 import interiorFitoutProgressImage from "@/assets/interior-fitout-progress.jpg";
+import urbanCommonsPlazaImage from "@/assets/urban-commons-plaza.jpg";
 import constructionFoundationWorkImage from "@/assets/construction-foundation-work.jpg";
 import constructionToLifestyleCenterImage from "@/assets/construction-to-lifestyle-center.jpg";
 import smartInfrastructureBlueprintImage from "@/assets/smart-infrastructure-blueprint.jpg";
@@ -143,7 +144,7 @@ const ProjectsPage = () => {
     location: "Pune, Maharashtra",
     status: "Interior Fitout",
     description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
-    image: interiorFitoutProgressImage
+    image: urbanCommonsPlazaImage
   }, {
     name: "Tech Valley Business Park",
     location: "Hyderabad, Telangana",
