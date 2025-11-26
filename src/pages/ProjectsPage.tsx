@@ -258,9 +258,7 @@ const ProjectsPage = () => {
               </Card>)}
           </div>
           
-          <div className="text-center">
-            <img src={projectCardsEsgImage} alt="Project cards with solar icons and carbon credit badges" className="w-full max-w-4xl mx-auto rounded-lg shadow-medium" />
-          </div>
+          
         </div>
       </section>
 
