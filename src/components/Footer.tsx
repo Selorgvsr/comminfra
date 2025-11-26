@@ -21,7 +21,7 @@ const Footer = () => {
           <div className="space-y-4">
             <div className="flex items-center space-x-3">
               <img src={logo} alt="CommInfra Logo" className="h-16 w-auto" />
-              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-primary to-commercial bg-clip-text text-transparent">
+              <span className="text-2xl font-bold tracking-tight bg-gradient-to-r from-primary to-commercial bg-clip-text text-blue-700">
                 COMMINFRA
               </span>
             </div>
@@ -31,7 +31,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Quick Links</h3>
+            <h3 className="font-semibold mb-4 text-blue-700">Quick Links</h3>
             <ul className="space-y-2">
               {footerLinks.slice(0, 3).map(link => <li key={link.path}>
                   <Link to={link.path} className="text-sm text-white/80 hover:text-solar transition-smooth">
@@ -42,7 +42,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Services</h3>
+            <h3 className="font-semibold mb-4 text-blue-700">Services</h3>
             <ul className="space-y-2">
               {footerLinks.slice(3).map(link => <li key={link.path}>
                   <Link to={link.path} className="text-sm text-white/80 hover:text-solar transition-smooth">
@@ -53,7 +53,7 @@ const Footer = () => {
           </div>
           
           <div>
-            <h3 className="font-semibold mb-4">Contact</h3>
+            <h3 className="font-semibold mb-4 text-blue-700">Contact</h3>
             <div className="space-y-2 text-sm text-white/80">
               
               <div className="flex items-center space-x-2">
