@@ -205,8 +205,10 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8 whitespace-pre-line">
                       {feature.content}
                     </p>
-                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500">
-                      Explore Design Approach
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500" asChild>
+                      <Link to="/projects">
+                        Explore Design Approach
+                      </Link>
                     </Button>
                   </div>
                 </div>
