@@ -239,8 +239,10 @@ const RentLeaseAssetPage = () => {
                     <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
                       {type.description}
                     </p>
-                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500">
-                      View Space
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500" asChild>
+                      <Link to="/projects">
+                        View Space
+                      </Link>
                     </Button>
                   </div>
                 </div>
