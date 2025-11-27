@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Dialog, DialogContent } from "@/components/ui/dialog";
@@ -374,8 +375,8 @@ const ProjectsPage = () => {
                 both financial returns and positive environmental impact.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button variant="investor" size="lg">
-                  Schedule a Project Tour
+                <Button asChild variant="investor" size="lg">
+                  <Link to="/contact">Schedule a Project Tour</Link>
                 </Button>
                 
               </div>
