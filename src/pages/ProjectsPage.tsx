@@ -216,51 +216,7 @@ const ProjectsPage = () => {
 
       {/* Featured Projects Section */}
       <section id="featured_projects_grid" className="py-20 bg-gradient-section-1 text-white">
-        <div className="container">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sky-50">
-              Featured Projects
-            </h2>
-            <p className="text-lg max-w-2xl mx-auto text-zinc-300">
-              Showcasing our portfolio of sustainable commercial developments with ESG alignment and innovation
-            </p>
-          </div>
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-12">
-            {featuredProjects.map((project, index) => <Card key={index} className="overflow-hidden hover-scale transition-all duration-300 border-commercial/20">
-                <CardContent className="p-0">
-                  <div className="h-48 bg-gradient-to-br from-commercial/20 to-commercial/40 flex items-center justify-center">
-                    <Building2 className="h-16 w-16 text-commercial" />
-                  </div>
-                  <div className="p-6">
-                    <div className="flex items-center justify-between mb-2">
-                      <span className={`text-xs px-2 py-1 rounded-full ${project.status === 'Completed' ? 'bg-green-100 text-green-800' : project.status === 'Ongoing' ? 'bg-blue-100 text-blue-800' : 'bg-orange-100 text-orange-800'}`}>
-                        {project.status}
-                      </span>
-                      <span className="text-xs bg-commercial/10 text-commercial px-2 py-1 rounded-full">
-                        {project.esgHighlight}
-                      </span>
-                    </div>
-                    <h3 className="text-xl font-semibold text-commercial-navy mb-2">
-                      {project.title}
-                    </h3>
-                    <p className="text-sm text-muted-foreground mb-2 flex items-center">
-                      <MapPin className="h-4 w-4 mr-1" />
-                      {project.location}
-                    </p>
-                    <p className="text-sm text-commercial font-medium mb-3">
-                      {project.type}
-                    </p>
-                    <p className="text-sm text-muted-foreground">
-                      {project.description}
-                    </p>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-          
-          
-        </div>
+        
       </section>
 
       {/* Ongoing Projects Section */}
