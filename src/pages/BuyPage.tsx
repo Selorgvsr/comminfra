@@ -319,19 +319,19 @@ const BuyPage = () => {
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">The heart of urban interaction</h3>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p>Welcome to Commercial Plazas — the heart of urban interaction.</p>
+                    <p className="text-zinc-300">Welcome to Commercial Plazas — the heart of urban interaction.</p>
 
                     <p className="text-zinc-300">
                       Each plaza is a curated ecosystem of retail, dining, and business synergy, positioned in
                       high-traffic zones for maximum visibility and returns.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Designed for versatility — from jewelry showrooms and cafés to boutiques and tech stores — our
                       plazas cater to brands that want to shine in the cityscape.
                     </p>
 
-                    <p>These are more than buildings; they're communities of commerce, experience, and expression.</p>
+                    <p className="text-zinc-300">These are more than buildings; they're communities of commerce, experience, and expression.</p>
 
                     <p className="font-semibold text-slate-50">
                       Architected with wide corridors, parking, safety systems, and elegant aesthetics, they invite
@@ -377,16 +377,16 @@ const BuyPage = () => {
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">Where lifestyle meets luxury</h3>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p>Our Lifestyle Centers redefine modern living with a blend of retail, leisure, and culture.</p>
+                    <p className="text-zinc-300">Our Lifestyle Centers redefine modern living with a blend of retail, leisure, and culture.</p>
 
-                    <p>Imagine an open-air promenade where dining meets design, and shopping blends with serenity.</p>
+                    <p className="text-zinc-300">Imagine an open-air promenade where dining meets design, and shopping blends with serenity.</p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Each center is designed for high-end brands, cafés, art studios, and wellness spaces —
                       destinations that shape urban lifestyle trends.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       These are not just commercial properties — they're lifestyle experiences engineered for emotional
                       engagement, footfall, and long-term revenue.
                     </p>
@@ -419,22 +419,22 @@ const BuyPage = () => {
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">The evolution of enterprise</h3>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p>
+                    <p className="text-zinc-300">
                       Our Business Parks represent the evolution of enterprise real estate — integrated work
                       environments built for growth and collaboration.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Each park features multiple towers, shared amenities, landscaped open zones, cafeterias, EV
                       parking, and digital infrastructure.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       They're designed to support IT companies, logistics offices, R&D units, and start-up clusters with
                       scalable, plug-and-play setups.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       With renewable energy systems, smart surveillance, and sustainable construction, these parks offer
                       future-ready spaces for businesses that aim for global standards.
                     </p>
@@ -482,19 +482,19 @@ const BuyPage = () => {
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">The pulse of city commerce</h3>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p>
+                    <p className="text-zinc-300">
                       Welcome to the pulse of city commerce — our High Street Commercial Properties are designed for
                       brands that thrive on exposure and experience.
                     </p>
 
-                    <p>Located in high-footfall areas, these spaces offer unmatched visibility and accessibility.</p>
+                    <p className="text-zinc-300">Located in high-footfall areas, these spaces offer unmatched visibility and accessibility.</p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Ideal for restaurants, flagship showrooms, fashion brands, and premium outlets — each property is
                       built with elegant facades, signage visibility, and smart retail planning.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Infrastructure includes ample parking, power backup, and modern interiors — everything your brand
                       needs to make a statement.
                     </p>
@@ -523,7 +523,7 @@ const BuyPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Development Stages</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-zinc-300">
               Choose properties based on completion status and investment timeline
             </p>
           </div>
@@ -565,7 +565,7 @@ const BuyPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">ESG Value Additions</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-zinc-300">
               Sustainable features that enhance property value and generate additional revenue streams
             </p>
           </div>
@@ -610,7 +610,7 @@ const BuyPage = () => {
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text mb-6 tracking-tight text-slate-50">
               Tailored for Every Investor
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-4xl mx-auto font-light leading-relaxed">
+            <p className="text-xl md:text-2xl max-w-4xl mx-auto font-light leading-relaxed text-zinc-300">
               Customized investment opportunities designed to match diverse investor goals — from institutional
               stability to corporate expansion and family wealth creation.
             </p>
@@ -644,17 +644,17 @@ const BuyPage = () => {
                       deliver consistent performance and portfolio diversification.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       We offer high-grade office towers, business parks, and retail plazas with predictable income
                       streams and low vacancy risks.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Each project is backed by professional management, compliance transparency, and sustainable design
                       to attract top corporate tenants.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Our developments align with ESG goals, offering carbon credit benefits through solar energy
                       integration.
                     </p>
@@ -684,16 +684,16 @@ const BuyPage = () => {
                       Corporate occupiers deserve more than space — they deserve ecosystems.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       We design tailor-made work environments for established brands and emerging enterprises alike.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Our commercial developments offer flexibility for expansion, smart energy systems, high-speed
                       connectivity, and world-class maintenance.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       From leasing individual floors to owning entire office blocks, we provide strategic solutions that
                       enhance productivity and brand image.
                     </p>
@@ -745,17 +745,17 @@ const BuyPage = () => {
                       appreciating assets that balance prestige with profit.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Invest in premium commercial floors, boutique retail units, or long-term leasing ventures that
                       generate stable rental yields.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       We curate customized investment plans — from single-unit ownership to multi-asset portfolios —
                       designed for legacy creation.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Each project is built with transparency, sustainability, and timeless design — assets that
                       appreciate in both value and reputation.
                     </p>
@@ -785,17 +785,17 @@ const BuyPage = () => {
                       income-generating commercial assets.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Our developments meet investment-grade benchmarks — audited, compliant, and built for long-term
                       rental yields.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       With transparent financial structures, asset management systems, and energy-efficient operations,
                       our projects deliver sustainable returns and carbon credits.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Partner with us to co-create commercial portfolios that merge physical growth with financial
                       performance.
                     </p>
