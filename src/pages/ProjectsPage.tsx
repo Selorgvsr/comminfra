@@ -221,7 +221,7 @@ const ProjectsPage = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-sky-50">
               Featured Projects
             </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="text-lg max-w-2xl mx-auto text-zinc-300">
               Showcasing our portfolio of sustainable commercial developments with ESG alignment and innovation
             </p>
           </div>
@@ -365,7 +365,7 @@ const ProjectsPage = () => {
               <h2 className="text-3xl md:text-4xl font-bold mb-6 text-green-600">
                 ESG & Sustainability Impact
               </h2>
-              <p className="text-lg text-muted-foreground mb-8">
+              <p className="text-lg mb-8 text-zinc-300">
                 Our commitment to environmental, social, and governance excellence drives measurable 
                 impact across all our commercial developments.
               </p>
@@ -377,7 +377,7 @@ const ProjectsPage = () => {
                     <div className="text-2xl font-bold text-commercial-navy mb-1 bg-lime-500">
                       {metric.value}
                     </div>
-                    <div className="text-sm text-muted-foreground">
+                    <div className="text-sm text-zinc-300">
                       {metric.title}
                     </div>
                   </div>)}
@@ -385,15 +385,15 @@ const ProjectsPage = () => {
               <div className="space-y-4">
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">LEED and BREEAM certified developments</span>
+                  <span className="text-zinc-300">LEED and BREEAM certified developments</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Solar integration across all projects</span>
+                  <span className="text-zinc-300">Solar integration across all projects</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <div className="w-2 h-2 bg-commercial rounded-full"></div>
-                  <span className="text-muted-foreground">Water conservation and waste reduction</span>
+                  <span className="text-zinc-300">Water conservation and waste reduction</span>
                 </div>
               </div>
             </div>
