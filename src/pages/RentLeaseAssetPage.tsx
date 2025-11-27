@@ -255,7 +255,7 @@ const RentLeaseAssetPage = () => {
       <section className="lease_models_duration_section py-20 bg-gradient-to-b from-muted/30 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text p-4 text-primary">
               Choose Your Ideal Lease Duration & Structure
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -295,7 +295,7 @@ const RentLeaseAssetPage = () => {
       <section className="facility_options_section py-20 bg-gradient-to-b from-background to-primary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-primary">
               Premium Amenities & Facilities Included
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -325,7 +325,7 @@ const RentLeaseAssetPage = () => {
       <section className="esg_features_section py-20 bg-gradient-to-b from-primary/5 to-secondary/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-primary">
               ESG-Compliant & Smart Building Features
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -357,7 +357,7 @@ const RentLeaseAssetPage = () => {
       <section className="featured_listings_section py-20 bg-gradient-to-b from-secondary/5 to-background">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text p-4 text-primary">
               Premium Properties Ready for Lease
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -403,7 +403,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text p-4 text-primary">
                 Frequently Asked Questions
               </h2>
               <p className="text-xl text-muted-foreground">Everything you need to know about leasing with us</p>
