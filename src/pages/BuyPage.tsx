@@ -547,8 +547,8 @@ const BuyPage = () => {
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">{stage.description}</p>
                   <Progress value={stage.progress} className="mb-4" />
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all">
-                    {stage.cta}
+                  <Button asChild variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all">
+                    <Link to="/contact">{stage.cta}</Link>
                   </Button>
                 </CardContent>
               </Card>)}
