@@ -22,8 +22,8 @@ import visionaryInfrastructureImage from "@/assets/visionary-infrastructure.jpg"
 import jointDevelopmentModernImage from "@/assets/joint-development-modern.jpg";
 import completedWithTenantsImage from "@/assets/completed-with-tenants.jpg";
 import propertyHandoverImage from "@/assets/property-handover.jpg";
-import leaseToOwnHandoverImage from "@/assets/lease-to-own-handover.jpg";
-import corporateOfficModernImage from "@/assets/corporate-office-modern.jpg";
+import galleryModernBuildingImage from "@/assets/gallery-modern-building.jpg";
+import galleryPremiumFacadeImage from "@/assets/gallery-premium-facade.png";
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
@@ -177,11 +177,11 @@ const ProjectsPage = () => {
     src: propertyHandoverImage,
     alt: "Property handover ceremony"
   }, {
-    src: leaseToOwnHandoverImage,
-    alt: "Lease to own property handover"
+    src: galleryModernBuildingImage,
+    alt: "Modern commercial building with contemporary design"
   }, {
-    src: corporateOfficModernImage,
-    alt: "Modern corporate office building"
+    src: galleryPremiumFacadeImage,
+    alt: "Premium commercial facade with architectural excellence"
   }];
   return <div className="min-h-screen gradient-mesh">
       {/* SEO Meta Tags */}
