@@ -244,7 +244,7 @@ const BuyPage = () => {
             <h2 className="text-5xl md:text-6xl font-bold bg-gradient-to-r from-gray-900 via-blue-900 to-gray-900 bg-clip-text mb-6 tracking-tight p-4 text-emerald-50">
               Asset Categories
             </h2>
-            <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto font-light">
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto font-light text-zinc-300">
               Discover premium commercial properties across diverse categories.
             </p>
           </div>
@@ -271,23 +271,23 @@ const BuyPage = () => {
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">Step into the future of work</h3>
 
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
-                    <p>
+                    <p className="text-zinc-300">
                       Our Office Spaces are crafted for performance, prestige, and presence. Each tower stands as a
                       symbol of productivity — designed with modern infrastructure, high-speed connectivity, green
                       energy systems, and customizable interiors.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       We offer spaces ranging from boutique executive offices to multi-floor corporate setups, built to
                       adapt to dynamic business needs.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Enjoy premium facilities like central air systems, high-speed elevators, security surveillance,
                       conference zones, and energy-efficient lighting.
                     </p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Every workspace breathes elegance, natural light, and sustainability — perfect for companies that
                       dream big and move fast.
                     </p>
@@ -321,7 +321,7 @@ const BuyPage = () => {
                   <div className="prose prose-lg text-gray-600 space-y-4 leading-relaxed">
                     <p>Welcome to Commercial Plazas — the heart of urban interaction.</p>
 
-                    <p>
+                    <p className="text-zinc-300">
                       Each plaza is a curated ecosystem of retail, dining, and business synergy, positioned in
                       high-traffic zones for maximum visibility and returns.
                     </p>
