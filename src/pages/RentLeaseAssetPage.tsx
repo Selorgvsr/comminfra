@@ -205,7 +205,7 @@ const RentLeaseAssetPage = () => {
               Premium Commercial Spaces
             </Badge>
             <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
-              Find Your Perfect Space
+              Commercial Spaces Tailored for Your Business Type
             </h2>
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
               Discover commercial spaces designed for your specific business needs
@@ -256,7 +256,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
-              Flexible Lease Options
+              Choose Your Ideal Lease Duration & Structure
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Choose the lease structure that fits your business strategy
@@ -296,7 +296,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              World-Class Facilities
+              Premium Amenities & Facilities Included
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               State-of-the-art amenities designed for modern businesses
@@ -326,7 +326,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Sustainable & Smart
+              ESG-Compliant & Smart Building Features
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               ESG-compliant spaces with cutting-edge technology
@@ -358,7 +358,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
-              Featured Properties
+              Premium Properties Ready for Lease
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Premium spaces available for immediate lease
@@ -432,7 +432,7 @@ const RentLeaseAssetPage = () => {
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Start Your Leasing Journey</h2>
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 text-white">Submit Your Leasing Inquiry Today</h2>
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
                 Get personalized recommendations and connect with our leasing experts
               </p>
