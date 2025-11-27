@@ -198,8 +198,8 @@ const SellPage = () => {
                 <CardContent>
                   <p className="text-sm text-muted-foreground mb-4">{stage.description}</p>
                   <Progress value={stage.completion} className="mb-4" />
-                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all">
-                    {stage.cta}
+                  <Button variant="outline" size="sm" className="w-full group-hover:bg-primary group-hover:text-white transition-all" asChild>
+                    <a href="#inquiry-form">{stage.cta}</a>
                   </Button>
                 </CardContent>
               </Card>)}
