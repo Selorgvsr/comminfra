@@ -282,52 +282,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       </section>
 
       {/* Project Showcase */}
-      <section className="project_showcase_section py-20 px-4 bg-gradient-section-1 text-white">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4">Project Gallery</h2>
-            <p className="text-xl text-muted-foreground">Showcasing architectural excellence</p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
-              <div className="relative h-64">
-                <img src={modernBusinessComplexImage} alt="Commercial Project" className="w-full h-full object-cover" />
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
-                  ESG Certified
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Modern Business Complex</h3>
-                <p className="text-muted-foreground">50,000 sq.ft • Solar Ready • Smart Systems</p>
-              </CardContent>
-            </Card>
-            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
-              <div className="relative h-64">
-                <img src={smartOfficeTowerImage} alt="Smart Building" className="w-full h-full object-cover" />
-                <div className="absolute top-4 right-4 bg-blue-500 text-white px-3 py-1 rounded-full text-sm">
-                  AI-Enabled
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Smart Office Tower</h3>
-                <p className="text-muted-foreground">75,000 sq.ft • IoT Integrated • Carbon Neutral</p>
-              </CardContent>
-            </Card>
-            <Card className="project_showcase_card overflow-hidden hover:shadow-lg transition-all duration-300">
-              <div className="relative h-64">
-                <img src={ecoBusinessParkImage} alt="Sustainable Complex" className="w-full h-full object-cover" />
-                <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm">
-                  LEED Gold
-                </div>
-              </div>
-              <CardContent className="p-6">
-                <h3 className="text-xl font-semibold mb-2">Eco Business Park</h3>
-                <p className="text-muted-foreground">1,20,000 sq.ft • EV Ready • Rainwater Harvesting</p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
+      
 
       {/* FAQs */}
       <section className="buyer_tenant_faq_section py-20 px-4">
