@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -268,7 +269,9 @@ const REITInvestPage = () => {
                   <p className="text-muted-foreground group-hover:text-foreground transition-colors text-sm">
                     {asset.description}
                   </p>
-                  <Button className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white">View Assets</Button>
+                  <Button asChild className="w-full mt-4 bg-blue-600 hover:bg-blue-700 text-white">
+                    <Link to="/projects">View Assets</Link>
+                  </Button>
                 </CardContent>
               </Card>)}
           </div>
