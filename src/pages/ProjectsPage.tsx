@@ -26,6 +26,8 @@ import propertyHandoverImage from "@/assets/property-handover.jpg";
 import galleryModernBuildingImage from "@/assets/gallery-modern-building.jpg";
 import galleryPremiumFacadeImage from "@/assets/gallery-premium-facade.png";
 import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
+import constructionSiteCraneImage from "@/assets/construction-site-crane.jpg";
+import constructionSiteBlueFacadeImage from "@/assets/construction-site-blue-facade.jpg";
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
@@ -160,6 +162,9 @@ const ProjectsPage = () => {
     src: completedWithTenantsImage,
     alt: "Completed commercial complex with tenants"
   }, {
+    src: constructionSiteBlueFacadeImage,
+    alt: "Construction site with blue safety netting and facade work"
+  }, {
     src: propertyHandoverImage,
     alt: "Property handover ceremony"
   }, {
@@ -168,6 +173,9 @@ const ProjectsPage = () => {
   }, {
     src: galleryPremiumFacadeImage,
     alt: "Premium commercial facade with architectural excellence"
+  }, {
+    src: constructionSiteCraneImage,
+    alt: "Construction site with tower crane and scaffolding"
   }, {
     src: semiCompletedScaffoldingImage,
     alt: "Semi-completed construction with scaffolding"
