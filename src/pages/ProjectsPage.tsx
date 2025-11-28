@@ -148,7 +148,7 @@ const ProjectsPage = () => {
     location: "Bangalore, Karnataka",
     image: infrastructureBlueprintImage
   }, {
-    name: "Green Retail Hub",
+    name: "Pallavaram",
     location: "Mumbai, Maharashtra",
     image: visionaryInfrastructureImage
   }, {
