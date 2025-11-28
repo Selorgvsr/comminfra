@@ -182,7 +182,7 @@ const ProjectsPage = () => {
     },
     {
       name: "Commercial Building",
-      location: "Pune, Maharashtra",
+      location: "Indira Nagar, Chennai",
       status: "Interior Fitout",
       description:
         "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
