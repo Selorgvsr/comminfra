@@ -152,7 +152,7 @@ const ProjectsPage = () => {
     location: "Mumbai, Maharashtra",
     image: visionaryInfrastructureImage
   }, {
-    name: "Innovation District",
+    name: "LB Road",
     location: "Delhi NCR",
     image: jointDevelopmentModernImage
   }];
