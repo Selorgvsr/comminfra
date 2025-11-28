@@ -130,18 +130,6 @@ const ProjectsPage = () => {
     count: 6
   }];
   const ongoingProjects = [{
-    name: "Metro Lifestyle Center",
-    location: "Bangalore, Karnataka",
-    status: "Under Construction",
-    description: "A state-of-the-art mixed-use development featuring retail spaces, entertainment zones, and modern amenities. Expected completion in Q4 2024.",
-    image: semiCompletedScaffoldingImage
-  }, {
-    name: "Solar Agri Hub",
-    location: "Ahmedabad, Gujarat",
-    status: "Foundation Stage",
-    description: "Revolutionary agrivoltaic project combining sustainable agriculture with solar energy generation. Pioneering dual land-use technology.",
-    image: constructionFoundationWorkImage
-  }, {
     name: "Urban Commons Plaza",
     location: "Pune, Maharashtra",
     status: "Interior Fitout",
@@ -155,10 +143,6 @@ const ProjectsPage = () => {
     image: techValleyBusinessParkImage
   }];
   const futureProjects = [{
-    name: "Eco Corporate Campus",
-    location: "Chennai, Tamil Nadu",
-    image: smartInfrastructureBlueprintImage
-  }, {
     name: "Smart Tech Park Phase 2",
     location: "Bangalore, Karnataka",
     image: infrastructureBlueprintImage
