@@ -132,7 +132,7 @@ const ProjectsPage = () => {
   }];
   const ongoingProjects = [{
     name: "Commercial Building",
-    location: "Mumbai, Maharashtra",
+    location: "SRP Tools,OMR,Chennai",
     status: "Structural Work",
     description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
     image: constructionProgressBuildingImage
