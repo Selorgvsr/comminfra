@@ -144,7 +144,7 @@ const ProjectsPage = () => {
     image: urbanCommonsPlazaImage
   }];
   const futureProjects = [{
-    name: "Smart Tech Park Phase 2",
+    name: "Saidapet",
     location: "Bangalore, Karnataka",
     image: infrastructureBlueprintImage
   }, {
