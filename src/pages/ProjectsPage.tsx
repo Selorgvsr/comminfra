@@ -131,12 +131,6 @@ const ProjectsPage = () => {
     count: 6
   }];
   const ongoingProjects = [{
-    name: "Urban Commons Plaza",
-    location: "Pune, Maharashtra",
-    status: "Interior Fitout",
-    description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
-    image: urbanCommonsPlazaImage
-  }, {
     name: "Metro Business Tower",
     location: "Mumbai, Maharashtra",
     status: "Structural Work",
@@ -148,12 +142,6 @@ const ProjectsPage = () => {
     status: "Interior Fitout",
     description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
     image: urbanCommonsPlazaImage
-  }, {
-    name: "Tech Valley Business Park",
-    location: "Hyderabad, Telangana",
-    status: "Structural Work",
-    description: "Modern business park designed for IT and tech companies with integrated solar power and rainwater harvesting systems.",
-    image: techValleyBusinessParkImage
   }];
   const futureProjects = [{
     name: "Smart Tech Park Phase 2",
@@ -180,6 +168,18 @@ const ProjectsPage = () => {
   }, {
     src: galleryPremiumFacadeImage,
     alt: "Premium commercial facade with architectural excellence"
+  }, {
+    src: semiCompletedScaffoldingImage,
+    alt: "Semi-completed construction with scaffolding"
+  }, {
+    src: interiorFitoutProgressImage,
+    alt: "Interior fitout progress in commercial space"
+  }, {
+    src: constructionFoundationWorkImage,
+    alt: "Foundation work in progress"
+  }, {
+    src: techValleyBusinessParkImage,
+    alt: "Tech Valley Business Park development"
   }];
   return <div className="min-h-screen gradient-mesh">
       {/* SEO Meta Tags */}
