@@ -829,7 +829,7 @@ const BuyPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Investment Highlights</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-400">
               Key metrics that demonstrate the value proposition of our commercial properties
             </p>
           </div>
@@ -850,7 +850,7 @@ const BuyPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Frequently Asked Questions</h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-400">
               Common questions from buyers about our commercial property investments
             </p>
           </div>
