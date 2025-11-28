@@ -137,7 +137,7 @@ const ProjectsPage = () => {
     description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
     image: constructionProgressBuildingImage
   }, {
-    name: "Tech Valley Business Park",
+    name: "Commercial Building",
     location: "Pune, Maharashtra",
     status: "Interior Fitout",
     description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
