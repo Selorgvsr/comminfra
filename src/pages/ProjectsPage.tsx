@@ -25,6 +25,7 @@ import completedWithTenantsImage from "@/assets/completed-with-tenants.jpg";
 import propertyHandoverImage from "@/assets/property-handover.jpg";
 import galleryModernBuildingImage from "@/assets/gallery-modern-building.jpg";
 import galleryPremiumFacadeImage from "@/assets/gallery-premium-facade.png";
+import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
@@ -131,6 +132,18 @@ const ProjectsPage = () => {
   }];
   const ongoingProjects = [{
     name: "Urban Commons Plaza",
+    location: "Pune, Maharashtra",
+    status: "Interior Fitout",
+    description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
+    image: urbanCommonsPlazaImage
+  }, {
+    name: "Metro Business Tower",
+    location: "Mumbai, Maharashtra",
+    status: "Structural Work",
+    description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
+    image: constructionProgressBuildingImage
+  }, {
+    name: "Tech Valley Business Park",
     location: "Pune, Maharashtra",
     status: "Interior Fitout",
     description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
