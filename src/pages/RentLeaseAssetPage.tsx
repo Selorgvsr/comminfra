@@ -354,49 +354,7 @@ const RentLeaseAssetPage = () => {
       </section>
 
       {/* Featured Listings */}
-      <section className="featured_listings_section py-20 bg-gradient-to-b from-secondary/5 to-background">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text p-4 text-primary">
-              Premium Properties Ready for Lease
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Premium spaces available for immediate lease
-            </p>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {featuredListings.map((listing, index) => <Card key={index} className="listing_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-primary/5 backdrop-blur-sm overflow-hidden">
-                <div className="relative h-48 bg-gradient-to-br from-primary/20 to-secondary/20">
-                  <img src={index === 0 ? retailFloorInterior : index === 1 ? restaurantCommercialInterior : smartInfrastructureBlueprint} alt={listing.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
-                  <Badge className="absolute top-4 right-4 bg-primary text-white">{listing.badge}</Badge>
-                </div>
-                <CardHeader>
-                  <CardTitle className="text-xl group-hover:text-primary transition-colors">{listing.title}</CardTitle>
-                  <div className="flex items-center gap-2 text-muted-foreground">
-                    <MapPin className="w-4 h-4" />
-                    {listing.location}
-                  </div>
-                </CardHeader>
-                <CardContent>
-                  <div className="space-y-4">
-                    <div className="flex justify-between items-center">
-                      <span className="text-sm text-muted-foreground">Size: {listing.size}</span>
-                      <span className="text-lg font-semibold text-primary">{listing.lease}</span>
-                    </div>
-                    <div className="space-y-2">
-                      {listing.features.map((feature, featureIndex) => <div key={featureIndex} className="flex items-center gap-2 text-sm">
-                          <Star className="w-4 h-4 text-yellow-500" />
-                          {feature}
-                        </div>)}
-                    </div>
-                    <Button className="w-full bg-primary hover:bg-primary/90 text-white">View Details</Button>
-                  </div>
-                </CardContent>
-              </Card>)}
-          </div>
-        </div>
-      </section>
+      
 
       {/* FAQs */}
       <section className="tenant_faq_section py-20 bg-gradient-to-b from-background to-muted/30">
