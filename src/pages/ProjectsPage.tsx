@@ -159,14 +159,8 @@ const ProjectsPage = () => {
     image: jointDevelopmentModernImage
   }];
   const galleryImages = [{
-    src: completedWithTenantsImage,
-    alt: "Completed commercial complex with tenants"
-  }, {
     src: constructionSiteBlueFacadeImage,
     alt: "Construction site with blue safety netting and facade work"
-  }, {
-    src: propertyHandoverImage,
-    alt: "Property handover ceremony"
   }, {
     src: galleryModernBuildingImage,
     alt: "Modern commercial building with contemporary design"
@@ -179,9 +173,6 @@ const ProjectsPage = () => {
   }, {
     src: semiCompletedScaffoldingImage,
     alt: "Semi-completed construction with scaffolding"
-  }, {
-    src: interiorFitoutProgressImage,
-    alt: "Interior fitout progress in commercial space"
   }, {
     src: constructionFoundationWorkImage,
     alt: "Foundation work in progress"
