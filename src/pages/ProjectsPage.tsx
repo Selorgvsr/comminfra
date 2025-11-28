@@ -131,7 +131,7 @@ const ProjectsPage = () => {
     count: 6
   }];
   const ongoingProjects = [{
-    name: "Metro Business Tower",
+    name: "Commercial Building",
     location: "Mumbai, Maharashtra",
     status: "Structural Work",
     description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
