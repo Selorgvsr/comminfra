@@ -207,7 +207,7 @@ const REITInvestPage = () => {
                   <div className="w-20 h-20 mx-auto rounded-2xl bg-gradient-to-br from-blue-500/20 to-purple-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <benefit.icon className="w-10 h-10 text-blue-600" />
                   </div>
-                  <CardTitle className="text-xl group-hover:text-blue-600 transition-colors">{benefit.title}</CardTitle>
+                  <CardTitle className="text-xl group-hover:text-blue-600 transition-colors bg-primary-foreground">{benefit.title}</CardTitle>
                   <CardDescription className="text-primary-foreground">{benefit.description}</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center bg-secondary-foreground">
