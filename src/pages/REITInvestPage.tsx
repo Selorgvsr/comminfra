@@ -28,6 +28,7 @@ import corporateOccupiers from "@/assets/corporate-occupiers.jpg";
 import rentalIncomeHighrise from "@/assets/rental-income-highrise.jpg";
 import investorHandshake from "@/assets/investor-handshake.jpg";
 import propertyHandover from "@/assets/property-handover.jpg";
+import futureVisionsBusiness from "@/assets/future-visions-business-technology.jpg";
 const REITInvestPage = () => {
   const [formData, setFormData] = useState({
     assetType: "",
@@ -413,7 +414,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-purple-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img src={investorHandshake} alt="Transparent Investment Terms" className="w-full h-full object-cover" />
+                      <img src={futureVisionsBusiness} alt="Transparent Investment Terms" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
