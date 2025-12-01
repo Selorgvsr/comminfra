@@ -192,7 +192,9 @@ const BusinessRevenueModelPage = () => {
         {/* Decorative background elements */}
         <div className="absolute inset-0 opacity-10">
           <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-primary to-secondary rounded-full blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-solar to-esg rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-solar to-esg rounded-full blur-3xl animate-pulse" style={{
+          animationDelay: '1s'
+        }}></div>
         </div>
 
         <div className="container mx-auto px-4 relative z-10">
@@ -200,7 +202,7 @@ const BusinessRevenueModelPage = () => {
             <Badge className="mb-6 bg-gradient-to-r from-primary to-secondary text-white border-0 font-semibold text-lg px-6 py-2">
               Your Path to Financial Peace
             </Badge>
-            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-solar bg-clip-text text-transparent">
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-solar bg-clip-text text-primary">
               Our Investment Plan
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -237,7 +239,9 @@ const BusinessRevenueModelPage = () => {
             </Card>
 
             {/* Step 2 */}
-            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-emerald-500/10 via-emerald-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-emerald-500/10 via-emerald-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{
+            animationDelay: '0.2s'
+          }}>
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 to-emerald-600"></div>
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-emerald-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
               
@@ -264,7 +268,9 @@ const BusinessRevenueModelPage = () => {
             </Card>
 
             {/* Step 3 */}
-            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-amber-500/10 via-amber-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-amber-500/10 via-amber-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{
+            animationDelay: '0.4s'
+          }}>
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-amber-600"></div>
               <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
               
@@ -292,11 +298,10 @@ const BusinessRevenueModelPage = () => {
           </div>
 
           {/* Call to Action */}
-          <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
-            <Button size="lg" className="bg-gradient-to-r from-primary via-secondary to-solar text-white font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
-              Start Your Investment Journey
-              <ArrowRight className="ml-2 w-5 h-5" />
-            </Button>
+          <div className="text-center mt-16 animate-fade-in" style={{
+          animationDelay: '0.6s'
+        }}>
+            
           </div>
         </div>
       </section>
