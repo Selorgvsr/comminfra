@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight } from "lucide-react";
+import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 // Import images
@@ -196,6 +196,81 @@ const Homepage = () => {
                 {/* Glassmorphism overlay effect */}
                 <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </Card>)}
+          </div>
+        </div>
+      </section>
+
+      {/* Problem Solving Section */}
+      <section className="Homepage_ProblemSolving py-20 bg-background">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-12 animate-fade-in">
+            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-foreground">Problem Solving</h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+              Comminfra offers a secure investment with multiple benefits
+            </p>
+          </div>
+          
+          <div className="max-w-5xl mx-auto">
+            <Card className="overflow-hidden border-2 border-primary/20 shadow-2xl backdrop-blur-sm bg-gradient-to-br from-card via-card to-primary/5 animate-fade-in">
+              <CardContent className="p-8 md:p-12">
+                <div className="space-y-6">
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <TrendingUp className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-foreground leading-relaxed">
+                        <span className="font-semibold text-primary">Assured appreciation</span> of both land and building values, increasing your asset worth over time.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-solar/10 to-transparent border border-solar/20 hover:border-solar/40 transition-all duration-300 hover:scale-[1.02] group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-solar/20 flex items-center justify-center group-hover:bg-solar/30 transition-colors">
+                      <MapPin className="h-6 w-6 text-solar" />
+                    </div>
+                    <div>
+                      <p className="text-foreground leading-relaxed">
+                        Properties <span className="font-semibold text-solar">strategically located</span> to attract reliable international tenants, ensuring higher and consistent rental payments.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-esg/10 to-transparent border border-esg/20 hover:border-esg/40 transition-all duration-300 hover:scale-[1.02] group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-esg/20 flex items-center justify-center group-hover:bg-esg/30 transition-colors">
+                      <DollarSign className="h-6 w-6 text-esg" />
+                    </div>
+                    <div>
+                      <p className="text-foreground leading-relaxed">
+                        <span className="font-semibold text-esg">Guaranteed rental income</span> for more than 10 years, providing a stable cash flow and long-term financial peace.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
+                      <Shield className="h-6 w-6 text-primary" />
+                    </div>
+                    <div>
+                      <p className="text-foreground leading-relaxed">
+                        <span className="font-semibold text-primary">Transparent investment terms</span> with timely payback of your principal plus interest within 10 years.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-solar/10 to-transparent border border-solar/20 hover:border-solar/40 transition-all duration-300 hover:scale-[1.02] group">
+                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-solar/20 flex items-center justify-center group-hover:bg-solar/30 transition-colors">
+                      <Award className="h-6 w-6 text-solar" />
+                    </div>
+                    <div>
+                      <p className="text-foreground leading-relaxed">
+                        Ownership of <span className="font-semibold text-solar">freehold property</span> giving you full control and security over your asset.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
