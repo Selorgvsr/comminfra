@@ -571,7 +571,7 @@ const BuyPage = () => {
           </div>
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 mb-12">
-            {esgFeatures.map((feature, index) => <Card key={index} className="group text-center p-6 hover:shadow-lg transition-all duration-300 bg-white/60 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1" title={feature.tooltip}>
+            {esgFeatures.map((feature, index) => <Card key={index} title={feature.tooltip} className="group text-center p-6 hover:shadow-lg transition-all duration-300 backdrop-blur-sm border border-white/20 rounded-xl hover:-translate-y-1 bg-primary-foreground">
                 <feature.icon className="h-12 w-12 text-primary mx-auto mb-3 group-hover:text-solar transition-colors group-hover:scale-110 transition-transform duration-300" />
                 <p className="text-sm font-medium text-center">{feature.title}</p>
               </Card>)}
