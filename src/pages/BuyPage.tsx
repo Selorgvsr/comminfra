@@ -835,7 +835,7 @@ const BuyPage = () => {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {investmentHighlights.map((highlight, index) => <Card key={index} className="text-center p-8 bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1">
+            {investmentHighlights.map((highlight, index) => <Card key={index} className="text-center p-8 backdrop-blur-sm border border-white/20 rounded-2xl hover:shadow-xl transition-all duration-300 hover:-translate-y-1 bg-primary-foreground">
                 <highlight.icon className="h-16 w-16 text-primary mx-auto mb-4 group-hover:text-solar transition-colors" />
                 <div className="text-4xl font-bold text-primary mb-2">{highlight.value}</div>
                 <h3 className="font-semibold mb-2">{highlight.title}</h3>
