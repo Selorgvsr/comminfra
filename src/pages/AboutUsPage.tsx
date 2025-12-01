@@ -34,7 +34,9 @@ const AboutUsPage = () => {
             Building India's Future 
             <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> We're Proud To Be Part Of This Journey</span>
           </h1>
-          
+          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in">
+            At Comminfra, we understand your need for secure, long-term property investments. We have helped hundreds generate steady returns and build wealth with confidence.
+          </p>
           
         </div>
       </section>
