@@ -137,6 +137,9 @@ const BusinessRevenueModelPage = () => {
             </span>
           </h1>
 
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+            Imagine owning a freehold property that appreciates over time, bringing you continuous rental income and growing your wealth effortlessly.
+          </p>
           
         </div>
       </section>
