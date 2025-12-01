@@ -324,7 +324,7 @@ const REITInvestPage = () => {
       <section className="investment_benefits_carousel py-20 bg-gradient-to-b from-background to-amber-500/5">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-secondary-foreground">
               Comminfra Investment Benefits
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -332,18 +332,16 @@ const REITInvestPage = () => {
             </p>
           </div>
 
-          <Carousel className="max-w-7xl mx-auto" opts={{ loop: true }}>
+          <Carousel className="max-w-7xl mx-auto" opts={{
+          loop: true
+        }}>
             <CarouselContent>
               {/* Slide 1: Assured Property Appreciation */}
               <CarouselItem>
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-amber-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img 
-                        src={attractiveCommercialBuilding} 
-                        alt="Assured Property Appreciation" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={attractiveCommercialBuilding} alt="Assured Property Appreciation" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -367,11 +365,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-blue-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img 
-                        src={corporateOccupiers} 
-                        alt="International Tenant Demand" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={corporateOccupiers} alt="International Tenant Demand" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -395,11 +389,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-green-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img 
-                        src={rentalIncomeHighrise} 
-                        alt="Guaranteed Long-Term Rental Income" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={rentalIncomeHighrise} alt="Guaranteed Long-Term Rental Income" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -423,11 +413,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-purple-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img 
-                        src={investorHandshake} 
-                        alt="Transparent Investment Terms" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={investorHandshake} alt="Transparent Investment Terms" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
@@ -451,11 +437,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-orange-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img 
-                        src={propertyHandover} 
-                        alt="Freehold Property Ownership" 
-                        className="w-full h-full object-cover"
-                      />
+                      <img src={propertyHandover} alt="Freehold Property Ownership" className="w-full h-full object-cover" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
