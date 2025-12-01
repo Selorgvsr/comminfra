@@ -237,7 +237,7 @@ const Homepage = () => {
                   </div>
                   <div>
                     <h3 className="font-semibold text-lg mb-2">{prop.title}</h3>
-                    <p className="text-muted-foreground">{prop.description}</p>
+                    <p className="text-gray-200">{prop.description}</p>
                   </div>
                 </div>
               </Card>)}
