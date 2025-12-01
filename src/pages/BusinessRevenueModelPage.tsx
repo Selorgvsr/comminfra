@@ -187,6 +187,120 @@ const BusinessRevenueModelPage = () => {
         </div>
       </section>
 
+      {/* Investment Plan Section */}
+      <section className="investment_plan_section py-24 bg-gradient-to-br from-primary/10 via-secondary/10 to-solar/10 relative overflow-hidden">
+        {/* Decorative background elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-20 w-64 h-64 bg-gradient-to-br from-primary to-secondary rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-20 right-20 w-96 h-96 bg-gradient-to-br from-solar to-esg rounded-full blur-3xl animate-pulse" style={{ animationDelay: '1s' }}></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <Badge className="mb-6 bg-gradient-to-r from-primary to-secondary text-white border-0 font-semibold text-lg px-6 py-2">
+              Your Path to Financial Peace
+            </Badge>
+            <h2 className="text-5xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-solar bg-clip-text text-transparent">
+              Our Investment Plan
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Follow these 3 simple steps to secure your financial future
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            {/* Step 1 */}
+            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-blue-500/10 via-blue-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in">
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-500 to-blue-600"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-blue-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              
+              <CardHeader className="relative">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-500 to-blue-600 flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                    <Shield className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold text-blue-500/20">01</div>
+                </div>
+                <CardTitle className="text-2xl group-hover:text-blue-600 transition-colors">
+                  Invest Securely
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  Start your journey with us. Invest in premium commercial properties with complete transparency and security.
+                </p>
+                <div className="mt-6 flex items-center gap-2 text-blue-600 font-semibold">
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span>Secure & Transparent</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Step 2 */}
+            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-emerald-500/10 via-emerald-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{ animationDelay: '0.2s' }}>
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 to-emerald-600"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-emerald-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              
+              <CardHeader className="relative">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-emerald-500 to-emerald-600 flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                    <TrendingUp className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold text-emerald-500/20">02</div>
+                </div>
+                <CardTitle className="text-2xl group-hover:text-emerald-600 transition-colors">
+                  Receive Returns
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  Get your invested amount plus attractive interest within 10 years. Guaranteed returns you can count on.
+                </p>
+                <div className="mt-6 flex items-center gap-2 text-emerald-600 font-semibold">
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span>Within 10 Years</span>
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Step 3 */}
+            <Card className="group relative overflow-hidden border-0 bg-gradient-to-br from-amber-500/10 via-amber-400/5 to-background hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-3 animate-fade-in" style={{ animationDelay: '0.4s' }}>
+              <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-amber-500 to-amber-600"></div>
+              <div className="absolute -top-10 -right-10 w-32 h-32 bg-amber-500/20 rounded-full blur-2xl group-hover:scale-150 transition-transform duration-700"></div>
+              
+              <CardHeader className="relative">
+                <div className="flex items-center gap-4 mb-4">
+                  <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-amber-500 to-amber-600 flex items-center justify-center shadow-lg transform group-hover:scale-110 group-hover:rotate-6 transition-all duration-500">
+                    <Building2 className="w-8 h-8 text-white" />
+                  </div>
+                  <div className="text-6xl font-bold text-amber-500/20">03</div>
+                </div>
+                <CardTitle className="text-2xl group-hover:text-amber-600 transition-colors">
+                  Enjoy Benefits
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <p className="text-muted-foreground leading-relaxed">
+                  Own freehold property and enjoy steady rental income for up to 30 years. Long-term wealth creation.
+                </p>
+                <div className="mt-6 flex items-center gap-2 text-amber-600 font-semibold">
+                  <ArrowRight className="w-5 h-5 group-hover:translate-x-2 transition-transform" />
+                  <span>Up to 30 Years</span>
+                </div>
+              </CardContent>
+            </Card>
+          </div>
+
+          {/* Call to Action */}
+          <div className="text-center mt-16 animate-fade-in" style={{ animationDelay: '0.6s' }}>
+            <Button size="lg" className="bg-gradient-to-r from-primary via-secondary to-solar text-white font-semibold text-lg px-8 py-6 shadow-lg hover:shadow-2xl transform hover:scale-105 transition-all duration-300">
+              Start Your Investment Journey
+              <ArrowRight className="ml-2 w-5 h-5" />
+            </Button>
+          </div>
+        </div>
+      </section>
+
       {/* Sustainability Revenue Streams */}
       <section className="sustainability_revenue_section py-20 bg-gradient-section-2">
         <div className="container mx-auto px-4">
