@@ -164,7 +164,7 @@ const Homepage = () => {
           <div className="text-center mb-16 animate-fade-in">
             <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">Our Strategic Pillars</h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto leading-relaxed">
-              Comprehensive commercial real estate solutions driving sustainable growth and investor success
+              Many investors struggle with uncertain returns, delayed paybacks, and lack of guaranteed rental income. Without a secure plan, it's difficult to build financial peace and confidently grow property assets over time
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
