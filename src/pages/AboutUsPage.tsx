@@ -169,7 +169,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Our Development Philosophy
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-400">
               Four core principles that drive every project we undertake
             </p>
           </div>
@@ -180,7 +180,7 @@ const AboutUsPage = () => {
                 <Wrench className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-50">Modular Design Logic</h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-400">
                 Scalable, adaptable designs that grow with changing market needs
               </p>
             </div>
@@ -190,7 +190,7 @@ const AboutUsPage = () => {
                 <Brain className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-50">AI-Adaptive Infrastructure</h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-400">
                 Smart systems that optimize performance and reduce operational costs
               </p>
             </div>
@@ -200,7 +200,7 @@ const AboutUsPage = () => {
                 <Leaf className="h-8 w-8 text-success" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-50">ESG-First Approach</h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-400">
                 Environmental, social, and governance principles embedded in every decision
               </p>
             </div>
@@ -210,7 +210,7 @@ const AboutUsPage = () => {
                 <BarChart3 className="h-8 w-8 text-primary" />
               </div>
               <h3 className="text-xl font-bold mb-4 text-slate-50">Investor-Grade Transparency</h3>
-              <p className="text-muted-foreground">
+              <p className="text-gray-400">
                 Real-time dashboards and comprehensive reporting for all stakeholders
               </p>
             </div>
@@ -225,7 +225,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Core Pillars of Our Platform
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-400">
               Six strategic pillars that form the foundation of our comprehensive platform
             </p>
           </div>
@@ -305,7 +305,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Leadership & Team
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-400">
               Strategic expertise in real estate, technology, ESG, and finance
             </p>
           </div>
@@ -367,7 +367,7 @@ const AboutUsPage = () => {
                 <h3 className="text-2xl font-bold text-foreground mb-2">
                   Strategic Excellence
                 </h3>
-                <p className="text-lg text-muted-foreground">
+                <p className="text-lg text-gray-700">
                   Our leadership team brings decades of combined experience in commercial real estate, sustainable development, and financial innovation.
                 </p>
               </div>
