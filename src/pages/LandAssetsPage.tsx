@@ -279,9 +279,7 @@ const LandAssetsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div className="flex flex-wrap gap-3 mb-6">
-                {cityFilters.map((city, index) => <Badge key={index} variant={city.active ? "default" : "outline"} className={`px-4 py-2 cursor-pointer transition-all duration-300 hover:scale-105 ${city.active ? "bg-primary text-white" : "hover:bg-primary/10"}`}>
-                    {city.name} ({city.plots} plots)
-                  </Badge>)}
+                {cityFilters.map((city, index) => {})}
               </div>
 
               <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl">
