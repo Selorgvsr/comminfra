@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp, Globe, Clock } from "lucide-react";
+import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp, Globe, Clock, Key } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 // Import images
@@ -286,7 +286,7 @@ const Homepage = () => {
             </Card>
 
             {/* Property Management */}
-            <Card className="group overflow-hidden border-2 border-solar/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-solar/10 hover:shadow-2xl hover:shadow-solar/20 transition-all duration-500 hover:scale-105 animate-fade-in md:col-span-2 lg:col-span-1" style={{
+            <Card className="group overflow-hidden border-2 border-solar/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-solar/10 hover:shadow-2xl hover:shadow-solar/20 transition-all duration-500 hover:scale-105 animate-fade-in" style={{
             animationDelay: '0.4s'
           }}>
               <CardContent className="p-8">
@@ -296,6 +296,23 @@ const Homepage = () => {
                   </div>
                   <h3 className="text-2xl font-bold transition-colors text-secondary-foreground">
                     Property Management
+                  </h3>
+                  
+                </div>
+              </CardContent>
+            </Card>
+
+            {/* Ownership of property */}
+            <Card className="group overflow-hidden border-2 border-esg/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-esg/10 hover:shadow-2xl hover:shadow-esg/20 transition-all duration-500 hover:scale-105 animate-fade-in" style={{
+            animationDelay: '0.5s'
+          }}>
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-esg/30 to-esg/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-esg/50">
+                    <Key className="h-10 w-10 text-esg" />
+                  </div>
+                  <h3 className="text-2xl font-bold transition-colors text-secondary-foreground">
+                    Ownership of property
                   </h3>
                   
                 </div>
