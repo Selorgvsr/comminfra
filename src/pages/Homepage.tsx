@@ -210,9 +210,7 @@ const Homepage = () => {
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="text-center mb-16 animate-fade-in">
-            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-solar to-esg bg-clip-text text-primary-foreground">
-              Investment-Finance Peace-Solution
-            </h2>
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-primary via-solar to-esg bg-clip-text text-primary-foreground">Investment-Financial Peace-Solution</h2>
             <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-gray-300">
               Secure your financial future with our comprehensive investment solutions
             </p>
