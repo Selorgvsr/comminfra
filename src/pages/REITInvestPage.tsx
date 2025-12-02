@@ -352,9 +352,7 @@ const REITInvestPage = () => {
                         <Badge className="bg-amber-100 text-amber-700 border-amber-200">Benefit 1</Badge>
                       </div>
                       <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground"> Property Appreciation</h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        Benefit from consistent appreciation of both land and building values, increasing your investment's worth steadily over time. Our expert market analysis ensures your property grows in value, securing your financial future with tangible asset growth.
-                      </p>
+                      <p className="text-lg text-muted-foreground leading-relaxed">Our projects are in prime city locations.Benefit from consistent appreciation of both land and building values, increasing your investment's worth steadily over time. Our expert market analysis ensures your property grows in value, securing your financial future with tangible asset growth.</p>
                     </div>
                   </div>
                 </Card>
