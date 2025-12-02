@@ -226,9 +226,9 @@ const SellPage = () => {
           
           <div className="space-y-16">
             {/* 1. Retail & Office Floors */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-80 md:h-auto overflow-hidden">
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden min-h-[600px]">
+              <div className="grid md:grid-cols-2 gap-0 h-full">
+                <div className="relative h-[600px] overflow-hidden">
                   <img src={retailFloorBranded} alt="Modern commercial tower with retail and office floors" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Store className="absolute top-6 left-6 h-12 w-12 text-white" />
@@ -251,8 +251,8 @@ const SellPage = () => {
             </Card>
 
             {/* 2. Shopping Arcades / Plazas */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden min-h-[600px]">
+              <div className="grid md:grid-cols-2 gap-0 h-full">
                 <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
                   <h3 className="text-3xl font-bold text-primary mb-4">Shopping Arcades / Plazas</h3>
                   <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
@@ -266,7 +266,7 @@ const SellPage = () => {
                   </div>
                   
                 </div>
-                <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
+                <div className="order-1 md:order-2 relative h-[600px] overflow-hidden">
                   <img src={shoppingArcadeTraffic} alt="Vibrant retail plaza with glass-front stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
                   <ShoppingBag className="absolute top-6 right-6 h-12 w-12 text-white" />
@@ -275,9 +275,9 @@ const SellPage = () => {
             </Card>
 
             {/* 3. High Street Commercial Units */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
-                <div className="relative h-80 md:h-auto overflow-hidden">
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden min-h-[600px]">
+              <div className="grid md:grid-cols-2 gap-0 h-full">
+                <div className="relative h-[600px] overflow-hidden">
                   <img src={highStreetPremium} alt="Bustling urban high street with boutique stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Building2 className="absolute top-6 left-6 h-12 w-12 text-white" />
@@ -298,8 +298,8 @@ const SellPage = () => {
             </Card>
 
             {/* 4. Lifestyle Centers / Business Parks */}
-            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
-              <div className="grid md:grid-cols-2 gap-0">
+            <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden min-h-[600px]">
+              <div className="grid md:grid-cols-2 gap-0 h-full">
                 <div className="order-2 md:order-1 p-8 md:p-12 flex flex-col justify-center">
                   <h3 className="text-3xl font-bold text-primary mb-4">Lifestyle Centers / Business Parks</h3>
                   <div className="prose prose-lg text-muted-foreground space-y-3 leading-relaxed">
@@ -313,7 +313,7 @@ const SellPage = () => {
                   </div>
                   
                 </div>
-                <div className="order-1 md:order-2 relative h-80 md:h-auto overflow-hidden">
+                <div className="order-1 md:order-2 relative h-[600px] overflow-hidden">
                   <img src={lifestyleCenterGreen} alt="Contemporary business park with landscaped greenery" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
                   <div className="absolute inset-0 bg-gradient-to-l from-black/40 to-transparent"></div>
                   <Trees className="absolute top-6 right-6 h-12 w-12 text-white" />
