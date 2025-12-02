@@ -423,55 +423,7 @@ const Homepage = () => {
       </section>
 
       {/* Sustainability & ESG Commitment */}
-      <section className="Homepage_ESGCommitment py-20 bg-gradient-section-1 text-white">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl font-bold mb-4 text-white">Sustainability & ESG Commitment</h2>
-            <p className="text-xl text-gray-300 max-w-2xl mx-auto">
-              Environmental responsibility with profitable returns
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
-            <Card className="ESGCard_Certification text-center">
-              <CardContent className="pt-6">
-                <img src={certificationImage} alt="Green Building Certification" className="w-full h-32 object-cover rounded-lg mb-4" />
-                <Award className="h-8 w-8 text-primary mx-auto mb-2" />
-                <h3 className="font-semibold mb-2">Green Building Certifications</h3>
-                <p className="text-sm text-muted-foreground">LEED and GRIHA certified developments</p>
-              </CardContent>
-            </Card>
-            <Card className="ESGCard_Solar text-center">
-              <CardContent className="pt-6">
-                <img src={solarImage} alt="Solar Infrastructure" className="w-full h-32 object-cover rounded-lg mb-4" />
-                <Sun className="h-8 w-8 text-primary mx-auto mb-2" />
-                <h3 className="font-semibold mb-2">Solar Infrastructure</h3>
-                <p className="text-sm text-muted-foreground">Renewable energy generation</p>
-              </CardContent>
-            </Card>
-            <Card className="ESGCard_Carbon text-center">
-              <CardContent className="pt-6">
-                <img src={carbonImage} alt="Carbon Credit Monetization" className="w-full h-32 object-cover rounded-lg mb-4" />
-                <Leaf className="h-8 w-8 text-primary mx-auto mb-2" />
-                <h3 className="font-semibold mb-2">Carbon Credit Monetization</h3>
-                <p className="text-sm text-muted-foreground">Environmental impact tracking</p>
-              </CardContent>
-            </Card>
-            <Card className="ESGCard_Dashboard text-center">
-              <CardContent className="pt-6">
-                <img src={esgUIImage} alt="ESG Dashboards" className="w-full h-32 object-cover rounded-lg mb-4" />
-                <BarChart3 className="h-8 w-8 text-primary mx-auto mb-2" />
-                <h3 className="font-semibold mb-2">ESG Dashboards</h3>
-                <p className="text-sm text-muted-foreground">Investor and tenant reporting</p>
-              </CardContent>
-            </Card>
-          </div>
-          <div className="text-center mt-12">
-            <Link to="/sustainability">
-              <Button size="lg">Learn About Our ESG Strategy</Button>
-            </Link>
-          </div>
-        </div>
-      </section>
+      
 
       {/* Contact & Inquiry Portal */}
       <section className="Homepage_ContactPortal py-20 gradient-mesh text-white">
