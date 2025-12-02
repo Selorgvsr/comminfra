@@ -6,7 +6,7 @@ import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
 import { Link } from "react-router-dom";
-import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp } from "lucide-react";
+import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp, Globe, Clock } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
 // Import images
@@ -200,74 +200,106 @@ const Homepage = () => {
         </div>
       </section>
 
-      {/* Problem Solving Section */}
-      <section className="Homepage_ProblemSolving py-20 bg-gray-950">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-12 animate-fade-in">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-primary-foreground">Problem Solving</h2>
-            <p className="text-xl max-w-3xl mx-auto leading-relaxed text-secondary">
-              Comminfra offers a secure investment with multiple benefits
+      {/* Investment-Finance Peace-Solution Section */}
+      <section className="Homepage_ProblemSolving py-20 bg-gradient-to-br from-gray-950 via-gray-900 to-gray-950 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute inset-0 opacity-10">
+          <div className="absolute top-20 left-10 w-72 h-72 bg-primary rounded-full blur-3xl"></div>
+          <div className="absolute bottom-20 right-10 w-96 h-96 bg-solar rounded-full blur-3xl"></div>
+        </div>
+        
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl md:text-6xl font-bold mb-6 text-primary-foreground bg-gradient-to-r from-primary via-solar to-esg bg-clip-text text-transparent">
+              Investment-Finance Peace-Solution
+            </h2>
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-muted-foreground">
+              Secure your financial future with our comprehensive investment solutions
             </p>
           </div>
           
-          <div className="max-w-5xl mx-auto">
-            <Card className="overflow-hidden border-2 border-primary/20 shadow-2xl backdrop-blur-sm bg-gradient-to-br from-card via-card to-primary/5 animate-fade-in">
-              <CardContent className="p-8 md:p-12 bg-popover-foreground">
-                <div className="space-y-6">
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <TrendingUp className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="leading-relaxed text-primary-foreground">
-                        <span className="font-semibold text-primary">Assured appreciation</span> of both land and building values, increasing your asset worth over time.
-                      </p>
-                    </div>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {/* Location Advantage */}
+            <Card className="group overflow-hidden border-2 border-primary/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-primary/10 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 animate-fade-in">
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-primary/50">
+                    <MapPin className="h-10 w-10 text-primary" />
                   </div>
+                  <h3 className="text-2xl font-bold text-primary-foreground group-hover:text-primary transition-colors">
+                    Location Advantage
+                  </h3>
+                  <p className="leading-relaxed text-muted-foreground">
+                    Properties strategically positioned in prime locations to maximize returns and attract premium tenants with superior connectivity.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-solar/10 to-transparent border border-solar/20 hover:border-solar/40 transition-all duration-300 hover:scale-[1.02] group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-solar/20 flex items-center justify-center group-hover:bg-solar/30 transition-colors">
-                      <MapPin className="h-6 w-6 text-solar" />
-                    </div>
-                    <div>
-                      <p className="leading-relaxed text-primary-foreground">
-                        Properties <span className="font-semibold text-solar">strategically located</span> to attract reliable international tenants, ensuring higher and consistent rental payments.
-                      </p>
-                    </div>
+            {/* Long-Term Rentals */}
+            <Card className="group overflow-hidden border-2 border-solar/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-solar/10 hover:shadow-2xl hover:shadow-solar/20 transition-all duration-500 hover:scale-105 animate-fade-in" style={{animationDelay: '0.1s'}}>
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-solar/30 to-solar/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-solar/50">
+                    <Clock className="h-10 w-10 text-solar" />
                   </div>
+                  <h3 className="text-2xl font-bold text-primary-foreground group-hover:text-solar transition-colors">
+                    Long-Term Rentals
+                  </h3>
+                  <p className="leading-relaxed text-muted-foreground">
+                    Guaranteed rental income for over 10 years, ensuring stable cash flow and long-term financial security for your investment portfolio.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-esg/10 to-transparent border border-esg/20 hover:border-esg/40 transition-all duration-300 hover:scale-[1.02] group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-esg/20 flex items-center justify-center group-hover:bg-esg/30 transition-colors">
-                      <DollarSign className="h-6 w-6 text-esg" />
-                    </div>
-                    <div>
-                      <p className="leading-relaxed text-primary-foreground">
-                        <span className="font-semibold text-esg">Guaranteed rental income</span> for more than 10 years, providing a stable cash flow and long-term financial peace.
-                      </p>
-                    </div>
+            {/* International Clients */}
+            <Card className="group overflow-hidden border-2 border-esg/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-esg/10 hover:shadow-2xl hover:shadow-esg/20 transition-all duration-500 hover:scale-105 animate-fade-in" style={{animationDelay: '0.2s'}}>
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-esg/30 to-esg/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-esg/50">
+                    <Globe className="h-10 w-10 text-esg" />
                   </div>
+                  <h3 className="text-2xl font-bold text-primary-foreground group-hover:text-esg transition-colors">
+                    International Clients
+                  </h3>
+                  <p className="leading-relaxed text-muted-foreground">
+                    Access to reliable international tenants ensuring higher rental payments and consistent occupancy rates across all properties.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 hover:border-primary/40 transition-all duration-300 hover:scale-[1.02] group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-primary/20 flex items-center justify-center group-hover:bg-primary/30 transition-colors">
-                      <Shield className="h-6 w-6 text-primary" />
-                    </div>
-                    <div>
-                      <p className="leading-relaxed text-primary-foreground">
-                        <span className="font-semibold text-primary">Transparent investment terms</span> with timely payback of your principal plus interest within 10 years.
-                      </p>
-                    </div>
+            {/* Transparent Investments */}
+            <Card className="group overflow-hidden border-2 border-primary/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-primary/10 hover:shadow-2xl hover:shadow-primary/20 transition-all duration-500 hover:scale-105 animate-fade-in" style={{animationDelay: '0.3s'}}>
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-primary/30 to-primary/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-primary/50">
+                    <Shield className="h-10 w-10 text-primary" />
                   </div>
+                  <h3 className="text-2xl font-bold text-primary-foreground group-hover:text-primary transition-colors">
+                    Transparent Investments
+                  </h3>
+                  <p className="leading-relaxed text-muted-foreground">
+                    Clear and transparent investment terms with timely payback of principal plus interest within 10 years, ensuring complete peace of mind.
+                  </p>
+                </div>
+              </CardContent>
+            </Card>
 
-                  <div className="flex items-start gap-4 p-6 rounded-xl bg-gradient-to-r from-solar/10 to-transparent border border-solar/20 hover:border-solar/40 transition-all duration-300 hover:scale-[1.02] group">
-                    <div className="flex-shrink-0 w-12 h-12 rounded-full bg-solar/20 flex items-center justify-center group-hover:bg-solar/30 transition-colors">
-                      <Award className="h-6 w-6 text-solar" />
-                    </div>
-                    <div>
-                      <p className="leading-relaxed text-primary-foreground">
-                        Ownership of <span className="font-semibold text-solar">freehold property</span> giving you full control and security over your asset.
-                      </p>
-                    </div>
+            {/* Property Management */}
+            <Card className="group overflow-hidden border-2 border-solar/30 shadow-xl backdrop-blur-sm bg-gradient-to-br from-card/95 via-card/90 to-solar/10 hover:shadow-2xl hover:shadow-solar/20 transition-all duration-500 hover:scale-105 animate-fade-in md:col-span-2 lg:col-span-1" style={{animationDelay: '0.4s'}}>
+              <CardContent className="p-8">
+                <div className="flex flex-col items-center text-center space-y-4">
+                  <div className="w-20 h-20 rounded-2xl bg-gradient-to-br from-solar/30 to-solar/10 flex items-center justify-center group-hover:scale-110 transition-transform duration-300 shadow-lg group-hover:shadow-solar/50">
+                    <Building2 className="h-10 w-10 text-solar" />
                   </div>
+                  <h3 className="text-2xl font-bold text-primary-foreground group-hover:text-solar transition-colors">
+                    Property Management
+                  </h3>
+                  <p className="leading-relaxed text-muted-foreground">
+                    Full-service property management with freehold ownership, giving you complete control and security over your valuable assets.
+                  </p>
                 </div>
               </CardContent>
             </Card>
