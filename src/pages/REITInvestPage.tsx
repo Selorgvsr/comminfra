@@ -196,6 +196,146 @@ const REITInvestPage = () => {
           
         </div>
       </section>
+      {/* Comminfra Investment Benefits Carousel */}
+      <section className="investment_benefits_carousel py-20 bg-gradient-to-b from-background to-amber-500/5">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-secondary-foreground">
+              Comminfra Investment Benefits
+            </h2>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Secure your financial future with strategic commercial real estate investments
+            </p>
+          </div>
+
+          <Carousel className="max-w-7xl mx-auto" opts={{
+          loop: true
+        }}>
+            <CarouselContent>
+              {/* Slide 1: Assured Property Appreciation */}
+              <CarouselItem>
+                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-amber-500/5">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-[400px] md:h-auto">
+                      <img src={attractiveCommercialBuilding} alt="Assured Property Appreciation" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    </div>
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="inline-flex items-center gap-2 mb-4">
+                        <TrendingUp className="w-6 h-6 text-amber-600" />
+                        <Badge className="bg-amber-100 text-amber-700 border-amber-200">Benefit 1</Badge>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground"> Property Appreciation</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">Our projects are in prime city locations.Benefit from consistent appreciation of both land and building values, increasing your investment's worth steadily over time. Our expert market analysis ensures your property grows in value, securing your financial future with tangible asset growth.</p>
+                    </div>
+                  </div>
+                </Card>
+              </CarouselItem>
+
+              {/* Slide 2: International Tenant Demand */}
+              <CarouselItem>
+                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-blue-500/5">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-[400px] md:h-auto">
+                      <img src={internationalTenantDemand} alt="International Tenant Demand" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    </div>
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="inline-flex items-center gap-2 mb-4">
+                        <Globe className="w-6 h-6 text-blue-600" />
+                        <Badge className="bg-blue-100 text-blue-700 border-blue-200">Benefit 2</Badge>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                        International Tenant Demand
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Our properties are strategically located to attract reliable international tenants, ensuring higher and consistent rental payments. This global tenant appeal minimizes vacancy rates and maximizes your rental income potential over the long term.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </CarouselItem>
+
+              {/* Slide 3: Guaranteed Long-Term Rental Income */}
+              <CarouselItem>
+                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-green-500/5">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-[400px] md:h-auto">
+                      <img src={rentalIncomeHighrise} alt="Guaranteed Long-Term Rental Income" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    </div>
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="inline-flex items-center gap-2 mb-4">
+                        <DollarSign className="w-6 h-6 text-green-600" />
+                        <Badge className="bg-green-100 text-green-700 border-green-200">Benefit 3</Badge>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Long-Term Rental Income</h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Enjoy stable rental income guaranteed for more than 10 years, giving you a dependable cash flow and financial peace of mind. This long-term rental assurance supports ongoing wealth building and protects you from market fluctuations.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </CarouselItem>
+
+              {/* Slide 4: Transparent Investment Terms */}
+              <CarouselItem>
+                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-purple-500/5">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-[400px] md:h-auto">
+                      <img src={futureVisionsBusiness} alt="Transparent Investment Terms" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    </div>
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="inline-flex items-center gap-2 mb-4">
+                        <Shield className="w-6 h-6 text-purple-600" />
+                        <Badge className="bg-purple-100 text-purple-700 border-purple-200">Benefit 4</Badge>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                        Transparent Investment Terms
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Experience clear and trustworthy investment terms with timely payback of your principal plus interest within 10 years. We prioritize transparency and investor trust through straightforward agreements and consistent communication.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </CarouselItem>
+
+              {/* Slide 5: Freehold Property Ownership */}
+              <CarouselItem>
+                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-orange-500/5">
+                  <div className="grid md:grid-cols-2 gap-0">
+                    <div className="relative h-[400px] md:h-auto">
+                      <img src={propertyHandover} alt="Freehold Property Ownership" className="w-full h-full object-cover" />
+                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
+                    </div>
+                    <div className="p-8 md:p-12 flex flex-col justify-center">
+                      <div className="inline-flex items-center gap-2 mb-4">
+                        <Award className="w-6 h-6 text-orange-600" />
+                        <Badge className="bg-orange-100 text-orange-700 border-orange-200">Benefit 5</Badge>
+                      </div>
+                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
+                        Freehold Property Ownership
+                      </h3>
+                      <p className="text-lg text-muted-foreground leading-relaxed">
+                        Gain full control and security with ownership of freehold property, providing you with a valuable, tangible asset. This means you hold the deed outright, with no restrictions on future use or transfer, empowering your long-term investment strategy.
+                      </p>
+                    </div>
+                  </div>
+                </Card>
+              </CarouselItem>
+            </CarouselContent>
+            
+            <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 hover:bg-white shadow-lg border-2" />
+            <CarouselNext className="hidden md:flex -right-12 bg-white/90 hover:bg-white shadow-lg border-2" />
+          </Carousel>
+
+          <div className="text-center mt-8 text-sm text-muted-foreground">
+            <p>Swipe or use arrows to explore all benefits</p>
+          </div>
+        </div>
+      </section>
 
       {/* REIT Explainer Panel */}
       <section className="reit_explainer_section py-20 bg-gradient-to-b from-background to-blue-500/5">
@@ -321,148 +461,6 @@ const REITInvestPage = () => {
           </div>
         </div>
       </section>
-
-      {/* Comminfra Investment Benefits Carousel */}
-      <section className="investment_benefits_carousel py-20 bg-gradient-to-b from-background to-amber-500/5">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-amber-600 to-orange-600 bg-clip-text text-secondary-foreground">
-              Comminfra Investment Benefits
-            </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Secure your financial future with strategic commercial real estate investments
-            </p>
-          </div>
-
-          <Carousel className="max-w-7xl mx-auto" opts={{
-          loop: true
-        }}>
-            <CarouselContent>
-              {/* Slide 1: Assured Property Appreciation */}
-              <CarouselItem>
-                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-amber-500/5">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-[400px] md:h-auto">
-                      <img src={attractiveCommercialBuilding} alt="Assured Property Appreciation" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-                    </div>
-                    <div className="p-8 md:p-12 flex flex-col justify-center">
-                      <div className="inline-flex items-center gap-2 mb-4">
-                        <TrendingUp className="w-6 h-6 text-amber-600" />
-                        <Badge className="bg-amber-100 text-amber-700 border-amber-200">Benefit 1</Badge>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground"> Property Appreciation</h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">Our projects are in prime city locations.Benefit from consistent appreciation of both land and building values, increasing your investment's worth steadily over time. Our expert market analysis ensures your property grows in value, securing your financial future with tangible asset growth.</p>
-                    </div>
-                  </div>
-                </Card>
-              </CarouselItem>
-
-              {/* Slide 2: International Tenant Demand */}
-              <CarouselItem>
-                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-blue-500/5">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-[400px] md:h-auto">
-                      <img src={internationalTenantDemand} alt="International Tenant Demand" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-                    </div>
-                    <div className="p-8 md:p-12 flex flex-col justify-center">
-                      <div className="inline-flex items-center gap-2 mb-4">
-                        <Globe className="w-6 h-6 text-blue-600" />
-                        <Badge className="bg-blue-100 text-blue-700 border-blue-200">Benefit 2</Badge>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                        International Tenant Demand
-                      </h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        Our properties are strategically located to attract reliable international tenants, ensuring higher and consistent rental payments. This global tenant appeal minimizes vacancy rates and maximizes your rental income potential over the long term.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </CarouselItem>
-
-              {/* Slide 3: Guaranteed Long-Term Rental Income */}
-              <CarouselItem>
-                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-green-500/5">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-[400px] md:h-auto">
-                      <img src={rentalIncomeHighrise} alt="Guaranteed Long-Term Rental Income" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-                    </div>
-                    <div className="p-8 md:p-12 flex flex-col justify-center">
-                      <div className="inline-flex items-center gap-2 mb-4">
-                        <DollarSign className="w-6 h-6 text-green-600" />
-                        <Badge className="bg-green-100 text-green-700 border-green-200">Benefit 3</Badge>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">Long-Term Rental Income</h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        Enjoy stable rental income guaranteed for more than 10 years, giving you a dependable cash flow and financial peace of mind. This long-term rental assurance supports ongoing wealth building and protects you from market fluctuations.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </CarouselItem>
-
-              {/* Slide 4: Transparent Investment Terms */}
-              <CarouselItem>
-                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-purple-500/5">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-[400px] md:h-auto">
-                      <img src={futureVisionsBusiness} alt="Transparent Investment Terms" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-                    </div>
-                    <div className="p-8 md:p-12 flex flex-col justify-center">
-                      <div className="inline-flex items-center gap-2 mb-4">
-                        <Shield className="w-6 h-6 text-purple-600" />
-                        <Badge className="bg-purple-100 text-purple-700 border-purple-200">Benefit 4</Badge>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                        Transparent Investment Terms
-                      </h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        Experience clear and trustworthy investment terms with timely payback of your principal plus interest within 10 years. We prioritize transparency and investor trust through straightforward agreements and consistent communication.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </CarouselItem>
-
-              {/* Slide 5: Freehold Property Ownership */}
-              <CarouselItem>
-                <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-orange-500/5">
-                  <div className="grid md:grid-cols-2 gap-0">
-                    <div className="relative h-[400px] md:h-auto">
-                      <img src={propertyHandover} alt="Freehold Property Ownership" className="w-full h-full object-cover" />
-                      <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
-                    </div>
-                    <div className="p-8 md:p-12 flex flex-col justify-center">
-                      <div className="inline-flex items-center gap-2 mb-4">
-                        <Award className="w-6 h-6 text-orange-600" />
-                        <Badge className="bg-orange-100 text-orange-700 border-orange-200">Benefit 5</Badge>
-                      </div>
-                      <h3 className="text-3xl md:text-4xl font-bold mb-6 text-foreground">
-                        Freehold Property Ownership
-                      </h3>
-                      <p className="text-lg text-muted-foreground leading-relaxed">
-                        Gain full control and security with ownership of freehold property, providing you with a valuable, tangible asset. This means you hold the deed outright, with no restrictions on future use or transfer, empowering your long-term investment strategy.
-                      </p>
-                    </div>
-                  </div>
-                </Card>
-              </CarouselItem>
-            </CarouselContent>
-            
-            <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 hover:bg-white shadow-lg border-2" />
-            <CarouselNext className="hidden md:flex -right-12 bg-white/90 hover:bg-white shadow-lg border-2" />
-          </Carousel>
-
-          <div className="text-center mt-8 text-sm text-muted-foreground">
-            <p>Swipe or use arrows to explore all benefits</p>
-          </div>
-        </div>
-      </section>
-
       {/* ESG & Solar Monetization */}
       <section className="esg_solar_section py-20 bg-gradient-to-b from-purple-500/5 to-green-500/5">
         <div className="container mx-auto px-4">
