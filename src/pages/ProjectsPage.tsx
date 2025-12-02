@@ -242,7 +242,7 @@ const ProjectsPage = () => {
                   <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-3">
                     {project.status}
                   </span>
-                  <p className="text-sm text-muted-foreground leading-relaxed">{project.description}</p>
+                  
                 </CardContent>
               </Card>)}
           </div>
