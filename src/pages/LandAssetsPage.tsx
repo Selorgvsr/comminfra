@@ -230,9 +230,9 @@ const LandAssetsPage = () => {
             {landCategories.map((category, index) => <Card key={index} className="group hover:shadow-[0_20px_60px_-15px_rgba(0,0,0,0.3)] transition-all duration-700 bg-white border-none rounded-3xl overflow-hidden animate-fade-in" style={{
             animationDelay: `${index * 150}ms`
           }}>
-                <div className={`grid md:grid-cols-2 gap-0 ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}>
+                <div className={`grid md:grid-cols-2 gap-0 min-h-[500px] ${index % 2 === 1 ? "md:grid-flow-dense" : ""}`}>
                   {/* Image Section */}
-                  <div className={`relative h-96 md:h-auto overflow-hidden ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
+                  <div className={`relative h-[300px] md:h-[500px] overflow-hidden ${index % 2 === 1 ? "md:col-start-2" : ""}`}>
                     <img src={category.image} alt={category.title} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-1000" />
                     <div className="absolute inset-0 bg-gradient-to-r from-primary/40 via-transparent to-transparent"></div>
                     <div className="absolute top-8 left-8">
@@ -243,17 +243,17 @@ const LandAssetsPage = () => {
                   </div>
 
                   {/* Content Section */}
-                  <div className={`flex flex-col justify-center p-10 md:p-14 ${index % 2 === 1 ? "md:col-start-1" : ""}`}>
+                  <div className={`flex flex-col justify-center p-10 md:p-14 h-[300px] md:h-[500px] ${index % 2 === 1 ? "md:col-start-1" : ""}`}>
                     <Badge className="w-fit mb-4 bg-gradient-to-r from-primary/10 to-solar/10 text-primary border-none font-semibold px-4 py-1.5">
                       Category {index + 1}
                     </Badge>
-                    <h3 className="text-3xl md:text-4xl font-bold mb-6 text-primary group-hover:text-commercial transition-colors duration-500">
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary group-hover:text-commercial transition-colors duration-500">
                       {category.title}
                     </h3>
-                    <p className="text-base md:text-lg text-muted-foreground leading-relaxed mb-8">
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6 line-clamp-5">
                       {category.description}
                     </p>
-                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500" asChild>
+                    <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500 mt-auto" asChild>
                       <Link to={category.link} className="flex items-center gap-2">
                         {category.cta}
                         <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
@@ -279,7 +279,7 @@ const LandAssetsPage = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
             <div className="space-y-6">
               <div className="flex flex-wrap gap-3 mb-6">
-                {cityFilters.map((city, index) => {})}
+                {cityFilters.map((city, index) => null)}
               </div>
 
               <Card className="bg-white/80 backdrop-blur-sm border border-white/20 rounded-2xl">
