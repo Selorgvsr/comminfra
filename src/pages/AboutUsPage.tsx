@@ -390,7 +390,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Let's Build the Future Together
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-300">
               Ready to explore opportunities? Get in touch with our team for a strategic consultation.
             </p>
           </div>
