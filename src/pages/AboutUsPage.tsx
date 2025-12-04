@@ -225,7 +225,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Core Pillars of Our Platform
             </h2>
-            <p className="text-xl max-w-3xl mx-auto text-gray-400">
+            <p className="text-xl max-w-3xl mx-auto text-slate-300">
               Six strategic pillars that form the foundation of our comprehensive platform
             </p>
           </div>
@@ -305,7 +305,7 @@ const AboutUsPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 text-slate-50">
               Leadership & Team
             </h2>
-            <p className="text-xl max-w-3xl mx-auto text-gray-400">
+            <p className="text-xl max-w-3xl mx-auto text-slate-300">
               Strategic expertise in real estate, technology, ESG, and finance
             </p>
           </div>
