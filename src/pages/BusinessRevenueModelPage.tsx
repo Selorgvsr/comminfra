@@ -137,7 +137,9 @@ const BusinessRevenueModelPage = () => {
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{ animationDelay: '0.2s' }}>
+          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{
+          animationDelay: '0.2s'
+        }}>
             Imagine owning a freehold property that appreciates over time, bringing you continuous rental income and growing your wealth effortlessly.
           </p>
           
@@ -149,7 +151,7 @@ const BusinessRevenueModelPage = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20 animate-fade-in">
             <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">Primary Revenue Streams</h2>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl max-w-3xl mx-auto leading-relaxed text-gray-300">
               Core income generators driving sustainable business growth
             </p>
           </div>
@@ -182,7 +184,7 @@ const BusinessRevenueModelPage = () => {
 
                     <div className="h-1 w-24 bg-gradient-to-r from-primary to-secondary rounded-full" />
 
-                    <p className="text-lg md:text-xl text-muted-foreground leading-relaxed">{stream.description}</p>
+                    <p className="text-lg md:text-xl leading-relaxed text-gray-300">{stream.description}</p>
                   </div>
                 </div>
               </div>)}
@@ -316,7 +318,7 @@ const BusinessRevenueModelPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-emerald-600 bg-clip-text text-transparent p-4">
               Sustainability Revenue Streams
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-300">
               ESG-aligned income from green infrastructure and sustainable practices
             </p>
           </div>
@@ -358,7 +360,7 @@ const BusinessRevenueModelPage = () => {
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent p-4">
               Advanced Revenue Opportunities
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl max-w-3xl mx-auto text-gray-300">
               Technology-driven and partnership-based income streams
             </p>
           </div>
