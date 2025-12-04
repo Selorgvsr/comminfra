@@ -176,7 +176,7 @@ const BusinessRevenueModelPage = () => {
                 </div>
 
                 {/* Content Section */}
-                <div className="w-full lg:w-1/2 space-y-6">
+                <div className="w-full lg:w-1/2 space-y-6 text-sidebar-ring">
                   <div className="space-y-4">
                     <h3 className="text-4xl md:text-5xl font-bold text-foreground group-hover:text-primary transition-colors duration-300">
                       {stream.title}
