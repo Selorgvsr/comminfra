@@ -6,7 +6,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Badge } from "@/components/ui/badge";
 import { Building2, Mail, Phone, MapPin, User, TrendingUp, Calendar, MessageSquare, ArrowRight, Clock } from "lucide-react";
-import heroImage from "@/assets/contact-hero-image.jpg";
+import heroImage from "@/assets/contact-hero-wood-blocks.jpg";
 const ContactPage = () => {
   const officeLocations = [{
     title: "Headquarters",
