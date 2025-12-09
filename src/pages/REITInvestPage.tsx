@@ -261,7 +261,7 @@ const REITInvestPage = () => {
                 <Card className="border-0 overflow-hidden shadow-2xl bg-gradient-to-br from-background via-background/95 to-green-500/5">
                   <div className="grid md:grid-cols-2 gap-0">
                     <div className="relative h-[400px] md:h-auto">
-                      <img src={rentalIncomeHighrise} alt="Guaranteed Long-Term Rental Income" className="w-full h-full object-cover" />
+                      <img alt="Guaranteed Long-Term Rental Income" className="w-full h-full object-cover" src="/lovable-uploads/6963ee9a-8349-4a1a-973a-b86264ec3644.jpg" />
                       <div className="absolute inset-0 bg-gradient-to-r from-black/20 to-transparent" />
                     </div>
                     <div className="p-8 md:p-12 flex flex-col justify-center">
