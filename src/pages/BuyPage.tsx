@@ -579,7 +579,7 @@ const BuyPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={rooftopSolar} alt="Commercial building with rooftop solar installation" className="w-full h-64 object-cover" />
+              <img alt="Commercial building with rooftop solar installation" className="w-full h-64 object-cover" src="/lovable-uploads/c32e375e-ef65-42a9-898c-bf3e7fcdaa05.jpg" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-6 text-white">
                   <Sun className="h-8 w-8 mb-2" />
