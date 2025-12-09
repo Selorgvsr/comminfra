@@ -1,163 +1,111 @@
 import { Mail, Phone, Shield, Lock, Database, Eye, Share2, Server, Cookie, Users, Bell, UserCheck, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from "@/components/ui/accordion";
-
+import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 const PrivacyPolicyPage = () => {
-  const sections = [
-    {
-      id: "introduction",
-      number: "01",
-      title: "Introduction",
-      icon: Shield,
-      content: [
-        "Comminfra collects data for commercial real estate services: asset acquisition, land sales, leasing, and REIT partnerships.",
-        "This policy is applicable to website visitors, investors, tenants, and partners across India.",
-        "Data Principal: Individual users | Data Fiduciary: Comminfra (Chennai-based entity)"
-      ]
-    },
-    {
-      id: "information-collected",
-      number: "02",
-      title: "Information We Collect",
-      icon: Database,
-      content: [
-        "Personal Data: Name, email, phone (+91 format), Google Meet ID, PAN/GST for KYC verification",
-        "Usage Data: IP address, browser type, pages visited (Asset Categories, Land Categories, Projects)",
-        "Transaction Data: Property inquiries (Retail Office Floors, Shopping Arcades, Mixed-Use Blocks), investment details",
-        "Cookies: Session tracking, analytics (Google Analytics compliant with data protection standards)"
-      ]
-    },
-    {
-      id: "data-usage",
-      number: "03",
-      title: "How We Use Your Data",
-      icon: Eye,
-      content: [
-        "Service Delivery: Land acquisition inquiries, asset sales leads, lease matching for Restaurants, Jewellery Stores, Corporate Offices",
-        "Marketing: Email updates on Sustainability features, Revenue Model opportunities, Projects gallery",
-        "Legal Compliance: RERA 2016 registration, PMLA 2002 KYC requirements, TDS reporting",
-        "Analytics: Website performance monitoring across Projects page, RentLease sections"
-      ]
-    },
-    {
-      id: "data-sharing",
-      number: "04",
-      title: "Data Sharing & Disclosure",
-      icon: Share2,
-      content: [
-        "Third Parties: REIT partners, legal advisors, payment gateways (Razorpay/UPI compliant)",
-        "Legal Requirements: Government authorities (IT Dept, RERA, PMLA), court orders as required by law",
-        "No Sale Policy: Personal data is never sold to third parties under any circumstances",
-        "Data Location: All data stored in India (AWS Mumbai region) ensuring data sovereignty"
-      ]
-    },
-    {
-      id: "data-security",
-      number: "05",
-      title: "Data Security",
-      icon: Lock,
-      content: [
-        "Encryption: HTTPS protocol, AES-256 encryption for contact forms and stored data",
-        "Access Controls: Role-based access for Managing Director and authorized admin team only",
-        "Breach Notification: Within 72 hours as per DPDP Act 2023 requirements",
-        "Data Retention: Transaction data 7 years (IT Act), inquiry data 2 years"
-      ]
-    },
-    {
-      id: "your-rights",
-      number: "06",
-      title: "Your Rights (DPDP Act 2023)",
-      icon: UserCheck,
-      content: [
-        "Access, Correction, Erasure, and Portability requests can be submitted via contactcomminfra@gmail.com",
-        "Grievance Officer: Shekar, Managing Director | Response within 30 days guaranteed",
-        "Consent Withdrawal: Unsubscribe links available in all emails, account deletion on request"
-      ]
-    },
-    {
-      id: "cookies",
-      number: "07",
-      title: "Cookies & Tracking",
-      icon: Cookie,
-      content: [
-        "Essential Cookies: Navigation functionality, contact form submissions",
-        "Analytics Cookies: Google Analytics with anonymized IP addresses",
-        "Cookie Preferences: Manage your preferences via the cookie consent banner on all pages"
-      ]
-    },
-    {
-      id: "childrens-privacy",
-      number: "08",
-      title: "Children's Privacy",
-      icon: Users,
-      content: [
-        "No collection of data from users under 18 years of age",
-        "Commercial real estate services are exclusively for verified adults and registered businesses",
-        "Any inadvertently collected minor data will be deleted immediately upon discovery"
-      ]
-    },
-    {
-      id: "policy-changes",
-      number: "09",
-      title: "Changes to Policy",
-      icon: Bell,
-      content: [
-        "Policy updates will be posted on website with 30 days advance notice",
-        "Material changes will be communicated via email to all registered users",
-        "Last Updated: December 09, 2025"
-      ]
-    },
-    {
-      id: "contact",
-      number: "10",
-      title: "Contact Information",
-      icon: Mail,
-      content: [
-        "Data Protection Officer: Shekar, Managing Director",
-        "Email: contactcomminfra@gmail.com | Phone: +91-9444126240",
-        "Address: Chennai, Tamil Nadu | DPDP Registration Pending",
-        "Governing Law: Digital Personal Data Protection Act 2023, IT Act 2000"
-      ]
-    }
-  ];
-
-  const quickLinks = [
-    { label: "Introduction", href: "#introduction" },
-    { label: "Data Collected", href: "#information-collected" },
-    { label: "Data Usage", href: "#data-usage" },
-    { label: "Data Sharing", href: "#data-sharing" },
-    { label: "Security", href: "#data-security" },
-    { label: "Your Rights", href: "#your-rights" },
-    { label: "Cookies", href: "#cookies" },
-    { label: "Children", href: "#childrens-privacy" },
-    { label: "Changes", href: "#policy-changes" },
-    { label: "Contact", href: "#contact" }
-  ];
-
-  return (
-    <div className="min-h-screen">
+  const sections = [{
+    id: "introduction",
+    number: "01",
+    title: "Introduction",
+    icon: Shield,
+    content: ["Comminfra collects data for commercial real estate services: asset acquisition, land sales, leasing, and REIT partnerships.", "This policy is applicable to website visitors, investors, tenants, and partners across India.", "Data Principal: Individual users | Data Fiduciary: Comminfra (Chennai-based entity)"]
+  }, {
+    id: "information-collected",
+    number: "02",
+    title: "Information We Collect",
+    icon: Database,
+    content: ["Personal Data: Name, email, phone (+91 format), Google Meet ID, PAN/GST for KYC verification", "Usage Data: IP address, browser type, pages visited (Asset Categories, Land Categories, Projects)", "Transaction Data: Property inquiries (Retail Office Floors, Shopping Arcades, Mixed-Use Blocks), investment details", "Cookies: Session tracking, analytics (Google Analytics compliant with data protection standards)"]
+  }, {
+    id: "data-usage",
+    number: "03",
+    title: "How We Use Your Data",
+    icon: Eye,
+    content: ["Service Delivery: Land acquisition inquiries, asset sales leads, lease matching for Restaurants, Jewellery Stores, Corporate Offices", "Marketing: Email updates on Sustainability features, Revenue Model opportunities, Projects gallery", "Legal Compliance: RERA 2016 registration, PMLA 2002 KYC requirements, TDS reporting", "Analytics: Website performance monitoring across Projects page, RentLease sections"]
+  }, {
+    id: "data-sharing",
+    number: "04",
+    title: "Data Sharing & Disclosure",
+    icon: Share2,
+    content: ["Third Parties: REIT partners, legal advisors, payment gateways (Razorpay/UPI compliant)", "Legal Requirements: Government authorities (IT Dept, RERA, PMLA), court orders as required by law", "No Sale Policy: Personal data is never sold to third parties under any circumstances", "Data Location: All data stored in India (AWS Mumbai region) ensuring data sovereignty"]
+  }, {
+    id: "data-security",
+    number: "05",
+    title: "Data Security",
+    icon: Lock,
+    content: ["Encryption: HTTPS protocol, AES-256 encryption for contact forms and stored data", "Access Controls: Role-based access for Managing Director and authorized admin team only", "Breach Notification: Within 72 hours as per DPDP Act 2023 requirements", "Data Retention: Transaction data 7 years (IT Act), inquiry data 2 years"]
+  }, {
+    id: "your-rights",
+    number: "06",
+    title: "Your Rights (DPDP Act 2023)",
+    icon: UserCheck,
+    content: ["Access, Correction, Erasure, and Portability requests can be submitted via contactcomminfra@gmail.com", "Grievance Officer: Shekar, Managing Director | Response within 30 days guaranteed", "Consent Withdrawal: Unsubscribe links available in all emails, account deletion on request"]
+  }, {
+    id: "cookies",
+    number: "07",
+    title: "Cookies & Tracking",
+    icon: Cookie,
+    content: ["Essential Cookies: Navigation functionality, contact form submissions", "Analytics Cookies: Google Analytics with anonymized IP addresses", "Cookie Preferences: Manage your preferences via the cookie consent banner on all pages"]
+  }, {
+    id: "childrens-privacy",
+    number: "08",
+    title: "Children's Privacy",
+    icon: Users,
+    content: ["No collection of data from users under 18 years of age", "Commercial real estate services are exclusively for verified adults and registered businesses", "Any inadvertently collected minor data will be deleted immediately upon discovery"]
+  }, {
+    id: "policy-changes",
+    number: "09",
+    title: "Changes to Policy",
+    icon: Bell,
+    content: ["Policy updates will be posted on website with 30 days advance notice", "Material changes will be communicated via email to all registered users", "Last Updated: December 09, 2025"]
+  }, {
+    id: "contact",
+    number: "10",
+    title: "Contact Information",
+    icon: Mail,
+    content: ["Data Protection Officer: Shekar, Managing Director", "Email: contactcomminfra@gmail.com | Phone: +91-9444126240", "Address: Chennai, Tamil Nadu | DPDP Registration Pending", "Governing Law: Digital Personal Data Protection Act 2023, IT Act 2000"]
+  }];
+  const quickLinks = [{
+    label: "Introduction",
+    href: "#introduction"
+  }, {
+    label: "Data Collected",
+    href: "#information-collected"
+  }, {
+    label: "Data Usage",
+    href: "#data-usage"
+  }, {
+    label: "Data Sharing",
+    href: "#data-sharing"
+  }, {
+    label: "Security",
+    href: "#data-security"
+  }, {
+    label: "Your Rights",
+    href: "#your-rights"
+  }, {
+    label: "Cookies",
+    href: "#cookies"
+  }, {
+    label: "Children",
+    href: "#childrens-privacy"
+  }, {
+    label: "Changes",
+    href: "#policy-changes"
+  }, {
+    label: "Contact",
+    href: "#contact"
+  }];
+  return <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1a237e] via-[#0d1442] to-black">
         {/* Animated Particles */}
         <div className="absolute inset-0">
-          {[...Array(30)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute w-1 h-1 bg-amber-400/40 rounded-full animate-pulse"
-              style={{
-                left: `${Math.random() * 100}%`,
-                top: `${Math.random() * 100}%`,
-                animationDelay: `${Math.random() * 3}s`,
-                animationDuration: `${2 + Math.random() * 3}s`
-              }}
-            />
-          ))}
+          {[...Array(30)].map((_, i) => <div key={i} className="absolute w-1 h-1 bg-amber-400/40 rounded-full animate-pulse" style={{
+          left: `${Math.random() * 100}%`,
+          top: `${Math.random() * 100}%`,
+          animationDelay: `${Math.random() * 3}s`,
+          animationDuration: `${2 + Math.random() * 3}s`
+        }} />)}
         </div>
 
         {/* Secure Lock Overlay */}
@@ -184,10 +132,7 @@ const PrivacyPolicyPage = () => {
             </p>
 
             <Link to="/contact">
-              <Button 
-                size="lg" 
-                className="bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-[#1a237e] transition-all duration-300 px-8 py-6 text-lg font-semibold"
-              >
+              <Button size="lg" className="bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-[#1a237e] transition-all duration-300 px-8 py-6 text-lg font-semibold">
                 Contact Data Officer
               </Button>
             </Link>
@@ -204,15 +149,9 @@ const PrivacyPolicyPage = () => {
       <section className="sticky top-16 z-40 bg-white/95 backdrop-blur-md border-b border-amber-200/50 shadow-sm">
         <div className="container py-4">
           <div className="flex flex-wrap justify-center gap-2 md:gap-4">
-            {quickLinks.map((link) => (
-              <a
-                key={link.href}
-                href={link.href}
-                className="px-3 py-1.5 text-xs md:text-sm font-medium text-[#1a237e] hover:text-amber-600 hover:bg-amber-50 rounded-full transition-all duration-300 border border-transparent hover:border-amber-200"
-              >
+            {quickLinks.map(link => <a key={link.href} href={link.href} className="px-3 py-1.5 text-xs md:text-sm font-medium text-[#1a237e] hover:text-amber-600 hover:bg-amber-50 rounded-full transition-all duration-300 border border-transparent hover:border-amber-200">
                 {link.label}
-              </a>
-            ))}
+              </a>)}
           </div>
         </div>
       </section>
@@ -223,12 +162,7 @@ const PrivacyPolicyPage = () => {
           <div className="max-w-4xl mx-auto">
             {/* Desktop View - Glass Cards */}
             <div className="hidden md:block space-y-8">
-              {sections.map((section) => (
-                <div
-                  key={section.id}
-                  id={section.id}
-                  className="group relative bg-white/80 backdrop-blur-sm rounded-2xl border border-[#1a237e]/10 hover:border-amber-400/50 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden scroll-mt-32"
-                >
+              {sections.map(section => <div key={section.id} id={section.id} className="group relative bg-white/80 backdrop-blur-sm rounded-2xl border border-[#1a237e]/10 hover:border-amber-400/50 shadow-lg hover:shadow-xl transition-all duration-500 overflow-hidden scroll-mt-32">
                   {/* Gold accent line */}
                   <div className="absolute left-0 top-0 bottom-0 w-1 bg-gradient-to-b from-amber-400 to-amber-600 opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
                   
@@ -245,30 +179,21 @@ const PrivacyPolicyPage = () => {
                           <h2 className="text-2xl font-bold text-[#1a237e]">{section.title}</h2>
                         </div>
                         <ul className="space-y-3">
-                          {section.content.map((item, idx) => (
-                            <li key={idx} className="flex items-start gap-3 text-slate-700">
+                          {section.content.map((item, idx) => <li key={idx} className="flex items-start gap-3 text-slate-700">
                               <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-2 flex-shrink-0" />
                               <span className="leading-relaxed">{item}</span>
-                            </li>
-                          ))}
+                            </li>)}
                         </ul>
                       </div>
                     </div>
                   </div>
-                </div>
-              ))}
+                </div>)}
             </div>
 
             {/* Mobile View - Accordion */}
             <div className="md:hidden">
               <Accordion type="single" collapsible className="space-y-4">
-                {sections.map((section) => (
-                  <AccordionItem
-                    key={section.id}
-                    value={section.id}
-                    id={section.id}
-                    className="bg-white/80 backdrop-blur-sm rounded-xl border border-[#1a237e]/10 shadow-md overflow-hidden scroll-mt-32"
-                  >
+                {sections.map(section => <AccordionItem key={section.id} value={section.id} id={section.id} className="bg-white/80 backdrop-blur-sm rounded-xl border border-[#1a237e]/10 shadow-md overflow-hidden scroll-mt-32">
                     <AccordionTrigger className="px-4 py-4 hover:no-underline hover:bg-amber-50/50">
                       <div className="flex items-center gap-3">
                         <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-[#1a237e] to-[#0d1442] flex items-center justify-center">
@@ -282,16 +207,13 @@ const PrivacyPolicyPage = () => {
                     </AccordionTrigger>
                     <AccordionContent className="px-4 pb-4">
                       <ul className="space-y-3 pt-2">
-                        {section.content.map((item, idx) => (
-                          <li key={idx} className="flex items-start gap-3 text-slate-700 text-sm">
+                        {section.content.map((item, idx) => <li key={idx} className="flex items-start gap-3 text-slate-700 text-sm">
                             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 mt-1.5 flex-shrink-0" />
                             <span className="leading-relaxed">{item}</span>
-                          </li>
-                        ))}
+                          </li>)}
                       </ul>
                     </AccordionContent>
-                  </AccordionItem>
-                ))}
+                  </AccordionItem>)}
               </Accordion>
             </div>
           </div>
@@ -314,7 +236,7 @@ const PrivacyPolicyPage = () => {
               </div>
             </div>
             <p className="text-white/60 text-sm">
-              © 2025 Comminfra. Your privacy is protected under Indian data protection laws.
+              © 2025 shekar@comminfra.in Your privacy is protected under Indian data protection laws.
             </p>
           </div>
         </div>
@@ -343,8 +265,6 @@ const PrivacyPolicyPage = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
-
 export default PrivacyPolicyPage;
