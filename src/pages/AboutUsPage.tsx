@@ -68,7 +68,7 @@ const AboutUsPage = () => {
             </div>
             
             <div className="relative">
-              <img src={visionaryInfrastructure} alt="Visionary sustainable infrastructure" className="w-full rounded-xl shadow-strong hover-scale" />
+              <img alt="Visionary sustainable infrastructure" className="w-full rounded-xl shadow-strong hover-scale" src="/lovable-uploads/e96eac2b-6526-403b-a3d2-f529251289e1.jpg" />
               <div className="absolute top-4 right-4 flex gap-2">
                 <div className="bg-success/20 text-success px-3 py-1 rounded-full text-sm font-medium">
                   ESG Aligned
