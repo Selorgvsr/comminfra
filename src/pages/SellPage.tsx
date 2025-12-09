@@ -278,7 +278,7 @@ const SellPage = () => {
             <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden min-h-[600px]">
               <div className="grid md:grid-cols-2 gap-0 h-full">
                 <div className="relative h-[600px] overflow-hidden">
-                  <img src={highStreetPremium} alt="Bustling urban high street with boutique stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img alt="Bustling urban high street with boutique stores" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/lovable-uploads/34e7e110-8df6-4128-83da-23c800189276.jpg" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Building2 className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
