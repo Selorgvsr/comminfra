@@ -16,6 +16,7 @@ import SustainabilityPage from "./pages/SustainabilityPage";
 import REITInvestPage from "./pages/REITInvestPage";
 import BusinessRevenueModelPage from "./pages/BusinessRevenueModelPage";
 import AboutUsPage from "./pages/AboutUsPage";
+import TermsAndConditionsPage from "./pages/TermsAndConditionsPage";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -41,6 +42,7 @@ const App = () => (
             <Route path="/business-model" element={<BusinessRevenueModelPage />} />
             <Route path="/manage-asset" element={<div className="container py-20"><h1 className="text-4xl font-bold text-center">Manage Asset Page - Coming Soon</h1></div>} />
             <Route path="/reit-invest" element={<REITInvestPage />} />
+            <Route path="/terms-and-conditions" element={<TermsAndConditionsPage />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
             <Route path="*" element={<NotFound />} />
           </Routes>

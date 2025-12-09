@@ -14,6 +14,9 @@ const Footer = () => {
   }, {
     label: "REIT & Invest in Rental Yield Assets",
     path: "/reit-invest"
+  }, {
+    label: "Terms & Conditions",
+    path: "/terms-and-conditions"
   }];
   return <footer className="bg-white border-t">
       <div className="container py-12 text-foreground">
