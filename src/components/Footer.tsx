@@ -17,6 +17,9 @@ const Footer = () => {
   }, {
     label: "Terms & Conditions",
     path: "/terms-and-conditions"
+  }, {
+    label: "Privacy Policy",
+    path: "/privacy-policy"
   }];
   return <footer className="bg-white border-t">
       <div className="container py-12 text-foreground">
