@@ -367,7 +367,7 @@ const Homepage = () => {
               </Card>)}
           </div>
           <div className="mt-12 text-center">
-            <img src={modularImage} alt="Modular Architecture" className="w-full max-w-4xl mx-auto rounded-lg shadow-lg" />
+            <img alt="Modular Architecture" className="w-full max-w-4xl mx-auto rounded-lg shadow-lg" src="/lovable-uploads/78e26bc0-4837-4837-ae92-bb9baf907199.jpg" />
           </div>
         </div>
       </section>
@@ -383,7 +383,7 @@ const Homepage = () => {
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
             <div>
-              <img src={yieldImage} alt="Rental Yield Analytics" className="w-full rounded-lg shadow-lg" />
+              <img alt="Rental Yield Analytics" className="w-full rounded-lg shadow-lg" src="/lovable-uploads/b6b8490c-fb08-4235-8552-f22f0d1deae4.jpg" />
             </div>
             <div className="space-y-6">
               <div className="grid grid-cols-2 gap-4">
