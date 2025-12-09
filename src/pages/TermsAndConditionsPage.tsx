@@ -230,9 +230,7 @@ const TermsAndConditionsPage = () => {
                 <span className="text-amber-400 text-sm font-medium">IT Act 1961 Compliant</span>
               </div>
             </div>
-            <p className="text-white/60 text-sm">
-              © 2025 shekar@Comminfra.in All rights reserved. Building with purpose and compliance.
-            </p>
+            <p className="text-white/60 text-sm">© 2025 shekar@comminfra.in All rights reserved. Building with purpose and compliance.</p>
           </div>
         </div>
       </section>
