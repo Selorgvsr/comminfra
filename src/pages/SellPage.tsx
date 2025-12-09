@@ -325,7 +325,7 @@ const SellPage = () => {
             <Card className="group hover:shadow-2xl transition-all duration-500 bg-white/80 backdrop-blur-sm border border-white/30 rounded-3xl overflow-hidden">
               <div className="grid md:grid-cols-2 gap-0">
                 <div className="relative h-80 md:h-auto overflow-hidden">
-                  <img src={completedWithTenants} alt="Futuristic mixed-use complex with offices and retail zones" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" />
+                  <img alt="Futuristic mixed-use complex with offices and retail zones" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700" src="/lovable-uploads/bf3edec3-be4c-46ff-a547-6778fe109131.jpg" />
                   <div className="absolute inset-0 bg-gradient-to-r from-black/40 to-transparent"></div>
                   <Blocks className="absolute top-6 left-6 h-12 w-12 text-white" />
                 </div>
