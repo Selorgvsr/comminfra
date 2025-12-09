@@ -555,7 +555,7 @@ const BuyPage = () => {
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img src={projectTimeline} alt="Project development timeline stages" className="w-full h-64 object-cover" />
+            <img alt="Project development timeline stages" className="w-full h-64 object-cover" src="/lovable-uploads/c3d77459-166e-4928-b0a4-34889415e64d.jpg" />
           </div>
         </div>
       </section>
