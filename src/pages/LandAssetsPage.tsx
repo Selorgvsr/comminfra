@@ -301,7 +301,7 @@ const LandAssetsPage = () => {
             </div>
 
             <div className="relative rounded-2xl overflow-hidden shadow-xl">
-              <img src={landZoningMap} alt="Interactive zoning map with commercial development zones" className="w-full h-96 object-cover" />
+              <img alt="Interactive zoning map with commercial development zones" className="w-full h-96 object-cover" src="/lovable-uploads/a3bff08c-5079-4b23-84cb-cf74316d2167.jpg" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end">
                 <div className="p-6 text-white">
                   <MapPin className="h-8 w-8 mb-2" />
@@ -385,7 +385,7 @@ const LandAssetsPage = () => {
 
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
             <div className="relative">
-              <img src={landSubmissionForm} alt="Land submission form interface" className="w-full h-96 object-cover rounded-2xl shadow-xl" />
+              <img alt="Land submission form interface" className="w-full h-96 object-cover rounded-2xl shadow-xl" src="/lovable-uploads/250233f4-95f6-49f1-ba48-65ebd81b4f93.jpg" />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent rounded-2xl flex items-end">
                 <div className="p-8 text-white">
                   <Target className="h-12 w-12 mb-4" />
