@@ -206,7 +206,7 @@ const SellPage = () => {
           </div>
 
           <div className="relative rounded-2xl overflow-hidden shadow-xl">
-            <img src={projectTimeline} alt="Development timeline showing various project stages" className="w-full h-64 object-cover" />
+            <img alt="Development timeline showing various project stages" className="w-full h-64 object-cover" src="/lovable-uploads/250287b5-e217-46cf-bbec-81cd3084a539.jpg" />
             <div className="absolute inset-0 bg-[url('@/assets/sell-hero-commercial.jpg')] bg-cover bg-center">
               
             </div>
