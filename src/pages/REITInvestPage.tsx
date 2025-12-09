@@ -367,7 +367,7 @@ const REITInvestPage = () => {
           <div className="mt-16 max-w-4xl mx-auto">
             <Card className="border-0 bg-gradient-to-br from-background/95 via-background/90 to-blue-500/5 backdrop-blur-md shadow-xl overflow-hidden">
               <div className="relative h-64">
-                <img src={reitExplainerGraphic} alt="REIT Structure Explanation" className="w-full h-full object-cover" />
+                <img alt="REIT Structure Explanation" className="w-full h-full object-cover" src="/lovable-uploads/fc6c65fc-7e50-42c1-83bc-f1af1708448f.jpg" />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                 <div className="absolute bottom-4 left-4 right-4 text-white">
                   <h3 className="text-2xl font-bold mb-2">SEBI-Regulated REIT Structure</h3>
