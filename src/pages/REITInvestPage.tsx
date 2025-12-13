@@ -187,7 +187,7 @@ const REITInvestPage = () => {
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in text-slate-50">
             Secure Long-Term Returns
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent text-8xl font-serif">
               {" "}
               with REIT-Grade Properties
             </span>
