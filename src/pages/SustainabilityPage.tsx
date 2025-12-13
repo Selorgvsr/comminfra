@@ -360,7 +360,7 @@ const SustainabilityPage = () => {
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent p-4">
                 Sustainability FAQs
               </h2>
-              <p className="text-xl text-muted-foreground">Everything you need to know about our ESG approach</p>
+              <p className="text-xl text-secondary-foreground">Everything you need to know about our ESG approach</p>
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
