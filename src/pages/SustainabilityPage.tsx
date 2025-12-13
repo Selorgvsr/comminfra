@@ -308,7 +308,7 @@ const SustainabilityPage = () => {
                   </CardTitle>
                   <CardDescription className="text-lg font-semibold text-primary-foreground">{credit.title}</CardDescription>
                 </CardHeader>
-                <CardContent className="text-center">
+                <CardContent className="text-center bg-secondary-foreground">
                   <p className="text-esg">{credit.description}</p>
                 </CardContent>
               </Card>)}
