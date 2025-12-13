@@ -160,7 +160,7 @@ const SustainabilityPage = () => {
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             We Build for Tomorrow
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent font-serif">
               {" "}
               Green, Smart, and Profitable
             </span>
