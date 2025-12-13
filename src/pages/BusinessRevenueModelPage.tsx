@@ -131,7 +131,7 @@ const BusinessRevenueModelPage = () => {
           </Badge>
           <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
             How We Generate
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent text-8xl font-serif">
               {" "}
               Revenue
             </span>
