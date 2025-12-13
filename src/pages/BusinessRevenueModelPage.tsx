@@ -119,7 +119,7 @@ const BusinessRevenueModelPage = () => {
       {/* Hero Section */}
       <section className="revenue_model_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={buildRevenueDashboard} alt="How We Generate Revenue" className="w-full h-full object-cover" />
+          <img alt="How We Generate Revenue" className="w-full h-full object-cover" src="/lovable-uploads/339d45fd-d791-4e76-8636-7f2e068fb326.jpg" />
           {/* Glassmorphism overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
           <div className="absolute inset-0 backdrop-blur-[2px]"></div>
