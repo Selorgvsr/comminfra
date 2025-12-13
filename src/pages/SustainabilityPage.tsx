@@ -357,7 +357,7 @@ const SustainabilityPage = () => {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text text-transparent p-4">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text p-4 text-secondary-foreground">
                 Sustainability FAQs
               </h2>
               <p className="text-xl text-secondary-foreground">Everything you need to know about our ESG approach</p>
