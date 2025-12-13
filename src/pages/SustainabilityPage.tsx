@@ -299,17 +299,17 @@ const SustainabilityPage = () => {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-4xl mx-auto">
             {carbonCredits.map((credit, index) => <Card key={index} className="carbon_credit_card group hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 border-0 bg-gradient-to-br from-background via-background/90 to-green-500/5 backdrop-blur-sm">
-                <CardHeader className="text-center">
+                <CardHeader className="text-center bg-secondary-foreground">
                   <div className="w-16 h-16 mx-auto rounded-xl bg-gradient-to-br from-green-500/20 to-blue-500/20 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform duration-300">
                     <credit.icon className="w-8 h-8 text-green-600" />
                   </div>
                   <CardTitle className="text-3xl font-bold text-green-600 group-hover:text-green-700 transition-colors">
                     {credit.value}
                   </CardTitle>
-                  <CardDescription className="text-lg font-semibold">{credit.title}</CardDescription>
+                  <CardDescription className="text-lg font-semibold text-primary-foreground">{credit.title}</CardDescription>
                 </CardHeader>
                 <CardContent className="text-center">
-                  <p className="text-muted-foreground">{credit.description}</p>
+                  <p className="text-esg">{credit.description}</p>
                 </CardContent>
               </Card>)}
           </div>
@@ -353,7 +353,7 @@ const SustainabilityPage = () => {
       </section>
 
       {/* FAQs */}
-      <section className="sustainability_faq_section py-20 bg-gradient-to-b from-purple-500/5 to-background">
+      <section className="sustainability_faq_section py-20 bg-gradient-to-b from-purple-500/5 to-background bg-esg">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
