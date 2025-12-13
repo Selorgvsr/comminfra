@@ -148,7 +148,7 @@ const SustainabilityPage = () => {
       {/* Hero Section */}
       <section className="sustainability_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={esgSustainableBuilding} alt="Green, Smart, and Profitable" className="w-full h-full object-cover" />
+          <img alt="Green, Smart, and Profitable" className="w-full h-full object-cover" src="/lovable-uploads/0119f867-4cc3-4b3e-a2bb-e34445aee493.jpg" />
           {/* Glassmorphism overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
           <div className="absolute inset-0 backdrop-blur-[2px]"></div>
