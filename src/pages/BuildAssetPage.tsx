@@ -139,7 +139,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
       {/* Hero Section */}
       <section className="build_asset_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={commercialFacadeImage} alt="Built for Business, Designed for Impact" className="w-full h-full object-cover" />
+          <img alt="Built for Business, Designed for Impact" className="w-full h-full object-cover" src="/lovable-uploads/0149a58c-f365-4c01-ab3c-f14b5e86c960.jpg" />
           {/* Glassmorphism overlay */}
           <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
           <div className="absolute inset-0 backdrop-blur-[2px]"></div>
