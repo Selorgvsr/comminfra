@@ -133,7 +133,7 @@ const ProjectsPage = () => {
     count: 6
   }];
   const ongoingProjects = [{
-    name: "Commercial Building",
+    name: "Commercial Office Building",
     location: "SRP Tools,OMR,Chennai",
     status: "Structural Work",
     description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
