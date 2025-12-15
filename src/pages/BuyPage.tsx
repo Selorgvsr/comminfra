@@ -82,7 +82,7 @@ const BuyPage = () => {
   // Development Stage Data
   const developmentStages = [{
     title: "Ready to Occupy",
-    description: "Completed Properties with modern amenities",
+    description: "Completed properties with all amenities",
     progress: 100,
     color: "bg-green-500",
     cta: "Buy Now",
@@ -265,7 +265,7 @@ const BuyPage = () => {
                 <div className="space-y-6 lg:pl-8">
                   <div className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 rounded-full">
                     <Building2 className="h-5 w-5 text-blue-600" />
-                    <span className="text-sm font-semibold text-blue-900">Office Spaces</span>
+                    <span className="text-sm font-semibold text-blue-900">Office Space</span>
                   </div>
 
                   <h3 className="text-4xl font-bold leading-tight text-slate-50">Step into the future of work</h3>
