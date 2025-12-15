@@ -139,7 +139,7 @@ const ProjectsPage = () => {
     description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
     image: constructionProgressBuildingImage
   }, {
-    name: "Commercial Building",
+    name: "Commercial Retail Building",
     location: "Indira Nagar, Chennai",
     status: "Interior Fitout",
     description: "Premium commercial complex with smart building systems and eco-friendly infrastructure. Targeting LEED Gold certification.",
