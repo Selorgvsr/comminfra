@@ -168,7 +168,7 @@ const SellPage = () => {
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Project Stage Segmentation</h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              We purchase properties at every stage of development with tailored evaluation processes and competitive pricing
+              We purchase properties at every stage of development with tailored evaluation process and competitive pricing
             </p>
           </div>
           
