@@ -41,7 +41,7 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center space-x-1">
           {navItems.map(item => <Button key={item.path} variant={location.pathname === item.path ? "commercial" : "ghost"} size="sm" asChild>
-              <Link to={item.path}>{item.label}</Link>
+              <Link to={item.path} className="text-base">{item.label}</Link>
             </Button>)}
         </nav>
         
