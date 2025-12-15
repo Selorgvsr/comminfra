@@ -38,7 +38,7 @@ const projectStages = [{
 }, {
   id: "semi-completed",
   title: "Semi-Completed Projects",
-  description: "Structural work and basic construction in progress",
+  description: "Structural work, Construction in progress",
   status: "🟡",
   cta: "Upload Progress Report",
   image: semiCompletedScaffolding,
