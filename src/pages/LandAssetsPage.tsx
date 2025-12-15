@@ -31,35 +31,35 @@ const LandAssetsPage = () => {
   const landCategories = [{
     icon: Building2,
     title: "Downtown / City Core",
-    description: "Our Downtown / City Core land parcels are the epicenter of opportunity — positioned within the most valuable and visible zones of urban life. Perfect for premium office towers, retail blocks, and hospitality developments, these lands offer unmatched connectivity and prestige. With established infrastructure — roads, power, and transit — every square foot here carries exponential potential. We assist in selling or acquiring core-zone assets with verified documentation, zoning compliance, and investor support. When you invest in city-core land, you invest in brand visibility, business growth, and long-term appreciation.",
+    description: "Our Downtown / City Core land parcels are positioned within the most valuable zones of urban life. Perfect for premium office towers, retail blocks, and hospitality developments with unmatched connectivity and prestige. We assist in selling or acquiring core-zone assets with verified documentation and zoning compliance.",
     cta: "View Land Parcels",
     link: "/projects?type=downtown",
     image: downtownCityCoreImage
   }, {
     icon: Store,
     title: "Mall-Adjacent Parcels",
-    description: "Our Mall-Adjacent Land Parcels are strategically positioned next to established retail ecosystems — where high footfall meets future value. These plots are perfect for developing commercial extensions, boutique showrooms, restaurants, and lifestyle outlets. Investors benefit from ready infrastructure, public visibility, and synergy with existing retail giants. We handle end-to-end sale preparation — from valuation to buyer targeting — ensuring your land captures its true commercial worth. In every successful city, land beside a mall becomes tomorrow's most lucrative investment.",
+    description: "Our Mall-Adjacent Land Parcels are strategically positioned next to established retail ecosystems where high footfall meets future value. Perfect for commercial extensions, boutique showrooms, restaurants, and lifestyle outlets. We handle end-to-end sale preparation ensuring your land captures its true commercial worth.",
     cta: "View Land Parcels",
     link: "/projects?type=mall-adjacent",
     image: mallAdjacentImage
   }, {
     icon: Building2,
     title: "Office Zone Land",
-    description: "Our Office Zone Lands are strategically located within or near established business districts — the heart of corporate expansion. These plots are zoned and ready for high-rise developments, IT parks, or coworking towers. Designed for institutional buyers and developers, each parcel offers high utility value, excellent access, and sustainable infrastructure. We facilitate seamless transactions, legal due diligence, and development partnerships for large-scale office land sales. When you sell or invest in office zone land, you're not just trading real estate — you're shaping the next corporate skyline.",
+    description: "Our Office Zone Lands are strategically located within or near established business districts. These plots are zoned and ready for high-rise developments, IT parks, or coworking towers. We facilitate seamless transactions, legal due diligence, and development partnerships for large-scale office land sales.",
     cta: "View Land Parcels",
     link: "/projects?type=office-zone",
     image: officeZoneImage
   }, {
     icon: Layers,
     title: "Mixed-Use Potential",
-    description: "Our Mixed-Use Potential Lands are the foundation for tomorrow's integrated cities — where retail, workspace, and lifestyle coexist. Ideal for developers envisioning multi-purpose hubs, these lands come with high flexibility and zoning adaptability. We help you position these assets for maximum investor interest — from architectural feasibility to market-driven valuation. Every mixed-use parcel is a blank canvas of possibilities — a chance to redefine how people live, work, and connect. Whether for sale or joint venture, these are future-ready investment opportunities waiting to be built upon.",
+    description: "Our Mixed-Use Potential Lands are the foundation for integrated cities where retail, workspace, and lifestyle coexist. Ideal for developers envisioning multi-purpose hubs with high flexibility and zoning adaptability. We help position these assets for maximum investor interest with market-driven valuation.",
     cta: "View Land Parcels",
     link: "/projects?type=mixed-use",
     image: mixedUseImage
   }, {
     icon: Compass,
     title: "Peripheral Growth Zones",
-    description: "Our Peripheral Growth Zone Lands are the smart investor's move — affordable today, priceless tomorrow. These plots sit in the path of planned urban expansion, industrial corridors, or upcoming infrastructure projects. We specialize in identifying and marketing lands with strong appreciation potential, offering clear documentation and easy access to utilities. Perfect for future commercial parks, logistics hubs, or tech campuses — these lands promise exponential value in the next growth wave. Invest now, develop later — your foresight builds tomorrow's cityscape.",
+    description: "Our Peripheral Growth Zone Lands are the smart investor's move, affordable today, priceless tomorrow. These plots sit in the path of planned urban expansion and infrastructure projects. We specialize in identifying lands with strong appreciation potential, offering clear documentation and easy utility access.",
     cta: "View Land Parcels",
     link: "/projects?type=peripheral",
     image: peripheralGrowthImage
