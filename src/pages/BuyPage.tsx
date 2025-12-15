@@ -82,7 +82,7 @@ const BuyPage = () => {
   // Development Stage Data
   const developmentStages = [{
     title: "Ready to Occupy",
-    description: "Completed properties with all amenities",
+    description: "Completed Properties with modern amenities",
     progress: 100,
     color: "bg-green-500",
     cta: "Buy Now",
