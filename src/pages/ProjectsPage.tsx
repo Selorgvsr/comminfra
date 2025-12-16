@@ -154,7 +154,7 @@ const ProjectsPage = () => {
     location: "Mumbai, Maharashtra",
     image: visionaryInfrastructureImage
   }, {
-    name: "LB Road",
+    name: "LB Road-Chennai",
     location: "Delhi NCR",
     image: jointDevelopmentModernImage
   }];
