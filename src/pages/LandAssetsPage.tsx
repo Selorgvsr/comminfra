@@ -250,7 +250,7 @@ const LandAssetsPage = () => {
                     <h3 className="text-2xl md:text-3xl font-bold mb-4 text-primary group-hover:text-commercial transition-colors duration-500">
                       {category.title}
                     </h3>
-                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6 line-clamp-5">
+                    <p className="text-sm md:text-base text-muted-foreground leading-relaxed mb-6">
                       {category.description}
                     </p>
                     <Button size="lg" className="w-fit bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full group-hover:shadow-lg transition-all duration-500 mt-auto" asChild>
