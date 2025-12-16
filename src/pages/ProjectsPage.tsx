@@ -146,7 +146,7 @@ const ProjectsPage = () => {
     image: urbanCommonsPlazaImage
   }];
   const futureProjects = [{
-    name: "Saidapet",
+    name: "Saidapet-Chennai",
     location: "Bangalore, Karnataka",
     image: infrastructureBlueprintImage
   }, {
