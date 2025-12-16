@@ -150,7 +150,7 @@ const ProjectsPage = () => {
     location: "Bangalore, Karnataka",
     image: infrastructureBlueprintImage
   }, {
-    name: "Pallavaram",
+    name: "Pallavaram-Chennai",
     location: "Mumbai, Maharashtra",
     image: visionaryInfrastructureImage
   }, {
