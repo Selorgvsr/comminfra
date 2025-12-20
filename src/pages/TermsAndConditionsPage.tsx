@@ -62,7 +62,7 @@ const TermsAndConditionsPage = () => {
     number: "10",
     title: "Contact Information",
     icon: Mail,
-    content: ["Shekar, Managing Director | contactcomminfra@gmail.com | +91-9444126240", "Registered Office: Chennai, Tamil Nadu (RERA compliant registration)", "Last Updated: December 2025"]
+    content: ["Shekar, Managing Director | shekar@comminfra.in | +91-9444126240", "Registered Office: Chennai, Tamil Nadu (RERA compliant registration)", "Last Updated: December 2025"]
   }];
   const quickLinks = [{
     label: "Introduction",
