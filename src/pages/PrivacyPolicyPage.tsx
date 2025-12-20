@@ -38,7 +38,7 @@ const PrivacyPolicyPage = () => {
     number: "06",
     title: "Your Rights (DPDP Act 2023)",
     icon: UserCheck,
-    content: ["Access, Correction, Erasure, and Portability requests can be submitted via contactcomminfra@gmail.com", "Grievance Officer: Shekar, Managing Director | Response within 30 days guaranteed", "Consent Withdrawal: Unsubscribe links available in all emails, account deletion on request"]
+    content: ["Access, Correction, Erasure, and Portability requests can be submitted via shekar@comminfra.in", "Grievance Officer: Shekar, Managing Director | Response within 30 days guaranteed", "Consent Withdrawal: Unsubscribe links available in all emails, account deletion on request"]
   }, {
     id: "cookies",
     number: "07",
@@ -62,7 +62,7 @@ const PrivacyPolicyPage = () => {
     number: "10",
     title: "Contact Information",
     icon: Mail,
-    content: ["Data Protection Officer: Shekar, Managing Director", "Email: contactcomminfra@gmail.com | Phone: +91-9444126240", "Address: Chennai, Tamil Nadu | DPDP Registration Pending", "Governing Law: Digital Personal Data Protection Act 2023, IT Act 2000"]
+    content: ["Data Protection Officer: Shekar, Managing Director", "Email: shekar@comminfra.in | Phone: +91-9444126240", "Address: Chennai, Tamil Nadu | DPDP Registration Pending", "Governing Law: Digital Personal Data Protection Act 2023, IT Act 2000"]
   }];
   const quickLinks = [{
     label: "Introduction",
