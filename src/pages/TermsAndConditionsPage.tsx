@@ -252,7 +252,7 @@ const TermsAndConditionsPage = () => {
               </div>
               <div className="flex items-center gap-2 text-slate-700">
                 <Mail className="h-5 w-5 text-amber-500" />
-                <span>contactcomminfra@gmail.com</span>
+                <span>​shekar@comminfra.in</span>
               </div>
             </div>
           </div>
