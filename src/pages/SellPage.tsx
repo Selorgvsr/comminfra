@@ -391,7 +391,7 @@ const SellPage = () => {
       <section id="inquiry-form" className="Contact_InquiryForm py-20">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">Contact & Submission Portal</h2>
+            <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">​Connect with us     </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Submit your property details for a comprehensive evaluation and competitive offer
             </p>
