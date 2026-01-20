@@ -578,6 +578,11 @@ const REITInvestPage = () => {
               <p className="text-xl text-white/90 max-w-3xl mx-auto">
                 Get personalized investment recommendations and connect with our REIT specialists
               </p>
+              <Link to="/contact">
+                <Button size="lg" className="mt-8 bg-primary hover:bg-primary/90">
+                  Contact Us <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
             </div>
 
             
