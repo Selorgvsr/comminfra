@@ -6,7 +6,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Progress } from "@/components/ui/progress";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Building2, TrendingUp, CheckCircle, Clock, DollarSign, FileText, Upload, MapPin, Calendar, Leaf, ShieldCheck, Timer, Store, ShoppingBag, Building, Trees, Blocks, Star, Award, Zap, ArrowRight, Moon, SunIcon } from "lucide-react";
 
 // Image imports
@@ -125,6 +125,7 @@ const faqs = [{
   answer: "We offer flexible deal structures including outright purchase, joint development partnerships, revenue sharing models, and staged payments. The structure depends on the property type, completion status, and seller preferences."
 }];
 const SellPage = () => {
+  const navigate = useNavigate();
   const [isDarkMode, setIsDarkMode] = useState(false);
   const [scrollY, setScrollY] = useState(0);
 
@@ -392,9 +393,15 @@ const SellPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">​Connect with us     </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
               Submit your property details for a comprehensive evaluation and competitive offer
             </p>
+            <Button 
+              onClick={() => navigate('/contact')} 
+              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold"
+            >
+              Contact Us
+            </Button>
           </div>
           
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
