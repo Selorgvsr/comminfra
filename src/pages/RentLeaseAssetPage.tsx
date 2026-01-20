@@ -396,7 +396,14 @@ const RentLeaseAssetPage = () => {
               </p>
             </div>
 
-            
+            <div className="text-center">
+              <Link to="/contact">
+                <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+                  Contact Us
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Button>
+              </Link>
+            </div>
           </div>
         </div>
       </section>
