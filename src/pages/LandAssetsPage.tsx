@@ -383,7 +383,14 @@ const LandAssetsPage = () => {
             </p>
           </div>
 
-          
+          <div className="flex justify-center">
+            <Button size="lg" className="bg-gradient-to-r from-primary to-commercial hover:from-commercial hover:to-primary text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group" asChild>
+              <Link to="/contact" className="flex items-center gap-2">
+                Contact Us
+                <ArrowRight className="h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </Link>
+            </Button>
+          </div>
         </div>
       </section>
     </div>;
