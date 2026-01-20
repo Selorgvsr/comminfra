@@ -5,7 +5,7 @@ import { Label } from "@/components/ui/label";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Textarea } from "@/components/ui/textarea";
 import { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, BarChart3, Shield, Zap, Users, Award, ArrowRight, TrendingUp, Globe, Clock, Key } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 
@@ -27,6 +27,7 @@ import certificationImage from "@/assets/sustainable-growth-building.jpg";
 import esgUIImage from "@/assets/esg-dashboard.jpg";
 import contactImage from "@/assets/contact-hero-image.jpg";
 const Homepage = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     name: "",
     organization: "",
@@ -431,6 +432,12 @@ const Homepage = () => {
             <p className="text-xl text-gray-300 max-w-2xl mx-auto">
               Ready to explore commercial real estate opportunities? Let's start the conversation.
             </p>
+            <Button 
+              onClick={() => navigate('/contact')} 
+              className="mt-8 bg-white text-gray-900 hover:bg-gray-100 px-8 py-3"
+            >
+              Contact Us
+            </Button>
           </div>
           
         </div>
