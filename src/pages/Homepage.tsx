@@ -432,58 +432,7 @@ const Homepage = () => {
               Ready to explore commercial real estate opportunities? Let's start the conversation.
             </p>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-            <div>
-              <img src={contactImage} alt="Contact Us" className="w-full rounded-lg shadow-lg" />
-            </div>
-            <Card className="Form_HomepageInquiry">
-              <CardHeader>
-                <CardTitle>Start Your Journey</CardTitle>
-                <CardDescription>Fill out the form and we'll get back to you within 24 hours</CardDescription>
-              </CardHeader>
-              <CardContent>
-                <form onSubmit={handleSubmit} className="space-y-4">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="name">Name</Label>
-                      <Input id="name" value={formData.name} onChange={e => handleInputChange("name", e.target.value)} placeholder="Your full name" required />
-                    </div>
-                    <div>
-                      <Label htmlFor="organization">Organization</Label>
-                      <Input id="organization" value={formData.organization} onChange={e => handleInputChange("organization", e.target.value)} placeholder="Company/Organization" />
-                    </div>
-                  </div>
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                    <div>
-                      <Label htmlFor="interestArea">Interest Area</Label>
-                      <Select value={formData.interestArea} onValueChange={value => handleInputChange("interestArea", value)}>
-                        <SelectTrigger>
-                          <SelectValue placeholder="Select your interest" />
-                        </SelectTrigger>
-                        <SelectContent>
-                          <SelectItem value="buy">Buy</SelectItem>
-                          <SelectItem value="lease">Lease</SelectItem>
-                          <SelectItem value="invest">Invest</SelectItem>
-                          <SelectItem value="esg">ESG</SelectItem>
-                        </SelectContent>
-                      </Select>
-                    </div>
-                    <div>
-                      <Label htmlFor="location">Location</Label>
-                      <Input id="location" value={formData.location} onChange={e => handleInputChange("location", e.target.value)} placeholder="Preferred location" />
-                    </div>
-                  </div>
-                  <div>
-                    <Label htmlFor="message">Message</Label>
-                    <Textarea id="message" value={formData.message} onChange={e => handleInputChange("message", e.target.value)} placeholder="Tell us about your requirements" rows={4} />
-                  </div>
-                  <Button type="submit" className="w-full">
-                    Get in Touch
-                  </Button>
-                </form>
-              </CardContent>
-            </Card>
-          </div>
+          
         </div>
       </section>
     </div>;
