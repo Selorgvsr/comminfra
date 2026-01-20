@@ -580,9 +580,14 @@ const REITInvestPage = () => {
               </p>
             </div>
 
-            <Card className="border-0 bg-gradient-to-br from-background/95 via-background/90 to-blue-500/5 backdrop-blur-md shadow-2xl">
-              
-              
+            <Card className="border-0 bg-gradient-to-br from-background/95 via-background/90 to-blue-500/5 backdrop-blur-md shadow-2xl p-8">
+              <div className="text-center">
+                <Link to="/contact">
+                  <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg">
+                    Contact Us <ArrowRight className="ml-2 h-5 w-5" />
+                  </Button>
+                </Link>
+              </div>
             </Card>
           </div>
         </div>
