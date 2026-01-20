@@ -155,10 +155,7 @@ const SellPage = () => {
           </h1>
           
           <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
-            <Link to="#inquiry-form">
-              Submit Your Property for Evaluation 
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-            </Link>
+            
           </Button>
         </div>
       </section>
@@ -396,10 +393,7 @@ const SellPage = () => {
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto mb-6">
               Submit your property details for a comprehensive evaluation and competitive offer
             </p>
-            <Button 
-              onClick={() => navigate('/contact')} 
-              className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold"
-            >
+            <Button onClick={() => navigate('/contact')} className="bg-primary hover:bg-primary/90 text-white px-8 py-3 rounded-lg font-semibold">
               Contact Us
             </Button>
           </div>
