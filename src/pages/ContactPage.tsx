@@ -140,11 +140,11 @@ const ContactPage = () => {
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <Label htmlFor="name">Full Name</Label>
-                    <Input id="name" placeholder="Your full name" />
+                    <Input id="name" placeholder="" />
                   </div>
                   <div>
                     <Label htmlFor="email">Email Address</Label>
-                    <Input id="email" type="email" placeholder="your.email@company.com" />
+                    <Input id="email" type="email" placeholder="" />
                   </div>
                 </div>
 
