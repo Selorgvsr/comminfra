@@ -299,7 +299,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
                     <span className="text-lg font-medium text-slate-50">{item.question}</span>
                   </div>
                 </AccordionTrigger>
-                <AccordionContent className="pt-4 text-muted-foreground">
+                <AccordionContent className="pt-4 text-white">
                   {item.answer}
                 </AccordionContent>
               </AccordionItem>)}
