@@ -359,8 +359,8 @@ const SellPage = () => {
           
           <div className="max-w-4xl mx-auto">
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white/60 backdrop-blur-sm rounded-xl px-6 border border-white/20 shadow-lg">
-                  <AccordionTrigger className="text-left font-semibold hover:text-primary transition-colors">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="bg-white/10 backdrop-blur-sm rounded-xl px-6 border border-white/20 shadow-lg">
+                  <AccordionTrigger className="text-left font-semibold text-white hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-white leading-relaxed">
