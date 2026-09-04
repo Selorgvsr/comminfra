@@ -12,6 +12,12 @@ const Footer = () => {
     label: "Business Revenue Model",
     path: "/business-model"
   }, {
+    label: "Land Asset",
+    path: "/land-assets"
+  }, {
+    label: "Built Asset",
+    path: "/build-asset"
+  }, {
     label: "REIT & Invest in Rental Yield Assets",
     path: "/reit-invest"
   }, {

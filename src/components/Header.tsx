@@ -14,12 +14,6 @@ const Header = () => {
     label: "Sell",
     path: "/sell"
   }, {
-    label: "Land Asset",
-    path: "/land-assets"
-  }, {
-    label: "Built Asset",
-    path: "/build-asset"
-  }, {
     label: "Rent/Lease Asset",
     path: "/rent-lease-asset"
   }, {
