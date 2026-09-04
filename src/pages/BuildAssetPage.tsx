@@ -292,7 +292,7 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
             <p className="text-xl text-muted-foreground">Everything you need to know about our buildings</p>
           </div>
           <Accordion type="single" collapsible className="space-y-4">
-            {faqItems.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="border rounded-lg px-6">
+            {faqItems.map((item, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-white/20 rounded-lg px-6 bg-white/10 backdrop-blur-sm">
                 <AccordionTrigger className="text-left hover:no-underline">
                   <div className="flex items-center space-x-3">
                     <MessageCircle className="h-5 w-5 text-primary flex-shrink-0" />

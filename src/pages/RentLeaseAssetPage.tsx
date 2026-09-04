@@ -368,8 +368,8 @@ const RentLeaseAssetPage = () => {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-gradient-to-r from-background via-background/90 to-primary/5 backdrop-blur-sm">
-                  <AccordionTrigger className="text-left font-semibold hover:text-primary transition-colors">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-white/10 backdrop-blur-sm">
+                  <AccordionTrigger className="text-left font-semibold text-white hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
                   <AccordionContent className="text-white pt-2">{faq.answer}</AccordionContent>
