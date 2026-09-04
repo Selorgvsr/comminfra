@@ -556,7 +556,7 @@ const REITInvestPage = () => {
                   <AccordionTrigger className="text-left font-semibold hover:text-blue-600 transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pt-2">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-white pt-2">{faq.answer}</AccordionContent>
                 </AccordionItem>)}
             </Accordion>
           </div>

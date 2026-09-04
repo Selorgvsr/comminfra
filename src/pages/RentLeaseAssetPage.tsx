@@ -372,7 +372,7 @@ const RentLeaseAssetPage = () => {
                   <AccordionTrigger className="text-left font-semibold hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground pt-2">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-white pt-2">{faq.answer}</AccordionContent>
                 </AccordionItem>)}
             </Accordion>
           </div>

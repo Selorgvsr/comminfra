@@ -861,7 +861,7 @@ const BuyPage = () => {
                   <AccordionTrigger className="text-left hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-white">{faq.answer}</AccordionContent>
                 </AccordionItem>)}
             </Accordion>
           </div>

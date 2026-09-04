@@ -363,7 +363,7 @@ const SellPage = () => {
                   <AccordionTrigger className="text-left font-semibold hover:text-primary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-muted-foreground leading-relaxed">
+                  <AccordionContent className="text-white leading-relaxed">
                     {faq.answer}
                   </AccordionContent>
                 </AccordionItem>)}
