@@ -552,11 +552,11 @@ const REITInvestPage = () => {
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-white/10 backdrop-blur-sm">
-                  <AccordionTrigger className="text-left font-semibold text-white hover:text-blue-600 transition-colors">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-secondary/40 rounded-xl px-6 bg-primary/95 shadow-lg backdrop-blur-sm">
+                  <AccordionTrigger className="text-left font-semibold text-primary-foreground hover:text-secondary transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white pt-2">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-primary-foreground/95 pt-2 leading-relaxed">{faq.answer}</AccordionContent>
                 </AccordionItem>)}
             </Accordion>
           </div>
