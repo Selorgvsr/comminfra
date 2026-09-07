@@ -353,22 +353,22 @@ const SustainabilityPage = () => {
       </section>
 
       {/* FAQs */}
-      <section className="sustainability_faq_section py-20 bg-gradient-to-b from-purple-500/5 to-background bg-esg">
+      <section className="sustainability_faq_section py-20 bg-gradient-to-br from-primary via-primary/95 to-primary/90">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-green-600 to-blue-600 bg-clip-text p-4 text-secondary-foreground">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 p-4 text-primary-foreground">
                 Sustainability FAQs
               </h2>
-              <p className="text-xl text-secondary-foreground">Everything you need to know about our ESG approach</p>
+              <p className="text-xl text-primary-foreground/90">Everything you need to know about our ESG approach</p>
             </div>
 
             <Accordion type="single" collapsible className="space-y-4">
-              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-border/50 rounded-xl px-6 bg-white/10 backdrop-blur-sm">
-                  <AccordionTrigger className="text-left font-semibold text-white hover:text-green-600 transition-colors">
+              {faqs.map((faq, index) => <AccordionItem key={index} value={`item-${index}`} className="border border-primary-foreground/20 rounded-xl px-6 bg-primary-foreground/10 backdrop-blur-sm shadow-xl">
+                  <AccordionTrigger className="text-left font-semibold text-primary-foreground hover:text-accent transition-colors">
                     {faq.question}
                   </AccordionTrigger>
-                  <AccordionContent className="text-white pt-2">{faq.answer}</AccordionContent>
+                  <AccordionContent className="text-primary-foreground/95 pt-2 leading-relaxed">{faq.answer}</AccordionContent>
                 </AccordionItem>)}
             </Accordion>
           </div>
