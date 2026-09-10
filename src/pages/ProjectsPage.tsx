@@ -239,10 +239,17 @@ const ProjectsPage = () => {
                     <MapPin className="h-4 w-4 mr-1 text-commercial" />
                     {project.location}
                   </p>
-                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-3">
+                  <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-4">
                     {project.status}
                   </span>
-                  
+                  <div className="flex flex-col gap-2">
+                    <Button asChild size="sm" className="w-full bg-commercial hover:bg-commercial/90 text-white">
+                      <Link to="/contact">Book Visit</Link>
+                    </Button>
+                    <Button variant="outline" size="sm" className="w-full border-commercial text-commercial hover:bg-commercial/10">
+                      Details
+                    </Button>
+                  </div>
                 </CardContent>
               </Card>)}
           </div>
