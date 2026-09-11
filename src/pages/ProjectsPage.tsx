@@ -28,8 +28,6 @@ import galleryPremiumFacadeImage from "@/assets/gallery-premium-facade.png";
 import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
 import constructionSiteCraneImage from "@/assets/construction-site-crane.jpg";
 import constructionSiteBlueFacadeImage from "@/assets/construction-site-blue-facade.jpg";
-import commercialForSaleImage from "@/assets/commercial-for-sale.jpg";
-import leaseAgreementSigningImage from "@/assets/lease-agreement-signing.jpg";
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
@@ -244,76 +242,16 @@ const ProjectsPage = () => {
                   <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-4">
                     {project.status}
                   </span>
-                  <div className="grid grid-cols-2 gap-2">
+                  <div className="flex flex-col gap-2">
                     <Button asChild size="sm" className="w-full bg-commercial hover:bg-commercial/90 text-white">
                       <Link to="/contact">Book Visit</Link>
                     </Button>
                     <Button variant="outline" size="sm" className="w-full border-commercial text-commercial hover:bg-commercial/10">
                       Details
                     </Button>
-                    <Button asChild size="sm" variant="secondary" className="w-full bg-amber-500 hover:bg-amber-600 text-white">
-                      <Link to="/buy">Buy</Link>
-                    </Button>
-                    <Button asChild size="sm" variant="secondary" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white">
-                      <Link to="/rent-lease-asset">Rent/Lease</Link>
-                    </Button>
                   </div>
                 </CardContent>
               </Card>)}
-          </div>
-        </div>
-      </section>
-
-      {/* Buy & Rent/Lease Hero Section */}
-      <section id="buy_rent_lease_hero_section" className="relative py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-commercial-navy via-commercial-navy/95 to-commercial-navy/90"></div>
-        <div className="absolute inset-0 opacity-10 bg-[radial-gradient(circle_at_center,_var(--tw-gradient-stops))] from-gold/30 via-transparent to-transparent"></div>
-
-        <div className="container relative z-10">
-          <div className="text-center mb-16">
-            <Badge className="mb-6 bg-white/10 backdrop-blur-md text-white border border-white/20 font-semibold animate-fade-in px-6 py-2">
-              Explore Opportunities
-            </Badge>
-            <h2 className="text-4xl md:text-5xl font-bold mb-4 text-white">
-              Ready to Own or Lease?<span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Find Your Perfect Commercial Space</span>
-            </h2>
-            <p className="text-xl text-white/80 max-w-3xl mx-auto">
-              Choose the path that fits your investment or business goals — buy premium assets or lease flexible commercial spaces.
-            </p>
-          </div>
-
-          <div className="grid md:grid-cols-2 gap-8">
-            {/* Buy Page Card */}
-            <div className="group relative h-[400px] rounded-3xl overflow-hidden shadow-2xl cursor-pointer">
-              <img src={commercialForSaleImage} alt="Buy premium commercial properties" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-              <div className="absolute inset-0 flex flex-col items-center justify-end p-8 text-center">
-                <h3 className="text-3xl font-bold text-white mb-3">Buy Commercial Property</h3>
-                <p className="text-white/90 mb-6 max-w-md">Own high-value commercial assets with strong appreciation and rental yield potential.</p>
-                <Button size="lg" className="bg-amber-500 hover:bg-amber-600 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group/btn" asChild>
-                  <Link to="/buy">
-                    Visit Buy Page
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
-
-            {/* Rent/Lease Page Card */}
-            <div className="group relative h-[400px] rounded-3xl overflow-hidden shadow-2xl cursor-pointer">
-              <img src={leaseAgreementSigningImage} alt="Rent or lease commercial spaces" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
-              <div className="absolute inset-0 flex flex-col items-center justify-end p-8 text-center">
-                <h3 className="text-3xl font-bold text-white mb-3">Rent/Lease Commercial Space</h3>
-                <p className="text-white/90 mb-6 max-w-md">Flexible leasing solutions tailored for restaurants, offices, retail brands, and lifestyle tenants.</p>
-                <Button size="lg" className="bg-emerald-500 hover:bg-emerald-600 text-white px-8 py-6 rounded-full shadow-lg hover:shadow-xl transition-all duration-300 group/btn" asChild>
-                  <Link to="/rent-lease-asset">
-                    Visit Rent/Lease Page
-                    <ArrowRight className="ml-2 h-5 w-5 group-hover/btn:translate-x-1 transition-transform" />
-                  </Link>
-                </Button>
-              </div>
-            </div>
           </div>
         </div>
       </section>
