@@ -198,6 +198,9 @@ const RentLeaseAssetPage = () => {
         </div>
       </section>
 
+      {/* Ongoing Projects Section */}
+      <OngoingProjectsSection />
+
       {/* Find Your Perfect Space - Tenant Type Segmentation */}
       <section className="tenant_type_segmentation_section py-24 bg-gradient-to-b from-white via-secondary/5 to-white">
         <div className="container px-4">

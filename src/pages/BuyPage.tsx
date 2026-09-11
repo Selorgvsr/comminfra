@@ -237,6 +237,9 @@ const BuyPage = () => {
         </div>
       </section>
 
+      {/* Ongoing Projects Section */}
+      <OngoingProjectsSection />
+
       {/* 2. Asset Categories - Premium Elegant Design */}
       <section className="AssetCard_Categories py-24 bg-gradient-section-1 text-white">
         <div className="container px-4 max-w-7xl mx-auto">
