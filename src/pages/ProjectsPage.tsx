@@ -28,6 +28,8 @@ import galleryPremiumFacadeImage from "@/assets/gallery-premium-facade.png";
 import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
 import constructionSiteCraneImage from "@/assets/construction-site-crane.jpg";
 import constructionSiteBlueFacadeImage from "@/assets/construction-site-blue-facade.jpg";
+import commercialForSaleImage from "@/assets/commercial-for-sale.jpg";
+import leaseAgreementSigningImage from "@/assets/lease-agreement-signing.jpg";
 const ProjectsPage = () => {
   const [selectedGalleryImage, setSelectedGalleryImage] = useState<string | null>(null);
   const featuredProjects = [{
