@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import OngoingProjectsSection from "@/components/OngoingProjectsSection";
 import { Building2, Store, Trees, Factory, ShoppingBag, Sun, Recycle, Car, Zap, FileText, Building, Users, Briefcase, UserCheck, TrendingUp, Home, Shield, ArrowRight, CheckCircle, Calendar, MapPin, DollarSign, Upload, Search, Moon, SunIcon } from "lucide-react";
 
 // Image imports
