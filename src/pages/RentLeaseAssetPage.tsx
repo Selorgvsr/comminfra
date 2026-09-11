@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import OngoingProjectsSection from "@/components/OngoingProjectsSection";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -196,6 +197,9 @@ const RentLeaseAssetPage = () => {
           </Button>
         </div>
       </section>
+
+      {/* Ongoing Projects Section */}
+      <OngoingProjectsSection />
 
       {/* Find Your Perfect Space - Tenant Type Segmentation */}
       <section className="tenant_type_segmentation_section py-24 bg-gradient-to-b from-white via-secondary/5 to-white">

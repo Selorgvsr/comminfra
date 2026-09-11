@@ -5,6 +5,7 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
 import { Link } from "react-router-dom";
+import OngoingProjectsSection from "@/components/OngoingProjectsSection";
 import { Building2, Store, Trees, Factory, ShoppingBag, Sun, Recycle, Car, Zap, FileText, Building, Users, Briefcase, UserCheck, TrendingUp, Home, Shield, ArrowRight, CheckCircle, Calendar, MapPin, DollarSign, Upload, Search, Moon, SunIcon } from "lucide-react";
 
 // Image imports
@@ -235,6 +236,9 @@ const BuyPage = () => {
           </Button>
         </div>
       </section>
+
+      {/* Ongoing Projects Section */}
+      <OngoingProjectsSection />
 
       {/* 2. Asset Categories - Premium Elegant Design */}
       <section className="AssetCard_Categories py-24 bg-gradient-section-1 text-white">
