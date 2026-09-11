@@ -244,12 +244,18 @@ const ProjectsPage = () => {
                   <span className="inline-block text-xs px-3 py-1 rounded-full bg-blue-100 text-blue-800 mb-4">
                     {project.status}
                   </span>
-                  <div className="flex flex-col gap-2">
+                  <div className="grid grid-cols-2 gap-2">
                     <Button asChild size="sm" className="w-full bg-commercial hover:bg-commercial/90 text-white">
                       <Link to="/contact">Book Visit</Link>
                     </Button>
                     <Button variant="outline" size="sm" className="w-full border-commercial text-commercial hover:bg-commercial/10">
                       Details
+                    </Button>
+                    <Button asChild size="sm" variant="secondary" className="w-full bg-amber-500 hover:bg-amber-600 text-white">
+                      <Link to="/buy">Buy</Link>
+                    </Button>
+                    <Button asChild size="sm" variant="secondary" className="w-full bg-emerald-500 hover:bg-emerald-600 text-white">
+                      <Link to="/rent-lease-asset">Rent/Lease</Link>
                     </Button>
                   </div>
                 </CardContent>
