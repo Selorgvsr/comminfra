@@ -11,6 +11,7 @@ import SellPage from "./pages/SellPage";
 import LandAssetsPage from "./pages/LandAssetsPage";
 import BuildAssetPage from "./pages/BuildAssetPage";
 import RentLeaseAssetPage from "./pages/RentLeaseAssetPage";
+import InteriorRenovationPage from "./pages/InteriorRenovationPage";
 import ContactPage from "./pages/ContactPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import REITInvestPage from "./pages/REITInvestPage";
@@ -36,6 +37,7 @@ const App = () => (
             <Route path="/land-assets" element={<LandAssetsPage />} />
             <Route path="/build-asset" element={<BuildAssetPage />} />
             <Route path="/rent-lease-asset" element={<RentLeaseAssetPage />} />
+            <Route path="/interior-renovation" element={<InteriorRenovationPage />} />
             <Route path="/projects" element={<ProjectsPage />} />
             <Route path="/contact" element={<ContactPage />} />
             <Route path="/about" element={<AboutUsPage />} />

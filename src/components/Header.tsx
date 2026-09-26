@@ -17,6 +17,9 @@ const Header = () => {
     label: "Rent/Lease Asset",
     path: "/rent-lease-asset"
   }, {
+    label: "Interior/Renovation",
+    path: "/interior-renovation"
+  }, {
     label: "Project",
     path: "/projects"
   }, {
