@@ -11,6 +11,7 @@ import SellPage from "./pages/SellPage";
 import LandAssetsPage from "./pages/LandAssetsPage";
 import BuildAssetPage from "./pages/BuildAssetPage";
 import RentLeaseAssetPage from "./pages/RentLeaseAssetPage";
+import InteriorRenovationPage from "./pages/InteriorRenovationPage";
 import ContactPage from "./pages/ContactPage";
 import SustainabilityPage from "./pages/SustainabilityPage";
 import REITInvestPage from "./pages/REITInvestPage";
