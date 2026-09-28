@@ -322,13 +322,13 @@ const InteriorRenovationPage = () => {
       <section id="interior_solutions_section" className="py-24 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               01 — Commercial Interior Solutions
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Spaces Designed for Business Performance
             </h2>
-            <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-xl md:text-2xl text-primary-foreground/85 max-w-4xl mx-auto leading-relaxed">
               We create functional and visually refined commercial interiors tailored to the needs of modern businesses.
             </p>
           </div>
@@ -344,8 +344,8 @@ const InteriorRenovationPage = () => {
               </Card>)}
           </div>
 
-          <p className="text-center text-lg md:text-xl text-muted-foreground max-w-4xl mx-auto">
-            Every space is planned around <span className="font-semibold text-commercial">functionality, brand identity, employee experience, customer movement and operational efficiency</span>.
+          <p className="text-center text-lg md:text-xl text-primary-foreground/85 max-w-4xl mx-auto">
+            Every space is planned around <span className="font-semibold text-accent">functionality, brand identity, employee experience, customer movement and operational efficiency</span>.
           </p>
         </div>
       </section>
@@ -355,22 +355,22 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 02 — Renovation & Property Transformation
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Give Existing Spaces a New Identity
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 Our renovation solutions help transform existing commercial properties into modern, efficient and market-ready spaces.
               </p>
               <div className="grid sm:grid-cols-2 gap-3">
                 {renovationWorks.map((item, index) => <div key={index} className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
                     <item.icon className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item.label}</span>
+                    <span className="text-sm text-primary-foreground/90">{item.label}</span>
                   </div>)}
               </div>
-              <p className="mt-8 text-lg text-muted-foreground">
+              <p className="mt-8 text-lg text-primary-foreground/85">
                 The objective is to <span className="font-semibold text-solar">upgrade the property without compromising business operations, safety or design quality</span>.
               </p>
             </div>
@@ -386,13 +386,13 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-3 text-white">
         <div className="container px-4">
           <div className="text-center mb-14">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               03 — Design & Planning
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               From Concept to Execution
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-primary-foreground/85 max-w-3xl mx-auto">
               A successful interior project begins with proper planning.
             </p>
           </div>
@@ -407,9 +407,9 @@ const InteriorRenovationPage = () => {
           </div>
 
           <div className="max-w-4xl mx-auto">
-            <p className="text-center text-lg text-muted-foreground mb-6">We develop layouts based on:</p>
+            <p className="text-center text-lg text-primary-foreground/85 mb-6">We develop layouts based on:</p>
             <div className="flex flex-wrap justify-center gap-3">
-              {layoutBasis.map((item, index) => <span key={index} className="bg-white/10 backdrop-blur-sm border border-white/15 text-foreground/90 px-4 py-2 rounded-full text-sm">
+              {layoutBasis.map((item, index) => <span key={index} className="bg-white/10 backdrop-blur-sm border border-white/15 text-primary-foreground/90 px-4 py-2 rounded-full text-sm">
                   {item}
                 </span>)}
             </div>
@@ -421,13 +421,13 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-14">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               04 — Turnkey Interior Execution
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               One Partner. Complete Execution.
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-xl text-primary-foreground/85 max-w-3xl mx-auto">
               CommInfra can coordinate the complete interior execution process from initial planning through final handover.
             </p>
           </div>
@@ -440,7 +440,7 @@ const InteriorRenovationPage = () => {
                 <span className="text-sm font-medium text-commercial-navy">{step}</span>
               </div>)}
           </div>
-          <p className="text-center text-lg text-muted-foreground mt-10 max-w-3xl mx-auto">
+          <p className="text-center text-lg text-primary-foreground/85 mt-10 max-w-3xl mx-auto">
             This creates a <span className="font-semibold text-solar">single coordinated workflow</span> instead of managing multiple independent contractors.
           </p>
         </div>
@@ -455,22 +455,22 @@ const InteriorRenovationPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy/60 via-transparent to-transparent"></div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 05 — Office Interior
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Modern Workspaces Built Around Your Business
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 We create professional office environments designed to support productivity, collaboration and corporate identity.
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {officeSolutions.map((item, index) => <div key={index} className="flex items-center space-x-3">
                     <CheckCircle2 className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item}</span>
+                    <span className="text-sm text-primary-foreground/90">{item}</span>
                   </div>)}
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/85">
                 Design can be adapted for <span className="font-semibold text-solar">startups, growing businesses, corporate offices and multi-floor commercial occupiers</span>.
               </p>
             </div>
@@ -483,22 +483,22 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 06 — Retail & Commercial Interiors
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Create Spaces That Customers Remember
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 Retail and commercial spaces require more than attractive interiors. They need <span className="font-semibold text-solar">efficient customer movement, visibility, functionality and brand consistency</span>.
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {retailSolutions.map((item, index) => <div key={index} className="flex items-center space-x-3">
                     <CheckCircle2 className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item}</span>
+                    <span className="text-sm text-primary-foreground/90">{item}</span>
                   </div>)}
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/85">
                 Suitable for <span className="font-semibold text-solar">retail stores, showrooms, high-street properties and commercial plazas</span>.
               </p>
             </div>
@@ -519,22 +519,22 @@ const InteriorRenovationPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy/60 via-transparent to-transparent"></div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 07 — Lease-Ready & Rental Property Fit-Out
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Convert Empty Commercial Space into a Market-Ready Asset
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 For property owners and investors, an unfinished or outdated space can affect leasing potential. CommInfra can prepare commercial spaces for occupancy.
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {leaseReadyWorks.map((item, index) => <div key={index} className="flex items-center space-x-3">
                     <CheckCircle2 className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item}</span>
+                    <span className="text-sm text-primary-foreground/90">{item}</span>
                   </div>)}
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/85">
                 The goal is to create <span className="font-semibold text-solar">professional, functional and tenant-ready commercial spaces</span>.
               </p>
             </div>
@@ -547,19 +547,19 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 08 — Sustainable Interior Solutions
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Better Interiors with Lower Operational Impact
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 Our Interior & Renovation division extends CommInfra's philosophy of energy efficiency, solar power, smart energy systems, water management and low-carbon development into interiors.
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {sustainableSolutions.map((item, index) => <div key={index} className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
                     <item.icon className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item.label}</span>
+                    <span className="text-sm text-primary-foreground/90">{item.label}</span>
                   </div>)}
               </div>
               <p className="text-lg font-semibold text-solar">Design beautiful spaces that perform efficiently.</p>
@@ -581,22 +581,22 @@ const InteriorRenovationPage = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-commercial-navy/60 via-transparent to-transparent"></div>
             </div>
             <div className="order-1 lg:order-2">
-              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+              <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
                 09 — Smart Commercial Interiors
               </div>
-              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+              <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Technology Integrated into the Workplace
               </h2>
-              <p className="text-xl text-muted-foreground mb-8 leading-relaxed">
+              <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed">
                 Modern commercial interiors increasingly require technology infrastructure from day one.
               </p>
               <div className="grid sm:grid-cols-2 gap-3 mb-8">
                 {smartSolutions.map((item, index) => <div key={index} className="flex items-center space-x-3 bg-white/5 backdrop-blur-sm rounded-xl px-4 py-3 border border-white/10">
                     <item.icon className="h-5 w-5 shrink-0 text-solar" />
-                    <span className="text-sm text-foreground/90">{item.label}</span>
+                    <span className="text-sm text-primary-foreground/90">{item.label}</span>
                   </div>)}
               </div>
-              <p className="text-lg text-muted-foreground">
+              <p className="text-lg text-primary-foreground/85">
                 This complements CommInfra's existing focus on <span className="font-semibold text-solar">AI-powered building management and smart building systems</span>.
               </p>
             </div>
@@ -608,10 +608,10 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               10 — Our Interior & Renovation Process
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               A Structured Approach from Site to Handover
             </h2>
           </div>
@@ -635,10 +635,10 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-2 text-white">
         <div className="container px-4">
           <div className="text-center mb-14">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               11 — Interior Solutions for Different Needs
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Designed Around Your Property
             </h2>
           </div>
@@ -660,18 +660,18 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-3 text-white">
         <div className="container px-4 max-w-5xl">
           <div className="text-center mb-12">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               12 — Why CommInfra
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Real Estate Knowledge Beyond Interior Design
             </h2>
           </div>
-          <p className="text-xl text-muted-foreground mb-8 leading-relaxed text-center">
+          <p className="text-xl text-primary-foreground/85 mb-8 leading-relaxed text-center">
             Unlike an interior-only service provider, CommInfra operates across the <span className="font-semibold text-solar">commercial property lifecycle</span>, including land assets, built assets, property sales, leasing/rental and commercial infrastructure.
           </p>
           <div className="flex flex-wrap justify-center gap-3 mb-14">
-            {["Commercial property requirements", "Tenant requirements", "Leasing requirements", "Asset enhancement", "Operational efficiency", "Sustainability", "Long-term property value"].map((item, index) => <span key={index} className="bg-white/10 backdrop-blur-sm border border-white/15 text-foreground/90 px-4 py-2 rounded-full text-sm">
+            {["Commercial property requirements", "Tenant requirements", "Leasing requirements", "Asset enhancement", "Operational efficiency", "Sustainability", "Long-term property value"].map((item, index) => <span key={index} className="bg-white/10 backdrop-blur-sm border border-white/15 text-primary-foreground/90 px-4 py-2 rounded-full text-sm">
                 {item}
               </span>)}
           </div>
@@ -688,10 +688,10 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-1 text-white">
         <div className="container px-4">
           <div className="text-center mb-14">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               13 — Before & After
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Transforming Existing Spaces
             </h2>
           </div>
@@ -713,7 +713,7 @@ const InteriorRenovationPage = () => {
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 max-w-5xl mx-auto">
             {beforeAfter.map((item, index) => <div key={index} className="bg-white/10 backdrop-blur-sm border border-white/15 rounded-2xl p-5 flex items-center justify-center gap-3">
-                <span className="text-sm text-muted-foreground text-center">{item.before}</span>
+                <span className="text-sm text-primary-foreground/85 text-center">{item.before}</span>
                 <ArrowRight className="h-5 w-5 shrink-0 text-solar" />
                 <span className="text-sm font-semibold text-white text-center">{item.after}</span>
               </div>)}
@@ -725,10 +725,10 @@ const InteriorRenovationPage = () => {
       <section className="py-24 bg-gradient-section-2 text-white">
         <div className="container px-4">
           <div className="text-center mb-16">
-            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-primary border-none font-semibold px-6 py-2 rounded-full">
+            <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
               14 — Project Showcase
             </div>
-            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-primary via-commercial to-solar bg-clip-text text-transparent">
+            <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Interior & Renovation Projects
             </h2>
           </div>
