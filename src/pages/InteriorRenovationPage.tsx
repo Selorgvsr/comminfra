@@ -9,7 +9,8 @@ import {
   ShieldCheck, Video, Wifi, MonitorSmartphone, Camera, Lock, Sun, Recycle, Gauge,
   Droplet, Sparkles, Eye, Search, ClipboardList, KeyRound, ArrowRightLeft
 } from "lucide-react";
-import heroInteriorImage from "@/assets/modern-mall-interior-skylight.jpg";
+import heroInteriorImageAsset from "@/assets/mall-interior-hero.jpg.asset.json";
+const heroInteriorImage = heroInteriorImageAsset.url;
 import renovationImage from "@/assets/commercial-plaza-premium.jpg";
 import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
 import retailInteriorImage from "@/assets/retail-floor-branded.jpg";
