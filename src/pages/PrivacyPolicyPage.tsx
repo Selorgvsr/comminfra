@@ -98,7 +98,7 @@ const PrivacyPolicyPage = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="prestige-hero relative  flex items-center overflow-hidden bg-gradient-to-br from-[#1a237e] via-[#0d1442] to-black">
+      <section className="prestige-hero relative flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={legalHeroImage} alt="" className="w-full h-full object-cover" />
           <div className="prestige-hero-overlay absolute inset-0" />
