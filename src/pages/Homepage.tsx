@@ -129,28 +129,27 @@ const Homepage = () => {
   };
   return <div className="Homepage_Container">
       {/* Hero Banner */}
-      <section className="Homepage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero Homepage_HeroBanner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroImage} alt="Commercial Infrastructure Asset" className="w-full h-full object-cover" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
         
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Commercial Real Estate Excellence
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             Commercial Infrastructure Asset
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> For Modern Business</span>
+            <span className="prestige-hero-highlight"> For Modern Business</span>
           </h1>
           
-          <p className="text-xl md:text-2xl text-gray-200 mb-8 max-w-4xl mx-auto leading-relaxed animate-fade-in">
+          <p className="prestige-hero-description">
             Find financial peace with Comminfra — secure asset appreciation and rental income that delivers strong returns within 10 years.
           </p>
           
-          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
+          <Button size="lg" className="prestige-hero-primary" asChild>
             <Link to="/projects">
               Explore Our Platform
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

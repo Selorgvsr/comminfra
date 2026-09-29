@@ -137,24 +137,23 @@ In every project, the façade becomes a visual identity — iconic, efficient, a
   }];
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
-      <section className="build_asset_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero build_asset_hero_banner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img alt="Built for Business, Designed for Impact" className="w-full h-full object-cover" src="/lovable-uploads/0149a58c-f365-4c01-ab3c-f14b5e86c960.jpg" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
         
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Premium Built Assets
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             Built for Business, 
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Designed for Impact</span>
+            <span className="prestige-hero-highlight"> Designed for Impact</span>
           </h1>
           
-          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
+          <Button size="lg" className="prestige-hero-primary" asChild>
             <Link to="/projects">
               View Build Specifications
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

@@ -78,36 +78,35 @@ const ContactPage = () => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="hero_contact_section relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero hero_contact_section relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img
             src={heroImage}
             alt="Team handshake in front of commercial building"
             className="w-full h-full object-cover"
           />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Let's Build Together
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             Connect with Our Commercial Development Team
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="prestige-hero-highlight">
               {" "}
               We're Ready to Build with You
             </span>
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-4xl mx-auto text-white/90 animate-fade-in">
+          <p className="prestige-hero-description">
             Whether you're buying, selling, investing, or collaborating — our team is here to guide you every step of
             the way.
           </p>
           <Button
             size="lg"
-            className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group"
+            className="prestige-hero-primary"
             asChild
           >
             <a href="#contact-form">

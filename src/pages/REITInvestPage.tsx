@@ -173,21 +173,20 @@ const REITInvestPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-blue-500/5">
       {/* Hero Section */}
-      <section className="REITPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero REITPage_HeroBanner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={premiumCommercialInvestment} alt="Secure Long-Term Returns with REIT-Grade Properties" className="w-full h-full object-cover" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             REIT & Investment Opportunities
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in text-slate-50">
+          <h1 className="prestige-hero-title">
             Secure Long-Term Returns
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent text-8xl font-serif">
+            <span className="prestige-hero-highlight">
               {" "}
               with REIT-Grade Properties
             </span>

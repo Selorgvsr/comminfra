@@ -1,3 +1,4 @@
+import legalHeroImage from "@/assets/legal-compliance-review.jpg";
 import { Mail, Phone, MapPin, FileText, Shield, Scale, Building2, Users, Leaf, TrendingUp, AlertTriangle, Gavel, XCircle, ChevronDown } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
@@ -97,45 +98,32 @@ const TermsAndConditionsPage = () => {
   }];
   return <div className="min-h-screen">
       {/* Hero Section */}
-      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-[#1a237e] via-[#0d1442] to-black">
-        {/* Animated Particles */}
+      <section className="prestige-hero relative flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          {[...Array(30)].map((_, i) => <div key={i} className="absolute w-1 h-1 bg-amber-400/40 rounded-full animate-pulse" style={{
-          left: `${Math.random() * 100}%`,
-          top: `${Math.random() * 100}%`,
-          animationDelay: `${Math.random() * 3}s`,
-          animationDuration: `${2 + Math.random() * 3}s`
-        }} />)}
+          <img src={legalHeroImage} alt="" className="w-full h-full object-cover" />
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        {/* Gradient Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-[#1a237e]/50 to-black/80" />
-
-        <div className="container relative z-10 text-center px-4">
-          <div className="max-w-4xl mx-auto">
-            <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-amber-500/10 border border-amber-500/30 mb-6">
-              <Scale className="h-4 w-4 text-amber-400" />
-              <span className="text-amber-400 text-sm font-medium">Legal Framework</span>
+        <div className="relative z-10 container prestige-hero-content">
+          <div className="max-w-4xl">
+            <div className="prestige-hero-eyebrow inline-flex items-center gap-2 mb-6">
+              <Scale className="h-4 w-4 text-accent" />
+              <span className="text-accent text-sm font-medium">Legal Framework</span>
             </div>
 
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-r from-amber-300 via-amber-400 to-amber-500 bg-clip-text text-transparent drop-shadow-lg">
+            <h1 className="prestige-hero-title">
               Terms & Conditions
             </h1>
 
-            <p className="text-lg md:text-xl text-white/80 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <p className="prestige-hero-description">
               Legal framework for commercial real estate transactions, investments, and partnerships in India
             </p>
 
-            <Link to="/contact">
-              <Button size="lg" className="bg-transparent border-2 border-amber-400 text-amber-400 hover:bg-amber-400 hover:text-[#1a237e] transition-all duration-300 px-8 py-6 text-lg font-semibold">
+            <Button size="lg" variant="outline" className="prestige-hero-secondary" asChild>
+              <Link to="/contact">
                 Contact Legal Team
-              </Button>
-            </Link>
-
-            {/* Scroll Indicator */}
-            <div className="mt-12 animate-bounce">
-              <ChevronDown className="h-8 w-8 text-amber-400 mx-auto" />
-            </div>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>

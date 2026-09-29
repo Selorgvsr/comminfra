@@ -117,29 +117,26 @@ const BusinessRevenueModelPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-primary/5">
       {/* Hero Section */}
-      <section className="revenue_model_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero revenue_model_hero_banner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img alt="How We Generate Revenue" className="w-full h-full object-cover" src="/lovable-uploads/339d45fd-d791-4e76-8636-7f2e068fb326.jpg" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Business Revenue Model
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             How We Generate
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent text-8xl font-serif">
+            <span className="prestige-hero-highlight">
               {" "}
               Revenue
             </span>
           </h1>
 
-          <p className="text-xl md:text-2xl text-white/90 max-w-4xl mx-auto leading-relaxed animate-fade-in" style={{
-          animationDelay: '0.2s'
-        }}>
+          <p className="prestige-hero-description">
             Imagine owning a freehold property that appreciates over time, bringing you continuous rental income and growing your wealth effortlessly.
           </p>
           

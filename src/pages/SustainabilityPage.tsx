@@ -146,21 +146,20 @@ const SustainabilityPage = () => {
   };
   return <div className="min-h-screen bg-gradient-to-br from-background via-background/95 to-green-500/5">
       {/* Hero Section */}
-      <section className="sustainability_hero_banner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero sustainability_hero_banner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img alt="Green, Smart, and Profitable" className="w-full h-full object-cover" src="/lovable-uploads/0119f867-4cc3-4b3e-a2bb-e34445aee493.jpg" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             ESG & Sustainability Excellence
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             We Build for Tomorrow
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent font-serif">
+            <span className="prestige-hero-highlight">
               {" "}
               Green, Smart, and Profitable
             </span>

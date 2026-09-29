@@ -8,6 +8,10 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    --prestige-navy: 218 49% 13%;
+    --prestige-gold: 40 63% 59%;
+    --prestige-white: 0 0% 100%;
+    --prestige-neutral: 216 21% 93%;
     --background: 0 0% 100%;
     --foreground: 210 24% 16%;
 
@@ -147,11 +151,175 @@ All colors MUST be HSL.
 
   body {
     @apply bg-background text-foreground;
+    font-family: 'Figtree', sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', sans-serif;
   }
 
   html {
     scroll-behavior: smooth;
+  }
+}
+
+/* Architectural Prestige: shared photographic opening treatment. */
+@layer components {
+  .prestige-hero {
+    min-height: min(78svh, 760px);
+    padding-block: 5rem;
+    isolation: isolate;
+    color: hsl(var(--prestige-white));
+    background: hsl(var(--prestige-navy));
+  }
+
+  .prestige-hero > .absolute:first-child img {
+    object-position: center;
+  }
+
+  .prestige-hero-overlay {
+    background: linear-gradient(90deg,
+      hsl(var(--prestige-navy) / .89) 0%,
+      hsl(var(--prestige-navy) / .76) 33%,
+      hsl(var(--prestige-navy) / .30) 67%,
+      hsl(var(--prestige-navy) / .08) 100%);
+  }
+
+  .prestige-hero-content {
+    text-align: left;
+  }
+
+  .prestige-hero .prestige-hero-eyebrow {
+    display: inline-flex;
+    width: fit-content;
+    padding: .45rem 0;
+    margin-bottom: 1.25rem;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+    box-shadow: none;
+    color: hsl(var(--prestige-gold));
+    font-family: 'Figtree', sans-serif;
+    font-size: .85rem;
+    font-weight: 700;
+    letter-spacing: 0;
+  }
+
+  .prestige-hero-title {
+    max-width: 850px;
+    margin-bottom: 1.4rem;
+    color: hsl(var(--prestige-white));
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 1.12;
+    letter-spacing: 0;
+    text-wrap: balance;
+    overflow-wrap: break-word;
+  }
+
+  .prestige-hero-highlight {
+    color: hsl(var(--prestige-gold));
+    font-family: 'Outfit', sans-serif;
+    font-size: inherit;
+    font-weight: inherit;
+    background: none;
+    -webkit-text-fill-color: currentColor;
+  }
+
+  .prestige-hero-description {
+    max-width: 660px;
+    margin: 0 0 2rem;
+    color: hsl(var(--prestige-neutral));
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+
+  .prestige-hero-tagline {
+    margin-bottom: 2rem;
+    color: hsl(var(--prestige-gold));
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+
+  .prestige-hero .prestige-hero-primary,
+  .prestige-hero .prestige-hero-secondary {
+    min-height: 3.25rem;
+    max-width: 100%;
+    height: auto;
+    white-space: normal;
+    padding: .85rem 1.5rem;
+    border-radius: 4px;
+    font-size: .95rem;
+    font-weight: 700;
+    text-align: center;
+    transition: background-color .2s ease, color .2s ease, border-color .2s ease;
+  }
+
+  .prestige-hero .prestige-hero-primary {
+    background: hsl(var(--prestige-gold));
+    color: hsl(var(--prestige-navy));
+    border: 1px solid hsl(var(--prestige-gold));
+  }
+
+  .prestige-hero .prestige-hero-primary:hover {
+    background: hsl(var(--prestige-white));
+    color: hsl(var(--prestige-navy));
+  }
+
+  .prestige-hero .prestige-hero-secondary {
+    background: transparent;
+    color: hsl(var(--prestige-white));
+    border: 1px solid hsl(var(--prestige-white) / .75);
+  }
+
+  .prestige-hero .prestige-hero-secondary:hover {
+    background: hsl(var(--prestige-white) / .14);
+    color: hsl(var(--prestige-white));
+  }
+
+  #interior_hero_section .prestige-hero-title {
+    font-size: 2.8rem;
+    max-width: 910px;
+  }
+
+  @media (max-width: 767px) {
+    .prestige-hero {
+      min-height: min(83svh, 740px);
+      padding-block: 2.5rem;
+    }
+    .prestige-hero-overlay {
+      background: linear-gradient(90deg, hsl(var(--prestige-navy) / .86), hsl(var(--prestige-navy) / .48));
+    }
+    .prestige-hero-title,
+    #interior_hero_section .prestige-hero-title {
+      font-size: 2.5rem;
+    }
+    .prestige-hero-description {
+      font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .prestige-hero-tagline {
+      margin-bottom: 1.25rem;
+    }
+    #interior_hero_section .prestige-hero-title {
+      font-size: 2rem;
+    }
+  }
+
+  @media (max-width: 400px) {
+    .prestige-hero-title,
+    #interior_hero_section .prestige-hero-title {
+      font-size: 2.15rem;
+    }
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .prestige-hero *, .prestige-hero *::before, .prestige-hero *::after {
+      animation-duration: .01ms !important;
+      transition-duration: .01ms !important;
+    }
   }
 }
 
