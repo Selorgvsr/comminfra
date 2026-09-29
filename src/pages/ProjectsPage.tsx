@@ -171,27 +171,26 @@ const ProjectsPage = () => {
       <title>Projects - Commercial Development Portfolio | CommercialDev</title>
 
       {/* Hero Section */}
-      <section id="hero_projects_section" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="hero_projects_section" className="prestige-hero relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={projectsPortfolioMontageImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Our Projects Portfolio
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             Explore Our Commercial Real Estate Projects
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="prestige-hero-highlight">
               {" "}
               Precision, Purpose, and Performance
             </span>
           </h1>
 
-          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
+          <Button size="lg" className="prestige-hero-primary" asChild>
             <a href="#ongoing_projects_section">
               View Our Portfolio
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />

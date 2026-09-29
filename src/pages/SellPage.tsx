@@ -137,26 +137,21 @@ const SellPage = () => {
   }, []);
   return <div className="min-h-screen gradient-mesh">
       {/* 1. Hero Section - Sell Your Commercial Property */}
-      <section className="SellPage_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero SellPage_HeroBanner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={sellHeroCommercial} alt="Attractive modern commercial building for sale" className="w-full h-full object-cover" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
         
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Premium Property Acquisition
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in text-slate-50">
+          <h1 className="prestige-hero-title">
             Unlock Value from Your Commercial Asset
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> Direct Acquisition</span>
+            <span className="prestige-hero-highlight"> Direct Acquisition</span>
           </h1>
-          
-          <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
-            
-          </Button>
         </div>
       </section>
 

@@ -280,37 +280,36 @@ const InteriorRenovationPage = () => {
 
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
-      <section id="interior_hero_section" className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section id="interior_hero_section" className="prestige-hero relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={heroInteriorImage} alt="Interior / Renovation - Transforming Commercial Spaces" className="w-full h-full object-cover" />
-          <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             Interior & Renovation Services
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in" style={{ textShadow: "0 2px 20px rgba(0,0,0,0.5)" }}>
+          <h1 className="prestige-hero-title">
             Interior / Renovation
-            <span className="block text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+            <span className="prestige-hero-highlight block">
               Transforming Commercial Spaces into High-Performance Business Environments
             </span>
           </h1>
-          <p className="text-lg md:text-2xl mb-4 max-w-4xl mx-auto leading-relaxed" style={{ textShadow: "0 2px 12px rgba(0,0,0,0.6)" }}>
+          <p className="prestige-hero-description">
             From office interiors and retail spaces to complete commercial renovations, CommInfra delivers professionally planned interior and renovation solutions that improve functionality, appearance, tenant experience and long-term property value.
           </p>
-          <p className="text-xl md:text-3xl font-semibold mb-10 text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent">
+          <p className="prestige-hero-tagline">
             Plan. Design. Renovate. Deliver.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-gradient-to-r from-primary to-primary/80 hover:from-primary/90 hover:to-primary text-white px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl animate-fade-in group" asChild>
+          <div className="flex flex-col sm:flex-row gap-4">
+            <Button size="lg" className="prestige-hero-primary" asChild>
               <Link to="/contact">
                 Start Your Project
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Link>
             </Button>
-            <Button size="lg" variant="outline" className="bg-white/10 backdrop-blur-md text-white border border-white/40 hover:bg-white/20 px-8 py-4 rounded-full hover:scale-105 transition-all duration-300 animate-fade-in" asChild>
+            <Button size="lg" variant="outline" className="prestige-hero-secondary" asChild>
               <a href="#interior_solutions_section">
                 View Our Services
               </a>

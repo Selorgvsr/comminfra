@@ -18,23 +18,22 @@ const AboutUsPage = () => {
   const navigate = useNavigate();
   return <div className="min-h-screen gradient-mesh">
       {/* Hero Section */}
-      <section className="AboutUs_HeroBanner relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="prestige-hero AboutUs_HeroBanner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
           <img src={indiaCommercialEvening} alt="Building India's Future" className="w-full h-full object-cover" />
-          {/* Glassmorphism overlay */}
-          <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/50"></div>
-          <div className="absolute inset-0 backdrop-blur-[2px]"></div>
+          
+          <div className="prestige-hero-overlay absolute inset-0" />
         </div>
         
-        <div className="relative z-10 container text-center text-white px-4">
-          <Badge className="mb-6 bg-white/20 backdrop-blur-md text-white border border-white/30 font-semibold animate-fade-in">
+        <div className="relative z-10 container prestige-hero-content">
+          <Badge className="prestige-hero-eyebrow">
             About CommInfra
           </Badge>
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight animate-fade-in">
+          <h1 className="prestige-hero-title">
             Building India's Future 
-            <span className="text-gradient bg-gradient-to-r from-solar to-esg bg-clip-text text-transparent"> We're Proud To Be Part Of This Journey</span>
+            <span className="prestige-hero-highlight"> We're Proud To Be Part Of This Journey</span>
           </h1>
-          <p className="text-xl md:text-2xl text-gray-300 max-w-4xl mx-auto leading-relaxed animate-fade-in">
+          <p className="prestige-hero-description">
             At Comminfra, we understand your need for secure, long-term property investments. We have helped hundreds generate steady returns and build wealth with confidence.
           </p>
           
