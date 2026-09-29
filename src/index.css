@@ -180,10 +180,10 @@ All colors MUST be HSL.
 
   .prestige-hero-overlay {
     background: linear-gradient(90deg,
-      hsl(var(--prestige-navy) / .94) 0%,
-      hsl(var(--prestige-navy) / .82) 33%,
-      hsl(var(--prestige-navy) / .35) 67%,
-      hsl(var(--prestige-navy) / .12) 100%);
+      hsl(var(--prestige-navy) / .89) 0%,
+      hsl(var(--prestige-navy) / .76) 33%,
+      hsl(var(--prestige-navy) / .30) 67%,
+      hsl(var(--prestige-navy) / .08) 100%);
   }
 
   .prestige-hero-content {
@@ -286,10 +286,10 @@ All colors MUST be HSL.
   @media (max-width: 767px) {
     .prestige-hero {
       min-height: min(83svh, 740px);
-      padding-block: 3.5rem;
+      padding-block: 2.5rem;
     }
     .prestige-hero-overlay {
-      background: linear-gradient(90deg, hsl(var(--prestige-navy) / .91), hsl(var(--prestige-navy) / .55));
+      background: linear-gradient(90deg, hsl(var(--prestige-navy) / .86), hsl(var(--prestige-navy) / .48));
     }
     .prestige-hero-title,
     #interior_hero_section .prestige-hero-title {
@@ -297,6 +297,14 @@ All colors MUST be HSL.
     }
     .prestige-hero-description {
       font-size: 1rem;
+      line-height: 1.5;
+      margin-bottom: 1.25rem;
+    }
+    .prestige-hero-tagline {
+      margin-bottom: 1.25rem;
+    }
+    #interior_hero_section .prestige-hero-title {
+      font-size: 2rem;
     }
   }
 

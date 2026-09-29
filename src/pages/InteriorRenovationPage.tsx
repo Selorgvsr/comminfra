@@ -10,6 +10,7 @@ import {
   Droplet, Sparkles, Eye, Search, ClipboardList, KeyRound, ArrowRightLeft
 } from "lucide-react";
 import heroInteriorImageAsset from "@/assets/mall-interior-hero.jpg.asset.json";
+import heroInteriorImageFallback from "@/assets/modern-mall-interior-skylight.jpg";
 const heroInteriorImage = heroInteriorImageAsset.url;
 import renovationImage from "@/assets/commercial-plaza-premium.jpg";
 import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
@@ -282,7 +283,7 @@ const InteriorRenovationPage = () => {
       {/* Hero Section */}
       <section id="interior_hero_section" className="prestige-hero relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={heroInteriorImage} alt="Interior / Renovation - Transforming Commercial Spaces" className="w-full h-full object-cover" />
+          <img src={heroInteriorImage} onError={(event) => { event.currentTarget.onerror = null; event.currentTarget.src = heroInteriorImageFallback; }} alt="Interior / Renovation - Transforming Commercial Spaces" className="w-full h-full object-cover" />
           <div className="prestige-hero-overlay absolute inset-0" />
         </div>
 
