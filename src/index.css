@@ -281,9 +281,9 @@ All colors MUST be HSL.
   }
 
   @media (max-width: 767px) {
-    .prestige-hero {
+    .prestige-hero.flex {
       min-height: min(83svh, 740px);
-      padding-block: 4rem 3rem;
+      padding-block: 3rem 2.5rem;
     }
     .prestige-hero-overlay {
       background: linear-gradient(90deg, hsl(var(--prestige-navy) / .86), hsl(var(--prestige-navy) / .48));
@@ -299,11 +299,17 @@ All colors MUST be HSL.
     .prestige-hero-tagline {
       margin-bottom: 1.25rem;
     }
+    #interior_hero_section .prestige-hero-title {
+      font-size: 2rem;
+    }
   }
 
   @media (max-width: 400px) {
     .prestige-hero-title {
       font-size: 2.15rem;
+    }
+    #interior_hero_section .prestige-hero-title {
+      font-size: 1.9rem;
     }
   }
 
