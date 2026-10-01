@@ -14,7 +14,7 @@ import renovationImage from "@/assets/mall-corridor-palms.jpg";
 import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
 import retailInteriorImage from "@/assets/retail-floor-branded.jpg";
 import leaseReadyImage from "@/assets/restaurant-ready-space.jpg";
-import sustainableImage from "@/assets/esg-sustainable-commercial-building.jpg";
+import sustainableImage from "@/assets/green-office-interior.jpg";
 import smartInteriorImage from "@/assets/smart-building-dashboard.jpg";
 import beforeImage from "@/assets/retail-floor-interior.jpg";
 import afterImage from "@/assets/leased-retail-interior.jpg";
