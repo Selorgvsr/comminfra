@@ -10,7 +10,7 @@ import {
   Droplet, Sparkles, Eye, Search, ClipboardList, KeyRound, ArrowRightLeft
 } from "lucide-react";
 import heroInteriorImage from "@/assets/modern-mall-interior-skylight.jpg";
-import renovationImage from "@/assets/commercial-plaza-premium.jpg";
+import renovationImage from "@/assets/mall-corridor-palms.jpg";
 import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
 import retailInteriorImage from "@/assets/retail-floor-branded.jpg";
 import leaseReadyImage from "@/assets/restaurant-ready-space.jpg";
