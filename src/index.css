@@ -282,7 +282,7 @@ All colors MUST be HSL.
 
   @media (max-width: 767px) {
     .prestige-hero.flex {
-      min-height: min(83svh, 740px);
+      min-height: min(88svh, 780px);
       padding-block: 3rem 2.5rem;
     }
     .prestige-hero-overlay {
