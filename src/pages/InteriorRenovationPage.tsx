@@ -12,7 +12,7 @@ import {
 import heroInteriorImage from "@/assets/modern-mall-interior-skylight.jpg";
 import renovationImage from "@/assets/mall-corridor-palms.jpg";
 import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
-import retailInteriorImage from "@/assets/retail-floor-branded.jpg";
+import retailInteriorImage from "@/assets/red-corridor-retail.jpg";
 import leaseReadyImage from "@/assets/restaurant-ready-space.jpg";
 import sustainableImage from "@/assets/green-office-interior.jpg";
 import smartInteriorImage from "@/assets/smart-building-dashboard.jpg";
