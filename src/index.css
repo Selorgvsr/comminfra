@@ -167,7 +167,7 @@ All colors MUST be HSL.
 /* Architectural Prestige: shared photographic opening treatment. */
 @layer components {
   .prestige-hero.flex {
-    min-height: min(78svh, 760px);
+    min-height: min(84svh, 800px);
     padding-block: clamp(6rem, 11svh, 9rem) 5rem;
     align-items: flex-start;
     isolation: isolate;
