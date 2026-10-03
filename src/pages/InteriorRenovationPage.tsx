@@ -322,7 +322,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              01 — Commercial Interior Solutions
+              Commercial Interior Solutions
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Spaces Designed for Business Performance
@@ -355,7 +355,7 @@ const InteriorRenovationPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                02 — Renovation & Property Transformation
+               Renovation & Property Transformation
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Give Existing Spaces a New Identity
@@ -386,7 +386,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-14">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              03 — Design & Planning
+              Design & Planning
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               From Concept to Execution
@@ -421,7 +421,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-14">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              04 — Turnkey Interior Execution
+             Turnkey Interior Execution
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               One Partner. Complete Execution.
@@ -455,7 +455,7 @@ const InteriorRenovationPage = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                05 — Office Interior
+               Office Interior
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Modern Workspaces Built Around Your Business
@@ -483,7 +483,7 @@ const InteriorRenovationPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                06 — Retail & Commercial Interiors
+               Retail & Commercial Interiors
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Create Spaces That Customers Remember
@@ -519,7 +519,7 @@ const InteriorRenovationPage = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                07 — Lease-Ready & Rental Property Fit-Out
+               Lease-Ready & Rental Property Fit-Out
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Convert Empty Commercial Space into a Market-Ready Asset
@@ -547,7 +547,7 @@ const InteriorRenovationPage = () => {
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                08 — Sustainable Interior Solutions
+               Sustainable Interior Solutions
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Better Interiors with Lower Operational Impact
@@ -581,7 +581,7 @@ const InteriorRenovationPage = () => {
             </div>
             <div className="order-1 lg:order-2">
               <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-                09 — Smart Commercial Interiors
+               Smart Commercial Interiors
               </div>
               <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
                 Technology Integrated into the Workplace
@@ -608,7 +608,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              10 — Our Interior & Renovation Process
+             — Our Interior & Renovation Process
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               A Structured Approach from Site to Handover
@@ -635,7 +635,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-14">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              11 — Interior Solutions for Different Needs
+             Interior Solutions for Different Needs
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Designed Around Your Property
@@ -660,7 +660,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4 max-w-5xl">
           <div className="text-center mb-12">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              12 — Why CommInfra
+             Why CommInfra
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Real Estate Knowledge Beyond Interior Design
@@ -688,7 +688,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-14">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              13 — Before & After
+              Before & After
             </div>
             <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Transforming Existing Spaces
@@ -725,7 +725,7 @@ const InteriorRenovationPage = () => {
         <div className="container px-4">
           <div className="text-center mb-16">
             <div className="mb-6 inline-block bg-gradient-to-r from-primary/20 to-solar/20 text-accent border-none font-semibold px-6 py-2 rounded-full">
-              14 — Project Showcase
+             Project Showcase
             </div>
             <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-accent via-primary-foreground to-accent bg-clip-text text-transparent">
               Interior & Renovation Projects
