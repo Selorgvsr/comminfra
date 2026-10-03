@@ -16,7 +16,7 @@ import retailInteriorImage from "@/assets/red-corridor-retail.jpg";
 import leaseReadyImage from "@/assets/restaurant-ready-space.jpg";
 import sustainableImage from "@/assets/green-office-interior.jpg";
 import smartInteriorImage from "@/assets/smart-office-tech.jpg";
-import beforeImage from "@/assets/retail-floor-interior.jpg";
+import beforeImage from "@/assets/dilapidated-meeting-room.jpg";
 import afterImage from "@/assets/leased-retail-interior.jpg";
 import showcaseOfficeImage from "@/assets/commercial-office-interior.jpg";
 import showcaseRetailImage from "@/assets/retail-brand-store.jpg";
