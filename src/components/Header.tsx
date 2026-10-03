@@ -38,7 +38,7 @@ const Header = () => {
         
         <nav className="hidden md:flex items-center space-x-1">
           {navItems.map(item => <Button key={item.path} variant={location.pathname === item.path ? "commercial" : "ghost"} size="sm" asChild>
-              <Link to={item.path} className="text-xl font-extrabold">{item.label}</Link>
+              <Link to={item.path} className="text-xl font-black">{item.label}</Link>
             </Button>)}
         </nav>
         
@@ -52,7 +52,7 @@ const Header = () => {
             </SheetTrigger>
             <SheetContent side="right" className="w-72">
               <div className="flex flex-col space-y-4 mt-8">
-                {navItems.map(item => <Button key={item.path} variant={location.pathname === item.path ? "commercial" : "ghost"} className="justify-start font-extrabold" asChild onClick={() => setIsOpen(false)}>
+                {navItems.map(item => <Button key={item.path} variant={location.pathname === item.path ? "commercial" : "ghost"} className="justify-start font-black" asChild onClick={() => setIsOpen(false)}>
                     <Link to={item.path}>{item.label}</Link>
                   </Button>)}
                 <Button variant="investor" className="mt-4" asChild>
