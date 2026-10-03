@@ -10,7 +10,7 @@ import { Building2, MapPin, Hammer, DollarSign, Home, Car, Sun, Leaf, Brain, Bar
 import { Badge } from "@/components/ui/badge";
 
 // Import images
-import heroImage from "@/assets/hero-commercial-complex.jpg";
+import heroImage from "@/assets/waterfront-financial-district.png";
 import investorImage from "@/assets/investor-handshake.jpg";
 import landImage from "@/assets/aerial-business-park.jpg";
 import buildingImage from "@/assets/sustainable-growth-building.jpg";
