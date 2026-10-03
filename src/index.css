@@ -322,6 +322,10 @@ All colors MUST be HSL.
 }
 
 @layer components {
+  .header-nav-link {
+    font-weight: 900 !important;
+  }
+
   .gradient-primary {
     background: var(--gradient-primary);
   }
