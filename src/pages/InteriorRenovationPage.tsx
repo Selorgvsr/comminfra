@@ -11,7 +11,7 @@ import {
 } from "lucide-react";
 import heroInteriorImage from "@/assets/modern-mall-interior-skylight.jpg";
 import renovationImage from "@/assets/mall-corridor-palms.jpg";
-import officeInteriorImage from "@/assets/commercial-office-interior.jpg";
+import officeInteriorImage from "@/assets/office-glass-interior.jpg";
 import retailInteriorImage from "@/assets/red-corridor-retail.jpg";
 import leaseReadyImage from "@/assets/restaurant-ready-space.jpg";
 import sustainableImage from "@/assets/green-office-interior.jpg";
