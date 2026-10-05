@@ -153,6 +153,15 @@ All colors MUST be HSL.
     @apply bg-background text-foreground;
     font-family: 'Figtree', sans-serif;
     font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+    overflow-x: clip;
+  }
+
+  img, video, iframe {
+    max-width: 100%;
+  }
+
+  input, textarea, select, button {
+    max-width: 100%;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -211,7 +220,7 @@ All colors MUST be HSL.
     max-width: 910px;
     margin-bottom: 1.4rem;
     color: hsl(var(--prestige-white));
-    font-size: 2.8rem;
+    font-size: clamp(2.15rem, 5vw, 2.8rem);
     font-weight: 600;
     line-height: 1.12;
     letter-spacing: 0;
@@ -283,13 +292,13 @@ All colors MUST be HSL.
   @media (max-width: 767px) {
     .prestige-hero.flex {
       min-height: min(88svh, 780px);
-      padding-block: 3rem 2.5rem;
+      padding-block: clamp(2.5rem, 8svh, 3rem) 2.5rem;
     }
     .prestige-hero-overlay {
       background: linear-gradient(90deg, hsl(var(--prestige-navy) / .86), hsl(var(--prestige-navy) / .48));
     }
     .prestige-hero-title {
-      font-size: 2.5rem;
+      font-size: clamp(2rem, 10.5vw, 2.5rem);
     }
     .prestige-hero-description {
       font-size: 1rem;
@@ -300,7 +309,7 @@ All colors MUST be HSL.
       margin-bottom: 1.25rem;
     }
     #interior_hero_section .prestige-hero-title {
-      font-size: 2rem;
+      font-size: clamp(1.75rem, 8.5vw, 2rem);
     }
   }
 
@@ -310,6 +319,27 @@ All colors MUST be HSL.
     }
     #interior_hero_section .prestige-hero-title {
       font-size: 1.9rem;
+    }
+  }
+
+  @media (max-width: 639px) {
+    .prestige-hero-content {
+      padding-inline: 1.25rem;
+    }
+
+    .prestige-hero .prestige-hero-primary,
+    .prestige-hero .prestige-hero-secondary {
+      width: 100%;
+    }
+
+    main section[class*="py-20"],
+    main section[class*="py-24"] {
+      padding-top: 3.5rem;
+      padding-bottom: 3.5rem;
+    }
+
+    main h2 {
+      overflow-wrap: anywhere;
     }
   }
 

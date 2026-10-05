@@ -207,7 +207,7 @@ const REITInvestPage = () => {
             </p>
           </div>
 
-          <Carousel className="max-w-7xl mx-auto" opts={{
+          <Carousel className="max-w-full mx-auto overflow-hidden xl:max-w-7xl" opts={{
           loop: true
         }}>
             <CarouselContent>
@@ -326,8 +326,8 @@ const REITInvestPage = () => {
               </CarouselItem>
             </CarouselContent>
             
-            <CarouselPrevious className="hidden md:flex -left-12 bg-white/90 hover:bg-white shadow-lg border-2" />
-            <CarouselNext className="hidden md:flex -right-12 bg-white/90 hover:bg-white shadow-lg border-2" />
+            <CarouselPrevious className="hidden xl:flex -left-10 bg-white/90 hover:bg-white shadow-lg border-2" />
+            <CarouselNext className="hidden xl:flex -right-10 bg-white/90 hover:bg-white shadow-lg border-2" />
           </Carousel>
 
           <div className="text-center mt-8 text-sm text-muted-foreground">
