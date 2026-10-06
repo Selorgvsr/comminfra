@@ -176,26 +176,25 @@ All colors MUST be HSL.
 /* Architectural Prestige: shared photographic opening treatment. */
 @layer components {
   .prestige-hero.flex {
-    min-height: min(84svh, 800px);
-    padding-block: clamp(6rem, 11svh, 9rem) 5rem;
-    align-items: flex-start;
+    min-height: min(88svh, 820px);
+    padding-block: clamp(6rem, 11svh, 9rem) clamp(3.5rem, 7svh, 5.5rem);
+    align-items: flex-end;
     isolation: isolate;
     color: hsl(var(--prestige-white));
     background: hsl(var(--prestige-navy));
   }
 
   .prestige-hero > .absolute:first-child img {
-    object-fit: contain !important;
+    object-fit: cover !important;
     object-position: center;
-    background: hsl(var(--prestige-navy));
   }
 
   .prestige-hero-overlay {
-    background: linear-gradient(90deg,
-      hsl(var(--prestige-navy) / .89) 0%,
-      hsl(var(--prestige-navy) / .76) 33%,
-      hsl(var(--prestige-navy) / .30) 67%,
-      hsl(var(--prestige-navy) / .08) 100%);
+    background: linear-gradient(180deg,
+      hsl(var(--prestige-navy) / .30) 0%,
+      hsl(var(--prestige-navy) / .12) 38%,
+      hsl(var(--prestige-navy) / .55) 68%,
+      hsl(var(--prestige-navy) / .88) 100%);
   }
 
   .prestige-hero-content {
@@ -219,12 +218,13 @@ All colors MUST be HSL.
   }
 
   .prestige-hero-title {
-    max-width: 910px;
+    max-width: 820px;
     margin-bottom: 1.4rem;
     color: hsl(var(--prestige-white));
-    font-size: clamp(2.15rem, 5vw, 2.8rem);
-    font-weight: 600;
-    line-height: 1.12;
+    font-size: clamp(2.6rem, 6vw, 4.25rem);
+    font-weight: 800;
+    line-height: 1.05;
+    text-shadow: 0 2px 24px hsl(var(--prestige-navy) / .45);
     letter-spacing: 0;
     text-wrap: balance;
     overflow-wrap: break-word;
@@ -241,11 +241,12 @@ All colors MUST be HSL.
   }
 
   .prestige-hero-description {
-    max-width: 660px;
+    max-width: 620px;
     margin: 0 0 2rem;
-    color: hsl(var(--prestige-neutral));
-    font-size: 1.2rem;
-    line-height: 1.6;
+    color: hsl(var(--prestige-white) / .92);
+    font-size: 1.1rem;
+    line-height: 1.55;
+    text-shadow: 0 1px 14px hsl(var(--prestige-navy) / .5);
   }
 
   .prestige-hero-tagline {
@@ -261,8 +262,8 @@ All colors MUST be HSL.
     max-width: 100%;
     height: auto;
     white-space: normal;
-    padding: .85rem 1.5rem;
-    border-radius: 4px;
+    padding: .85rem 2rem;
+    border-radius: 999px;
     font-size: .95rem;
     font-weight: 700;
     text-align: center;
@@ -270,25 +271,27 @@ All colors MUST be HSL.
   }
 
   .prestige-hero .prestige-hero-primary {
-    background: hsl(var(--prestige-gold));
+    background: hsl(var(--prestige-white));
     color: hsl(var(--prestige-navy));
-    border: 1px solid hsl(var(--prestige-gold));
+    border: 1px solid hsl(var(--prestige-white));
   }
 
   .prestige-hero .prestige-hero-primary:hover {
-    background: hsl(var(--prestige-white));
+    background: hsl(var(--prestige-gold));
+    border-color: hsl(var(--prestige-gold));
     color: hsl(var(--prestige-navy));
   }
 
   .prestige-hero .prestige-hero-secondary {
-    background: transparent;
+    background: hsl(var(--prestige-white) / .08);
+    backdrop-filter: blur(6px);
     color: hsl(var(--prestige-white));
-    border: 1px solid hsl(var(--prestige-white) / .75);
+    border: 1px solid hsl(var(--prestige-white) / .85);
   }
 
   .prestige-hero .prestige-hero-secondary:hover {
-    background: hsl(var(--prestige-white) / .14);
-    color: hsl(var(--prestige-white));
+    background: hsl(var(--prestige-white));
+    color: hsl(var(--prestige-navy));
   }
 
   @media (max-width: 767px) {
@@ -297,10 +300,10 @@ All colors MUST be HSL.
       padding-block: clamp(2.5rem, 8svh, 3rem) 2.5rem;
     }
     .prestige-hero-overlay {
-      background: linear-gradient(90deg, hsl(var(--prestige-navy) / .86), hsl(var(--prestige-navy) / .48));
+      background: linear-gradient(180deg, hsl(var(--prestige-navy) / .34) 0%, hsl(var(--prestige-navy) / .18) 40%, hsl(var(--prestige-navy) / .9) 100%);
     }
     .prestige-hero-title {
-      font-size: clamp(2rem, 10.5vw, 2.5rem);
+      font-size: clamp(2.1rem, 9.5vw, 2.75rem);
     }
     .prestige-hero-description {
       font-size: 1rem;
