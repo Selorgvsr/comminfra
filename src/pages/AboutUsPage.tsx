@@ -20,7 +20,7 @@ const AboutUsPage = () => {
       {/* Hero Section */}
       <section className="prestige-hero AboutUs_HeroBanner relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={indiaCommercialEvening} alt="Building India's Future" className="w-full h-full object-cover" />
+          <img src={curtainWallHighRise} alt="Building India's Future" className="w-full h-full object-cover" />
           
           <div className="prestige-hero-overlay absolute inset-0" />
         </div>
