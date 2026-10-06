@@ -173,7 +173,7 @@ const ProjectsPage = () => {
       {/* Hero Section */}
       <section id="hero_projects_section" className="prestige-hero relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={projectsPortfolioMontageImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
+          <img src={newBuildingsNeighborhoodImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
           
           <div className="prestige-hero-overlay absolute inset-0" />
         </div>
