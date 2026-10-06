@@ -7,7 +7,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Building2, Target, Users, Handshake, MapPin, Wrench, ShoppingCart, Home, Truck, Sun, Leaf, Brain, BarChart3, ArrowRight, Upload } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
-import indiaCommercialEvening from "@/assets/india-commercial-evening-hd.jpg";
+import curtainWallHighRise from "@/assets/curtain-wall-high-rise.jpg";
 import visionaryInfrastructure from "@/assets/visionary-infrastructure.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
