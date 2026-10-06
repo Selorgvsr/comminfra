@@ -12,7 +12,7 @@ import { Building2, TrendingUp, CheckCircle, Clock, DollarSign, FileText, Upload
 // Image imports
 import sellerHandshake from "@/assets/seller-handshake.jpg";
 import projectTimeline from "@/assets/project-timeline.jpg";
-import sellHeroCommercial from "@/assets/sell-hero-commercial.jpg";
+import sellHeroCommercial from "@/assets/office-buildings.jpg";
 import constructionFoundation from "@/assets/construction-foundation-work.jpg";
 import semiCompletedScaffolding from "@/assets/semi-completed-scaffolding.jpg";
 import interiorFitout from "@/assets/interior-fitout-progress.jpg";
