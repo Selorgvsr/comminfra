@@ -185,7 +185,9 @@ All colors MUST be HSL.
   }
 
   .prestige-hero > .absolute:first-child img {
+    object-fit: contain !important;
     object-position: center;
+    background: hsl(var(--prestige-navy));
   }
 
   .prestige-hero-overlay {
