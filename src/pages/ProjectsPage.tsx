@@ -6,7 +6,7 @@ import OngoingProjectsSection from "@/components/OngoingProjectsSection";
 import { Building2, Zap, Droplets, Car, Sun, Leaf, TrendingUp, DollarSign, Users, Calendar, FileText, Filter, Award, Target, Clock, ArrowRight } from "lucide-react";
 import { Badge } from "@/components/ui/badge";
 import { useState } from "react";
-import projectsPortfolioMontageImage from "@/assets/projects-portfolio-montage.jpg";
+import newBuildingsNeighborhoodImage from "@/assets/new-buildings-neighborhood.jpg";
 import projectCardsEsgImage from "@/assets/project-cards-esg.jpg";
 import projectCategoriesFilterImage from "@/assets/project-categories-filter.jpg";
 import esgSustainableBuildingImage from "@/assets/esg-sustainable-commercial-building.jpg";
@@ -173,7 +173,7 @@ const ProjectsPage = () => {
       {/* Hero Section */}
       <section id="hero_projects_section" className="prestige-hero relative  flex items-center overflow-hidden">
         <div className="absolute inset-0">
-          <img src={projectsPortfolioMontageImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
+          <img src={newBuildingsNeighborhoodImage} alt="Explore Our Commercial Real Estate Projects" className="w-full h-full object-cover" />
           
           <div className="prestige-hero-overlay absolute inset-0" />
         </div>
