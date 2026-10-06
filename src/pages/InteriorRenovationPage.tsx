@@ -295,9 +295,7 @@ const InteriorRenovationPage = () => {
               Transforming Commercial Spaces into High-Performance Business Environments
             </span>
           </h1>
-          <p className="prestige-hero-description">
-            From office interiors and retail spaces to complete commercial renovations, CommInfra delivers professionally planned interior and renovation solutions that improve functionality, appearance, tenant experience and long-term property value.
-          </p>
+          <p className="prestige-hero-description">{"\n"}</p>
           <p className="prestige-hero-tagline">
             Plan. Design. Renovate. Deliver.
           </p>
