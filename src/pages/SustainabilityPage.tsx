@@ -12,7 +12,7 @@ import { Leaf, Recycle, Building, Droplets, Zap, Sun, Brain, TrendingUp, Users, 
 // Import images
 import esgSustainableBuilding from "@/assets/esg-sustainable-commercial-building.jpg";
 import energyEfficientFacade from "@/assets/energy-efficient-facade.jpg";
-import rainwaterHarvestingSystem from "@/assets/rainwater-harvesting-system.jpg";
+import rainwaterHarvestingSystem from "@/assets/rooftop-water-tanks-building.jpg";
 import smartBuildingDashboard from "@/assets/smart-building-dashboard.jpg";
 import esgDashboard from "@/assets/esg-dashboard.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
