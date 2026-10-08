@@ -18,7 +18,7 @@ import esgDashboard from "@/assets/esg-dashboard.jpg";
 import rooftopSolarBuilding from "@/assets/rooftop-solar-building.jpg";
 import solarSmartMeter from "@/assets/solar-smart-meter.jpg";
 import sustainableGrowthBuilding from "@/assets/sustainable-growth-building.jpg";
-import lowCarbonConstruction from "@/assets/low-carbon-construction.jpg";
+import lowCarbonConstruction from "@/assets/low-carbon-green-towers.jpg";
 import smartEnergySystems from "@/assets/smart-energy-systems.jpg";
 const SustainabilityPage = () => {
   const [formData, setFormData] = useState({
