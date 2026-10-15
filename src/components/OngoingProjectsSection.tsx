@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
-import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
+import commercialOfficeBuildingImage from "@/assets/commercial-office-building-omr.jpg";
 import urbanCommonsPlazaImage from "@/assets/urban-commons-plaza.jpg";
 
 const ongoingProjects = [{
@@ -10,7 +10,7 @@ const ongoingProjects = [{
   location: "SRP Tools,OMR,Chennai",
   status: "Structural Work",
   description: "Modern high-rise commercial tower under construction with state-of-the-art facilities and sustainable design features.",
-  image: constructionProgressBuildingImage
+  image: commercialOfficeBuildingImage
 }, {
   name: "Commercial Retail Building",
   location: "Indira Nagar, Chennai",
