@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { MapPin } from "lucide-react";
-import constructionProgressBuildingImage from "@/assets/construction-progress-building.jpg";
+import commercialOfficeBuildingImage from "@/assets/commercial-office-building-omr.jpg";
 import urbanCommonsPlazaImage from "@/assets/urban-commons-plaza.jpg";
 
 const ongoingProjects = [{
